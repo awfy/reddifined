@@ -1,0 +1,41 @@
+{
+	
+	"manifest_version": 	2,
+	
+	"name": 				"Knap",
+	"description":			"Making reddit handsome.",
+	"version": 				"1.0.0",
+	
+	"icons":				{
+	
+								"16": 		"assets/imgs/icons/small.png",
+								"48": 		"assets/imgs/icons/medium.png",
+								"128": 		"assets/imgs/icons/large.png"
+		
+							},
+	
+	"page_action":			{
+	
+								"default_icon": 	{
+													
+														"19":		"assets/imgs/icons/page-small.png",
+														"38":		"assets/imgs/icons/page-large.png"
+													
+													},
+												
+								"default_title":	"Knap for Reddit"
+		
+							},
+	
+	"content_scripts":		[
+							
+								{
+									
+									"matches": 			[ "*reddit.com*" ],
+									"css":				[ "assets/styles/style.css" ]
+									
+								}
+							
+							]
+	
+}
