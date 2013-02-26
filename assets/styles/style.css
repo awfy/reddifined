@@ -1,4 +1,6 @@
+@import url("http://fonts.googleapis.com/css?family=Droid+Sans:400,700");
 /* imports */
+/* compass */
 /* line 17, ../../../../.rvm/gems/ruby-1.9.3-p385/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -55,4 +57,232 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block; }
 
+/* google webfont */
+/* variables */
+/* font family */
+/* font colors */
+/* font weights (don't need to be used) */
+/* reddit colors */
 /* mixins */
+/* build */
+/* line 40, style.scss */
+body {
+  background: white;
+  color: #616c78;
+  font-family: "Helvetica Neue", Helvetica, Arial, Tahoma, sans-serif;
+  min-width: 992px;
+  /* header */
+  /* content */ }
+  /* line 51, style.scss */
+  body #header {
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e4f0fb), color-stop(50%, #d7e8f9), color-stop(100%, #cee3f8));
+    background-image: -webkit-linear-gradient(#e4f0fb, #d7e8f9 50%, #cee3f8);
+    background-image: -moz-linear-gradient(#e4f0fb, #d7e8f9 50%, #cee3f8);
+    background-image: -o-linear-gradient(#e4f0fb, #d7e8f9 50%, #cee3f8);
+    background-image: linear-gradient(#e4f0fb, #d7e8f9 50%, #cee3f8);
+    -webkit-box-shadow: white 0 1px 0 inset, rgba(0, 0, 0, 0.1) 0 1px 2px;
+    -moz-box-shadow: white 0 1px 0 inset, rgba(0, 0, 0, 0.1) 0 1px 2px;
+    box-shadow: white 0 1px 0 inset, rgba(0, 0, 0, 0.1) 0 1px 2px;
+    background-color: #cee3f8;
+    border-bottom: 1px solid #a1c9f2;
+    min-height: 42px;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    /* sidebar (sub-reddits */
+    /* logo & navigation */
+    /* user items */ }
+    /* line 72, style.scss */
+    body #header #sr-header-area {
+      background: #cee3f8;
+      border: 0;
+      border-right: 1px solid #a1c9f2;
+      bottom: 0;
+      height: auto;
+      line-height: 1;
+      position: fixed;
+      left: 0;
+      top: 42px;
+      width: 180px; }
+      /* line 84, style.scss */
+      body #header #sr-header-area #srLeftContainer, body #header #sr-header-area #RESShortcutsViewport, body #header #sr-header-area #RESShortcutsEditContainer {
+        display: none; }
+    /* line 92, style.scss */
+    body #header #header-bottom-left {
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+      background: none;
+      bottom: auto;
+      display: block;
+      height: auto;
+      left: 0;
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      right: auto;
+      top: 0;
+      width: auto;
+      /* logo */
+      /* page name */
+      /* navigation */ }
+      /* line 112, style.scss */
+      body #header #header-bottom-left #header-img, body #header #header-bottom-left a#header-img-a {
+        background: url("http://i.imgur.com/gZWtB.png") no-repeat 0 0;
+        color: #313b45;
+        font-family: "Droid Sans", "Helvetica Neue", Helvetica, Arial, Tahoma, sans-serif;
+        font-weight: 700;
+        height: 23px;
+        left: 10px;
+        line-height: 25px;
+        margin: 0;
+        padding-left: 33px;
+        position: absolute;
+        text-indent: 0;
+        top: 10px;
+        width: 86px; }
+        /* line 127, style.scss */
+        body #header #header-bottom-left #header-img #header-img, body #header #header-bottom-left a#header-img-a #header-img {
+          display: none; }
+      /* line 135, style.scss */
+      body #header #header-bottom-left span.pagename {
+        background: none;
+        color: #313b45;
+        font-family: "Droid Sans", "Helvetica Neue", Helvetica, Arial, Tahoma, sans-serif;
+        font-weight: 700;
+        height: 23px;
+        left: 43px;
+        line-height: 23px;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        text-indent: 0;
+        top: 10px; }
+        /* line 149, style.scss */
+        body #header #header-bottom-left span.pagename a {
+          background: none;
+          bottom: auto;
+          color: #313b45;
+          display: block;
+          font-family: "Droid Sans", "Helvetica Neue", Helvetica, Arial, Tahoma, sans-serif;
+          font-size: 12px;
+          font-weight: 700;
+          font-variant: normal;
+          height: 23px;
+          left: auto;
+          line-height: 23px;
+          padding: 0;
+          position: relative;
+          right: auto;
+          text-indent: 0;
+          top: auto; }
+      /* line 172, style.scss */
+      body #header #header-bottom-left ul.tabmenu {
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+        border-radius: 0;
+        background: transparent;
+        border: 0;
+        display: block;
+        margin: 0;
+        height: auto;
+        left: 180px;
+        padding: 0;
+        position: absolute;
+        right: auto;
+        top: 0;
+        width: auto; }
+        /* line 186, style.scss */
+        body #header #header-bottom-left ul.tabmenu li {
+          display: block;
+          float: left;
+          margin: 0;
+          padding: 0; }
+          /* line 192, style.scss */
+          body #header #header-bottom-left ul.tabmenu li a {
+            background: transparent;
+            border: 0;
+            color: #313b45;
+            display: block;
+            font-size: 11px;
+            font-weight: 700;
+            height: 42px;
+            line-height: 42px;
+            margin-right: -1px;
+            padding: 0 14px;
+            position: relative;
+            text-shadow: rgba(255, 255, 255, 0.5) 0 1px 0;
+            text-transform: capitalize;
+            z-index: 25; }
+            /* line 208, style.scss */
+            body #header #header-bottom-left ul.tabmenu li a:before, body #header #header-bottom-left ul.tabmenu li a:after {
+              background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e4f0fb), color-stop(100%, #a1c9f2));
+              background-image: -webkit-linear-gradient(top, #e4f0fb, #a1c9f2);
+              background-image: -moz-linear-gradient(top, #e4f0fb, #a1c9f2);
+              background-image: -o-linear-gradient(top, #e4f0fb, #a1c9f2);
+              background-image: linear-gradient(top, #e4f0fb, #a1c9f2);
+              background-color: #a1c9f2;
+              content: "";
+              display: block;
+              height: 42px;
+              left: 0;
+              position: absolute;
+              top: 0;
+              width: 1px; }
+            /* line 226, style.scss */
+            body #header #header-bottom-left ul.tabmenu li a:after {
+              left: auto;
+              right: 0; }
+            /* line 231, style.scss */
+            body #header #header-bottom-left ul.tabmenu li a:hover {
+              background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e4f0fb), color-stop(100%, #c1dbf6));
+              background-image: -webkit-linear-gradient(top, #e4f0fb, #c1dbf6);
+              background-image: -moz-linear-gradient(top, #e4f0fb, #c1dbf6);
+              background-image: -o-linear-gradient(top, #e4f0fb, #c1dbf6);
+              background-image: linear-gradient(top, #e4f0fb, #c1dbf6);
+              z-index: 50; }
+            /* line 242, style.scss */
+            body #header #header-bottom-left ul.tabmenu li a:active {
+              background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #c5def7), color-stop(100%, #cae0f7));
+              background-image: -webkit-linear-gradient(top, #c5def7, #cae0f7);
+              background-image: -moz-linear-gradient(top, #c5def7, #cae0f7);
+              background-image: -o-linear-gradient(top, #c5def7, #cae0f7);
+              background-image: linear-gradient(top, #c5def7, #cae0f7);
+              -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 1px 1px inset;
+              -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 1px 1px inset;
+              box-shadow: rgba(0, 0, 0, 0.1) 0 1px 1px inset;
+              z-index: 75; }
+              /* line 253, style.scss */
+              body #header #header-bottom-left ul.tabmenu li a:active:before, body #header #header-bottom-left ul.tabmenu li a:active:after {
+                background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #a1c9f2), color-stop(100%, #cae0f7));
+                background-image: -webkit-linear-gradient(top, #a1c9f2, #cae0f7);
+                background-image: -moz-linear-gradient(top, #a1c9f2, #cae0f7);
+                background-image: -o-linear-gradient(top, #a1c9f2, #cae0f7);
+                background-image: linear-gradient(top, #a1c9f2, #cae0f7); }
+          /* line 269, style.scss */
+          body #header #header-bottom-left ul.tabmenu li.selected a, body #header #header-bottom-left ul.tabmenu li.selected a:hover, body #header #header-bottom-left ul.tabmenu li.selected a:active {
+            background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #c5def7), color-stop(100%, #cae0f7));
+            background-image: -webkit-linear-gradient(top, #c5def7, #cae0f7);
+            background-image: -moz-linear-gradient(top, #c5def7, #cae0f7);
+            background-image: -o-linear-gradient(top, #c5def7, #cae0f7);
+            background-image: linear-gradient(top, #c5def7, #cae0f7);
+            -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 1px 1px inset;
+            -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 1px 1px inset;
+            box-shadow: rgba(0, 0, 0, 0.1) 0 1px 1px inset;
+            z-index: 75; }
+            /* line 280, style.scss */
+            body #header #header-bottom-left ul.tabmenu li.selected a:before, body #header #header-bottom-left ul.tabmenu li.selected a:after, body #header #header-bottom-left ul.tabmenu li.selected a:hover:before, body #header #header-bottom-left ul.tabmenu li.selected a:hover:after, body #header #header-bottom-left ul.tabmenu li.selected a:active:before, body #header #header-bottom-left ul.tabmenu li.selected a:active:after {
+              background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #a1c9f2), color-stop(100%, #cae0f7));
+              background-image: -webkit-linear-gradient(top, #a1c9f2, #cae0f7);
+              background-image: -moz-linear-gradient(top, #a1c9f2, #cae0f7);
+              background-image: -o-linear-gradient(top, #a1c9f2, #cae0f7);
+              background-image: linear-gradient(top, #a1c9f2, #cae0f7); }
+    /* line 302, style.scss */
+    body #header #header-bottom-right {
+      display: none; }
+  /* line 310, style.scss */
+  body .content {
+    margin: 62px 0 0 200px; }

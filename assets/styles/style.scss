@@ -1,7 +1,314 @@
 /* imports */
 
-@import "compass";
-@import "compass/reset";
+	/* compass */
+	@import "compass";
+	@import "compass/reset";
+	
+	/* google webfont */
+	@import url('http://fonts.googleapis.com/css?family=Droid+Sans:400,700');
+
+/* variables */
+	
+	/* font family */
+	$fontFamily: 			"Helvetica Neue", Helvetica, Arial, Tahoma, sans-serif;
+	$fontFamilyCustom: 		"Droid Sans", "Helvetica Neue", Helvetica, Arial, Tahoma, sans-serif;
+	
+	/* font colors */
+	$fontColor: 			#616c78;
+	$fontColorLight:		#939fab;
+	$fontColorDark:			#313b45;
+	$fontColorLink:			#297acc;
+	$fontColorLinkHover: 	#2061a2;
+	
+	/* font weights (don't need to be used) */
+	$fontWeight: 			400;
+	$fontWeightBold: 		700;
+	
+	/* reddit colors */
+	$redditOrange:			#ff5700;
+	$redditRed:				#ff4500;
+	$redditPaleBlue:		#cee3f8;
+	$redditUpVote:			#ff8b60;
+	$redditDownVote:		#9494ff;
 
 /* mixins */
 
+	
+
+/* build */
+
+body {
+	background: white;
+	color: $fontColor;
+	font-family: $fontFamily;
+	min-width: 992px;
+	
+	$headerHeight: 42px;
+	$sidebarWidth: 180px;
+	
+	/* header */
+	
+	#header {
+	
+		@include background-image(
+			linear-gradient(
+				lighten($redditPaleBlue,5%),
+				lighten($redditPaleBlue,2%) 50%,
+				$redditPaleBlue
+			)
+		);
+		@include box-shadow(white 0 1px 0 inset, rgba(black,0.1) 0 1px 2px);
+		
+		background-color: $redditPaleBlue;
+		border-bottom: 1px solid darken($redditPaleBlue,10%);
+		min-height: $headerHeight;
+		left: 0;
+		position: fixed;
+		right: 0;
+		top: 0;
+		
+		/* sidebar (sub-reddits */
+		
+		#sr-header-area {
+			background: $redditPaleBlue;
+			border: 0;
+			border-right: 1px solid darken($redditPaleBlue,10%);
+			bottom: 0;
+			height: auto;
+			line-height: 1;
+			position: fixed;
+			left: 0;
+			top: $headerHeight;
+			width: $sidebarWidth;
+			
+			#srLeftContainer, #RESShortcutsViewport, #RESShortcutsEditContainer {
+				display: none;	
+			}
+			
+		}
+		
+		/* logo & navigation */
+		
+		#header-bottom-left {
+			$logoHeight: 23px;
+			$logoPadding: 27px;
+			$logoWidth: 86px;
+			
+			@include box-shadow(none);
+			background: none;
+			bottom: auto;
+			display: block;
+			height: auto;
+			left: 0;
+			margin: 0;
+			padding: 0;
+			position: absolute;
+			right: auto;
+			top: 0;
+			width: auto;
+			
+			/* logo */
+		
+			#header-img, a#header-img-a {
+				background: url('http://i.imgur.com/gZWtB.png') no-repeat 0 0;
+				color: $fontColorDark;
+				font-family: $fontFamilyCustom;
+				font-weight: $fontWeightBold;
+				height: $logoHeight;
+				left: 10px;
+				line-height: $logoHeight + 2px;
+				margin: 0;
+				padding-left: $logoPadding + 6px;
+				position: absolute;
+				text-indent: 0;
+				top: 10px;
+				width: $logoWidth;
+				
+				#header-img {
+					display: none;	
+				}
+				
+			}
+			
+			/* page name */
+			
+			span.pagename {
+				background: none;
+				color: $fontColorDark;
+				font-family: $fontFamilyCustom;
+				font-weight: $fontWeightBold;
+				height: $logoHeight;
+				left: 10px + $logoPadding + 6px;
+				line-height: $logoHeight;
+				margin: 0;
+				padding: 0;
+				position: absolute;
+				text-indent: 0;
+				top: 10px;
+				
+				a {
+					background: none;
+					bottom: auto;
+					color: $fontColorDark;
+					display: block;
+					font-family: $fontFamilyCustom;
+					font-size: 12px;
+					font-weight: $fontWeightBold;
+					font-variant: normal;
+					height: $logoHeight;
+					left: auto;
+					line-height: $logoHeight;
+					padding: 0;
+					position: relative;
+					right: auto;
+					text-indent: 0;
+					top: auto;
+				}
+				
+			}
+			
+			/* navigation */
+			
+			ul.tabmenu {
+				@include border-radius(0);
+				background: transparent;
+				border: 0;
+				display: block;
+				margin: 0;
+				height: auto;
+				left: $sidebarWidth;
+				padding: 0;
+				position: absolute;
+				right: auto;
+				top: 0;
+				width: auto;
+				
+				li {
+					display: block;
+					float: left;
+					margin: 0;
+					padding: 0;
+					
+					a {
+						background: transparent;
+						border: 0;
+						color: $fontColorDark;
+						display: block;
+						font-size: 11px;
+						font-weight: $fontWeightBold;
+						height: $headerHeight;
+						line-height: $headerHeight;
+						margin-right: -1px;
+						padding: 0 14px;
+						position: relative;
+						text-shadow: rgba(white,0.5) 0 1px 0;
+						text-transform: capitalize;
+						z-index: 25;
+						
+						&:before, &:after {
+							@include background-image(
+								linear-gradient(
+									top, 
+									lighten($redditPaleBlue,5%),
+									darken($redditPaleBlue,10%)
+								)
+							);
+							background-color: darken($redditPaleBlue,10%);
+							content: "";
+							display: block;
+							height: $headerHeight;
+							left: 0;
+							position: absolute;
+							top: 0;
+							width: 1px;
+						}
+						
+						&:after {
+							left: auto;
+							right: 0;
+						}
+						
+						&:hover {
+							@include background-image(
+								linear-gradient(
+									top, 
+									lighten($redditPaleBlue,5%),
+									darken($redditPaleBlue,3%)
+								)
+							);
+							z-index: 50;
+						}
+						
+						&:active {
+							@include background-image(
+								linear-gradient(
+									top, 
+									darken($redditPaleBlue,2%),
+									darken($redditPaleBlue,1%)
+								)
+							);
+							@include box-shadow(rgba(black,0.1) 0 1px 1px inset);
+							z-index: 75;
+							
+							&:before, &:after {
+								@include background-image(
+									linear-gradient(
+										top, 
+										darken($redditPaleBlue,10%),
+										darken($redditPaleBlue,1%)
+									)
+								);
+							}
+							
+						}
+						
+					}
+					
+					&.selected {
+						
+						a, a:hover, a:active {
+							@include background-image(
+								linear-gradient(
+									top, 
+									darken($redditPaleBlue,2%),
+									darken($redditPaleBlue,1%)
+								)
+							);
+							@include box-shadow(rgba(black,0.1) 0 1px 1px inset);
+							z-index: 75;
+							
+							&:before, &:after {
+								@include background-image(
+									linear-gradient(
+										top, 
+										darken($redditPaleBlue,10%),
+										darken($redditPaleBlue,1%)
+									)
+								);
+							}
+							
+						}
+						
+					}
+					
+				}
+				
+			}
+		
+		}
+		
+		/* user items */
+		
+		#header-bottom-right {
+			display: none;
+		}
+		
+	}
+	
+	/* content */
+	
+	.content {
+		margin: ($headerHeight + 20px) 0 0 ($sidebarWidth + 20px);
+	}
+	
+}
