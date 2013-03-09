@@ -1195,6 +1195,16 @@ body {
 									content: " ago";
 								}
 								
+								&.edited-timestamp {
+									right: -4px;
+									top: -1px;
+									
+									&:after {
+										content: "";	
+									}
+									
+								}
+								
 							}
 							
 						}
@@ -1217,7 +1227,21 @@ body {
 						
 						/* usertext */
 						
+						form.usertext {
+							
+							&.border {
+								
+								div.usertext-body {
+									margin: 4px 0;
+									padding: 0 10px;
+								}
+								
+							}
+							
+						}
+						
 						div.usertext-body {
+							@include border-radius(4px);
 							
 							div.md {
 								color: $fontColor;
@@ -1270,6 +1294,11 @@ body {
 						margin: 10px 0 0 13px;
 						
 						div.thing {
+								
+							-moz-border-radius: 4px !important;
+							-webkit-border-radius: 4px !important;
+							border-radius: 4px !important;
+								
 							margin: 0 0 16px 0 !important;
 							
 							&.comment {
@@ -1288,7 +1317,7 @@ body {
 							}
 							
 							&.morechildren {
-								margin: 0 -16px -10px -29px !important;
+								margin: 0 -16px 0 -29px !important;
 								padding: 0 !important;
 								
 								div.entry {
@@ -1826,6 +1855,410 @@ body {
 				a#header-img {
 					font-size: 0;
 					text-indent: -9999em;
+				}
+				
+			}
+			
+		}
+		
+		div.content {
+			
+			div.commentarea {
+				
+				div.panestack-title {
+					background: lighten($redditPaleBlue,5%);
+					border: 0;
+					line-height: 24px;
+					margin: 0;
+					padding: 6px 16px 10px;
+					position: relative;
+					vertical-align: middle;
+					z-index: 25;
+					
+					span.title {
+						color: $fontColorDark;
+						font-family: $fontFamilyCustom;
+						font-size: 16px;
+						text-transform: capitalize;
+					}
+					
+					span.RESSubscriptionButton {
+						@include background-image(
+							linear-gradient(
+								lighten($redditOrange,5%),
+								lighten($redditOrange,2%) 50%,
+								$redditOrange
+							)
+						);
+						@include border-radius(5px);
+						@include box-shadow(rgba(white,0.3) 0 1px 0 inset, rgba(black,0.1) 0 1px 1px);
+						background-color: $redditOrange;
+						border: 0;
+						border: 1px solid shade($redditOrange,23%);
+						color: #fff;
+						display: inline-block;
+						font-family: $fontFamilyCustom;
+						font-size: 10px;
+						font-weight: $fontWeightBold;
+						height: 16px;
+						line-height: 17px;
+						margin: -2px 0 0 10px;
+						padding: 0 8px;
+						text-shadow: 0 -1px 0 rgba(black,0.3);
+						text-transform: capitalize;
+						vertical-align: middle;
+						width: auto;
+						
+						&:hover {
+							@include background-image(
+								linear-gradient(
+									lighten($redditOrange,2%),
+									lighten($redditOrange,1%) 50%,
+									darken($redditOrange,2%)
+								)
+							);
+							background-color: darken($redditOrange,2%);
+							color: lighten($redditOrange,45%);
+						}
+						
+						&:active {
+							@include background-image(
+								linear-gradient(
+									darken($redditOrange,2%),
+									lighten($redditOrange,1%) 50%,
+									lighten($redditOrange,2%)
+								)
+							);
+							@include box-shadow(rgba(black,0.05) 0 1px 1px inset, rgba(white,0.7) 0 1px 0);
+							background-color: darken($redditOrange,2%);
+							color: lighten($redditOrange,45%);
+						}
+						
+					}
+					
+				}
+				
+				div.menuarea {
+					background: lighten($redditPaleBlue,5%);
+					border: 0;
+					margin: 0;
+					overflow: visible;
+					padding: 0;
+					position: relative;
+					z-index: 50;
+					
+					div.spacer {
+						position: absolute;
+						right: 349px;
+						top: -24px;
+						
+						span {
+							color: $fontColor;
+							font-family: $fontFamilyCustom;
+							font-size: 12px;
+							
+							&.dropdown-title {
+								text-transform: capitalize;	
+							}
+							
+						}
+						
+						div.dropdown {
+							
+							span.selected {
+								background: transparent;
+								font-size: 12px;
+								padding: 0 12px 0 0;
+								text-decoration: none;
+								text-transform: capitalize;
+								
+								&:after {
+									@include arrow(bottom, $fontColor, 4px);
+									content: "";
+									position: absolute;
+									right: 0;
+									top: 5px;	
+								}
+								
+							}
+							
+						}
+						
+						div.drop-choices {
+							@include border-radius(4px);
+							@include box-shadow(rgba(black,0.2) 0 1px 2px);
+							border: 1px solid rgba(black,0.4);
+							left: auto !important;
+							margin: 0;
+							padding: 8px 12px;
+							right: 0;
+							top: 20px !important;
+							width: 110px;
+							
+							&:before {
+								@include arrow(top, rgba(black,0.4), 4px);
+								position: absolute;	
+								right: 10px;
+								top: 0;
+							}
+							
+						}
+						
+					}
+					
+					div#REScommentNavToggle {
+						display: none;
+					}
+					
+				}
+				
+				> form.usertext {
+					background: lighten($redditPaleBlue,5%);
+					margin: 0;
+					padding: 0 16px 10px;
+					
+					div.usertext-edit {
+						margin: 0;
+						padding: 0;
+						width: auto;
+							
+						div.commentingAs {
+							display: none;	
+						}
+						
+						div.markdownEditor {
+						}
+						
+						div {
+							margin-right: 26px;
+							position: relative;
+							
+							textarea[name="text"] {
+								@include background-image(
+									linear-gradient(
+										lighten($redditPaleBlue,7%),
+										lighten($redditPaleBlue,13%)
+									)
+								);
+								@include border-radius(5px);
+								@include box-shadow(rgba(black,0.05) 0 1px 1px inset, rgba(white,0.5) 0 1px 0);
+								background-color: $redditPaleBlue;
+								border: 0;
+								border: 1px solid shade($redditPaleBlue,23%);
+								color: $fontColor;
+								display: block;
+								font-family: $fontFamily;
+								font-size: 14px;
+								font-weight: $fontWeight;
+								line-height: 1.4em;
+								margin: 0 !important;
+								min-height: 3em !important;
+								padding: 8px 12px;
+								text-shadow: 0 1px 0 #fff;
+								width: 100% !important;
+								
+								&:hover {
+									border-color: shade($redditPaleBlue,26%);
+								}
+								
+								&:active, &:focus {
+									outline: none;
+								}
+								
+							}
+							
+							&.bottom-area {
+								height: 26px;
+								margin: 6px 0 0;
+									
+								span.help-toggle {
+									
+									a {
+										color: $fontColorLink;
+										font-family: $fontFamilyCustom;
+										font-size: 10px;
+										outline: 0;
+										text-transform: capitalize;
+										
+										a:hover {
+											color: $fontColorLinkHover;	
+										}
+										
+									}
+									
+								}
+								
+								div.usertext-buttons {
+									float: left;
+									margin: 0;
+					
+									button.save {
+										@include background-image(
+											linear-gradient(
+												lighten($redditPaleBlue,5%),
+												lighten($redditPaleBlue,2%) 50%,
+												$redditPaleBlue
+											)
+										);
+										@include border-radius(4px);
+										@include box-shadow(rgba(white,0.3) 0 1px 0 inset, rgba(black,0.1) 0 1px 1px);
+										background-color: $redditPaleBlue;
+										border: 0;
+										border: 1px solid shade($redditPaleBlue,23%);
+										color: $fontColor;
+										cursor: pointer;
+										display: inline-block;
+										font-family: $fontFamilyCustom;
+										font-size: 12px;
+										font-weight: $fontWeight;
+										height: 24px;
+										line-height: 24px;
+										margin: 0;
+										padding: 0 11px;
+										text-shadow: 0 1px 0 rgba(white,0.9);
+										text-transform: capitalize;
+										vertical-align: middle;
+										width: auto;
+										
+										&:hover {
+											@include background-image(
+												linear-gradient(
+													lighten($redditPaleBlue,2%),
+													lighten($redditPaleBlue,1%) 50%,
+													darken($redditPaleBlue,2%)
+												)
+											);
+											background-color: darken($redditPaleBlue,2%);
+											color: shade($fontColor,5%);
+										}
+										
+										&:active {
+											@include background-image(
+												linear-gradient(
+													darken($redditPaleBlue,2%),
+													lighten($redditPaleBlue,1%) 50%,
+													lighten($redditPaleBlue,2%)
+												)
+											);
+											@include box-shadow(rgba(black,0.05) 0 1px 1px inset, rgba(white,0.7) 0 1px 0);
+											background-color: darken($redditPaleBlue,2%);
+											color: shade($fontColor,5%);
+										}
+										
+									}
+									
+								}
+								
+							}
+							
+						}
+								
+						table.markhelp {
+							margin: 10px 0 0;
+							
+							tbody {
+								
+								tr {
+									border: 0;
+									padding: 0;
+								
+									td {
+										border: 1px solid shade($redditPaleBlue,15%);
+										color: $fontColor;
+										font-family: $fontFamily;
+										font-size: 12px;
+										padding: 6px 10px;
+										
+									}
+									
+									&:first-child {
+										background-color: $redditPaleBlue !important;
+										
+										em {
+											font-style: normal;
+											font-weight: $fontWeightBold;
+											text-transform: capitalize;
+										}
+										
+									}
+									
+								}
+								
+							}
+							
+						}
+						
+						div.RESDialogSmall {
+							background: transparent;
+							border: 0;
+							margin: 10px 0 0;
+							padding: 0;
+							
+							> h3 {
+								background: transparent;
+								border: 0;
+								color: $fontColor;
+								font-size: 10px;
+								font-weight: $fontWeightBold;
+								height: auto;
+								left: auto;
+								margin: 0;
+								padding: 0;
+								position: relative;
+								right: auto;
+								top: auto;
+								
+								&:after {
+									content: ":"	
+								}
+								
+							}
+							
+							div.RESDialogContents {
+								@include border-radius(4px);
+								background: #fff;
+								border: 1px solid darken($redditPaleBlue,5%);
+								margin: 4px 0 0;
+								padding: 10px 16px;
+							}
+							
+						}
+						
+					}
+					
+				}
+				
+				div.infobar {
+					@include border-radius(0);
+					@include box-shadow(rgba(black,0.05) 0 1px 1px inset);
+					background: transparent;
+					background-color: $redditPaleBlue;
+					border: 0;
+					border-bottom: 1px solid darken($redditPaleBlue,5%);
+					border-top: 1px solid darken($redditPaleBlue,10%);
+					color: $fontColor;
+					font-family: $fontFamilyCustom;
+					font-size: 13px;
+					font-weight: $fontWeight;
+					line-height: 1.3em;
+					margin: 0 0 -1px;
+					padding: 10px 16px;
+					text-align: left;
+					text-shadow: 0 1px 0 #fff;
+					
+					p {
+						
+						a {
+							color: $fontColorLink;
+							
+							&:hover {
+								color: $fontColorLinkHover;	
+							}
+							
+						}
+							
+					}
+					
 				}
 				
 			}
