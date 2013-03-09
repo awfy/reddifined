@@ -1,4 +1,4 @@
-Knap
+Reddifined
 ====
 
-Make Reddit handsome.
+Redefining how Reddit looks.
