@@ -2,8 +2,8 @@
 	
 	"manifest_version": 	2,
 	
-	"name": 				"Knap",
-	"description":			"Making reddit handsome.",
+	"name": 				"Reddifined",
+	"description":			"Redefining how Reddit looks.",
 	"version": 				"1.0.0",
 	
 	"icons":				{
@@ -22,7 +22,7 @@
 													
 													},
 												
-								"default_title":	"Knap for Reddit"
+								"default_title":	"Reddifined for Reddit"
 		
 							},
 	
