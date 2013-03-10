@@ -943,6 +943,13 @@ body {
 					
 				}
 				
+				/* last-clicked */
+				
+				&.last-clicked {
+					background: lighten($fontColorLink, 48%);
+					border: 0;
+				}
+				
 				/* comment */
 				
 				&.comment {
@@ -958,6 +965,62 @@ body {
 					margin: 0 0 -1px !important;
 					padding-bottom: 0 !important;
 					position: relative;
+					
+					p.parent {
+						color: $fontColor;
+						font-family: $fontFamilyCustom;
+						font-size: 11px;
+						font-weight: $fontWeight;
+						line-height: 1.3em;
+						padding: 0 0 6px 12px;
+						
+						a.title {
+							color: $fontColorLink;
+							font-family: $fontFamilyCustom;
+							font-size: 13px;
+							font-weight: $fontWeight;
+							line-height: 1.3em;
+							margin: 0;
+							
+							&:hover {
+								color: $fontColorLinkHover;	
+							}
+							
+						}
+						
+						a.author {
+							color: $fontColorLink;
+							display: inline-block;
+							font-family: $fontFamilyCustom;
+							font-size: 11px;
+							font-style: normal;
+							height: 14px;
+							line-height: 14px;
+							margin: 0 3px 0 0;
+							padding: 0;
+							text-indent: 0;
+							
+							&:hover {
+								color: $fontColorLinkHover;	
+								text-decoration: none;
+							}
+							
+							&.submitter {
+								background: none;
+								background-color: $fontColorLink !important;
+								color: #fff;
+								padding: 0 4px;
+								
+								&:hover {
+									background-color: $fontColorLinkHover !important;
+									color: #fff;
+								}
+								
+							}
+							
+						}
+						
+					}
 					
 					div.midcol {
 						$midcolWidth: 12px !important;
