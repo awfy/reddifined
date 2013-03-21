@@ -14,20 +14,21 @@
 	$fontFamilyCustom: 		"Droid Sans", "Helvetica Neue", Helvetica, Arial, Tahoma, sans-serif;
 	
 	/* font colors */
-	$fontColor: 			#616c78;
-	$fontColorLight:		#939fab;
-	$fontColorDark:			#313b45;
-	$fontColorLink:			#297acc;
-	$fontColorLinkHover: 	#2061a2;
+	$fontColor: 			     #616c78;
+	$fontColorLight:		   #939fab;
+	$fontColorDark:			   #313b45;
+	$fontColorLink:			   #297acc;
+	$fontColorLinkHover: 	 #2061a2;
 	
 	/* font weights (don't need to be used) */
-	$fontWeight: 			400;
+	$fontWeight: 			  400;
 	$fontWeightBold: 		700;
 	
 	/* reddit colors */
 	$redditOrange:			#ff5700;
-	$redditRed:				#ff4500;
+	$redditRed:				  #ff4500;
 	$redditPaleBlue:		#e6eff7 /* #cee3f8 */ ;
+	$redditDarkBlue:    #3d454d;
 	$redditUpVote:			#ff8b60;
 	$redditDownVote:		#9494ff;
 
@@ -88,12 +89,13 @@
 
 /* build */
 
-body {
-	background: $redditPaleBlue;
+body.res {
+	background-color: $redditPaleBlue;
 	color: $fontColor;
 	font-family: $fontFamily;
 	min-width: 992px;
 	
+	$subHeight: 26px;
 	$headerHeight: 42px;
 	$sidebarWidth: 180px;
 	
@@ -110,32 +112,205 @@ body {
 		@include box-shadow(white 0 1px 0 inset, rgba(black,0.1) 0 1px 2px);
 		background-color: $redditPaleBlue;
 		border: 0;
-		/* border-bottom: 1px solid darken($redditPaleBlue,10%); */
-		border-bottom: 0;
+		border-bottom: 1px solid darken($redditPaleBlue,10%);
 		margin: 0;
 		height: $headerHeight;
 		left: 0;
 		position: fixed;
 		right: 0;
-		top: 0;
+		top: $subHeight + 1px;
 		width: auto;
-		z-index: 50;
+		z-index: 200;
 		
 		/* sidebar (sub-reddits */
 		
 		#sr-header-area {
-			background: $redditPaleBlue;
+			 $controlWidth: 16px;
+			 
+		  @include box-shadow(rgba(black,0.2) 0 -1px 2px inset);
+			background: $redditDarkBlue;
 			border: 0;
-			/* border-right: 1px solid darken($redditPaleBlue,10%); */
-			bottom: 0;
-			height: auto;
+			border-bottom: 1px solid darken($redditDarkBlue,10%);
+			height: $subHeight;
 			line-height: 1;
 			left: 0;
 			position: fixed;
-			top: $headerHeight;
-			width: $sidebarWidth;
+			right: 0;
+			top: 0;
 			
 			div#srLeftContainer {
+			  @include background-image(linear-gradient(
+			    lighten($redditDarkBlue,10%),
+			    lighten($redditDarkBlue,5%),
+			    $redditDarkBlue
+			  ));
+			  @include box-shadow(rgba(black,0.1) -1px 0 1px);
+			  border-right: 1px solid darken($redditDarkBlue,10%);
+  			height: $subHeight;
+  			line-height: $subHeight;
+  			max-height: $subHeight;
+  			margin: 0;
+  			padding: 0 10px;
+  			
+  			div#srDropdown {
+    		  
+    		  div#srDropdownContainer {
+      		  margin-right: -10px;
+      		  
+      		  a {
+      		    color: #fff;
+        		  line-height: $subHeight;
+        		  padding: 0 14px 0 0;
+        		  position: relative;
+        		  text-shadow: 0 1px 0 rgba(black,0.7);
+        		  text-transform: uppercase;
+        		  
+        		  &:after {
+          		  @include arrow(bottom, #fff, 4px);
+          		  content: "";
+          		  display: inline-block;
+          		  position: absolute;
+          		  right: 0;
+          		  top: 4px;
+        		  }
+        		  
+      		  }
+      		  
+    		  }
+    		  	
+  			}
+  			
+  			div#RESStaticShortcuts {
+    			
+    			a, span {
+    		    color: #fff;
+      		  line-height: $subHeight;
+      		  text-shadow: 0 1px 0 rgba(black,0.7);
+      		  text-transform: uppercase;
+      		  
+      		  &.RESShortcutsCurrentSub {
+        		  color: $redditOrange !important;
+        		  cursor: default;
+        		  font-weight: normal;  
+        		  text-decoration: none;
+        		  
+        		  &:hover {
+          		  text-decoration: none;
+        		  }
+        		  
+      		  }
+      		  
+      		  &:hover {
+        		  text-decoration: underline;
+      		  }
+      		  
+    			}
+    			
+  			}
+    			
+  			span.srSep {
+  			  display: none;
+  			}
+  			
+			}
+			
+			div#RESShortcutsViewport {
+  			height: $subHeight;
+  			line-height: $subHeight;
+  			max-height: $subHeight;
+  			
+  			#RESShortcuts {
+  			 padding: 0 ($controlWidth*3 + 10px) 0 10px;
+    			
+    			a, span {
+    		    color: #fff;
+      		  line-height: $subHeight;
+      		  text-shadow: 0 1px 0 rgba(black,0.7);
+      		  text-transform: uppercase;
+      		  
+      		  &.RESShortcutsCurrentSub {
+        		  color: $redditOrange !important;
+        		  cursor: default;
+        		  font-weight: normal;  
+        		  text-decoration: none;
+        		  
+        		  &:hover {
+          		  text-decoration: none;
+        		  }
+        		  
+      		  }
+      		  
+    			}
+    			
+    			a:hover {
+      			text-decoration: underline;
+    			}
+    			
+  			}
+  			
+			}
+			
+			div#RESShortcutsEditContainer {
+			  @include background-image(linear-gradient(
+			    lighten($redditDarkBlue,10%),
+			    lighten($redditDarkBlue,5%),
+			    $redditDarkBlue
+			  ));
+			  @include box-shadow(rgba(black,0.1) -1px 0 1px);
+			  border-left: 1px solid darken($redditDarkBlue,10%);
+			  height: $subHeight;
+			  line-height: $subHeight;
+  			max-height: $subHeight;
+  			position: absolute;
+  			right: 0;
+  			top: 0;
+  			width: $controlWidth*3;
+  			
+  			div {
+    		  $arrowWidth: 5px;
+    		  
+    		  background: transparent;
+    		  color: #fff;
+    		  font-size: 13px;	
+    		  height: $subHeight;
+    		  line-height: $subHeight;
+    		  max-height: $subHeight;
+    		  position: absolute;
+    		  text-align: center;
+    		  text-shadow: rgba(black,0.7) 0 1px 0;
+    		  width: $controlWidth;
+    		  
+    		  &#RESShortcutsLeft, &#RESShortcutsRight {
+    		    cursor: pointer;
+    		    font-size: 0;
+      		  text-indent: -9999em;
+      		  
+      		  &:before {
+        		  @include arrow(left, #fff, $arrowWidth);
+        		  content: "";
+        		  left: 8px;
+        		  position: absolute;
+        		  top: 8px;  
+      		  }
+      		  
+    		  }
+    		  
+    		  &#RESShortcutsRight {
+      		  
+      		  &:before {
+        		  @include arrow(right, #fff, $arrowWidth);
+        		  border-right: transparent;
+        		  left: auto;
+        		  right: 8px; 
+      		  }
+      		  
+    		  }
+    		  
+  			}
+  			
+			}
+			
+			/* div#srLeftContainer {
 				position: relative;
 				z-index: 20;
 				
@@ -388,7 +563,7 @@ body {
 			
 			div#RESShortcutsEditContainer {
 				display: none;
-			}
+			} */
 			
 		}
 		
@@ -397,7 +572,7 @@ body {
 		#header-bottom-left {
 			$logoHeight: 23px;
 			$logoPadding: 27px;
-			$logoWidth: 86px;
+			$logoWidth: 27px;
 			
 			@include box-shadow(none);
 			background: none;
@@ -417,15 +592,14 @@ body {
 			#header-img, a#header-img-a {
 				background: url('http://i.imgur.com/gZWtB.png') no-repeat 0 0;
 				color: $fontColorDark;
-				font-family: $fontFamilyCustom;
-				font-weight: $fontWeightBold;
+				font-size: 0;
 				height: $logoHeight;
 				left: 10px;
-				line-height: $logoHeight + 2px;
+				line-height: $logoHeight;
 				margin: 0;
-				padding-left: $logoPadding + 6px;
+				padding: 0;
 				position: absolute;
-				text-indent: 0;
+				text-indent: -9999em;
 				top: 10px;
 				width: $logoWidth;
 				
@@ -438,6 +612,9 @@ body {
 			/* page name */
 			
 			span.pagename {
+			  
+			  display: none;
+			   
 				background: none;
 				color: $fontColorDark;
 				font-family: $fontFamilyCustom;
@@ -481,7 +658,7 @@ body {
 				display: block;
 				margin: 0;
 				height: auto;
-				left: $sidebarWidth + 10px;
+				left: $logoWidth + 20px;
 				padding: 0;
 				position: absolute;
 				right: auto;
@@ -607,6 +784,10 @@ body {
 		/* user items */
 		
 		#header-bottom-right {
+		  @include border-radius(0);
+		  position: absolute;
+		  right: 10px;
+		  top: 0;
 		}
 		
 	}
@@ -618,7 +799,7 @@ body {
 		@include box-shadow(rgba(black,0.03) -2px -2px 2px, rgba(black,0.1) -1px -1px 1px);
 		background: white;
 		border: 0;
-		margin: $headerHeight 0 0 $sidebarWidth !important;
+		margin: ($headerHeight + $subHeight + 2px) 0 0 !important;
 		padding: 0;
 		position: relative;
 		z-index: 75;
@@ -639,7 +820,7 @@ body {
 			div.thing {
 				background: #fff;
 				margin: 0;
-				padding: 10px 16px !important;
+				padding: 16px 20px !important;
 				
 				&:first-child {
 					@include border-top-left-radius(5px);	
@@ -1795,30 +1976,33 @@ body {
 	/* sub-reddits list */
 	
 	> table#srList {
-		@include box-shadow(rgba(black,0.05) 0 1px 1px inset);
+	  $subListWidth: 220px;
+	  
+	  @include border-radius(0);
+		@include box-shadow(rgba(black,0.1) 0 2px 3px, rgba(black,0.1) 0 0 3px);
 		background: transparent;
-		background-color: $redditPaleBlue;
+		background-color: #fff;
 		border: 0;
-		border-top: 1px solid shade($redditPaleBlue,15%);
+		border-right: 1px solid rgba(black,0.4);
 		bottom: 0;
 		max-height: none;
 		left: 0;
 		position: fixed;
-		top: $headerHeight + 10px + 29px;
-		width: $sidebarWidth;
-		z-index: 60;
+		top: 27px;
+		width: $subListWidth;
+		z-index: 500;
 		
-		/* &:before {
-			@include arrow(top, shade($redditPaleBlue,30%), 6px);
+		&:before {
+			@include arrow(top, rgba(black,0.4), 6px);
 			content: "";
 			left: 10px;
 			position: absolute;
 			top: -6px;
-		} */
+		}
 		
 		thead, tbody {
 			display: block;
-			width: $sidebarWidth;
+			width: $subListWidth;
 			
 			tr {
 				border: 1px solid transparent;
@@ -1836,7 +2020,7 @@ body {
 				position: relative;
 				text-shadow: 0 1px 0 #fff;
 				text-transform: lowercase;
-				width: $sidebarWidth;
+				width: $subListWidth;
 				
 				td {
 					color: $fontColor;
@@ -1852,7 +2036,7 @@ body {
 						left: 0;
 						position: absolute;
 						top: 0;
-						width: $sidebarWidth;
+						width: $subListWidth;
 					
 						a {
 							color: $fontColorDark;
