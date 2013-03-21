@@ -793,10 +793,103 @@ body.res {
 		/* user items */
 		
 		#header-bottom-right {
-		  @include border-radius(0);
+		  $userbarHeight: 26px;
+		  
+			@include background-image(
+				linear-gradient(
+					top, 
+					#e5e8ee,
+					#f0f2f6
+				)
+			);
+		  @include border-radius(5px);
+		  @include box-shadow(rgba(black,0.1) 0 1px 1px inset, #fff 0 1px 0);
+		  border: 1px solid #98a4b8;
+		  height: $userbarHeight;
+		  padding: 0 10px;
 		  position: absolute;
 		  right: 10px;
-		  top: 0;
+		  top: 6px;
+		  
+		  div#userbarToggle {
+  		  display: none;  
+		  }
+		  
+		  span {
+		    font-family: $fontFamilyCustom;
+		    font-size: 11px;
+  		  
+  		  &.user {
+  		    font-size: 0;
+  		    line-height: $userbarHeight;
+    		  margin: 0;
+    		  text-indent: -9999em;
+    		  
+    		  a {
+    		    color: $fontColorLink;
+    		    font-size: 11px;
+    		    font-weight: bold;
+      		  margin-right: 4px !important;
+      		  text-indent: 0;
+      		  
+      		  &:hover {
+        		  color: $fontColorLinkHover;
+        		  text-decoration: underline;  
+      		  }
+      		  
+    		  }
+    		  
+    		  span#RESAccountSwitcherIcon {
+    		    background: transparent;
+    		    margin: 0;
+    		    padding: 0;
+    		    position: relative;
+      		  
+      		  &:before {
+      		    @include arrow(bottom, $fontColorLink, 4px);
+      		    content: "";
+      		    position: absolute;
+      		    top: 6px;
+      		    left: 2px;
+      		  }
+      		  
+      		  &:hover {
+    		      @include arrow(bottom, $fontColorLinkHover, 4px);
+      		  }
+      		  
+    		  }
+    		  
+    		  span.userkarma {
+    		    border: 0;
+    		    cursor: default;
+    		    height: $userbarHeight;
+    		    line-height: $userbarHeight;
+      		  padding: 0 5px;
+      		  
+      		  a {
+        		  color: $redditOrange; 
+        		  margin-right: 0 !important;
+      		  }
+      		  
+    		  }
+    		  
+  		  }
+  		  
+  		  &.separator {
+  		    @include box-shadow(rgba(#fff,0.7) 1px 0 0);
+  		    background: rgba(#98a4b8,0.5);
+  		    display: inline-block;
+  		    font-size: 0;
+    		  height: $userbarHeight;
+    		  margin: 0 8px 0;
+    		  position: relative;
+    		  text-indent: -9999em;
+    		  top: -10px;
+    		  width: 1px;
+  		  }
+  		  
+		  }
+		  
 		}
 		
 	}
