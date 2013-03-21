@@ -8,6 +8,9 @@
 	@import url('http://fonts.googleapis.com/css?family=Droid+Sans:400,700');
 
 /* variables */
+
+  /* widths + heights */
+  $minWidth: 992px;
 	
 	/* font family */
 	$fontFamily: 			"Helvetica Neue", Helvetica, Arial, Tahoma, sans-serif;
@@ -93,7 +96,7 @@ body.res {
 	background-color: $redditPaleBlue;
 	color: $fontColor;
 	font-family: $fontFamily;
-	min-width: 992px;
+	min-width: $minWidth;
 	
 	$subHeight: 26px;
 	$headerHeight: 42px;
@@ -104,16 +107,18 @@ body.res {
 	#header {
 		@include background-image(
 			linear-gradient(
-				lighten($redditPaleBlue,5%),
-				lighten($redditPaleBlue,2%) 50%,
-				$redditPaleBlue
+			  rgba(255,255,255,0), 
+			  #f0f2f6 95%, 
+			  #e5e8ee
 			)
 		);
-		@include box-shadow(white 0 1px 0 inset, rgba(black,0.1) 0 1px 2px);
-		background-color: $redditPaleBlue;
+		@include box-shadow(white 0 1px 0 inset, rgba(139,154,179,0.4) 0 1px 3px);
+		background-color: #fff;
 		border: 0;
-		border-bottom: 1px solid darken($redditPaleBlue,10%);
+		border-bottom: 1px solid #98a4b8;
 		margin: 0;
+		min-width: $minWidth;
+		max-width: none;
 		height: $headerHeight;
 		left: 0;
 		position: fixed;
@@ -122,10 +127,14 @@ body.res {
 		width: auto;
 		z-index: 200;
 		
+		&:before, &:after {
+  		display: none;
+		}
+		
 		/* sidebar (sub-reddits */
 		
 		#sr-header-area {
-			 $controlWidth: 16px;
+		  $controlWidth: 16px;
 			 
 		  @include box-shadow(rgba(black,0.2) 0 -1px 2px inset);
 			background: $redditDarkBlue;
@@ -144,7 +153,7 @@ body.res {
 			    lighten($redditDarkBlue,5%),
 			    $redditDarkBlue
 			  ));
-			  @include box-shadow(rgba(black,0.1) -1px 0 1px);
+			  @include box-shadow(rgba(black,0.1) 1px 0 1px);
 			  border-right: 1px solid darken($redditDarkBlue,10%);
   			height: $subHeight;
   			line-height: $subHeight;
@@ -155,18 +164,18 @@ body.res {
   			div#srDropdown {
     		  
     		  div#srDropdownContainer {
-      		  margin-right: -10px;
-      		  
+    		    padding-right: 4px;
+    		    
       		  a {
       		    color: #fff;
         		  line-height: $subHeight;
-        		  padding: 0 14px 0 0;
+        		  padding: 0 13px 0 0;
         		  position: relative;
         		  text-shadow: 0 1px 0 rgba(black,0.7);
         		  text-transform: uppercase;
         		  
         		  &:after {
-          		  @include arrow(bottom, #fff, 4px);
+          		  @include arrow(bottom, #fff, 3px);
           		  content: "";
           		  display: inline-block;
           		  position: absolute;
@@ -693,11 +702,11 @@ body.res {
 							@include background-image(
 								linear-gradient(
 									top, 
-									lighten($redditPaleBlue,5%),
-									darken($redditPaleBlue,10%)
+									rgba(240,242,246,0),
+									rgba(240,242,246,0) 30%,
+									rgba(#98a4b8,0.5)
 								)
 							);
-							background-color: darken($redditPaleBlue,10%);
 							content: "";
 							display: block;
 							height: $headerHeight;
@@ -716,8 +725,8 @@ body.res {
 							@include background-image(
 								linear-gradient(
 									top, 
-									lighten($redditPaleBlue,5%),
-									darken($redditPaleBlue,3%)
+									rgba(255,255,255,0),
+									#e5e8ee
 								)
 							);
 							z-index: 50;
@@ -727,8 +736,8 @@ body.res {
 							@include background-image(
 								linear-gradient(
 									top, 
-									darken($redditPaleBlue,2%),
-									darken($redditPaleBlue,1%)
+									#e5e8ee,
+									#f0f2f6
 								)
 							);
 							@include box-shadow(rgba(black,0.1) 0 1px 1px inset);
@@ -738,8 +747,8 @@ body.res {
 								@include background-image(
 									linear-gradient(
 										top, 
-										darken($redditPaleBlue,10%),
-										darken($redditPaleBlue,1%)
+										rgba(#98a4b8,0.6),
+										rgba(#98a4b8,0.3)
 									)
 								);
 							}
@@ -754,8 +763,8 @@ body.res {
 							@include background-image(
 								linear-gradient(
 									top, 
-									darken($redditPaleBlue,2%),
-									darken($redditPaleBlue,1%)
+									#e5e8ee,
+									#f0f2f6
 								)
 							);
 							@include box-shadow(rgba(black,0.1) 0 1px 1px inset);
@@ -765,8 +774,8 @@ body.res {
 								@include background-image(
 									linear-gradient(
 										top, 
-										darken($redditPaleBlue,10%),
-										darken($redditPaleBlue,1%)
+										rgba(#98a4b8,0.6),
+										rgba(#98a4b8,0.3)
 									)
 								);
 							}
