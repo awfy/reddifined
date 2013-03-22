@@ -420,51 +420,82 @@ body.res {
         /* line 194, style.scss */
         body.res #header #sr-header-area div#srLeftContainer div#RESStaticShortcuts a, body.res #header #sr-header-area div#srLeftContainer div#RESStaticShortcuts span {
           color: #fff;
+          font-size: 12px !important;
           line-height: 26px;
           text-shadow: 0 1px 0 rgba(0, 0, 0, 0.7);
-          text-transform: uppercase; }
-          /* line 200, style.scss */
+          text-transform: none; }
+          /* line 201, style.scss */
+          body.res #header #sr-header-area div#srLeftContainer div#RESStaticShortcuts a.subbarlink, body.res #header #sr-header-area div#srLeftContainer div#RESStaticShortcuts a.undefined, body.res #header #sr-header-area div#srLeftContainer div#RESStaticShortcuts span.subbarlink, body.res #header #sr-header-area div#srLeftContainer div#RESStaticShortcuts span.undefined {
+            font-size: 0 !important;
+            text-indent: -9999em; }
+            /* line 205, style.scss */
+            body.res #header #sr-header-area div#srLeftContainer div#RESStaticShortcuts a.subbarlink:before, body.res #header #sr-header-area div#srLeftContainer div#RESStaticShortcuts a.undefined:before, body.res #header #sr-header-area div#srLeftContainer div#RESStaticShortcuts span.subbarlink:before, body.res #header #sr-header-area div#srLeftContainer div#RESStaticShortcuts span.undefined:before {
+              font-size: 11px;
+              line-height: 26px; }
+            /* line 210, style.scss */
+            body.res #header #sr-header-area div#srLeftContainer div#RESStaticShortcuts a.subbarlink[href="/r/Dashboard/"]:before, body.res #header #sr-header-area div#srLeftContainer div#RESStaticShortcuts a.undefined[href="/r/Dashboard/"]:before, body.res #header #sr-header-area div#srLeftContainer div#RESStaticShortcuts span.subbarlink[href="/r/Dashboard/"]:before, body.res #header #sr-header-area div#srLeftContainer div#RESStaticShortcuts span.undefined[href="/r/Dashboard/"]:before {
+              content: "Dashboard"; }
+            /* line 214, style.scss */
+            body.res #header #sr-header-area div#srLeftContainer div#RESStaticShortcuts a.subbarlink[href="/"]:before, body.res #header #sr-header-area div#srLeftContainer div#RESStaticShortcuts a.undefined[href="/"]:before, body.res #header #sr-header-area div#srLeftContainer div#RESStaticShortcuts span.subbarlink[href="/"]:before, body.res #header #sr-header-area div#srLeftContainer div#RESStaticShortcuts span.undefined[href="/"]:before {
+              content: "Frontpage"; }
+            /* line 218, style.scss */
+            body.res #header #sr-header-area div#srLeftContainer div#RESStaticShortcuts a.subbarlink[href="/r/all/"]:before, body.res #header #sr-header-area div#srLeftContainer div#RESStaticShortcuts a.undefined[href="/r/all/"]:before, body.res #header #sr-header-area div#srLeftContainer div#RESStaticShortcuts span.subbarlink[href="/r/all/"]:before, body.res #header #sr-header-area div#srLeftContainer div#RESStaticShortcuts span.undefined[href="/r/all/"]:before {
+              content: "All"; }
+            /* line 222, style.scss */
+            body.res #header #sr-header-area div#srLeftContainer div#RESStaticShortcuts a.subbarlink[href="/r/random/"]:before, body.res #header #sr-header-area div#srLeftContainer div#RESStaticShortcuts a.undefined[href="/r/random/"]:before, body.res #header #sr-header-area div#srLeftContainer div#RESStaticShortcuts span.subbarlink[href="/r/random/"]:before, body.res #header #sr-header-area div#srLeftContainer div#RESStaticShortcuts span.undefined[href="/r/random/"]:before {
+              content: "Random"; }
+            /* line 226, style.scss */
+            body.res #header #sr-header-area div#srLeftContainer div#RESStaticShortcuts a.subbarlink[href="/r/friends/"]:before, body.res #header #sr-header-area div#srLeftContainer div#RESStaticShortcuts a.undefined[href="/r/friends/"]:before, body.res #header #sr-header-area div#srLeftContainer div#RESStaticShortcuts span.subbarlink[href="/r/friends/"]:before, body.res #header #sr-header-area div#srLeftContainer div#RESStaticShortcuts span.undefined[href="/r/friends/"]:before {
+              content: "Friends"; }
+            /* line 230, style.scss */
+            body.res #header #sr-header-area div#srLeftContainer div#RESStaticShortcuts a.subbarlink[href="/r/mod/"]:before, body.res #header #sr-header-area div#srLeftContainer div#RESStaticShortcuts a.undefined[href="/r/mod/"]:before, body.res #header #sr-header-area div#srLeftContainer div#RESStaticShortcuts span.subbarlink[href="/r/mod/"]:before, body.res #header #sr-header-area div#srLeftContainer div#RESStaticShortcuts span.undefined[href="/r/mod/"]:before {
+              content: "Mod"; }
+            /* line 234, style.scss */
+            body.res #header #sr-header-area div#srLeftContainer div#RESStaticShortcuts a.subbarlink[href="/r/mod/about/modqueue"]:before, body.res #header #sr-header-area div#srLeftContainer div#RESStaticShortcuts a.undefined[href="/r/mod/about/modqueue"]:before, body.res #header #sr-header-area div#srLeftContainer div#RESStaticShortcuts span.subbarlink[href="/r/mod/about/modqueue"]:before, body.res #header #sr-header-area div#srLeftContainer div#RESStaticShortcuts span.undefined[href="/r/mod/about/modqueue"]:before {
+              content: "Queue"; }
+          /* line 240, style.scss */
           body.res #header #sr-header-area div#srLeftContainer div#RESStaticShortcuts a.RESShortcutsCurrentSub, body.res #header #sr-header-area div#srLeftContainer div#RESStaticShortcuts span.RESShortcutsCurrentSub {
             color: #ff5700 !important;
             cursor: default;
             font-weight: normal;
             text-decoration: none; }
-            /* line 206, style.scss */
+            /* line 246, style.scss */
             body.res #header #sr-header-area div#srLeftContainer div#RESStaticShortcuts a.RESShortcutsCurrentSub:hover, body.res #header #sr-header-area div#srLeftContainer div#RESStaticShortcuts span.RESShortcutsCurrentSub:hover {
               text-decoration: none; }
-          /* line 212, style.scss */
+          /* line 252, style.scss */
           body.res #header #sr-header-area div#srLeftContainer div#RESStaticShortcuts a:hover, body.res #header #sr-header-area div#srLeftContainer div#RESStaticShortcuts span:hover {
             text-decoration: underline; }
-        /* line 220, style.scss */
+        /* line 260, style.scss */
         body.res #header #sr-header-area div#srLeftContainer span.srSep {
           display: none; }
-      /* line 226, style.scss */
+      /* line 266, style.scss */
       body.res #header #sr-header-area div#RESShortcutsViewport {
         height: 26px;
         line-height: 26px;
         max-height: 26px; }
-        /* line 231, style.scss */
+        /* line 271, style.scss */
         body.res #header #sr-header-area div#RESShortcutsViewport #RESShortcuts {
           padding: 0 58px 0 10px; }
-          /* line 234, style.scss */
+          /* line 274, style.scss */
           body.res #header #sr-header-area div#RESShortcutsViewport #RESShortcuts a, body.res #header #sr-header-area div#RESShortcutsViewport #RESShortcuts span {
             color: #fff;
+            font-size: 11px !important;
             line-height: 26px;
             text-shadow: 0 1px 0 rgba(0, 0, 0, 0.7);
-            text-transform: uppercase; }
-            /* line 240, style.scss */
+            text-transform: none; }
+            /* line 281, style.scss */
             body.res #header #sr-header-area div#RESShortcutsViewport #RESShortcuts a.RESShortcutsCurrentSub, body.res #header #sr-header-area div#RESShortcutsViewport #RESShortcuts span.RESShortcutsCurrentSub {
               color: #ff5700 !important;
               cursor: default;
               font-weight: normal;
               text-decoration: none; }
-              /* line 246, style.scss */
+              /* line 287, style.scss */
               body.res #header #sr-header-area div#RESShortcutsViewport #RESShortcuts a.RESShortcutsCurrentSub:hover, body.res #header #sr-header-area div#RESShortcutsViewport #RESShortcuts span.RESShortcutsCurrentSub:hover {
                 text-decoration: none; }
-          /* line 254, style.scss */
+          /* line 295, style.scss */
           body.res #header #sr-header-area div#RESShortcutsViewport #RESShortcuts a:hover {
             text-decoration: underline; }
-      /* line 262, style.scss */
+      /* line 303, style.scss */
       body.res #header #sr-header-area div#RESShortcutsEditContainer {
         background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #545e69), color-stop(50%, #48525b), color-stop(100%, #3d454d));
         background-image: -webkit-linear-gradient(#545e69, #48525b, #3d454d);
@@ -482,7 +513,7 @@ body.res {
         right: 0;
         top: 0;
         width: 48px; }
-        /* line 278, style.scss */
+        /* line 319, style.scss */
         body.res #header #sr-header-area div#RESShortcutsEditContainer div {
           background: transparent;
           color: #fff;
@@ -494,12 +525,12 @@ body.res {
           text-align: center;
           text-shadow: rgba(0, 0, 0, 0.7) 0 1px 0;
           width: 16px; }
-          /* line 292, style.scss */
+          /* line 333, style.scss */
           body.res #header #sr-header-area div#RESShortcutsEditContainer div#RESShortcutsLeft, body.res #header #sr-header-area div#RESShortcutsEditContainer div#RESShortcutsRight {
             cursor: pointer;
             font-size: 0;
             text-indent: -9999em; }
-            /* line 297, style.scss */
+            /* line 338, style.scss */
             body.res #header #sr-header-area div#RESShortcutsEditContainer div#RESShortcutsLeft:before, body.res #header #sr-header-area div#RESShortcutsEditContainer div#RESShortcutsRight:before {
               display: block;
               height: 0;
@@ -511,7 +542,7 @@ body.res {
               left: 8px;
               position: absolute;
               top: 8px; }
-          /* line 309, style.scss */
+          /* line 350, style.scss */
           body.res #header #sr-header-area div#RESShortcutsEditContainer div#RESShortcutsRight:before {
             display: block;
             height: 0;
@@ -522,7 +553,7 @@ body.res {
             border-right: transparent;
             left: auto;
             right: 8px; }
-    /* line 581, style.scss */
+    /* line 622, style.scss */
     body.res #header #header-bottom-left {
       -webkit-box-shadow: none;
       -moz-box-shadow: none;
@@ -541,7 +572,7 @@ body.res {
       /* logo */
       /* page name */
       /* navigation */ }
-      /* line 601, style.scss */
+      /* line 642, style.scss */
       body.res #header #header-bottom-left #header-img, body.res #header #header-bottom-left a#header-img-a {
         background: url("http://i.imgur.com/gZWtB.png") no-repeat 0 0;
         color: #313b45;
@@ -555,10 +586,10 @@ body.res {
         text-indent: -9999em;
         top: 10px;
         width: 27px; }
-        /* line 615, style.scss */
+        /* line 656, style.scss */
         body.res #header #header-bottom-left #header-img #header-img, body.res #header #header-bottom-left a#header-img-a #header-img {
           display: none; }
-      /* line 623, style.scss */
+      /* line 664, style.scss */
       body.res #header #header-bottom-left span.pagename {
         display: none;
         background: none;
@@ -573,7 +604,7 @@ body.res {
         position: absolute;
         text-indent: 0;
         top: 10px; }
-        /* line 640, style.scss */
+        /* line 681, style.scss */
         body.res #header #header-bottom-left span.pagename a {
           background: none;
           bottom: auto;
@@ -591,7 +622,7 @@ body.res {
           right: auto;
           text-indent: 0;
           top: auto; }
-      /* line 663, style.scss */
+      /* line 704, style.scss */
       body.res #header #header-bottom-left ul.tabmenu {
         -webkit-border-radius: 0;
         -moz-border-radius: 0;
@@ -609,13 +640,13 @@ body.res {
         right: auto;
         top: 0;
         width: auto; }
-        /* line 677, style.scss */
+        /* line 718, style.scss */
         body.res #header #header-bottom-left ul.tabmenu li {
           display: block;
           float: left;
           margin: 0;
           padding: 0; }
-          /* line 683, style.scss */
+          /* line 724, style.scss */
           body.res #header #header-bottom-left ul.tabmenu li a {
             -webkit-border-radius: 0;
             -moz-border-radius: 0;
@@ -639,7 +670,7 @@ body.res {
             text-shadow: rgba(255, 255, 255, 0.5) 0 1px 0;
             text-transform: capitalize;
             z-index: 25; }
-            /* line 701, style.scss */
+            /* line 742, style.scss */
             body.res #header #header-bottom-left ul.tabmenu li a:before, body.res #header #header-bottom-left ul.tabmenu li a:after {
               background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(240, 242, 246, 0)), color-stop(30%, rgba(240, 242, 246, 0)), color-stop(100%, rgba(152, 164, 184, 0.5)));
               background-image: -webkit-linear-gradient(top, rgba(240, 242, 246, 0), rgba(240, 242, 246, 0) 30%, rgba(152, 164, 184, 0.5));
@@ -653,11 +684,11 @@ body.res {
               position: absolute;
               top: 0;
               width: 1px; }
-            /* line 719, style.scss */
+            /* line 760, style.scss */
             body.res #header #header-bottom-left ul.tabmenu li a:after {
               left: auto;
               right: 0; }
-            /* line 724, style.scss */
+            /* line 765, style.scss */
             body.res #header #header-bottom-left ul.tabmenu li a:hover {
               background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(100%, #e5e8ee));
               background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0), #e5e8ee);
@@ -665,7 +696,7 @@ body.res {
               background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0), #e5e8ee);
               background-image: linear-gradient(top, rgba(255, 255, 255, 0), #e5e8ee);
               z-index: 50; }
-            /* line 735, style.scss */
+            /* line 776, style.scss */
             body.res #header #header-bottom-left ul.tabmenu li a:active {
               background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e5e8ee), color-stop(100%, #f0f2f6));
               background-image: -webkit-linear-gradient(top, #e5e8ee, #f0f2f6);
@@ -676,14 +707,14 @@ body.res {
               -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 1px 1px inset;
               box-shadow: rgba(0, 0, 0, 0.1) 0 1px 1px inset;
               z-index: 75; }
-              /* line 746, style.scss */
+              /* line 787, style.scss */
               body.res #header #header-bottom-left ul.tabmenu li a:active:before, body.res #header #header-bottom-left ul.tabmenu li a:active:after {
                 background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(152, 164, 184, 0.6)), color-stop(100%, rgba(152, 164, 184, 0.3)));
                 background-image: -webkit-linear-gradient(top, rgba(152, 164, 184, 0.6), rgba(152, 164, 184, 0.3));
                 background-image: -moz-linear-gradient(top, rgba(152, 164, 184, 0.6), rgba(152, 164, 184, 0.3));
                 background-image: -o-linear-gradient(top, rgba(152, 164, 184, 0.6), rgba(152, 164, 184, 0.3));
                 background-image: linear-gradient(top, rgba(152, 164, 184, 0.6), rgba(152, 164, 184, 0.3)); }
-          /* line 762, style.scss */
+          /* line 803, style.scss */
           body.res #header #header-bottom-left ul.tabmenu li.selected a, body.res #header #header-bottom-left ul.tabmenu li.selected a:hover, body.res #header #header-bottom-left ul.tabmenu li.selected a:active {
             background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e5e8ee), color-stop(100%, #f0f2f6));
             background-image: -webkit-linear-gradient(top, #e5e8ee, #f0f2f6);
@@ -694,14 +725,14 @@ body.res {
             -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 1px 1px inset;
             box-shadow: rgba(0, 0, 0, 0.1) 0 1px 1px inset;
             z-index: 75; }
-            /* line 773, style.scss */
+            /* line 814, style.scss */
             body.res #header #header-bottom-left ul.tabmenu li.selected a:before, body.res #header #header-bottom-left ul.tabmenu li.selected a:after, body.res #header #header-bottom-left ul.tabmenu li.selected a:hover:before, body.res #header #header-bottom-left ul.tabmenu li.selected a:hover:after, body.res #header #header-bottom-left ul.tabmenu li.selected a:active:before, body.res #header #header-bottom-left ul.tabmenu li.selected a:active:after {
               background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(152, 164, 184, 0.6)), color-stop(100%, rgba(152, 164, 184, 0.3)));
               background-image: -webkit-linear-gradient(top, rgba(152, 164, 184, 0.6), rgba(152, 164, 184, 0.3));
               background-image: -moz-linear-gradient(top, rgba(152, 164, 184, 0.6), rgba(152, 164, 184, 0.3));
               background-image: -o-linear-gradient(top, rgba(152, 164, 184, 0.6), rgba(152, 164, 184, 0.3));
               background-image: linear-gradient(top, rgba(152, 164, 184, 0.6), rgba(152, 164, 184, 0.3)); }
-    /* line 795, style.scss */
+    /* line 836, style.scss */
     body.res #header #header-bottom-right {
       background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e5e8ee), color-stop(100%, #f0f2f6));
       background-image: -webkit-linear-gradient(top, #e5e8ee, #f0f2f6);
@@ -722,37 +753,37 @@ body.res {
       position: absolute;
       right: 10px;
       top: 6px; }
-      /* line 814, style.scss */
+      /* line 855, style.scss */
       body.res #header #header-bottom-right div#userbarToggle {
         display: none; }
-      /* line 818, style.scss */
+      /* line 859, style.scss */
       body.res #header #header-bottom-right span {
         font-family: "Droid Sans", "Helvetica Neue", Helvetica, Arial, Tahoma, sans-serif;
         font-size: 11px; }
-        /* line 822, style.scss */
+        /* line 863, style.scss */
         body.res #header #header-bottom-right span.user {
           font-size: 0;
           line-height: 26px;
           margin: 0;
           text-indent: -9999em; }
-          /* line 828, style.scss */
+          /* line 869, style.scss */
           body.res #header #header-bottom-right span.user a {
             color: #297acc;
             font-size: 11px;
             font-weight: bold;
             margin-right: 4px !important;
             text-indent: 0; }
-            /* line 835, style.scss */
+            /* line 876, style.scss */
             body.res #header #header-bottom-right span.user a:hover {
               color: #2061a2;
               text-decoration: underline; }
-          /* line 842, style.scss */
+          /* line 883, style.scss */
           body.res #header #header-bottom-right span.user span#RESAccountSwitcherIcon {
             background: transparent;
             margin: 0;
             padding: 0;
             position: relative; }
-            /* line 848, style.scss */
+            /* line 889, style.scss */
             body.res #header #header-bottom-right span.user span#RESAccountSwitcherIcon:before {
               display: block;
               height: 0;
@@ -764,7 +795,7 @@ body.res {
               position: absolute;
               top: 6px;
               left: 2px; }
-            /* line 856, style.scss */
+            /* line 897, style.scss */
             body.res #header #header-bottom-right span.user span#RESAccountSwitcherIcon:hover {
               display: block;
               height: 0;
@@ -772,18 +803,18 @@ body.res {
               border-top: 4px solid #2061a2;
               border-right: 4px solid transparent;
               border-left: 4px solid transparent; }
-          /* line 862, style.scss */
+          /* line 903, style.scss */
           body.res #header #header-bottom-right span.user span.userkarma {
             border: 0;
             cursor: default;
             height: 26px;
             line-height: 26px;
             padding: 0 5px; }
-            /* line 869, style.scss */
+            /* line 910, style.scss */
             body.res #header #header-bottom-right span.user span.userkarma a {
               color: #ff5700;
               margin-right: 0 !important; }
-        /* line 878, style.scss */
+        /* line 919, style.scss */
         body.res #header #header-bottom-right span.separator {
           -webkit-box-shadow: rgba(255, 255, 255, 0.7) 1px 0 0;
           -moz-box-shadow: rgba(255, 255, 255, 0.7) 1px 0 0;
@@ -797,7 +828,7 @@ body.res {
           text-indent: -9999em;
           top: -10px;
           width: 1px; }
-  /* line 899, style.scss */
+  /* line 940, style.scss */
   body.res div.content {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -815,28 +846,28 @@ body.res {
     z-index: 75;
     /* promoted & organic lisiting */
     /* link listing */ }
-    /* line 914, style.scss */
+    /* line 955, style.scss */
     body.res div.content div#siteTable_promoted, body.res div.content div #siteTable_organic {
       display: none; }
-    /* line 920, style.scss */
+    /* line 961, style.scss */
     body.res div.content div.linklisting, body.res div.content div.nestedlisting {
       /* page marker */ }
-      /* line 922, style.scss */
+      /* line 963, style.scss */
       body.res div.content div.linklisting div.thing, body.res div.content div.nestedlisting div.thing {
         background: #fff;
         margin: 0;
         padding: 16px 20px !important;
         /* last-clicked */
         /* comment */ }
-        /* line 927, style.scss */
+        /* line 968, style.scss */
         body.res div.content div.linklisting div.thing:first-child, body.res div.content div.nestedlisting div.thing:first-child {
           -moz-border-radius-topleft: 5px;
           -webkit-border-top-left-radius: 5px;
           border-top-left-radius: 5px; }
-        /* line 931, style.scss */
+        /* line 972, style.scss */
         body.res div.content div.linklisting div.thing.odd, body.res div.content div.nestedlisting div.thing.odd {
           background: #f9fbfd; }
-        /* line 935, style.scss */
+        /* line 976, style.scss */
         body.res div.content div.linklisting div.thing span.rank, body.res div.content div.nestedlisting div.thing span.rank {
           color: #939fab;
           font-family: "Droid Sans", "Helvetica Neue", Helvetica, Arial, Tahoma, sans-serif;
@@ -846,13 +877,13 @@ body.res {
           padding: 0;
           text-align: center;
           width: 26px !important; }
-        /* line 946, style.scss */
+        /* line 987, style.scss */
         body.res div.content div.linklisting div.thing div.midcol, body.res div.content div.nestedlisting div.thing div.midcol {
           margin: 0 8px 0 0;
           padding: 0;
           position: relative;
           width: 46px !important; }
-          /* line 954, style.scss */
+          /* line 995, style.scss */
           body.res div.content div.linklisting div.thing div.midcol div.arrow, body.res div.content div.nestedlisting div.thing div.midcol div.arrow {
             background: transparent;
             height: 10px;
@@ -863,7 +894,7 @@ body.res {
             top: 5px;
             width: 46px;
             z-index: 20; }
-            /* line 965, style.scss */
+            /* line 1006, style.scss */
             body.res div.content div.linklisting div.thing div.midcol div.arrow:after, body.res div.content div.nestedlisting div.thing div.midcol div.arrow:after {
               background: transparent;
               background-color: #939fab;
@@ -877,7 +908,7 @@ body.res {
               top: 6px;
               width: 6px;
               z-index: 20; }
-            /* line 980, style.scss */
+            /* line 1021, style.scss */
             body.res div.content div.linklisting div.thing div.midcol div.arrow:before, body.res div.content div.nestedlisting div.thing div.midcol div.arrow:before {
               display: block;
               height: 0;
@@ -889,16 +920,16 @@ body.res {
               left: 17px;
               position: absolute;
               top: 0; }
-            /* line 988, style.scss */
+            /* line 1029, style.scss */
             body.res div.content div.linklisting div.thing div.midcol div.arrow.down, body.res div.content div.linklisting div.thing div.midcol div.arrow.downmod, body.res div.content div.nestedlisting div.thing div.midcol div.arrow.down, body.res div.content div.nestedlisting div.thing div.midcol div.arrow.downmod {
               display: block;
               bottom: 5px;
               top: auto; }
-              /* line 993, style.scss */
+              /* line 1034, style.scss */
               body.res div.content div.linklisting div.thing div.midcol div.arrow.down:after, body.res div.content div.linklisting div.thing div.midcol div.arrow.downmod:after, body.res div.content div.nestedlisting div.thing div.midcol div.arrow.down:after, body.res div.content div.nestedlisting div.thing div.midcol div.arrow.downmod:after {
                 top: auto;
                 bottom: 6px; }
-              /* line 998, style.scss */
+              /* line 1039, style.scss */
               body.res div.content div.linklisting div.thing div.midcol div.arrow.down:before, body.res div.content div.linklisting div.thing div.midcol div.arrow.downmod:before, body.res div.content div.nestedlisting div.thing div.midcol div.arrow.down:before, body.res div.content div.nestedlisting div.thing div.midcol div.arrow.downmod:before {
                 display: block;
                 height: 0;
@@ -910,25 +941,25 @@ body.res {
                 bottom: 0;
                 content: "";
                 top: auto; }
-            /* line 1008, style.scss */
+            /* line 1049, style.scss */
             body.res div.content div.linklisting div.thing div.midcol div.arrow.upmod, body.res div.content div.nestedlisting div.thing div.midcol div.arrow.upmod {
               background: transparent; }
-              /* line 1011, style.scss */
+              /* line 1052, style.scss */
               body.res div.content div.linklisting div.thing div.midcol div.arrow.upmod:after, body.res div.content div.nestedlisting div.thing div.midcol div.arrow.upmod:after {
                 background: #ff8b60; }
-              /* line 1015, style.scss */
+              /* line 1056, style.scss */
               body.res div.content div.linklisting div.thing div.midcol div.arrow.upmod:before, body.res div.content div.nestedlisting div.thing div.midcol div.arrow.upmod:before {
                 border-bottom-color: #ff8b60; }
-            /* line 1021, style.scss */
+            /* line 1062, style.scss */
             body.res div.content div.linklisting div.thing div.midcol div.arrow.downmod, body.res div.content div.nestedlisting div.thing div.midcol div.arrow.downmod {
               background: transparent; }
-              /* line 1024, style.scss */
+              /* line 1065, style.scss */
               body.res div.content div.linklisting div.thing div.midcol div.arrow.downmod:after, body.res div.content div.nestedlisting div.thing div.midcol div.arrow.downmod:after {
                 background: #9494ff; }
-              /* line 1028, style.scss */
+              /* line 1069, style.scss */
               body.res div.content div.linklisting div.thing div.midcol div.arrow.downmod:before, body.res div.content div.nestedlisting div.thing div.midcol div.arrow.downmod:before {
                 border-top-color: #9494ff; }
-          /* line 1036, style.scss */
+          /* line 1077, style.scss */
           body.res div.content div.linklisting div.thing div.midcol div.score, body.res div.content div.nestedlisting div.thing div.midcol div.score {
             color: #616c78;
             font-family: "Droid Sans", "Helvetica Neue", Helvetica, Arial, Tahoma, sans-serif;
@@ -938,16 +969,16 @@ body.res {
             padding: 0;
             position: relative;
             z-index: 10; }
-            /* line 1046, style.scss */
+            /* line 1087, style.scss */
             body.res div.content div.linklisting div.thing div.midcol div.score.dislikes, body.res div.content div.nestedlisting div.thing div.midcol div.score.dislikes {
               color: #9494ff; }
-            /* line 1050, style.scss */
+            /* line 1091, style.scss */
             body.res div.content div.linklisting div.thing div.midcol div.score.likes, body.res div.content div.nestedlisting div.thing div.midcol div.score.likes {
               color: #ff8b60; }
-        /* line 1058, style.scss */
+        /* line 1099, style.scss */
         body.res div.content div.linklisting div.thing a.thumbnail, body.res div.content div.nestedlisting div.thing a.thumbnail {
           margin: 0 8px 0 0; }
-          /* line 1061, style.scss */
+          /* line 1102, style.scss */
           body.res div.content div.linklisting div.thing a.thumbnail img, body.res div.content div.nestedlisting div.thing a.thumbnail img {
             -webkit-border-radius: 3px;
             -moz-border-radius: 3px;
@@ -955,27 +986,27 @@ body.res {
             -o-border-radius: 3px;
             border-radius: 3px;
             display: block; }
-        /* line 1068, style.scss */
+        /* line 1109, style.scss */
         body.res div.content div.linklisting div.thing div.entry, body.res div.content div.nestedlisting div.thing div.entry {
           margin: 0;
           padding: 0;
           /* expando */ }
-          /* line 1072, style.scss */
+          /* line 1113, style.scss */
           body.res div.content div.linklisting div.thing div.entry p.title, body.res div.content div.nestedlisting div.thing div.entry p.title {
             font-size: 15px;
             font-family: "Droid Sans", "Helvetica Neue", Helvetica, Arial, Tahoma, sans-serif;
             line-height: 1.4em;
             margin: 0; }
-            /* line 1078, style.scss */
+            /* line 1119, style.scss */
             body.res div.content div.linklisting div.thing div.entry p.title a.title, body.res div.content div.nestedlisting div.thing div.entry p.title a.title {
               color: #297acc; }
-              /* line 1081, style.scss */
+              /* line 1122, style.scss */
               body.res div.content div.linklisting div.thing div.entry p.title a.title:hover, body.res div.content div.nestedlisting div.thing div.entry p.title a.title:hover {
                 color: #2061a2; }
-              /* line 1085, style.scss */
+              /* line 1126, style.scss */
               body.res div.content div.linklisting div.thing div.entry p.title a.title:visited, body.res div.content div.nestedlisting div.thing div.entry p.title a.title:visited {
                 color: #939fab; }
-            /* line 1091, style.scss */
+            /* line 1132, style.scss */
             body.res div.content div.linklisting div.thing div.entry p.title span.linkflairlabel, body.res div.content div.nestedlisting div.thing div.entry p.title span.linkflairlabel {
               -webkit-border-radius: 4px;
               -moz-border-radius: 4px;
@@ -992,74 +1023,74 @@ body.res {
               max-width: 120px;
               padding: 0 6px;
               vertical-align: top; }
-            /* line 1105, style.scss */
+            /* line 1146, style.scss */
             body.res div.content div.linklisting div.thing div.entry p.title span.domain, body.res div.content div.nestedlisting div.thing div.entry p.title span.domain {
               color: #939fab;
               font-size: 10px; }
-          /* line 1112, style.scss */
+          /* line 1153, style.scss */
           body.res div.content div.linklisting div.thing div.entry a.expando-button, body.res div.content div.nestedlisting div.thing div.entry a.expando-button {
             margin: 0 6px 0 0; }
-          /* line 1116, style.scss */
+          /* line 1157, style.scss */
           body.res div.content div.linklisting div.thing div.entry p.tagline, body.res div.content div.nestedlisting div.thing div.entry p.tagline {
             color: #939fab;
             font-family: "Droid Sans", "Helvetica Neue", Helvetica, Arial, Tahoma, sans-serif; }
-            /* line 1120, style.scss */
+            /* line 1161, style.scss */
             body.res div.content div.linklisting div.thing div.entry p.tagline span, body.res div.content div.nestedlisting div.thing div.entry p.tagline span {
               font-family: "Droid Sans", "Helvetica Neue", Helvetica, Arial, Tahoma, sans-serif;
               font-size: 10px; }
-              /* line 1124, style.scss */
+              /* line 1165, style.scss */
               body.res div.content div.linklisting div.thing div.entry p.tagline span:first-child, body.res div.content div.nestedlisting div.thing div.entry p.tagline span:first-child {
                 font-size: 0;
                 text-indent: -9999px; }
-              /* line 1129, style.scss */
+              /* line 1170, style.scss */
               body.res div.content div.linklisting div.thing div.entry p.tagline span span.res_post_ups, body.res div.content div.nestedlisting div.thing div.entry p.tagline span span.res_post_ups {
                 color: #ff8b60;
                 font-size: 10px;
                 text-indent: 0; }
-                /* line 1134, style.scss */
+                /* line 1175, style.scss */
                 body.res div.content div.linklisting div.thing div.entry p.tagline span span.res_post_ups:after, body.res div.content div.nestedlisting div.thing div.entry p.tagline span span.res_post_ups:after {
                   color: #939fab;
                   content: " - ";
                   font-size: 8px;
                   vertical-align: middle; }
-              /* line 1143, style.scss */
+              /* line 1184, style.scss */
               body.res div.content div.linklisting div.thing div.entry p.tagline span span.res_post_downs, body.res div.content div.nestedlisting div.thing div.entry p.tagline span span.res_post_downs {
                 color: #9494ff;
                 margin-right: 4px; }
-            /* line 1150, style.scss */
+            /* line 1191, style.scss */
             body.res div.content div.linklisting div.thing div.entry p.tagline a, body.res div.content div.nestedlisting div.thing div.entry p.tagline a {
               color: #297acc;
               margin: 0; }
-              /* line 1154, style.scss */
+              /* line 1195, style.scss */
               body.res div.content div.linklisting div.thing div.entry p.tagline a:hover, body.res div.content div.nestedlisting div.thing div.entry p.tagline a:hover {
                 color: #2061a2;
                 text-decoration: none; }
-            /* line 1161, style.scss */
+            /* line 1202, style.scss */
             body.res div.content div.linklisting div.thing div.entry p.tagline span.RESUserTag, body.res div.content div.nestedlisting div.thing div.entry p.tagline span.RESUserTag {
               display: none; }
-          /* line 1169, style.scss */
+          /* line 1210, style.scss */
           body.res div.content div.linklisting div.thing div.entry ul.flat-list li, body.res div.content div.nestedlisting div.thing div.entry ul.flat-list li {
             font-family: "Droid Sans", "Helvetica Neue", Helvetica, Arial, Tahoma, sans-serif;
             font-size: 10px;
             font-weight: 400;
             margin: 0;
             padding: 0; }
-            /* line 1176, style.scss */
+            /* line 1217, style.scss */
             body.res div.content div.linklisting div.thing div.entry ul.flat-list li:after, body.res div.content div.nestedlisting div.thing div.entry ul.flat-list li:after {
               content: " - "; }
-            /* line 1182, style.scss */
+            /* line 1223, style.scss */
             body.res div.content div.linklisting div.thing div.entry ul.flat-list li:last-child:after, body.res div.content div.nestedlisting div.thing div.entry ul.flat-list li:last-child:after {
               content: ""; }
-            /* line 1188, style.scss */
+            /* line 1229, style.scss */
             body.res div.content div.linklisting div.thing div.entry ul.flat-list li a, body.res div.content div.linklisting div.thing div.entry ul.flat-list li span, body.res div.content div.nestedlisting div.thing div.entry ul.flat-list li a, body.res div.content div.nestedlisting div.thing div.entry ul.flat-list li span {
               color: #939fab;
               font-size: 10px;
               font-weight: 400; }
-              /* line 1193, style.scss */
+              /* line 1234, style.scss */
               body.res div.content div.linklisting div.thing div.entry ul.flat-list li a:hover, body.res div.content div.linklisting div.thing div.entry ul.flat-list li span:hover, body.res div.content div.nestedlisting div.thing div.entry ul.flat-list li a:hover, body.res div.content div.nestedlisting div.thing div.entry ul.flat-list li span:hover {
                 color: #2061a2;
                 text-decoration: none; }
-          /* line 1206, style.scss */
+          /* line 1247, style.scss */
           body.res div.content div.linklisting div.thing div.entry div.expando, body.res div.content div.nestedlisting div.thing div.entry div.expando {
             -webkit-border-radius: 5px;
             -moz-border-radius: 5px;
@@ -1068,19 +1099,19 @@ body.res {
             border-radius: 5px;
             background: #f9fbfd;
             margin: 6px 16px 6px 0; }
-          /* line 1212, style.scss */
+          /* line 1253, style.scss */
           body.res div.content div.linklisting div.thing div.entry.keyHighlight, body.res div.content div.nestedlisting div.thing div.entry.keyHighlight {
             background-color: transparent;
             border: 0;
             outline: none; }
-            /* line 1219, style.scss */
+            /* line 1260, style.scss */
             body.res div.content div.linklisting div.thing div.entry.keyHighlight p.title a.title, body.res div.content div.nestedlisting div.thing div.entry.keyHighlight p.title a.title {
               text-decoration: underline; }
-        /* line 1231, style.scss */
+        /* line 1272, style.scss */
         body.res div.content div.linklisting div.thing.last-clicked, body.res div.content div.nestedlisting div.thing.last-clicked {
           background: #eef5fc;
           border: 0; }
-        /* line 1238, style.scss */
+        /* line 1279, style.scss */
         body.res div.content div.linklisting div.thing.comment, body.res div.content div.nestedlisting div.thing.comment {
           -moz-border-radius: 0 !important;
           -webkit-border-radius: 0 !important;
@@ -1093,7 +1124,7 @@ body.res {
           padding-bottom: 0 !important;
           position: relative;
           /* child */ }
-          /* line 1252, style.scss */
+          /* line 1293, style.scss */
           body.res div.content div.linklisting div.thing.comment p.parent, body.res div.content div.nestedlisting div.thing.comment p.parent {
             color: #616c78;
             font-family: "Droid Sans", "Helvetica Neue", Helvetica, Arial, Tahoma, sans-serif;
@@ -1101,7 +1132,7 @@ body.res {
             font-weight: 400;
             line-height: 1.3em;
             padding: 0 0 6px 12px; }
-            /* line 1260, style.scss */
+            /* line 1301, style.scss */
             body.res div.content div.linklisting div.thing.comment p.parent a.title, body.res div.content div.nestedlisting div.thing.comment p.parent a.title {
               color: #297acc;
               font-family: "Droid Sans", "Helvetica Neue", Helvetica, Arial, Tahoma, sans-serif;
@@ -1109,10 +1140,10 @@ body.res {
               font-weight: 400;
               line-height: 1.3em;
               margin: 0; }
-              /* line 1268, style.scss */
+              /* line 1309, style.scss */
               body.res div.content div.linklisting div.thing.comment p.parent a.title:hover, body.res div.content div.nestedlisting div.thing.comment p.parent a.title:hover {
                 color: #2061a2; }
-            /* line 1274, style.scss */
+            /* line 1315, style.scss */
             body.res div.content div.linklisting div.thing.comment p.parent a.author, body.res div.content div.nestedlisting div.thing.comment p.parent a.author {
               color: #297acc;
               display: inline-block;
@@ -1124,21 +1155,21 @@ body.res {
               margin: 0 3px 0 0;
               padding: 0;
               text-indent: 0; }
-              /* line 1286, style.scss */
+              /* line 1327, style.scss */
               body.res div.content div.linklisting div.thing.comment p.parent a.author:hover, body.res div.content div.nestedlisting div.thing.comment p.parent a.author:hover {
                 color: #2061a2;
                 text-decoration: none; }
-              /* line 1291, style.scss */
+              /* line 1332, style.scss */
               body.res div.content div.linklisting div.thing.comment p.parent a.author.submitter, body.res div.content div.nestedlisting div.thing.comment p.parent a.author.submitter {
                 background: none;
                 background-color: #297acc !important;
                 color: #fff;
                 padding: 0 4px; }
-                /* line 1297, style.scss */
+                /* line 1338, style.scss */
                 body.res div.content div.linklisting div.thing.comment p.parent a.author.submitter:hover, body.res div.content div.nestedlisting div.thing.comment p.parent a.author.submitter:hover {
                   background-color: #2061a2 !important;
                   color: #fff; }
-          /* line 1308, style.scss */
+          /* line 1349, style.scss */
           body.res div.content div.linklisting div.thing.comment div.midcol, body.res div.content div.nestedlisting div.thing.comment div.midcol {
             height: 24px;
             left: 10px;
@@ -1146,7 +1177,7 @@ body.res {
             position: absolute;
             top: 10px;
             width: 12px !important; }
-            /* line 1318, style.scss */
+            /* line 1359, style.scss */
             body.res div.content div.linklisting div.thing.comment div.midcol div.arrow, body.res div.content div.nestedlisting div.thing.comment div.midcol div.arrow {
               background: transparent;
               height: 10px;
@@ -1157,7 +1188,7 @@ body.res {
               top: 0;
               width: 12px !important;
               z-index: 20; }
-              /* line 1329, style.scss */
+              /* line 1370, style.scss */
               body.res div.content div.linklisting div.thing.comment div.midcol div.arrow:after, body.res div.content div.nestedlisting div.thing.comment div.midcol div.arrow:after {
                 background: transparent;
                 background-color: #939fab;
@@ -1171,7 +1202,7 @@ body.res {
                 top: 6px;
                 width: 6px;
                 z-index: 20; }
-              /* line 1344, style.scss */
+              /* line 1385, style.scss */
               body.res div.content div.linklisting div.thing.comment div.midcol div.arrow:before, body.res div.content div.nestedlisting div.thing.comment div.midcol div.arrow:before {
                 display: block;
                 height: 0;
@@ -1183,16 +1214,16 @@ body.res {
                 left: 0;
                 position: absolute;
                 top: 0; }
-              /* line 1352, style.scss */
+              /* line 1393, style.scss */
               body.res div.content div.linklisting div.thing.comment div.midcol div.arrow.down, body.res div.content div.linklisting div.thing.comment div.midcol div.arrow.downmod, body.res div.content div.nestedlisting div.thing.comment div.midcol div.arrow.down, body.res div.content div.nestedlisting div.thing.comment div.midcol div.arrow.downmod {
                 display: block;
                 bottom: 0;
                 top: auto; }
-                /* line 1357, style.scss */
+                /* line 1398, style.scss */
                 body.res div.content div.linklisting div.thing.comment div.midcol div.arrow.down:after, body.res div.content div.linklisting div.thing.comment div.midcol div.arrow.downmod:after, body.res div.content div.nestedlisting div.thing.comment div.midcol div.arrow.down:after, body.res div.content div.nestedlisting div.thing.comment div.midcol div.arrow.downmod:after {
                   top: auto;
                   bottom: 6px; }
-                /* line 1362, style.scss */
+                /* line 1403, style.scss */
                 body.res div.content div.linklisting div.thing.comment div.midcol div.arrow.down:before, body.res div.content div.linklisting div.thing.comment div.midcol div.arrow.downmod:before, body.res div.content div.nestedlisting div.thing.comment div.midcol div.arrow.down:before, body.res div.content div.nestedlisting div.thing.comment div.midcol div.arrow.downmod:before {
                   display: block;
                   height: 0;
@@ -1204,31 +1235,31 @@ body.res {
                   bottom: 0;
                   content: "";
                   top: auto; }
-              /* line 1372, style.scss */
+              /* line 1413, style.scss */
               body.res div.content div.linklisting div.thing.comment div.midcol div.arrow.upmod, body.res div.content div.nestedlisting div.thing.comment div.midcol div.arrow.upmod {
                 background: transparent; }
-                /* line 1375, style.scss */
+                /* line 1416, style.scss */
                 body.res div.content div.linklisting div.thing.comment div.midcol div.arrow.upmod:after, body.res div.content div.nestedlisting div.thing.comment div.midcol div.arrow.upmod:after {
                   background: #ff8b60; }
-                /* line 1379, style.scss */
+                /* line 1420, style.scss */
                 body.res div.content div.linklisting div.thing.comment div.midcol div.arrow.upmod:before, body.res div.content div.nestedlisting div.thing.comment div.midcol div.arrow.upmod:before {
                   border-bottom-color: #ff8b60; }
-              /* line 1385, style.scss */
+              /* line 1426, style.scss */
               body.res div.content div.linklisting div.thing.comment div.midcol div.arrow.downmod, body.res div.content div.nestedlisting div.thing.comment div.midcol div.arrow.downmod {
                 background: transparent; }
-                /* line 1388, style.scss */
+                /* line 1429, style.scss */
                 body.res div.content div.linklisting div.thing.comment div.midcol div.arrow.downmod:after, body.res div.content div.nestedlisting div.thing.comment div.midcol div.arrow.downmod:after {
                   background: #9494ff; }
-                /* line 1392, style.scss */
+                /* line 1433, style.scss */
                 body.res div.content div.linklisting div.thing.comment div.midcol div.arrow.downmod:before, body.res div.content div.nestedlisting div.thing.comment div.midcol div.arrow.downmod:before {
                   border-top-color: #9494ff; }
-          /* line 1402, style.scss */
+          /* line 1443, style.scss */
           body.res div.content div.linklisting div.thing.comment div.entry, body.res div.content div.nestedlisting div.thing.comment div.entry {
             padding-left: 12px;
             /* comment collapsed */
             /* usertext */
             /* flat-list */ }
-            /* line 1407, style.scss */
+            /* line 1448, style.scss */
             body.res div.content div.linklisting div.thing.comment div.entry p.tagline, body.res div.content div.linklisting div.thing.comment div.entry div.collapsed, body.res div.content div.nestedlisting div.thing.comment div.entry p.tagline, body.res div.content div.nestedlisting div.thing.comment div.entry div.collapsed {
               color: #939fab;
               display: block;
@@ -1242,7 +1273,7 @@ body.res {
               padding: 0 0 0 14px;
               position: relative;
               text-indent: -9999em; }
-              /* line 1423, style.scss */
+              /* line 1464, style.scss */
               body.res div.content div.linklisting div.thing.comment div.entry p.tagline a.expand, body.res div.content div.linklisting div.thing.comment div.entry div.collapsed a.expand, body.res div.content div.nestedlisting div.thing.comment div.entry p.tagline a.expand, body.res div.content div.nestedlisting div.thing.comment div.entry div.collapsed a.expand {
                 -webkit-border-radius: 3px;
                 -moz-border-radius: 3px;
@@ -1263,7 +1294,7 @@ body.res {
                 text-indent: -9999em;
                 top: 1px;
                 width: 10px; }
-                /* line 1440, style.scss */
+                /* line 1481, style.scss */
                 body.res div.content div.linklisting div.thing.comment div.entry p.tagline a.expand:before, body.res div.content div.linklisting div.thing.comment div.entry div.collapsed a.expand:before, body.res div.content div.nestedlisting div.thing.comment div.entry p.tagline a.expand:before, body.res div.content div.nestedlisting div.thing.comment div.entry div.collapsed a.expand:before {
                   color: #939fab;
                   content: "-";
@@ -1276,14 +1307,14 @@ body.res {
                   text-align: center;
                   text-indent: 0;
                   width: 10px; }
-                /* line 1454, style.scss */
+                /* line 1495, style.scss */
                 body.res div.content div.linklisting div.thing.comment div.entry p.tagline a.expand:hover, body.res div.content div.linklisting div.thing.comment div.entry div.collapsed a.expand:hover, body.res div.content div.nestedlisting div.thing.comment div.entry p.tagline a.expand:hover, body.res div.content div.nestedlisting div.thing.comment div.entry div.collapsed a.expand:hover {
                   border-color: #297acc;
                   color: #297acc; }
-                  /* line 1458, style.scss */
+                  /* line 1499, style.scss */
                   body.res div.content div.linklisting div.thing.comment div.entry p.tagline a.expand:hover:before, body.res div.content div.linklisting div.thing.comment div.entry div.collapsed a.expand:hover:before, body.res div.content div.nestedlisting div.thing.comment div.entry p.tagline a.expand:hover:before, body.res div.content div.nestedlisting div.thing.comment div.entry div.collapsed a.expand:hover:before {
                     color: #297acc; }
-              /* line 1466, style.scss */
+              /* line 1507, style.scss */
               body.res div.content div.linklisting div.thing.comment div.entry p.tagline a.author, body.res div.content div.linklisting div.thing.comment div.entry div.collapsed a.author, body.res div.content div.nestedlisting div.thing.comment div.entry p.tagline a.author, body.res div.content div.nestedlisting div.thing.comment div.entry div.collapsed a.author {
                 color: #297acc;
                 display: inline-block;
@@ -1295,21 +1326,21 @@ body.res {
                 margin: 0 3px;
                 padding: 0;
                 text-indent: 0; }
-                /* line 1478, style.scss */
+                /* line 1519, style.scss */
                 body.res div.content div.linklisting div.thing.comment div.entry p.tagline a.author:hover, body.res div.content div.linklisting div.thing.comment div.entry div.collapsed a.author:hover, body.res div.content div.nestedlisting div.thing.comment div.entry p.tagline a.author:hover, body.res div.content div.nestedlisting div.thing.comment div.entry div.collapsed a.author:hover {
                   color: #2061a2;
                   text-decoration: none; }
-                /* line 1483, style.scss */
+                /* line 1524, style.scss */
                 body.res div.content div.linklisting div.thing.comment div.entry p.tagline a.author.submitter, body.res div.content div.linklisting div.thing.comment div.entry div.collapsed a.author.submitter, body.res div.content div.nestedlisting div.thing.comment div.entry p.tagline a.author.submitter, body.res div.content div.nestedlisting div.thing.comment div.entry div.collapsed a.author.submitter {
                   background: none;
                   background-color: #297acc !important;
                   color: #fff;
                   padding: 0 4px; }
-                  /* line 1489, style.scss */
+                  /* line 1530, style.scss */
                   body.res div.content div.linklisting div.thing.comment div.entry p.tagline a.author.submitter:hover, body.res div.content div.linklisting div.thing.comment div.entry div.collapsed a.author.submitter:hover, body.res div.content div.nestedlisting div.thing.comment div.entry p.tagline a.author.submitter:hover, body.res div.content div.nestedlisting div.thing.comment div.entry div.collapsed a.author.submitter:hover {
                     background-color: #2061a2 !important;
                     color: #fff; }
-              /* line 1498, style.scss */
+              /* line 1539, style.scss */
               body.res div.content div.linklisting div.thing.comment div.entry p.tagline span, body.res div.content div.linklisting div.thing.comment div.entry p.tagline time, body.res div.content div.linklisting div.thing.comment div.entry div.collapsed span, body.res div.content div.linklisting div.thing.comment div.entry div.collapsed time, body.res div.content div.nestedlisting div.thing.comment div.entry p.tagline span, body.res div.content div.nestedlisting div.thing.comment div.entry p.tagline time, body.res div.content div.nestedlisting div.thing.comment div.entry div.collapsed span, body.res div.content div.nestedlisting div.thing.comment div.entry div.collapsed time {
                 color: #939fab;
                 font-family: "Droid Sans", "Helvetica Neue", Helvetica, Arial, Tahoma, sans-serif;
@@ -1317,7 +1348,7 @@ body.res {
                 font-style: normal;
                 font-weight: 400;
                 text-indent: -9999em; }
-                /* line 1506, style.scss */
+                /* line 1547, style.scss */
                 body.res div.content div.linklisting div.thing.comment div.entry p.tagline span.flair, body.res div.content div.linklisting div.thing.comment div.entry p.tagline time.flair, body.res div.content div.linklisting div.thing.comment div.entry div.collapsed span.flair, body.res div.content div.linklisting div.thing.comment div.entry div.collapsed time.flair, body.res div.content div.nestedlisting div.thing.comment div.entry p.tagline span.flair, body.res div.content div.nestedlisting div.thing.comment div.entry p.tagline time.flair, body.res div.content div.nestedlisting div.thing.comment div.entry div.collapsed span.flair, body.res div.content div.nestedlisting div.thing.comment div.entry div.collapsed time.flair {
                   -webkit-border-radius: 4px;
                   -moz-border-radius: 4px;
@@ -1335,44 +1366,44 @@ body.res {
                   padding: 0 4px;
                   text-indent: 0;
                   vertical-align: top; }
-                /* line 1521, style.scss */
+                /* line 1562, style.scss */
                 body.res div.content div.linklisting div.thing.comment div.entry p.tagline span.RESUserTag, body.res div.content div.linklisting div.thing.comment div.entry p.tagline time.RESUserTag, body.res div.content div.linklisting div.thing.comment div.entry div.collapsed span.RESUserTag, body.res div.content div.linklisting div.thing.comment div.entry div.collapsed time.RESUserTag, body.res div.content div.nestedlisting div.thing.comment div.entry p.tagline span.RESUserTag, body.res div.content div.nestedlisting div.thing.comment div.entry p.tagline time.RESUserTag, body.res div.content div.nestedlisting div.thing.comment div.entry div.collapsed span.RESUserTag, body.res div.content div.nestedlisting div.thing.comment div.entry div.collapsed time.RESUserTag {
                   display: none; }
-                /* line 1525, style.scss */
+                /* line 1566, style.scss */
                 body.res div.content div.linklisting div.thing.comment div.entry p.tagline span.score, body.res div.content div.linklisting div.thing.comment div.entry p.tagline time.score, body.res div.content div.linklisting div.thing.comment div.entry div.collapsed span.score, body.res div.content div.linklisting div.thing.comment div.entry div.collapsed time.score, body.res div.content div.nestedlisting div.thing.comment div.entry p.tagline span.score, body.res div.content div.nestedlisting div.thing.comment div.entry p.tagline time.score, body.res div.content div.nestedlisting div.thing.comment div.entry div.collapsed span.score, body.res div.content div.nestedlisting div.thing.comment div.entry div.collapsed time.score {
                   color: #616c78;
                   font-size: 10px;
                   padding: 0 3px;
                   text-indent: 0; }
-                  /* line 1531, style.scss */
+                  /* line 1572, style.scss */
                   body.res div.content div.linklisting div.thing.comment div.entry p.tagline span.score.dislikes, body.res div.content div.linklisting div.thing.comment div.entry p.tagline time.score.dislikes, body.res div.content div.linklisting div.thing.comment div.entry div.collapsed span.score.dislikes, body.res div.content div.linklisting div.thing.comment div.entry div.collapsed time.score.dislikes, body.res div.content div.nestedlisting div.thing.comment div.entry p.tagline span.score.dislikes, body.res div.content div.nestedlisting div.thing.comment div.entry p.tagline time.score.dislikes, body.res div.content div.nestedlisting div.thing.comment div.entry div.collapsed span.score.dislikes, body.res div.content div.nestedlisting div.thing.comment div.entry div.collapsed time.score.dislikes {
                     color: #9494ff; }
-                  /* line 1535, style.scss */
+                  /* line 1576, style.scss */
                   body.res div.content div.linklisting div.thing.comment div.entry p.tagline span.score.likes, body.res div.content div.linklisting div.thing.comment div.entry p.tagline time.score.likes, body.res div.content div.linklisting div.thing.comment div.entry div.collapsed span.score.likes, body.res div.content div.linklisting div.thing.comment div.entry div.collapsed time.score.likes, body.res div.content div.nestedlisting div.thing.comment div.entry p.tagline span.score.likes, body.res div.content div.nestedlisting div.thing.comment div.entry p.tagline time.score.likes, body.res div.content div.nestedlisting div.thing.comment div.entry div.collapsed span.score.likes, body.res div.content div.nestedlisting div.thing.comment div.entry div.collapsed time.score.likes {
                     color: #ff8b60; }
-                /* line 1541, style.scss */
+                /* line 1582, style.scss */
                 body.res div.content div.linklisting div.thing.comment div.entry p.tagline span.res_comment_ups, body.res div.content div.linklisting div.thing.comment div.entry p.tagline time.res_comment_ups, body.res div.content div.linklisting div.thing.comment div.entry div.collapsed span.res_comment_ups, body.res div.content div.linklisting div.thing.comment div.entry div.collapsed time.res_comment_ups, body.res div.content div.nestedlisting div.thing.comment div.entry p.tagline span.res_comment_ups, body.res div.content div.nestedlisting div.thing.comment div.entry p.tagline time.res_comment_ups, body.res div.content div.nestedlisting div.thing.comment div.entry div.collapsed span.res_comment_ups, body.res div.content div.nestedlisting div.thing.comment div.entry div.collapsed time.res_comment_ups {
                   color: #ff8b60;
                   font-size: 10px;
                   padding-left: 3px;
                   text-indent: 0; }
-                  /* line 1547, style.scss */
+                  /* line 1588, style.scss */
                   body.res div.content div.linklisting div.thing.comment div.entry p.tagline span.res_comment_ups:after, body.res div.content div.linklisting div.thing.comment div.entry p.tagline time.res_comment_ups:after, body.res div.content div.linklisting div.thing.comment div.entry div.collapsed span.res_comment_ups:after, body.res div.content div.linklisting div.thing.comment div.entry div.collapsed time.res_comment_ups:after, body.res div.content div.nestedlisting div.thing.comment div.entry p.tagline span.res_comment_ups:after, body.res div.content div.nestedlisting div.thing.comment div.entry p.tagline time.res_comment_ups:after, body.res div.content div.nestedlisting div.thing.comment div.entry div.collapsed span.res_comment_ups:after, body.res div.content div.nestedlisting div.thing.comment div.entry div.collapsed time.res_comment_ups:after {
                     color: #939fab;
                     content: " - "; }
-                /* line 1554, style.scss */
+                /* line 1595, style.scss */
                 body.res div.content div.linklisting div.thing.comment div.entry p.tagline span.res_comment_downs, body.res div.content div.linklisting div.thing.comment div.entry p.tagline time.res_comment_downs, body.res div.content div.linklisting div.thing.comment div.entry div.collapsed span.res_comment_downs, body.res div.content div.linklisting div.thing.comment div.entry div.collapsed time.res_comment_downs, body.res div.content div.nestedlisting div.thing.comment div.entry p.tagline span.res_comment_downs, body.res div.content div.nestedlisting div.thing.comment div.entry p.tagline time.res_comment_downs, body.res div.content div.nestedlisting div.thing.comment div.entry div.collapsed span.res_comment_downs, body.res div.content div.nestedlisting div.thing.comment div.entry div.collapsed time.res_comment_downs {
                   color: #9494ff;
                   font-size: 10px;
                   padding-right: 3px;
                   text-indent: 0; }
-                /* line 1561, style.scss */
+                /* line 1602, style.scss */
                 body.res div.content div.linklisting div.thing.comment div.entry p.tagline span.gilded-comment-icon, body.res div.content div.linklisting div.thing.comment div.entry p.tagline time.gilded-comment-icon, body.res div.content div.linklisting div.thing.comment div.entry div.collapsed span.gilded-comment-icon, body.res div.content div.linklisting div.thing.comment div.entry div.collapsed time.gilded-comment-icon, body.res div.content div.nestedlisting div.thing.comment div.entry p.tagline span.gilded-comment-icon, body.res div.content div.nestedlisting div.thing.comment div.entry p.tagline time.gilded-comment-icon, body.res div.content div.nestedlisting div.thing.comment div.entry div.collapsed span.gilded-comment-icon, body.res div.content div.nestedlisting div.thing.comment div.entry div.collapsed time.gilded-comment-icon {
                   height: 14px;
                   margin: 0 2px;
                   top: auto;
                   width: 13px; }
-              /* line 1570, style.scss */
+              /* line 1611, style.scss */
               body.res div.content div.linklisting div.thing.comment div.entry p.tagline time, body.res div.content div.linklisting div.thing.comment div.entry div.collapsed time, body.res div.content div.nestedlisting div.thing.comment div.entry p.tagline time, body.res div.content div.nestedlisting div.thing.comment div.entry div.collapsed time {
                 font-size: 10px;
                 padding: 0 3px;
@@ -1380,41 +1411,41 @@ body.res {
                 right: 0;
                 text-indent: 0;
                 top: 0; }
-                /* line 1578, style.scss */
+                /* line 1619, style.scss */
                 body.res div.content div.linklisting div.thing.comment div.entry p.tagline time:after, body.res div.content div.linklisting div.thing.comment div.entry div.collapsed time:after, body.res div.content div.nestedlisting div.thing.comment div.entry p.tagline time:after, body.res div.content div.nestedlisting div.thing.comment div.entry div.collapsed time:after {
                   content: " ago"; }
-                /* line 1582, style.scss */
+                /* line 1623, style.scss */
                 body.res div.content div.linklisting div.thing.comment div.entry p.tagline time.edited-timestamp, body.res div.content div.linklisting div.thing.comment div.entry div.collapsed time.edited-timestamp, body.res div.content div.nestedlisting div.thing.comment div.entry p.tagline time.edited-timestamp, body.res div.content div.nestedlisting div.thing.comment div.entry div.collapsed time.edited-timestamp {
                   right: -4px;
                   top: -1px; }
-                  /* line 1586, style.scss */
+                  /* line 1627, style.scss */
                   body.res div.content div.linklisting div.thing.comment div.entry p.tagline time.edited-timestamp:after, body.res div.content div.linklisting div.thing.comment div.entry div.collapsed time.edited-timestamp:after, body.res div.content div.nestedlisting div.thing.comment div.entry p.tagline time.edited-timestamp:after, body.res div.content div.nestedlisting div.thing.comment div.entry div.collapsed time.edited-timestamp:after {
                     content: ""; }
-            /* line 1598, style.scss */
+            /* line 1639, style.scss */
             body.res div.content div.linklisting div.thing.comment div.entry div.collapsed, body.res div.content div.nestedlisting div.thing.comment div.entry div.collapsed {
               margin-bottom: 10px; }
-              /* line 1603, style.scss */
+              /* line 1644, style.scss */
               body.res div.content div.linklisting div.thing.comment div.entry div.collapsed a.expand:before, body.res div.content div.nestedlisting div.thing.comment div.entry div.collapsed a.expand:before {
                 content: "+";
                 line-height: 10px; }
-            /* line 1618, style.scss */
+            /* line 1659, style.scss */
             body.res div.content div.linklisting div.thing.comment div.entry form.usertext.border div.usertext-body, body.res div.content div.nestedlisting div.thing.comment div.entry form.usertext.border div.usertext-body {
               margin: 4px 0;
               padding: 0 10px; }
-            /* line 1627, style.scss */
+            /* line 1668, style.scss */
             body.res div.content div.linklisting div.thing.comment div.entry div.usertext-body, body.res div.content div.nestedlisting div.thing.comment div.entry div.usertext-body {
               -webkit-border-radius: 4px;
               -moz-border-radius: 4px;
               -ms-border-radius: 4px;
               -o-border-radius: 4px;
               border-radius: 4px; }
-              /* line 1630, style.scss */
+              /* line 1671, style.scss */
               body.res div.content div.linklisting div.thing.comment div.entry div.usertext-body div.md, body.res div.content div.nestedlisting div.thing.comment div.entry div.usertext-body div.md {
                 color: #616c78;
                 font-family: "Helvetica Neue", Helvetica, Arial, Tahoma, sans-serif;
                 font-size: 13px;
                 line-height: 1.4em; }
-            /* line 1643, style.scss */
+            /* line 1684, style.scss */
             body.res div.content div.linklisting div.thing.comment div.entry ul.flat-list li, body.res div.content div.nestedlisting div.thing.comment div.entry ul.flat-list li {
               color: #939fab;
               font-family: "Droid Sans", "Helvetica Neue", Helvetica, Arial, Tahoma, sans-serif;
@@ -1422,52 +1453,52 @@ body.res {
               font-weight: 400;
               margin: 0;
               padding: 0; }
-              /* line 1651, style.scss */
+              /* line 1692, style.scss */
               body.res div.content div.linklisting div.thing.comment div.entry ul.flat-list li a, body.res div.content div.nestedlisting div.thing.comment div.entry ul.flat-list li a {
                 color: #939fab;
                 font-weight: 400; }
-              /* line 1656, style.scss */
+              /* line 1697, style.scss */
               body.res div.content div.linklisting div.thing.comment div.entry ul.flat-list li:after, body.res div.content div.nestedlisting div.thing.comment div.entry ul.flat-list li:after {
                 content: " - "; }
-              /* line 1662, style.scss */
+              /* line 1703, style.scss */
               body.res div.content div.linklisting div.thing.comment div.entry ul.flat-list li:last-child:after, body.res div.content div.nestedlisting div.thing.comment div.entry ul.flat-list li:last-child:after {
                 content: ""; }
-          /* line 1676, style.scss */
+          /* line 1717, style.scss */
           body.res div.content div.linklisting div.thing.comment div.child, body.res div.content div.nestedlisting div.thing.comment div.child {
             border: 0;
             margin: 10px 0 0 13px; }
-            /* line 1680, style.scss */
+            /* line 1721, style.scss */
             body.res div.content div.linklisting div.thing.comment div.child div.thing, body.res div.content div.nestedlisting div.thing.comment div.child div.thing {
               -moz-border-radius: 4px !important;
               -webkit-border-radius: 4px !important;
               border-radius: 4px !important;
               margin: 0 0 16px 0 !important; }
-              /* line 1688, style.scss */
+              /* line 1729, style.scss */
               body.res div.content div.linklisting div.thing.comment div.child div.thing.comment, body.res div.content div.nestedlisting div.thing.comment div.child div.thing.comment {
                 -moz-border-radius: 4px !important;
                 -webkit-border-radius: 4px !important;
                 border-radius: 4px !important;
                 border-left: 1px solid #d3e3f1 !important;
                 border-right: 1px solid #d3e3f1 !important; }
-                /* line 1697, style.scss */
+                /* line 1738, style.scss */
                 body.res div.content div.linklisting div.thing.comment div.child div.thing.comment.even, body.res div.content div.nestedlisting div.thing.comment div.child div.thing.comment.even {
                   background: white !important; }
-              /* line 1703, style.scss */
+              /* line 1744, style.scss */
               body.res div.content div.linklisting div.thing.comment div.child div.thing.morechildren, body.res div.content div.nestedlisting div.thing.comment div.child div.thing.morechildren {
                 margin: 0 -16px 0 -29px !important;
                 padding: 0 !important; }
-                /* line 1707, style.scss */
+                /* line 1748, style.scss */
                 body.res div.content div.linklisting div.thing.comment div.child div.thing.morechildren div.entry, body.res div.content div.nestedlisting div.thing.comment div.child div.thing.morechildren div.entry {
                   padding-left: 0; }
-                  /* line 1710, style.scss */
+                  /* line 1751, style.scss */
                   body.res div.content div.linklisting div.thing.comment div.child div.thing.morechildren div.entry p.tagline, body.res div.content div.nestedlisting div.thing.comment div.child div.thing.morechildren div.entry p.tagline {
                     display: none; }
-                  /* line 1714, style.scss */
+                  /* line 1755, style.scss */
                   body.res div.content div.linklisting div.thing.comment div.child div.thing.morechildren div.entry span.morecomments, body.res div.content div.nestedlisting div.thing.comment div.child div.thing.morechildren div.entry span.morecomments {
                     color: #939fab;
                     font-family: "Droid Sans", "Helvetica Neue", Helvetica, Arial, Tahoma, sans-serif;
                     font-size: 12px; }
-                    /* line 1719, style.scss */
+                    /* line 1760, style.scss */
                     body.res div.content div.linklisting div.thing.comment div.child div.thing.morechildren div.entry span.morecomments a.button, body.res div.content div.nestedlisting div.thing.comment div.child div.thing.morechildren div.entry span.morecomments a.button {
                       -webkit-border-radius: 0 0 3px 3px;
                       -moz-border-radius: 0 0 3px 3px;
@@ -1482,21 +1513,21 @@ body.res {
                       font-size: 12px;
                       margin: 0;
                       padding: 6px 0; }
-                      /* line 1730, style.scss */
+                      /* line 1771, style.scss */
                       body.res div.content div.linklisting div.thing.comment div.child div.thing.morechildren div.entry span.morecomments a.button span.gray, body.res div.content div.nestedlisting div.thing.comment div.child div.thing.morechildren div.entry span.morecomments a.button span.gray {
                         color: #939fab; }
-                      /* line 1734, style.scss */
+                      /* line 1775, style.scss */
                       body.res div.content div.linklisting div.thing.comment div.child div.thing.morechildren div.entry span.morecomments a.button:hover, body.res div.content div.nestedlisting div.thing.comment div.child div.thing.morechildren div.entry span.morecomments a.button:hover {
                         background: #eef4f9;
                         color: #2061a2;
                         text-decoration: none; }
-                  /* line 1744, style.scss */
+                  /* line 1785, style.scss */
                   body.res div.content div.linklisting div.thing.comment div.child div.thing.morechildren div.entry ul.flat-list, body.res div.content div.nestedlisting div.thing.comment div.child div.thing.morechildren div.entry ul.flat-list {
                     display: none; }
-                /* line 1750, style.scss */
+                /* line 1791, style.scss */
                 body.res div.content div.linklisting div.thing.comment div.child div.thing.morechildren .child, body.res div.content div.nestedlisting div.thing.comment div.child div.thing.morechildren .child {
                   display: none; }
-      /* line 1766, style.scss */
+      /* line 1807, style.scss */
       body.res div.content div.linklisting div.NERPageMarker, body.res div.content div.nestedlisting div.NERPageMarker {
         -webkit-border-radius: 0;
         -moz-border-radius: 0;
@@ -1519,7 +1550,7 @@ body.res {
         padding: 10px 16px;
         text-align: left;
         text-shadow: 0 1px 0 white; }
-  /* line 1791, style.scss */
+  /* line 1832, style.scss */
   body.res div.side {
     -moz-border-radius-bottomleft: 5px;
     -webkit-border-bottom-left-radius: 5px;
@@ -1535,7 +1566,7 @@ body.res {
     padding: 10px 16px;
     position: relative;
     z-index: 100; }
-    /* line 1803, style.scss */
+    /* line 1844, style.scss */
     body.res div.side div.spacer {
       margin: 0;
       padding: 6px 0;
@@ -1546,7 +1577,7 @@ body.res {
       .goldvertisement {
       	display: none;
       } */ }
-      /* line 1809, style.scss */
+      /* line 1850, style.scss */
       body.res div.side div.spacer form#search input[name="q"] {
         background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f9fbfd), color-stop(100%, #ffffff));
         background-image: -webkit-linear-gradient(#f9fbfd, #ffffff);
@@ -1569,29 +1600,29 @@ body.res {
         padding: 6px 12px;
         text-transform: capitalize;
         width: 274px; }
-      /* line 1832, style.scss */
+      /* line 1873, style.scss */
       body.res div.side div.spacer div.sidecontentbox div.title {
         padding-bottom: 6px; }
-        /* line 1835, style.scss */
+        /* line 1876, style.scss */
         body.res div.side div.spacer div.sidecontentbox div.title h1 {
           color: #616c78;
           font-family: "Droid Sans", "Helvetica Neue", Helvetica, Arial, Tahoma, sans-serif;
           text-transform: lowercase; }
-      /* line 1843, style.scss */
+      /* line 1884, style.scss */
       body.res div.side div.spacer div.sidecontentbox ul.content {
         border: 0;
         padding: 0; }
-        /* line 1855, style.scss */
+        /* line 1896, style.scss */
         body.res div.side div.spacer div.sidecontentbox ul.content li div.gadget div.click-gadget div div.reddit-link {
           position: relative; }
-          /* line 1858, style.scss */
+          /* line 1899, style.scss */
           body.res div.side div.spacer div.sidecontentbox ul.content li div.gadget div.click-gadget div div.reddit-link div.midcol {
             height: 24px;
             left: 0;
             position: absolute;
             top: 4px;
             width: 12px; }
-            /* line 1867, style.scss */
+            /* line 1908, style.scss */
             body.res div.side div.spacer div.sidecontentbox ul.content li div.gadget div.click-gadget div div.reddit-link div.midcol div.arrow {
               background: transparent;
               height: 10px;
@@ -1602,7 +1633,7 @@ body.res {
               top: 0;
               width: 12px;
               z-index: 20; }
-              /* line 1878, style.scss */
+              /* line 1919, style.scss */
               body.res div.side div.spacer div.sidecontentbox ul.content li div.gadget div.click-gadget div div.reddit-link div.midcol div.arrow:after {
                 background: transparent;
                 background-color: #939fab;
@@ -1616,7 +1647,7 @@ body.res {
                 top: 6px;
                 width: 6px;
                 z-index: 20; }
-              /* line 1893, style.scss */
+              /* line 1934, style.scss */
               body.res div.side div.spacer div.sidecontentbox ul.content li div.gadget div.click-gadget div div.reddit-link div.midcol div.arrow:before {
                 display: block;
                 height: 0;
@@ -1628,16 +1659,16 @@ body.res {
                 left: 0;
                 position: absolute;
                 top: 0; }
-              /* line 1901, style.scss */
+              /* line 1942, style.scss */
               body.res div.side div.spacer div.sidecontentbox ul.content li div.gadget div.click-gadget div div.reddit-link div.midcol div.arrow.down, body.res div.side div.spacer div.sidecontentbox ul.content li div.gadget div.click-gadget div div.reddit-link div.midcol div.arrow.downmod {
                 display: block;
                 bottom: 0;
                 top: auto; }
-                /* line 1906, style.scss */
+                /* line 1947, style.scss */
                 body.res div.side div.spacer div.sidecontentbox ul.content li div.gadget div.click-gadget div div.reddit-link div.midcol div.arrow.down:after, body.res div.side div.spacer div.sidecontentbox ul.content li div.gadget div.click-gadget div div.reddit-link div.midcol div.arrow.downmod:after {
                   top: auto;
                   bottom: 6px; }
-                /* line 1911, style.scss */
+                /* line 1952, style.scss */
                 body.res div.side div.spacer div.sidecontentbox ul.content li div.gadget div.click-gadget div div.reddit-link div.midcol div.arrow.down:before, body.res div.side div.spacer div.sidecontentbox ul.content li div.gadget div.click-gadget div div.reddit-link div.midcol div.arrow.downmod:before {
                   display: block;
                   height: 0;
@@ -1649,66 +1680,66 @@ body.res {
                   bottom: 0;
                   content: "";
                   top: auto; }
-              /* line 1921, style.scss */
+              /* line 1962, style.scss */
               body.res div.side div.spacer div.sidecontentbox ul.content li div.gadget div.click-gadget div div.reddit-link div.midcol div.arrow.upmod {
                 background: transparent; }
-                /* line 1924, style.scss */
+                /* line 1965, style.scss */
                 body.res div.side div.spacer div.sidecontentbox ul.content li div.gadget div.click-gadget div div.reddit-link div.midcol div.arrow.upmod:after {
                   background: #ff8b60; }
-                /* line 1928, style.scss */
+                /* line 1969, style.scss */
                 body.res div.side div.spacer div.sidecontentbox ul.content li div.gadget div.click-gadget div div.reddit-link div.midcol div.arrow.upmod:before {
                   border-bottom-color: #ff8b60; }
-              /* line 1934, style.scss */
+              /* line 1975, style.scss */
               body.res div.side div.spacer div.sidecontentbox ul.content li div.gadget div.click-gadget div div.reddit-link div.midcol div.arrow.downmod {
                 background: transparent; }
-                /* line 1937, style.scss */
+                /* line 1978, style.scss */
                 body.res div.side div.spacer div.sidecontentbox ul.content li div.gadget div.click-gadget div div.reddit-link div.midcol div.arrow.downmod:after {
                   background: #9494ff; }
-                /* line 1941, style.scss */
+                /* line 1982, style.scss */
                 body.res div.side div.spacer div.sidecontentbox ul.content li div.gadget div.click-gadget div div.reddit-link div.midcol div.arrow.downmod:before {
                   border-top-color: #9494ff; }
-          /* line 1953, style.scss */
+          /* line 1994, style.scss */
           body.res div.side div.spacer div.sidecontentbox ul.content li div.gadget div.click-gadget div div.reddit-link div.entry a.reddit-link-title {
             color: #297acc;
             font-family: "Droid Sans", "Helvetica Neue", Helvetica, Arial, Tahoma, sans-serif;
             font-size: 13px; }
-            /* line 1958, style.scss */
+            /* line 1999, style.scss */
             body.res div.side div.spacer div.sidecontentbox ul.content li div.gadget div.click-gadget div div.reddit-link div.entry a.reddit-link-title:hover {
               color: #2061a2; }
-          /* line 1964, style.scss */
+          /* line 2005, style.scss */
           body.res div.side div.spacer div.sidecontentbox ul.content li div.gadget div.click-gadget div div.reddit-link div.entry span.linkflair {
             color: #939fab;
             font-size: 11px;
             margin-left: 4px; }
-          /* line 1970, style.scss */
+          /* line 2011, style.scss */
           body.res div.side div.spacer div.sidecontentbox ul.content li div.gadget div.click-gadget div div.reddit-link div.entry small {
             color: #939fab;
             font-size: 10px; }
-            /* line 1976, style.scss */
+            /* line 2017, style.scss */
             body.res div.side div.spacer div.sidecontentbox ul.content li div.gadget div.click-gadget div div.reddit-link div.entry small span.score {
               color: #939fab; }
-              /* line 1979, style.scss */
+              /* line 2020, style.scss */
               body.res div.side div.spacer div.sidecontentbox ul.content li div.gadget div.click-gadget div div.reddit-link div.entry small span.score.dislikes {
                 color: #9494ff; }
-              /* line 1983, style.scss */
+              /* line 2024, style.scss */
               body.res div.side div.spacer div.sidecontentbox ul.content li div.gadget div.click-gadget div div.reddit-link div.entry small span.score.likes {
                 color: #ff8b60; }
-            /* line 1991, style.scss */
+            /* line 2032, style.scss */
             body.res div.side div.spacer div.sidecontentbox ul.content li div.gadget div.click-gadget div div.reddit-link div.entry small a.reddit-comment-link {
               color: #939fab; }
-              /* line 1994, style.scss */
+              /* line 2035, style.scss */
               body.res div.side div.spacer div.sidecontentbox ul.content li div.gadget div.click-gadget div div.reddit-link div.entry small a.reddit-comment-link:hover {
                 color: #297acc; }
-      /* line 2022, style.scss */
+      /* line 2063, style.scss */
       body.res div.side div.spacer div.sidebox.create div.spacer {
         display: none; }
-      /* line 2028, style.scss */
+      /* line 2069, style.scss */
       body.res div.side div.spacer div.sidebox div.morelink {
         background: transparent;
         border: 0;
         height: auto;
         line-height: 1; }
-        /* line 2034, style.scss */
+        /* line 2075, style.scss */
         body.res div.side div.spacer div.sidebox div.morelink a {
           background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f9fbfd), color-stop(50%, #eef4f9), color-stop(100%, #e6eff7));
           background-image: -webkit-linear-gradient(#f9fbfd, #eef4f9 50%, #e6eff7);
@@ -1735,10 +1766,10 @@ body.res {
           line-height: 30px;
           text-shadow: 0 1px 0 white;
           text-transform: capitalize; }
-        /* line 2058, style.scss */
+        /* line 2099, style.scss */
         body.res div.side div.spacer div.sidebox div.morelink div.nub {
           display: none; }
-  /* line 2080, style.scss */
+  /* line 2121, style.scss */
   body.res > table#srList {
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
@@ -1759,7 +1790,7 @@ body.res {
     top: 27px;
     width: 220px;
     z-index: 500; }
-    /* line 2097, style.scss */
+    /* line 2138, style.scss */
     body.res > table#srList:before {
       display: block;
       height: 0;
@@ -1771,11 +1802,11 @@ body.res {
       left: 10px;
       position: absolute;
       top: -6px; }
-    /* line 2105, style.scss */
+    /* line 2146, style.scss */
     body.res > table#srList thead, body.res > table#srList tbody {
       display: block;
       width: 220px; }
-      /* line 2109, style.scss */
+      /* line 2150, style.scss */
       body.res > table#srList thead tr, body.res > table#srList tbody tr {
         border: 1px solid transparent;
         border-left: 0;
@@ -1793,14 +1824,14 @@ body.res {
         text-shadow: 0 1px 0 white;
         text-transform: lowercase;
         width: 220px; }
-        /* line 2127, style.scss */
+        /* line 2168, style.scss */
         body.res > table#srList thead tr td, body.res > table#srList tbody tr td {
           color: #616c78;
           font-size: 11px;
           font-weight: 700;
           margin: 0;
           padding: 0; }
-          /* line 2134, style.scss */
+          /* line 2175, style.scss */
           body.res > table#srList thead tr td:first-child, body.res > table#srList tbody tr td:first-child {
             color: #313b45;
             height: auto;
@@ -1809,19 +1840,19 @@ body.res {
             position: absolute;
             top: 0;
             width: 220px; }
-            /* line 2143, style.scss */
+            /* line 2184, style.scss */
             body.res > table#srList thead tr td:first-child a, body.res > table#srList tbody tr td:first-child a {
               color: #313b45;
               display: block;
               padding: 0 10px;
               width: auto; }
-              /* line 2149, style.scss */
+              /* line 2190, style.scss */
               body.res > table#srList thead tr td:first-child a:hover, body.res > table#srList tbody tr td:first-child a:hover {
                 color: #2061a2; }
-          /* line 2156, style.scss */
+          /* line 2197, style.scss */
           body.res > table#srList thead tr td.RESvisited, body.res > table#srList tbody tr td.RESvisited {
             display: none; }
-          /* line 2160, style.scss */
+          /* line 2201, style.scss */
           body.res > table#srList thead tr td.RESshortcut, body.res > table#srList tbody tr td.RESshortcut {
             font-size: 0;
             height: 30px;
@@ -1831,7 +1862,7 @@ body.res {
             text-align: center;
             top: 0;
             width: 30px; }
-            /* line 2170, style.scss */
+            /* line 2211, style.scss */
             body.res > table#srList thead tr td.RESshortcut:before, body.res > table#srList tbody tr td.RESshortcut:before {
               color: #313b45;
               content: "+";
@@ -1841,31 +1872,31 @@ body.res {
               font-weight: 700;
               height: auto;
               line-height: 30px; }
-            /* line 2183, style.scss */
+            /* line 2224, style.scss */
             body.res > table#srList thead tr td.RESshortcut:hover:before, body.res > table#srList tbody tr td.RESshortcut:hover:before {
               color: #2061a2; }
-        /* line 2193, style.scss */
+        /* line 2234, style.scss */
         body.res > table#srList thead tr:hover, body.res > table#srList tbody tr:hover {
           background: #e1eaf2;
           border-bottom: 1px solid #c3cbd1;
           border-top: 1px solid #c3cbd1;
           color: #2061a2;
           text-decoration: none; }
-        /* line 2201, style.scss */
+        /* line 2242, style.scss */
         body.res > table#srList thead tr:first-child, body.res > table#srList tbody tr:first-child {
           border-top: 0; }
-    /* line 2209, style.scss */
+    /* line 2250, style.scss */
     body.res > table#srList thead {
       display: none; }
-  /* line 2223, style.scss */
+  /* line 2264, style.scss */
   body.res.subscriber div#header div#header-bottom-left a#header-img {
     font-size: 0;
     text-indent: -9999em; }
-  /* line 2242, style.scss */
+  /* line 2283, style.scss */
   body.res.comments-page div#header div#header-bottom-left a#header-img {
     font-size: 0;
     text-indent: -9999em; }
-  /* line 2255, style.scss */
+  /* line 2296, style.scss */
   body.res.comments-page div.content div.commentarea div.panestack-title {
     background: #f9fbfd;
     border: 0;
@@ -1875,13 +1906,13 @@ body.res {
     position: relative;
     vertical-align: middle;
     z-index: 25; }
-    /* line 2265, style.scss */
+    /* line 2306, style.scss */
     body.res.comments-page div.content div.commentarea div.panestack-title span.title {
       color: #313b45;
       font-family: "Droid Sans", "Helvetica Neue", Helvetica, Arial, Tahoma, sans-serif;
       font-size: 16px;
       text-transform: capitalize; }
-    /* line 2272, style.scss */
+    /* line 2313, style.scss */
     body.res.comments-page div.content div.commentarea div.panestack-title span.RESSubscriptionButton {
       background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff681a), color-stop(50%, #ff5e0a), color-stop(100%, #ff5700));
       background-image: -webkit-linear-gradient(#ff681a, #ff5e0a 50%, #ff5700);
@@ -1912,7 +1943,7 @@ body.res {
       text-transform: capitalize;
       vertical-align: middle;
       width: auto; }
-      /* line 2299, style.scss */
+      /* line 2340, style.scss */
       body.res.comments-page div.content div.commentarea div.panestack-title span.RESSubscriptionButton:hover {
         background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff5e0a), color-stop(50%, #ff5a05), color-stop(100%, #f55400));
         background-image: -webkit-linear-gradient(#ff5e0a, #ff5a05 50%, #f55400);
@@ -1921,7 +1952,7 @@ body.res {
         background-image: linear-gradient(#ff5e0a, #ff5a05 50%, #f55400);
         background-color: #f55400;
         color: #ffeee5; }
-      /* line 2311, style.scss */
+      /* line 2352, style.scss */
       body.res.comments-page div.content div.commentarea div.panestack-title span.RESSubscriptionButton:active {
         background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f55400), color-stop(50%, #ff5a05), color-stop(100%, #ff5e0a));
         background-image: -webkit-linear-gradient(#f55400, #ff5a05 50%, #ff5e0a);
@@ -1933,7 +1964,7 @@ body.res {
         box-shadow: rgba(0, 0, 0, 0.05) 0 1px 1px inset, rgba(255, 255, 255, 0.7) 0 1px 0;
         background-color: #f55400;
         color: #ffeee5; }
-  /* line 2328, style.scss */
+  /* line 2369, style.scss */
   body.res.comments-page div.content div.commentarea div.menuarea {
     background: #f9fbfd;
     border: 0;
@@ -1942,27 +1973,27 @@ body.res {
     padding: 0;
     position: relative;
     z-index: 50; }
-    /* line 2337, style.scss */
+    /* line 2378, style.scss */
     body.res.comments-page div.content div.commentarea div.menuarea div.spacer {
       position: absolute;
       right: 349px;
       top: -24px; }
-      /* line 2342, style.scss */
+      /* line 2383, style.scss */
       body.res.comments-page div.content div.commentarea div.menuarea div.spacer span {
         color: #616c78;
         font-family: "Droid Sans", "Helvetica Neue", Helvetica, Arial, Tahoma, sans-serif;
         font-size: 12px; }
-        /* line 2347, style.scss */
+        /* line 2388, style.scss */
         body.res.comments-page div.content div.commentarea div.menuarea div.spacer span.dropdown-title {
           text-transform: capitalize; }
-      /* line 2355, style.scss */
+      /* line 2396, style.scss */
       body.res.comments-page div.content div.commentarea div.menuarea div.spacer div.dropdown span.selected {
         background: transparent;
         font-size: 12px;
         padding: 0 12px 0 0;
         text-decoration: none;
         text-transform: capitalize; }
-        /* line 2362, style.scss */
+        /* line 2403, style.scss */
         body.res.comments-page div.content div.commentarea div.menuarea div.spacer div.dropdown span.selected:after {
           display: block;
           height: 0;
@@ -1974,7 +2005,7 @@ body.res {
           position: absolute;
           right: 0;
           top: 5px; }
-      /* line 2374, style.scss */
+      /* line 2415, style.scss */
       body.res.comments-page div.content div.commentarea div.menuarea div.spacer div.drop-choices {
         -webkit-border-radius: 4px;
         -moz-border-radius: 4px;
@@ -1991,7 +2022,7 @@ body.res {
         right: 0;
         top: 20px !important;
         width: 110px; }
-        /* line 2385, style.scss */
+        /* line 2426, style.scss */
         body.res.comments-page div.content div.commentarea div.menuarea div.spacer div.drop-choices:before {
           display: block;
           height: 0;
@@ -2002,27 +2033,27 @@ body.res {
           position: absolute;
           right: 10px;
           top: 0; }
-    /* line 2396, style.scss */
+    /* line 2437, style.scss */
     body.res.comments-page div.content div.commentarea div.menuarea div#REScommentNavToggle {
       display: none; }
-  /* line 2402, style.scss */
+  /* line 2443, style.scss */
   body.res.comments-page div.content div.commentarea > form.usertext {
     background: #f9fbfd;
     margin: 0;
     padding: 0 16px 10px; }
-    /* line 2407, style.scss */
+    /* line 2448, style.scss */
     body.res.comments-page div.content div.commentarea > form.usertext div.usertext-edit {
       margin: 0;
       padding: 0;
       width: auto; }
-      /* line 2412, style.scss */
+      /* line 2453, style.scss */
       body.res.comments-page div.content div.commentarea > form.usertext div.usertext-edit div.commentingAs {
         display: none; }
-      /* line 2419, style.scss */
+      /* line 2460, style.scss */
       body.res.comments-page div.content div.commentarea > form.usertext div.usertext-edit div {
         margin-right: 26px;
         position: relative; }
-        /* line 2423, style.scss */
+        /* line 2464, style.scss */
         body.res.comments-page div.content div.commentarea > form.usertext div.usertext-edit div textarea[name="text"] {
           background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #ffffff));
           background-image: -webkit-linear-gradient(#ffffff, #ffffff);
@@ -2051,31 +2082,31 @@ body.res {
           padding: 8px 12px;
           text-shadow: 0 1px 0 white;
           width: 100% !important; }
-          /* line 2447, style.scss */
+          /* line 2488, style.scss */
           body.res.comments-page div.content div.commentarea > form.usertext div.usertext-edit div textarea[name="text"]:hover {
             border-color: #aab0b6; }
-          /* line 2451, style.scss */
+          /* line 2492, style.scss */
           body.res.comments-page div.content div.commentarea > form.usertext div.usertext-edit div textarea[name="text"]:active, body.res.comments-page div.content div.commentarea > form.usertext div.usertext-edit div textarea[name="text"]:focus {
             outline: none; }
-        /* line 2457, style.scss */
+        /* line 2498, style.scss */
         body.res.comments-page div.content div.commentarea > form.usertext div.usertext-edit div.bottom-area {
           height: 26px;
           margin: 6px 0 0; }
-          /* line 2463, style.scss */
+          /* line 2504, style.scss */
           body.res.comments-page div.content div.commentarea > form.usertext div.usertext-edit div.bottom-area span.help-toggle a {
             color: #297acc;
             font-family: "Droid Sans", "Helvetica Neue", Helvetica, Arial, Tahoma, sans-serif;
             font-size: 10px;
             outline: 0;
             text-transform: capitalize; }
-            /* line 2470, style.scss */
+            /* line 2511, style.scss */
             body.res.comments-page div.content div.commentarea > form.usertext div.usertext-edit div.bottom-area span.help-toggle a a:hover {
               color: #2061a2; }
-          /* line 2478, style.scss */
+          /* line 2519, style.scss */
           body.res.comments-page div.content div.commentarea > form.usertext div.usertext-edit div.bottom-area div.usertext-buttons {
             float: left;
             margin: 0; }
-            /* line 2482, style.scss */
+            /* line 2523, style.scss */
             body.res.comments-page div.content div.commentarea > form.usertext div.usertext-edit div.bottom-area div.usertext-buttons button.save {
               background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f9fbfd), color-stop(50%, #eef4f9), color-stop(100%, #e6eff7));
               background-image: -webkit-linear-gradient(#f9fbfd, #eef4f9 50%, #e6eff7);
@@ -2107,7 +2138,7 @@ body.res {
               text-transform: capitalize;
               vertical-align: middle;
               width: auto; }
-              /* line 2510, style.scss */
+              /* line 2551, style.scss */
               body.res.comments-page div.content div.commentarea > form.usertext div.usertext-edit div.bottom-area div.usertext-buttons button.save:hover {
                 background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #eef4f9), color-stop(50%, #eaf1f8), color-stop(100%, #deeaf5));
                 background-image: -webkit-linear-gradient(#eef4f9, #eaf1f8 50%, #deeaf5);
@@ -2116,7 +2147,7 @@ body.res {
                 background-image: linear-gradient(#eef4f9, #eaf1f8 50%, #deeaf5);
                 background-color: #deeaf5;
                 color: #5c6672; }
-              /* line 2522, style.scss */
+              /* line 2563, style.scss */
               body.res.comments-page div.content div.commentarea > form.usertext div.usertext-edit div.bottom-area div.usertext-buttons button.save:active {
                 background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #deeaf5), color-stop(50%, #eaf1f8), color-stop(100%, #eef4f9));
                 background-image: -webkit-linear-gradient(#deeaf5, #eaf1f8 50%, #eef4f9);
@@ -2128,35 +2159,35 @@ body.res {
                 box-shadow: rgba(0, 0, 0, 0.05) 0 1px 1px inset, rgba(255, 255, 255, 0.7) 0 1px 0;
                 background-color: #deeaf5;
                 color: #5c6672; }
-      /* line 2543, style.scss */
+      /* line 2584, style.scss */
       body.res.comments-page div.content div.commentarea > form.usertext div.usertext-edit table.markhelp {
         margin: 10px 0 0; }
-        /* line 2548, style.scss */
+        /* line 2589, style.scss */
         body.res.comments-page div.content div.commentarea > form.usertext div.usertext-edit table.markhelp tbody tr {
           border: 0;
           padding: 0; }
-          /* line 2552, style.scss */
+          /* line 2593, style.scss */
           body.res.comments-page div.content div.commentarea > form.usertext div.usertext-edit table.markhelp tbody tr td {
             border: 1px solid #c3cbd1;
             color: #616c78;
             font-family: "Helvetica Neue", Helvetica, Arial, Tahoma, sans-serif;
             font-size: 12px;
             padding: 6px 10px; }
-          /* line 2561, style.scss */
+          /* line 2602, style.scss */
           body.res.comments-page div.content div.commentarea > form.usertext div.usertext-edit table.markhelp tbody tr:first-child {
             background-color: #e6eff7 !important; }
-            /* line 2564, style.scss */
+            /* line 2605, style.scss */
             body.res.comments-page div.content div.commentarea > form.usertext div.usertext-edit table.markhelp tbody tr:first-child em {
               font-style: normal;
               font-weight: 700;
               text-transform: capitalize; }
-      /* line 2578, style.scss */
+      /* line 2619, style.scss */
       body.res.comments-page div.content div.commentarea > form.usertext div.usertext-edit div.RESDialogSmall {
         background: transparent;
         border: 0;
         margin: 10px 0 0;
         padding: 0; }
-        /* line 2584, style.scss */
+        /* line 2625, style.scss */
         body.res.comments-page div.content div.commentarea > form.usertext div.usertext-edit div.RESDialogSmall > h3 {
           background: transparent;
           border: 0;
@@ -2170,10 +2201,10 @@ body.res {
           position: relative;
           right: auto;
           top: auto; }
-          /* line 2598, style.scss */
+          /* line 2639, style.scss */
           body.res.comments-page div.content div.commentarea > form.usertext div.usertext-edit div.RESDialogSmall > h3:after {
             content: ":"; }
-        /* line 2604, style.scss */
+        /* line 2645, style.scss */
         body.res.comments-page div.content div.commentarea > form.usertext div.usertext-edit div.RESDialogSmall div.RESDialogContents {
           -webkit-border-radius: 4px;
           -moz-border-radius: 4px;
@@ -2184,7 +2215,7 @@ body.res {
           border: 1px solid #d3e3f1;
           margin: 4px 0 0;
           padding: 10px 16px; }
-  /* line 2618, style.scss */
+  /* line 2659, style.scss */
   body.res.comments-page div.content div.commentarea div.infobar {
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
@@ -2208,12 +2239,12 @@ body.res {
     padding: 10px 16px;
     text-align: left;
     text-shadow: 0 1px 0 white; }
-    /* line 2638, style.scss */
+    /* line 2679, style.scss */
     body.res.comments-page div.content div.commentarea div.infobar p a {
       color: #297acc; }
-      /* line 2641, style.scss */
+      /* line 2682, style.scss */
       body.res.comments-page div.content div.commentarea div.infobar p a:hover {
         color: #2061a2; }
-  /* line 2659, style.scss */
+  /* line 2700, style.scss */
   body.res div#authorInfoToolTip {
     display: none !important; }
