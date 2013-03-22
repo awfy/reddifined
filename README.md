@@ -2,6 +2,10 @@
 
 Redefining how Reddit looks. An extension for Google Chrome.
 
+### Reddit Enhancement Suite __(Required)__
+
+1. [Download](http://redditenhancementsuite.com/) the latest version for your browser.
+
 ### Install on Chrome
 
 1. Download the repo to your machine.
