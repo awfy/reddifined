@@ -4,11 +4,8 @@ Redefining how Reddit looks. An extension for Google Chrome.
 
 ### Requirements
 
-1. __Reddit Enhancement Suite__
-  [Download](http://redditenhancementsuite.com/) the latest version for your browser.
-
-2. __Disable Custom Styles__
-  Navigate to your preferences on Reddit and uncheck _"allow subreddits to show me custom styles"_.
+1. __Reddit Enhancement Suite__ - [Download](http://redditenhancementsuite.com/) the latest version for your browser.
+2. __Disable Custom Styles__ - Navigate to your preferences on Reddit and uncheck _"allow subreddits to show me custom styles"_.
 
 ### Installing as Chrome Extension
 
