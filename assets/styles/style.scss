@@ -11,6 +11,8 @@
 
   /* widths + heights */
   $minWidth: 992px;
+  
+  $searchWidth: 180px;
 	
 	/* font family */
 	$fontFamily: 			"Helvetica Neue", Helvetica, Arial, Tahoma, sans-serif;
@@ -30,7 +32,7 @@
 	/* reddit colors */
 	$redditOrange:			#ff5700;
 	$redditRed:				  #ff4500;
-	$redditPaleBlue:		#e6eff7 /* #cee3f8 */ ;
+	$redditPaleBlue:		#f0f2f6 /* #e6eff7 /* #cee3f8 */ ;
 	$redditDarkBlue:    #3d454d;
 	$redditUpVote:			#ff8b60;
 	$redditDownVote:		#9494ff;
@@ -90,6 +92,28 @@
 	    
 	}
 
+  /* placeholder */
+  
+  @mixin placeholder($placeholder: #999) {
+  
+    &::-webkit-input-placeholder {
+       color: $placeholder;
+    }
+    
+    &:-moz-placeholder { /* Firefox 18- */
+       color: $placeholder;  
+    }
+    
+    &::-moz-placeholder {  /* Firefox 19+ */
+       color: $placeholder;  
+    }
+    
+    &:-ms-input-placeholder {  
+       color: $placeholder;  
+    }
+    
+  }
+
 /* build */
 
 body.res {
@@ -125,7 +149,7 @@ body.res {
 		right: 0;
 		top: $subHeight + 1px;
 		width: auto;
-		z-index: 200;
+		z-index: 500;
 		
 		&:before, &:after {
   		display: none;
@@ -849,8 +873,8 @@ body.res {
 		  height: $userbarHeight;
 		  padding: 0 10px;
 		  position: absolute;
-		  right: 10px;
-		  top: 6px;
+		  right: $searchWidth + 20px;
+		  top: 7px;
 		  
 		  div#userbarToggle {
   		  display: none;  
@@ -903,6 +927,7 @@ body.res {
     		  span.userkarma {
     		    border: 0;
     		    cursor: default;
+    		    display: none;
     		    height: $userbarHeight;
     		    line-height: $userbarHeight;
       		  padding: 0 5px;
@@ -944,8 +969,6 @@ body.res {
 		border: 0;
 		margin: ($headerHeight + $subHeight + 2px) 0 0 !important;
 		padding: 0;
-		position: relative;
-		z-index: 75;
 		
 		div.spacer {
 		}
@@ -970,7 +993,7 @@ body.res {
 				}
 				
 				&.odd {
-					background: lighten($redditPaleBlue,5%);
+					background: rgba($redditPaleBlue,0.5);
 				}
 				
 				span.rank {
@@ -1287,7 +1310,7 @@ body.res {
 					border-left: 0 !important;
 					border-right: 0 !important;
 					margin: 0 0 -1px !important;
-					padding-bottom: 0 !important;
+					padding-bottom: 6px !important;
 					position: relative;
 					
 					p.parent {
@@ -1350,10 +1373,10 @@ body.res {
 						$midcolWidth: 12px !important;
 						
 						height: 24px;
-						left: 10px;
+						left: 14px;
 						margin: 0;
 						position: absolute;
-						top: 10px;
+						top: 16px;
 						width: $midcolWidth;
 						
 						div.arrow {
@@ -1838,34 +1861,113 @@ body.res {
 		border-top: 0;
 		margin: 0;
 		padding: 10px 16px;
-		position: relative;
-		z-index: 100;
+		position: static;
 		
 		div.spacer {
 			margin: 0;
 			padding: 6px 0;
+			
+			/* search */
+			
+			&:first-child {
+			  margin: 0;
+  		  margin-left: ($minWidth - $searchWidth - 10px);
+			  padding: 0;
+  			position: fixed;
+  			right: 10px;
+  			top: $subHeight + 1px + 7px;
+  			z-index: 500;
 				
-			form#search {
-				
-				input[name="q"] {
-					@include background-image(
-						linear-gradient(
-							lighten($redditPaleBlue,5%),
-							#fff
-						)
-					);
-					@include border-radius(20px);
-					@include box-shadow(#fff 0 1px 1px, rgba(black,0.1) 0 1px 1px inset);
-					border: 1px solid shade($redditPaleBlue,25%);
-					color: $fontColorLight;
-					font-family: $fontFamilyCustom;
-					font-size: 13px;
-					outline: none;
-					padding: 6px 12px;
-					text-transform: capitalize;
-					width: 274px;
-				}
-				
+  			form#search {
+  				
+  				input[name="q"] {
+  					@include background-image(
+  						linear-gradient(
+  							lighten($redditPaleBlue,5%),
+  							#fff
+  						)
+  					);
+  					@include border-radius(20px);
+  					@include box-shadow(#fff 0 1px 1px, rgba(black,0.1) 0 1px 1px inset);
+  					@include box-sizing(border-box);
+  					@include placeholder($fontColorLight);
+						border: 1px solid rgba(#98a4b8,0.8);
+						border-bottom-color: rgba(#98a4b8,0.6);
+						border-top-color: #98a4b8;
+  					color: $fontColor;
+  					font-family: $fontFamilyCustom;
+  					font-size: 13px;
+  					outline: none;
+  					padding: 6px 12px 5px;
+  					text-transform: capitalize;
+  					width: $searchWidth;
+  				}
+  				
+  				div#searchexpando {
+        		@include background-image(
+        			linear-gradient(
+        			  rgba(255,255,255,0), 
+        			  #f0f2f6 95%, 
+        			  #e5e8ee
+        			)
+        		);
+						@include border-radius(4px);
+						@include box-shadow(white 0 1px 0 inset, rgba(139,154,179,0.2) 0 2px 2px, rgba(139,154,179,0.1) 0 0 4px);
+  				  @include box-sizing(border-box);
+						background-color: #fff;
+						border: 0;
+						border: 1px solid rgba(#98a4b8,0.8);
+						border-bottom-color: #98a4b8;
+						border-top-color: rgba(#98a4b8,0.6);
+						color: $fontColor;
+						cursor: pointer;
+						display: block;
+						font-family: $fontFamily;
+						font-size: 14px;
+						font-weight: $fontWeightBold;
+						margin: 0;
+						padding: 10px 16px;
+    				position: absolute;
+    				right: 0;
+    				top: 30px;
+						width: 260px;
+						
+						&:before {
+  					 	@include arrow(top, rgba(#98a4b8,0.6), 6px);
+  					 	content: "";
+  					 	position: absolute;
+  					 	right: ($searchWidth/2) - 6px;
+  					 	top: -6px;
+						}
+						
+						&:after {
+  					 	@include arrow(top, #fff, 5px);
+  					 	content: "";
+  					 	position: absolute;
+  					 	right: ($searchWidth/2) - 5px;
+  					 	top: -4px;
+						}
+						
+  				}
+  				
+  			}
+
+			}
+			
+			/* sponsorshipbox */
+			
+			&:nth-child(2) {
+  			display: none;
+			}
+			
+			/* titlebox */
+			
+			div.titlebox {
+  			
+  			div:first-child {
+    			z-index: 50 !important;
+  			}
+  			
 			}
 			
 			div.sidecontentbox {
@@ -1877,6 +1979,10 @@ body.res {
 						color: $fontColor;
 						font-family: $fontFamilyCustom;
 						text-transform: lowercase;	
+						
+						&[style=" "]:after {
+  						content: "Recently Viewed Links"
+						}
 					}
 					
 				}
@@ -2055,6 +2161,10 @@ body.res {
 				}
 				
 			}
+			
+			div.sponsorshipbox {
+  			margin: -px;
+			}
 		
 			div.sidebox {
 				
@@ -2070,30 +2180,66 @@ body.res {
 					background: transparent;
 					border: 0;
 					height: auto;
+					letter-spacing: normal;
 					line-height: 1;
 					
 					a {
-						@include background-image(
-							linear-gradient(
-								lighten($redditPaleBlue,5%),
-								lighten($redditPaleBlue,2%) 50%,
-								$redditPaleBlue
-							)
-						);
-						@include border-radius(5px);
-						@include box-shadow(white 0 1px 0 inset, rgba(black,0.1) 0 1px 1px);
-						background-color: $redditPaleBlue;
+        		@include background-image(
+        			linear-gradient(
+        			  rgba(255,255,255,0), 
+        			  #f0f2f6 95%, 
+        			  #e5e8ee
+        			)
+        		);
+						@include border-radius(4px);
+						@include box-shadow(white 0 1px 0 inset, rgba(139,154,179,0.2) 0 1px 1px);
+						background-color: #fff;
 						border: 0;
-						border: 1px solid shade($redditPaleBlue,23%);
+						border: 1px solid rgba(#98a4b8,0.8);
+						border-bottom-color: #98a4b8;
+						border-top-color: rgba(#98a4b8,0.6);
 						color: $fontColor;
+						cursor: pointer;
 						display: block;
-						font-family: $fontFamilyCustom;
+						font-family: $fontFamily;
 						font-size: 14px;
 						font-weight: $fontWeightBold;
 						height: auto;
 						line-height: 30px;
+						margin: 0;
+						padding: 0 11px;
 						text-shadow: 0 1px 0 #fff;
 						text-transform: capitalize;
+						vertical-align: middle;
+						width: auto;
+						
+						&:hover {
+							@include background-image(
+								linear-gradient(
+									top, 
+									rgba(255,255,255,0),
+									#e5e8ee
+								)
+							);
+							color: $fontColorDark;
+						}
+						
+						&:active {
+							@include background-image(
+								linear-gradient(
+									top, 
+									#e5e8ee,
+									#f0f2f6
+								)
+							);
+							@include box-shadow(rgba(black,0.1) 0 1px 1px inset, rgba(white,0.7) 0 1px 0);
+							background-color: darken($redditPaleBlue,2%);
+							border-color: 1px solid rgba(#98a4b8,0.8);
+							border-bottom-color: rgba(#98a4b8,0.6);
+							border-top-color: #98a4b8;
+							color: $fontColorDark;
+						}
+						
 					}
 					
 					div.nub {
@@ -2114,6 +2260,18 @@ body.res {
 			
 		}
 		
+	}
+	
+	/* footer */
+	
+	div.footer-parent {
+  	display: none;
+	}
+	
+	/* debug */
+	
+	p.debuginfo {
+  	display: none;
 	}
 	
 	/* sub-reddits list */
@@ -2291,7 +2449,7 @@ body.res {
 		
 		div.content {
 			
-			div.commentarea {
+			div.commentarea { 
 				
 				div.panestack-title {
 					background: lighten($redditPaleBlue,5%);
@@ -2497,6 +2655,7 @@ body.res {
 							
 							&.bottom-area {
 								height: 26px;
+								overflow: visible;
 								margin: 6px 0 0;
 									
 								span.help-toggle {
@@ -2521,56 +2680,60 @@ body.res {
 									margin: 0;
 					
 									button.save {
-										@include background-image(
-											linear-gradient(
-												lighten($redditPaleBlue,5%),
-												lighten($redditPaleBlue,2%) 50%,
-												$redditPaleBlue
-											)
-										);
+                		@include background-image(
+                			linear-gradient(
+                			  rgba(255,255,255,0), 
+                			  #f0f2f6 95%, 
+                			  #e5e8ee
+                			)
+                		);
 										@include border-radius(4px);
-										@include box-shadow(rgba(white,0.3) 0 1px 0 inset, rgba(black,0.1) 0 1px 1px);
-										background-color: $redditPaleBlue;
+										@include box-shadow(white 0 1px 0 inset, rgba(139,154,179,0.2) 0 1px 1px);
+										background-color: #fff;
 										border: 0;
-										border: 1px solid shade($redditPaleBlue,23%);
+										border: 1px solid rgba(#98a4b8,0.8);
+										border-bottom-color: #98a4b8;
+										border-top-color: rgba(#98a4b8,0.6);
 										color: $fontColor;
 										cursor: pointer;
 										display: inline-block;
-										font-family: $fontFamilyCustom;
+										font-family: $fontFamily;
 										font-size: 12px;
-										font-weight: $fontWeight;
-										height: 24px;
+										font-weight: $fontWeightBold;
+										height: 26px;
 										line-height: 24px;
 										margin: 0;
 										padding: 0 11px;
-										text-shadow: 0 1px 0 rgba(white,0.9);
+										text-shadow: 0 1px 0 #fff;
 										text-transform: capitalize;
 										vertical-align: middle;
 										width: auto;
 										
 										&:hover {
-											@include background-image(
-												linear-gradient(
-													lighten($redditPaleBlue,2%),
-													lighten($redditPaleBlue,1%) 50%,
-													darken($redditPaleBlue,2%)
-												)
-											);
-											background-color: darken($redditPaleBlue,2%);
-											color: shade($fontColor,5%);
+        							@include background-image(
+        								linear-gradient(
+        									top, 
+        									rgba(255,255,255,0),
+        									#e5e8ee
+        								)
+        							);
+        							color: $fontColorDark;
 										}
 										
 										&:active {
-											@include background-image(
-												linear-gradient(
-													darken($redditPaleBlue,2%),
-													lighten($redditPaleBlue,1%) 50%,
-													lighten($redditPaleBlue,2%)
-												)
-											);
-											@include box-shadow(rgba(black,0.05) 0 1px 1px inset, rgba(white,0.7) 0 1px 0);
+        							@include background-image(
+        								linear-gradient(
+        									top, 
+        									#e5e8ee,
+        									#f0f2f6
+        								)
+        							);
+											@include box-shadow(rgba(black,0.1) 0 1px 1px inset, rgba(white,0.7) 0 1px 0);
 											background-color: darken($redditPaleBlue,2%);
-											color: shade($fontColor,5%);
+											border-color: 1px solid rgba(#98a4b8,0.8);
+											border-bottom-color: rgba(#98a4b8,0.6);
+											border-top-color: #98a4b8;
+        							color: $fontColorDark;
 										}
 										
 									}
@@ -2688,6 +2851,24 @@ body.res {
 					}
 					
 				}
+				
+				
+			  
+			  div.nestedlisting {
+			    
+			    div.thing {
+			      
+			      &.comment {
+			        
+			        p.parent {
+  			        display: none;
+			        }
+			        
+			      } 
+			       
+			    } 
+			    
+			  }
 				
 			}
 			
