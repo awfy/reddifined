@@ -974,7 +974,7 @@ body.res {
 				width: 28px !important;
 
 				&:before {
-			    @include image-set('http://i.imgur.com/AicMACo.png','http://i.imgur.com/Fn1L9T4.png');
+			    @include image-set('http://i.imgur.com/BiMNt9k.png','http://i.imgur.com/gZsyOcb.png');
 			    content: "";
 					display: block;
 					height: 14px;
@@ -991,7 +991,7 @@ body.res {
 				  top: auto !important;
 
   				&:before {
-			      @include image-set('http://i.imgur.com/jdFnMvg.png','http://i.imgur.com/Sb7mcZj.png');
+			      @include image-set('http://i.imgur.com/TFqUiBJ.png','http://i.imgur.com/Nx2t7Cs.png');
   				}
 
 				}
@@ -1046,14 +1046,14 @@ body.res {
 				margin: 0 0 0 -1px;
 				position: relative;
 				text-indent: -9999em;
-				width: 27px;
+				width: 28px;
 
 				span#RESSettingsButton {
 			    @include image-set('http://i.imgur.com/0Yew0MD.png','http://i.imgur.com/2AhsvK1.png');
 			    background-position: 0 0;
 					display: block;
 					height: 14px;
-					left: 6px;
+					left: 7px;
 					margin: 0;
 					position: absolute;
 					top: 6px;
@@ -2059,6 +2059,7 @@ body.res {
 							-webkit-border-radius: 4px !important;
 							border-radius: 4px !important;
 
+							background-color: #fff !important;
 							margin: 0 0 16px 0 !important;
 
 							&.comment {
@@ -2589,16 +2590,70 @@ body.res {
   /* preferences dropdown */
 
   div#RESMainGearOverlay {
-    display: none !important;
+		@include background-image(
+			linear-gradient(
+				top,
+				#e5e8ee,
+				#f0f2f6
+			)
+		);
+		@include border-radius(0);
+		@include box-shadow(rgba(black,0.1) 0 1px 1px inset, rgba(white,0.7) 0 1px 0);
+		background-color: #fff;
+		border: 1px solid rgba(#98a4b8,0.8);
+		border-bottom-color: rgba(#98a4b8,0.6);
+		border-top-color: #98a4b8;
+		cursor: pointer;
+		display: block;
+		float: left;
+		font-size: 0;
+		height: 26px !important;
+		left: auto !important;
+		margin: 0 0 0 -1px;
+		position: fixed;
+		right: $searchWidth + 48px !important;
+		text-indent: -9999em;
+		top: $subHeight + 8px !important;
+		width: 28px;
+
+		div.gearIcon {
+	    @include image-set('http://i.imgur.com/0Yew0MD.png','http://i.imgur.com/2AhsvK1.png');
+	    background-position: 0 0;
+			display: block;
+			height: 14px;
+			left: 7px;
+			margin: 0;
+			position: absolute;
+			top: 6px;
+			width: 14px;
+		}
+
   }
 
 	div#RESPrefsDropdown {
-	  display: none !important;
+	  @include border-radius(4px 0 4px 4px);
+	  @include box-shadow(rgba(black,0.1) 0 2px 3px, rgba(black,0.1) 0 0 5px, rgba(black,0.3) 0 0 0 1px);
+	  background: #fff;
+	  border: 0 !important;
+	  margin: 0;
+	  padding: 0;
+	  position: fixed;
+		right: $searchWidth + 49px !important;
+		top: $subHeight + 36px !important;
 
 	  ul#RESDropdownOptions {
 
-      &:before {
-        content: counter;
+  	  li {
+  	    background: none;
+    	  border: 0;
+    	  margin: 0;
+    	  padding: 0;
+
+    	  a {
+      	  display: block;
+      	  padding: 0 10px;
+    	  }
+
       }
 
 	  }
