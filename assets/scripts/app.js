@@ -1,5 +1,7 @@
 jQuery(document).ready(function() {
-	
-	$(".default-header").text("Reddit");
-	
+
+	console.log ( 'Injected success!' );
+
+	$('#header').addClass('working');
+
 });

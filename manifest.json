@@ -20,9 +20,16 @@
                                 "default_title":	   "Reddifined for Reddit"
   },
 
+  "permissions": [
+                                "tabs", "http://*.reddit.com/*"
+  ],
+
   "content_scripts": [ {
                                 "matches":		        [ "http://*.reddit.com/*", "https://*.reddit.com/*" ],
-                                "css":				        [ "assets/styles/style.css" ]
+                                "run_at":             [ "document_start" ],
+                                "css":				        [ "assets/styles/style.css" ],
+                                "js":				          [ "assets/scripts/app.js" ]
+
   }]
 
 }
