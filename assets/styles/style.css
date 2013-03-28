@@ -2336,7 +2336,6 @@ body.res {
     border-bottom-color: rgba(152, 164, 184, 0.6);
     border-top-color: #98a4b8;
     cursor: pointer;
-    display: block;
     float: left;
     font-size: 0;
     height: 26px !important;
@@ -2347,7 +2346,7 @@ body.res {
     text-indent: -9999em;
     top: 34px !important;
     width: 28px; }
-    /* line 2757, style.scss */
+    /* line 2756, style.scss */
     body.res div#RESMainGearOverlay div.gearIcon {
       background-image: url(http://i.imgur.com/0Yew0MD.png);
       background-image: -webkit-image-set(url(http://i.imgur.com/0Yew0MD.png) 1x, url(http://i.imgur.com/2AhsvK1.png) 2x);
@@ -2359,7 +2358,7 @@ body.res {
       position: absolute;
       top: 6px;
       width: 14px; }
-  /* line 2771, style.scss */
+  /* line 2770, style.scss */
   body.res div#RESPrefsDropdown {
     -webkit-border-radius: 4px 0 4px 4px;
     -moz-border-radius: 4px 0 4px 4px;
@@ -2376,17 +2375,17 @@ body.res {
     position: fixed;
     right: 229px !important;
     top: 62px !important; }
-    /* line 2784, style.scss */
+    /* line 2783, style.scss */
     body.res div#RESPrefsDropdown ul#RESDropdownOptions li {
       background: none;
       border: 0;
       margin: 0;
       padding: 0; }
-      /* line 2790, style.scss */
+      /* line 2789, style.scss */
       body.res div#RESPrefsDropdown ul#RESDropdownOptions li a {
         display: block;
         padding: 0 10px; }
-  /* line 2803, style.scss */
+  /* line 2802, style.scss */
   body.res > table#srList {
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
@@ -2407,7 +2406,7 @@ body.res {
     top: 27px;
     width: 220px;
     z-index: 500; }
-    /* line 2820, style.scss */
+    /* line 2819, style.scss */
     body.res > table#srList:before {
       display: block;
       height: 0;
@@ -2419,11 +2418,11 @@ body.res {
       left: 10px;
       position: absolute;
       top: -6px; }
-    /* line 2828, style.scss */
+    /* line 2827, style.scss */
     body.res > table#srList thead, body.res > table#srList tbody {
       display: block;
       width: 220px; }
-      /* line 2832, style.scss */
+      /* line 2831, style.scss */
       body.res > table#srList thead tr, body.res > table#srList tbody tr {
         border: 1px solid transparent;
         border-left: 0;
@@ -2441,14 +2440,14 @@ body.res {
         text-shadow: 0 1px 0 #fff;
         text-transform: lowercase;
         width: 220px; }
-        /* line 2850, style.scss */
+        /* line 2849, style.scss */
         body.res > table#srList thead tr td, body.res > table#srList tbody tr td {
           color: #616c78;
           font-size: 11px;
           font-weight: 700;
           margin: 0;
           padding: 0; }
-          /* line 2857, style.scss */
+          /* line 2856, style.scss */
           body.res > table#srList thead tr td:first-child, body.res > table#srList tbody tr td:first-child {
             color: #313b45;
             height: auto;
@@ -2457,19 +2456,19 @@ body.res {
             position: absolute;
             top: 0;
             width: 220px; }
-            /* line 2866, style.scss */
+            /* line 2865, style.scss */
             body.res > table#srList thead tr td:first-child a, body.res > table#srList tbody tr td:first-child a {
               color: #313b45;
               display: block;
               padding: 0 10px;
               width: auto; }
-              /* line 2872, style.scss */
+              /* line 2871, style.scss */
               body.res > table#srList thead tr td:first-child a:hover, body.res > table#srList tbody tr td:first-child a:hover {
                 color: #2061a2; }
-          /* line 2879, style.scss */
+          /* line 2878, style.scss */
           body.res > table#srList thead tr td.RESvisited, body.res > table#srList tbody tr td.RESvisited {
             display: none; }
-          /* line 2883, style.scss */
+          /* line 2882, style.scss */
           body.res > table#srList thead tr td.RESshortcut, body.res > table#srList tbody tr td.RESshortcut {
             font-size: 0;
             height: 30px;
@@ -2479,7 +2478,7 @@ body.res {
             text-align: center;
             top: 0;
             width: 30px; }
-            /* line 2893, style.scss */
+            /* line 2892, style.scss */
             body.res > table#srList thead tr td.RESshortcut:before, body.res > table#srList tbody tr td.RESshortcut:before {
               color: #313b45;
               content: "+";
@@ -2489,31 +2488,31 @@ body.res {
               font-weight: 700;
               height: auto;
               line-height: 30px; }
-            /* line 2906, style.scss */
+            /* line 2905, style.scss */
             body.res > table#srList thead tr td.RESshortcut:hover:before, body.res > table#srList tbody tr td.RESshortcut:hover:before {
               color: #2061a2; }
-        /* line 2916, style.scss */
+        /* line 2915, style.scss */
         body.res > table#srList thead tr:hover, body.res > table#srList tbody tr:hover {
           background: #ebedf1;
           border-bottom: 1px solid #cccdd1;
           border-top: 1px solid #cccdd1;
           color: #2061a2;
           text-decoration: none; }
-        /* line 2924, style.scss */
+        /* line 2923, style.scss */
         body.res > table#srList thead tr:first-child, body.res > table#srList tbody tr:first-child {
           border-top: 0; }
-    /* line 2932, style.scss */
+    /* line 2931, style.scss */
     body.res > table#srList thead {
       display: none; }
-  /* line 2946, style.scss */
+  /* line 2945, style.scss */
   body.res.subscriber div#header div#header-bottom-left a#header-img {
     font-size: 0;
     text-indent: -9999em; }
-  /* line 2965, style.scss */
+  /* line 2964, style.scss */
   body.res.comments-page div#header div#header-bottom-left a#header-img {
     font-size: 0;
     text-indent: -9999em; }
-  /* line 2978, style.scss */
+  /* line 2977, style.scss */
   body.res.comments-page div.content div.commentarea div.panestack-title {
     background: white;
     border: 0;
@@ -2523,13 +2522,13 @@ body.res {
     position: relative;
     vertical-align: middle;
     z-index: 25; }
-    /* line 2988, style.scss */
+    /* line 2987, style.scss */
     body.res.comments-page div.content div.commentarea div.panestack-title span.title {
       color: #313b45;
       font-family: "Droid Sans", "Helvetica Neue", Helvetica, Arial, Tahoma, sans-serif;
       font-size: 16px;
       text-transform: capitalize; }
-    /* line 2995, style.scss */
+    /* line 2994, style.scss */
     body.res.comments-page div.content div.commentarea div.panestack-title span.RESSubscriptionButton {
       background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff681a), color-stop(50%, #ff5e0a), color-stop(100%, #ff5700));
       background-image: -webkit-linear-gradient(#ff681a, #ff5e0a 50%, #ff5700);
@@ -2560,7 +2559,7 @@ body.res {
       text-transform: capitalize;
       vertical-align: middle;
       width: auto; }
-      /* line 3022, style.scss */
+      /* line 3021, style.scss */
       body.res.comments-page div.content div.commentarea div.panestack-title span.RESSubscriptionButton:hover {
         background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff5e0a), color-stop(50%, #ff5a05), color-stop(100%, #f55400));
         background-image: -webkit-linear-gradient(#ff5e0a, #ff5a05 50%, #f55400);
@@ -2569,7 +2568,7 @@ body.res {
         background-image: linear-gradient(#ff5e0a, #ff5a05 50%, #f55400);
         background-color: #f55400;
         color: #ffeee5; }
-      /* line 3034, style.scss */
+      /* line 3033, style.scss */
       body.res.comments-page div.content div.commentarea div.panestack-title span.RESSubscriptionButton:active {
         background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f55400), color-stop(50%, #ff5a05), color-stop(100%, #ff5e0a));
         background-image: -webkit-linear-gradient(#f55400, #ff5a05 50%, #ff5e0a);
@@ -2581,7 +2580,7 @@ body.res {
         box-shadow: rgba(0, 0, 0, 0.05) 0 1px 1px inset, rgba(255, 255, 255, 0.7) 0 1px 0;
         background-color: #f55400;
         color: #ffeee5; }
-  /* line 3051, style.scss */
+  /* line 3050, style.scss */
   body.res.comments-page div.content div.commentarea div.menuarea {
     background: white;
     border: 0;
@@ -2590,27 +2589,27 @@ body.res {
     padding: 0;
     position: relative;
     z-index: 50; }
-    /* line 3060, style.scss */
+    /* line 3059, style.scss */
     body.res.comments-page div.content div.commentarea div.menuarea div.spacer {
       position: absolute;
       right: 349px;
       top: -24px; }
-      /* line 3065, style.scss */
+      /* line 3064, style.scss */
       body.res.comments-page div.content div.commentarea div.menuarea div.spacer span {
         color: #616c78;
         font-family: "Droid Sans", "Helvetica Neue", Helvetica, Arial, Tahoma, sans-serif;
         font-size: 12px; }
-        /* line 3070, style.scss */
+        /* line 3069, style.scss */
         body.res.comments-page div.content div.commentarea div.menuarea div.spacer span.dropdown-title {
           text-transform: capitalize; }
-      /* line 3078, style.scss */
+      /* line 3077, style.scss */
       body.res.comments-page div.content div.commentarea div.menuarea div.spacer div.dropdown span.selected {
         background: transparent;
         font-size: 12px;
         padding: 0 12px 0 0;
         text-decoration: none;
         text-transform: capitalize; }
-        /* line 3085, style.scss */
+        /* line 3084, style.scss */
         body.res.comments-page div.content div.commentarea div.menuarea div.spacer div.dropdown span.selected:after {
           display: block;
           height: 0;
@@ -2622,7 +2621,7 @@ body.res {
           position: absolute;
           right: 0;
           top: 5px; }
-      /* line 3097, style.scss */
+      /* line 3096, style.scss */
       body.res.comments-page div.content div.commentarea div.menuarea div.spacer div.drop-choices {
         -webkit-border-radius: 4px;
         -moz-border-radius: 4px;
@@ -2639,7 +2638,7 @@ body.res {
         right: 0;
         top: 20px !important;
         width: 110px; }
-        /* line 3108, style.scss */
+        /* line 3107, style.scss */
         body.res.comments-page div.content div.commentarea div.menuarea div.spacer div.drop-choices:before {
           display: block;
           height: 0;
@@ -2650,27 +2649,27 @@ body.res {
           position: absolute;
           right: 10px;
           top: 0; }
-    /* line 3119, style.scss */
+    /* line 3118, style.scss */
     body.res.comments-page div.content div.commentarea div.menuarea div#REScommentNavToggle {
       display: none; }
-  /* line 3125, style.scss */
+  /* line 3124, style.scss */
   body.res.comments-page div.content div.commentarea > form.usertext {
     background: white;
     margin: 0;
     padding: 0 16px 10px; }
-    /* line 3130, style.scss */
+    /* line 3129, style.scss */
     body.res.comments-page div.content div.commentarea > form.usertext div.usertext-edit {
       margin: 0;
       padding: 0;
       width: auto; }
-      /* line 3135, style.scss */
+      /* line 3134, style.scss */
       body.res.comments-page div.content div.commentarea > form.usertext div.usertext-edit div.commentingAs {
         display: none; }
-      /* line 3142, style.scss */
+      /* line 3141, style.scss */
       body.res.comments-page div.content div.commentarea > form.usertext div.usertext-edit div {
         margin-right: 26px;
         position: relative; }
-        /* line 3146, style.scss */
+        /* line 3145, style.scss */
         body.res.comments-page div.content div.commentarea > form.usertext div.usertext-edit div textarea[name="text"] {
           background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #ffffff));
           background-image: -webkit-linear-gradient(#ffffff, #ffffff);
@@ -2699,32 +2698,32 @@ body.res {
           padding: 8px 12px;
           text-shadow: 0 1px 0 #fff;
           width: 100% !important; }
-          /* line 3170, style.scss */
+          /* line 3169, style.scss */
           body.res.comments-page div.content div.commentarea > form.usertext div.usertext-edit div textarea[name="text"]:hover {
             border-color: #b1b3b6; }
-          /* line 3174, style.scss */
+          /* line 3173, style.scss */
           body.res.comments-page div.content div.commentarea > form.usertext div.usertext-edit div textarea[name="text"]:active, body.res.comments-page div.content div.commentarea > form.usertext div.usertext-edit div textarea[name="text"]:focus {
             outline: none; }
-        /* line 3180, style.scss */
+        /* line 3179, style.scss */
         body.res.comments-page div.content div.commentarea > form.usertext div.usertext-edit div.bottom-area {
           height: 26px;
           overflow: visible;
           margin: 6px 0 0; }
-          /* line 3187, style.scss */
+          /* line 3186, style.scss */
           body.res.comments-page div.content div.commentarea > form.usertext div.usertext-edit div.bottom-area span.help-toggle a {
             color: #297acc;
             font-family: "Droid Sans", "Helvetica Neue", Helvetica, Arial, Tahoma, sans-serif;
             font-size: 10px;
             outline: 0;
             text-transform: capitalize; }
-            /* line 3194, style.scss */
+            /* line 3193, style.scss */
             body.res.comments-page div.content div.commentarea > form.usertext div.usertext-edit div.bottom-area span.help-toggle a a:hover {
               color: #2061a2; }
-          /* line 3202, style.scss */
+          /* line 3201, style.scss */
           body.res.comments-page div.content div.commentarea > form.usertext div.usertext-edit div.bottom-area div.usertext-buttons {
             float: left;
             margin: 0; }
-            /* line 3206, style.scss */
+            /* line 3205, style.scss */
             body.res.comments-page div.content div.commentarea > form.usertext div.usertext-edit div.bottom-area div.usertext-buttons button.save {
               background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(95%, #f0f2f6), color-stop(100%, #e5e8ee));
               background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), #f0f2f6 95%, #e5e8ee);
@@ -2758,7 +2757,7 @@ body.res {
               text-transform: capitalize;
               vertical-align: middle;
               width: auto; }
-              /* line 3236, style.scss */
+              /* line 3235, style.scss */
               body.res.comments-page div.content div.commentarea > form.usertext div.usertext-edit div.bottom-area div.usertext-buttons button.save:hover {
                 background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(100%, #e5e8ee));
                 background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0), #e5e8ee);
@@ -2766,7 +2765,7 @@ body.res {
                 background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0), #e5e8ee);
                 background-image: linear-gradient(top, rgba(255, 255, 255, 0), #e5e8ee);
                 color: #313b45; }
-              /* line 3247, style.scss */
+              /* line 3246, style.scss */
               body.res.comments-page div.content div.commentarea > form.usertext div.usertext-edit div.bottom-area div.usertext-buttons button.save:active {
                 background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e5e8ee), color-stop(100%, #f0f2f6));
                 background-image: -webkit-linear-gradient(top, #e5e8ee, #f0f2f6);
@@ -2781,35 +2780,35 @@ body.res {
                 border-bottom-color: rgba(152, 164, 184, 0.6);
                 border-top-color: #98a4b8;
                 color: #313b45; }
-      /* line 3271, style.scss */
+      /* line 3270, style.scss */
       body.res.comments-page div.content div.commentarea > form.usertext div.usertext-edit table.markhelp {
         margin: 10px 0 0; }
-        /* line 3276, style.scss */
+        /* line 3275, style.scss */
         body.res.comments-page div.content div.commentarea > form.usertext div.usertext-edit table.markhelp tbody tr {
           border: 0;
           padding: 0; }
-          /* line 3280, style.scss */
+          /* line 3279, style.scss */
           body.res.comments-page div.content div.commentarea > form.usertext div.usertext-edit table.markhelp tbody tr td {
             border: 1px solid #cccdd1;
             color: #616c78;
             font-family: "Helvetica Neue", Helvetica, Arial, Tahoma, sans-serif;
             font-size: 12px;
             padding: 6px 10px; }
-          /* line 3289, style.scss */
+          /* line 3288, style.scss */
           body.res.comments-page div.content div.commentarea > form.usertext div.usertext-edit table.markhelp tbody tr:first-child {
             background-color: #f0f2f6 !important; }
-            /* line 3292, style.scss */
+            /* line 3291, style.scss */
             body.res.comments-page div.content div.commentarea > form.usertext div.usertext-edit table.markhelp tbody tr:first-child em {
               font-style: normal;
               font-weight: 700;
               text-transform: capitalize; }
-      /* line 3306, style.scss */
+      /* line 3305, style.scss */
       body.res.comments-page div.content div.commentarea > form.usertext div.usertext-edit div.RESDialogSmall {
         background: transparent;
         border: 0;
         margin: 10px 0 0;
         padding: 0; }
-        /* line 3312, style.scss */
+        /* line 3311, style.scss */
         body.res.comments-page div.content div.commentarea > form.usertext div.usertext-edit div.RESDialogSmall > h3 {
           background: transparent;
           border: 0;
@@ -2823,10 +2822,10 @@ body.res {
           position: relative;
           right: auto;
           top: auto; }
-          /* line 3326, style.scss */
+          /* line 3325, style.scss */
           body.res.comments-page div.content div.commentarea > form.usertext div.usertext-edit div.RESDialogSmall > h3:after {
             content: ":"; }
-        /* line 3332, style.scss */
+        /* line 3331, style.scss */
         body.res.comments-page div.content div.commentarea > form.usertext div.usertext-edit div.RESDialogSmall div.RESDialogContents {
           -webkit-border-radius: 4px;
           -moz-border-radius: 4px;
@@ -2837,7 +2836,7 @@ body.res {
           border: 1px solid #e0e4ec;
           margin: 4px 0 0;
           padding: 10px 16px; }
-  /* line 3346, style.scss */
+  /* line 3345, style.scss */
   body.res.comments-page div.content div.commentarea div.infobar {
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
@@ -2861,24 +2860,24 @@ body.res {
     padding: 10px 16px;
     text-align: left;
     text-shadow: 0 1px 0 #fff; }
-    /* line 3366, style.scss */
+    /* line 3365, style.scss */
     body.res.comments-page div.content div.commentarea div.infobar p a {
       color: #297acc; }
-      /* line 3369, style.scss */
+      /* line 3368, style.scss */
       body.res.comments-page div.content div.commentarea div.infobar p a:hover {
         color: #2061a2; }
-  /* line 3387, style.scss */
+  /* line 3386, style.scss */
   body.res.comments-page div.content div.commentarea div.nestedlisting div.thing.comment p.parent {
     display: none; }
-  /* line 3411, style.scss */
+  /* line 3410, style.scss */
   body.res.profile-page div.sidebar div.side-profile div.titlebox {
     font-size: 0;
     text-indent: -9999em; }
-    /* line 3415, style.scss */
+    /* line 3414, style.scss */
     body.res.profile-page div.sidebar div.side-profile div.titlebox h1 {
       color: #313b45;
       font-family: "Droid Sans", "Helvetica Neue", Helvetica, Arial, Tahoma, sans-serif; }
-    /* line 3422, style.scss */
+    /* line 3421, style.scss */
     body.res.profile-page div.sidebar div.side-profile div.titlebox div.karma-count span.karma {
       -webkit-border-radius: 4px 0 0 4px;
       -moz-border-radius: 4px 0 0 4px;
@@ -2893,7 +2892,7 @@ body.res {
       height: 18px;
       line-height: 18px;
       padding: 0 8px; }
-      /* line 3433, style.scss */
+      /* line 3432, style.scss */
       body.res.profile-page div.sidebar div.side-profile div.titlebox div.karma-count span.karma.comment-karma {
         -webkit-border-radius: 0 4px 4px 0;
         -moz-border-radius: 0 4px 4px 0;
@@ -2901,24 +2900,24 @@ body.res {
         -o-border-radius: 0 4px 4px 0;
         border-radius: 0 4px 4px 0;
         background: #9494ff; }
-    /* line 3442, style.scss */
+    /* line 3441, style.scss */
     body.res.profile-page div.sidebar div.side-profile div.titlebox table#per-sr-karma, body.res.profile-page div.sidebar div.side-profile div.titlebox div.karma-breakdown, body.res.profile-page div.sidebar div.side-profile div.titlebox div.giftgold, body.res.profile-page div.sidebar div.side-profile div.titlebox div.bottom {
       display: none; }
-  /* line 3450, style.scss */
+  /* line 3449, style.scss */
   body.res.profile-page div.sidebar div.trophy-area, body.res.profile-page div.sidebar div.recently-viewed {
     display: none; }
-  /* line 3464, style.scss */
+  /* line 3463, style.scss */
   body.res.no-search #header #header-bottom-right {
     right: 10px; }
-  /* line 3470, style.scss */
+  /* line 3469, style.scss */
   body.res.no-search div#RESMainGearOverlay {
     right: 38px !important; }
-  /* line 3474, style.scss */
+  /* line 3473, style.scss */
   body.res.no-search div#RESPrefsDropdown {
     right: 39px !important; }
-  /* line 3486, style.scss */
+  /* line 3485, style.scss */
   body.res.submit-page div.sidebar div.creation-dropdown {
     display: none; }
-  /* line 3496, style.scss */
+  /* line 3495, style.scss */
   body.res div#authorInfoToolTip {
     display: none !important; }
