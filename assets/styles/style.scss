@@ -1,125 +1,4 @@
-/* imports */
-
-	/* compass */
-	@import "compass";
-	@import "compass/reset";
-
-	/* google webfont */
-	@import url('http://fonts.googleapis.com/css?family=Droid+Sans:400,700');
-
-/* variables */
-
-  /* widths + heights */
-  $minWidth: 992px;
-  $sideWidth: 332px;
-  $searchWidth: 180px;
-
-	/* font family */
-	$fontFamily: 			"Helvetica Neue", Helvetica, Arial, Tahoma, sans-serif;
-	$fontFamilyCustom: 		"Droid Sans", "Helvetica Neue", Helvetica, Arial, Tahoma, sans-serif;
-
-	/* font colors */
-	$fontColor: 			     #616c78;
-	$fontColorLight:		   #939fab;
-	$fontColorDark:			   #313b45;
-	$fontColorLink:			   #297acc;
-	$fontColorLinkHover: 	 #2061a2;
-
-	/* font weights (don't need to be used) */
-	$fontWeight: 400;
-	$fontWeightBold: 700;
-
-	/* reddit colors */
-	$redditOrange:			#ff5700;
-	$redditRed:				  #ff4500;
-	$redditPaleBlue:		#f0f2f6 /* #e6eff7 /* #cee3f8 */ ;
-	$redditDarkBlue:    #3d454d;
-	$redditUpVote:			#ff8b60;
-	$redditDownVote:		#9494ff;
-
-/* mixins */
-
-	/* border arrow */
-
-	@mixin arrow($direction, $color, $size){
-	    display: block;
-	    height: 0;
-	    width: 0;
-
-	    @if $direction == 'top' {
-	        border-left: $size solid transparent;
-	    	border-right: $size solid transparent;
-	    	border-bottom: $size solid $color;
-	    }
-
-	    @else if $direction == 'right' {
-	        border-top: $size solid transparent;
-	        border-bottom: $size solid transparent;
-	    	border-left: $size solid $color;
-	    }
-
-	    @else if $direction == 'bottom' {
-	        border-top: $size solid $color;
-	        border-right: $size solid transparent;
-	        border-left: $size solid transparent;
-	    }
-
-	    @else if $direction == 'left' {
-	        border-top: $size solid transparent;
-	    	border-right: $size solid $color;
-	    	border-bottom: $size solid transparent;
-	    }
-
-	    @else if $direction == 'top-left' {
-	        border-top: $size solid $color;
-	        border-right: $size solid transparent;
-	    }
-
-	    @else if $direction == 'top-right' {
-	        border-top: $size solid $color;
-	        border-left: $size solid transparent;
-	    }
-
-	    @else if $direction == 'bottom-left' {
-	        border-bottom: $size solid $color;
-	        border-right: $size solid transparent;
-	    }
-
-	    @else if $direction == 'bottom-right' {
-	        border-bottom: $size solid $color;
-	        border-left: $size solid transparent;
-	    }
-
-	}
-
-  /* placeholder */
-
-  @mixin placeholder($placeholder: #999) {
-
-    &::-webkit-input-placeholder {
-       color: $placeholder;
-    }
-
-    &:-moz-placeholder { /* Firefox 18- */
-       color: $placeholder;
-    }
-
-    &::-moz-placeholder {  /* Firefox 19+ */
-       color: $placeholder;
-    }
-
-    &:-ms-input-placeholder {
-       color: $placeholder;
-    }
-
-  }
-
-  /* retina images */
-
-  @mixin image-set($normal,$retina){
-  	background-image: image_url("#{$normal}");
-	  background-image: -webkit-image-set(image_url("#{$normal}") 1x, image_url("#{$retina}") 2x);
-  }
+@import "helpers.scss";
 
 /* build */
 
@@ -301,10 +180,13 @@ body.res {
   			max-height: $subHeight;
 
   			#RESShortcuts {
-  			 padding: 0 ($controlWidth*3 + 10px) 0 10px;
+  			  color: white;
+    		  font-size: 11px !important;
+  			  padding: 0 ($controlWidth*3 + 10px) 0 10px;
+      		text-shadow: 0 1px 0 rgba(black,0.7);
 
     			a, span {
-    		    color: #fff;
+    		    color: white;
     		    font-size: 11px !important;
       		  line-height: $subHeight;
       		  text-shadow: 0 1px 0 rgba(black,0.7);
@@ -2189,8 +2071,11 @@ body.res {
 		display: block !important;
 		float: none;
 		margin: ($subHeight + 1px + $headerHeight + 1px) 0 0 0;
+		min-height: 70px;
 		padding: 10px 16px;
 		width: 100%;
+
+		/* creation dropdown */
 
 		div.creation-dropdown {
   		@include background-image(
@@ -2211,19 +2096,54 @@ body.res {
 			cursor: pointer;
 			display: block;
 			font-family: $fontFamily;
-			font-size: 14px;
+			font-size: 12px;
 			font-weight: $fontWeightBold;
-			height: 30px;
-			line-height: 30px;
+			height: 26px;
+			line-height: 26px;
 			margin: 0;
 			padding: 0 32px 0 11px;
 			position: absolute;
 			right: 16px;
 			text-shadow: 0 1px 0 #fff;
 			text-transform: capitalize;
-			top: 10px;
+			top: 18px;
 			vertical-align: middle;
 			z-index: 100;
+
+			&:before {
+  			@include arrow(bottom, $fontColor, 4px);
+  			content: "";
+  			position: absolute;
+  			right: 12px;
+  			top: 11px;
+			}
+
+			&:hover {
+				@include background-image(
+					linear-gradient(
+						top,
+						rgba(255,255,255,0),
+						#e5e8ee
+					)
+				);
+				color: $fontColorDark;
+			}
+
+			&:active {
+				@include background-image(
+					linear-gradient(
+						top,
+						#e5e8ee,
+						#f0f2f6
+					)
+				);
+				@include box-shadow(rgba(black,0.1) 0 1px 1px inset, rgba(white,0.7) 0 1px 0);
+				background-color: darken($redditPaleBlue,2%);
+				border-color: 1px solid rgba(#98a4b8,0.8);
+				border-bottom-color: rgba(#98a4b8,0.6);
+				border-top-color: #98a4b8;
+				color: $fontColorDark;
+			}
 
 			div.creation-dropdown-area {
     		@include background-image(
@@ -2305,6 +2225,15 @@ body.res {
 						color: $fontColorDark;
 					}
 
+					&.new-disabled, &.new-disabled:hover, &.new-disabled:active {
+					  @include background-image(none);
+					  @include box-shadow(none);
+					  background: transparent;
+  				  border-color: transparent;
+  				  color: $redditRed;
+  				  cursor: default;
+					}
+
 				}
 
   			&.show-dropdown {
@@ -2313,42 +2242,9 @@ body.res {
 
 			}
 
-			&:before {
-  			@include arrow(bottom, $fontColor, 5px);
-  			content: "";
-  			position: absolute;
-  			right: 12px;
-  			top: 13px;
-			}
-
-			&:hover {
-				@include background-image(
-					linear-gradient(
-						top,
-						rgba(255,255,255,0),
-						#e5e8ee
-					)
-				);
-				color: $fontColorDark;
-			}
-
-			&:active {
-				@include background-image(
-					linear-gradient(
-						top,
-						#e5e8ee,
-						#f0f2f6
-					)
-				);
-				@include box-shadow(rgba(black,0.1) 0 1px 1px inset, rgba(white,0.7) 0 1px 0);
-				background-color: darken($redditPaleBlue,2%);
-				border-color: 1px solid rgba(#98a4b8,0.8);
-				border-bottom-color: rgba(#98a4b8,0.6);
-				border-top-color: #98a4b8;
-				color: $fontColorDark;
-			}
-
 		}
+
+		/* sidebar spacer */
 
 		div.spacer {
 			margin: 0;
@@ -2438,6 +2334,12 @@ body.res {
 
   			}
 
+			}
+
+			/* login form */
+
+			&.login-form-box {
+  			display: none;
 			}
 
 			/* sponsor/ad/gold box */
@@ -2663,14 +2565,6 @@ body.res {
 				}
 
 			}
-
-			/* iframe#ad-frame {
-				display: none;
-			}
-
-			.goldvertisement {
-				display: none;
-			} */
 
 			&.recently-viewed {
 
@@ -3399,6 +3293,153 @@ body.res {
 
 	}
 
+	/* subreddit */
+
+	&.subreddit-page {
+
+  	div.sidebar {
+
+  	  div.recently-viewed {
+    	  display: none;
+  	  }
+
+  	  div.subreddit-info-box {
+
+    	  div.titlebox {
+
+      	  p.users-online {
+        	  display: none !important;
+      	  }
+
+      	  div.subreddit-options {
+        	  display: none;
+      	  }
+
+      	  div.subreddit-details {
+
+        	  h1.redditname {
+          	  font-family: $fontFamilyCustom;
+          	  font-size: 18px;
+          	  margin: 0;
+          	  padding: 2px 0 3px;
+        	  }
+
+        	  span.subscribers {
+        			@include border-radius(4px);
+        			@include box-shadow(rgba(black,0.1) 0 1px 0 inset, rgba(white,0.2) 0 1px 1px);
+        			background: transparent;
+        			background-position: 0 0;
+        			background-repeat: no-repeat;
+        			border: 0;
+							border: 1px solid rgba(#98a4b8,0.6);
+							border-bottom-color: rgba(#98a4b8,0.4);
+							border-top-color: rgba(#98a4b8,0.8);
+        			color: $fontColor;
+        	    display: inline-block;
+        	    font-size: 11px;
+        	    font-weight: bold;
+        	    height: 12px;
+        	    line-height: 12px;
+        	    padding: 3px 6px;
+        			text-shadow: 0 1px 0 rgba(white,0.9);
+
+          	  span.word {
+            	  font-size: 0;
+            	  text-indent: -9999em;
+
+            	  &:before {
+              	  content: "subscribers";
+              	  font-size: 11px;
+              	  font-weight: bold;
+              	  text-indent: 0;
+            	  }
+
+          	  }
+
+        	  }
+
+          }
+
+      	  div.subButtons {
+        	  position: absolute;
+        	  right: 102px;
+        	  top: 18px;
+
+        	  span.REStoggle {
+          	  @include green-button;
+          	  @include border-radius(4px 0 0 4px);
+          	  display: block;
+          	  float: right;
+          	  margin-right: -1px;
+
+          	  &.remove {
+            	  @include red-button;
+            	  @include border-radius(4px 0 0 4px);
+            	  margin-right: -1px;
+          	  }
+
+        	  }
+
+        	  span.RESshortcut {
+          	  @include green-button;
+          	  @include border-radius(0 4px 4px 0);
+          	  display: block;
+          	  float: right;
+
+          	  &.remove {
+            	  @include red-button;
+            	  @include border-radius(0 4px 4px 0);
+          	  }
+
+        	  }
+
+        		span.fancy-toggle-button {
+          	  display: block;
+          	  float: right;
+        		  margin: 0 0 0 6px;
+
+          		a {
+          		  @include green-button;
+          			display: none;
+
+          			&.active {
+            			display: block;
+          			}
+
+          			&.remove {
+          			  @include red-button;
+          			}
+
+          		}
+
+            }
+
+      	  }
+
+      	  form.usertext {
+        	  display: none;
+      	  }
+
+      	  div.bottom {
+        	  display: none;
+      	  }
+
+      	  div.clear {
+        	  display: none;
+      	  }
+
+    	  }
+
+  	  }
+
+  	  div.moderators-box {
+    	  display: none;
+  	  }
+
+  	}
+
+  }
+
 	/* profile page */
 
 	&.profile-page {
@@ -3487,6 +3528,63 @@ body.res {
     	}
 
   	}
+
+	}
+
+	/* logged out */
+
+	&.logged-out {
+
+  	div#header {
+
+    	div#header-bottom-right {
+
+      	span {
+
+        	&.user {
+
+            a {
+              margin-top: -13px !important;
+              font-size: 0;
+              text-indent: -9999em;
+
+              &:before {
+                color: $fontColor;
+                content: "Login/Join";
+                font-size: 12px;
+                text-indent: 0;
+              }
+
+              &:hover {
+
+                &:before {
+                  color: $fontColorDark;
+                }
+
+              }
+
+            }
+
+        	}
+
+        	&#openRESPrefs {
+            @include border-radius(0 4px 4px 0);
+        	}
+
+        }
+
+    	}
+
+  	}
+
+	  div#RESMainGearOverlay {
+	    @include border-radius(0 4px 0 0);
+  	  right: 200px !important;
+	  }
+
+	  div#RESPrefsDropdown {
+  	  right: 201px !important;
+	  }
 
 	}
 
