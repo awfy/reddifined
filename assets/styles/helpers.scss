@@ -1,0 +1,252 @@
+/* imports */
+
+	/* compass */
+	@import "compass";
+	@import "compass/reset";
+
+	/* google webfont */
+	@import url('http://fonts.googleapis.com/css?family=Droid+Sans:400,700');
+
+/* variables */
+
+  /* widths + heights */
+  $minWidth: 992px;
+  $sideWidth: 332px;
+  $searchWidth: 180px;
+
+	/* font family */
+	$fontFamily: 			"Helvetica Neue", Helvetica, Arial, Tahoma, sans-serif;
+	$fontFamilyCustom: 		"Droid Sans", "Helvetica Neue", Helvetica, Arial, Tahoma, sans-serif;
+
+	/* font colors */
+	$fontColor: 			     #616c78;
+	$fontColorLight:		   #939fab;
+	$fontColorDark:			   #313b45;
+	$fontColorLink:			   #297acc;
+	$fontColorLinkHover: 	 #2061a2;
+
+	/* font weights (don't need to be used) */
+	$fontWeight: 400;
+	$fontWeightBold: 700;
+
+	/* reddit colors */
+	$redditOrange:			#ff5700;
+	$redditRed:				  #ff4500;
+	$redditPaleBlue:		#f0f2f6 /* #e6eff7 /* #cee3f8 */ ;
+	$redditDarkBlue:    #3d454d;
+	$redditUpVote:			#ff8b60;
+	$redditDownVote:		#9494ff;
+
+/* mixins */
+
+  /* colors */
+
+    /* buttons */
+
+    @mixin green-button($fontSize: 12px, $height: 26px) {
+
+  		@include background-image(
+  			linear-gradient(
+  			  #98db39,
+  			  #72b334 95%,
+  			  #5ea120
+  			)
+  		);
+			@include border-radius(4px);
+			@include box-shadow(rgba(white,0.2) 0 1px 0 inset, rgba(black,0.2) 0 1px 1px);
+			@include box-sizing(border);
+			background-color: #fff;
+			background-position: 0 0;
+			background-repeat: no-repeat;
+			border: 0;
+			border: 1px solid rgba(#3c6614,0.8);
+			border-bottom-color: #3c6614;
+			border-top-color: rgba(#3c6614,0.6);
+			color: rgba(white,0.97);
+			cursor: pointer;
+			font-family: $fontFamily;
+			font-size: $fontSize;
+			font-weight: $fontWeightBold;
+			height: $height;
+			line-height: $height;
+			margin: 0;
+			outline: 0;
+			padding: 0 11px;
+			text-shadow: 0 -1px 0 rgba(black,0.5);
+			text-transform: capitalize;
+			vertical-align: middle;
+			z-index: 100;
+
+			&:hover {
+    		@include background-image(
+    			linear-gradient(
+    			  #98db39,
+    			  #5ea120
+    			)
+    		);
+    		color: white;
+    		text-decoration: none;
+			}
+
+			&:active {
+    		@include background-image(
+    			linear-gradient(
+    			  #5ea120,
+    			  #72b334
+    			)
+    		);
+				@include box-shadow(rgba(black,0.1) 0 1px 1px inset, rgba(white,0.7) 0 1px 0);
+				background-color: #5ea120;
+				border-color: 1px solid rgba(#3c6614,0.8);
+				border-bottom-color: rgba(#3c6614,0.6);
+				border-top-color: #3c6614;
+				color: white;
+        text-shadow: 0 1px 0 rgba(black,0.5);
+			}
+
+		}
+
+    @mixin red-button($fontSize: 12px, $height: 26px) {
+
+  		@include background-image(
+  			linear-gradient(
+  			  #e95c3e,
+  			  #d83e1a 95%,
+  			  #bf2a13
+  			)
+  		);
+			@include border-radius(4px);
+			@include box-shadow(rgba(white,0.2) 0 1px 0 inset, rgba(black,0.2) 0 1px 1px);
+			@include box-sizing(border);
+			background-color: #fff;
+			background-position: 0 0;
+			background-repeat: no-repeat;
+			border: 0;
+		  border: 1px solid rgba(#801c0d,0.8);
+		  border-bottom-color: #801c0d;
+		  border-top-color: rgba(#801c0d,0.6);
+			color: rgba(white,0.97);
+			cursor: pointer;
+			font-family: $fontFamily;
+			font-size: $fontSize;
+			font-weight: $fontWeightBold;
+			height: $height;
+			line-height: $height;
+			margin: 0;
+			outline: 0;
+			padding: 0 11px;
+			text-shadow: 0 -1px 0 rgba(black,0.5);
+			text-transform: capitalize;
+			vertical-align: middle;
+			z-index: 100;
+
+			&:hover {
+    		@include background-image(
+    			linear-gradient(
+    			  #d83e1a,
+    			  #bf2a13
+    			)
+    		);
+    		color: white;
+    		text-decoration: none;
+			}
+
+			&:active {
+    		@include background-image(
+    			linear-gradient(
+    			  #bf2a13,
+    			  #d83e1a
+    			)
+    		);
+				@include box-shadow(rgba(black,0.1) 0 1px 1px inset, rgba(white,0.7) 0 1px 0);
+				background-color: #5ea120;
+    		border: 1px solid rgba(#801c0d,0.8);
+    		border-bottom-color: rgba(#801c0d,0.6);
+    		border-top-color: #801c0d;
+				color: white;
+        text-shadow: 0 1px 0 rgba(black,0.5);
+			}
+
+		}
+
+	/* border arrow */
+
+	@mixin arrow($direction, $color, $size){
+	    display: block;
+	    height: 0;
+	    width: 0;
+
+	    @if $direction == 'top' {
+	        border-left: $size solid transparent;
+	    	border-right: $size solid transparent;
+	    	border-bottom: $size solid $color;
+	    }
+
+	    @else if $direction == 'right' {
+	        border-top: $size solid transparent;
+	        border-bottom: $size solid transparent;
+	    	border-left: $size solid $color;
+	    }
+
+	    @else if $direction == 'bottom' {
+	        border-top: $size solid $color;
+	        border-right: $size solid transparent;
+	        border-left: $size solid transparent;
+	    }
+
+	    @else if $direction == 'left' {
+	        border-top: $size solid transparent;
+	    	border-right: $size solid $color;
+	    	border-bottom: $size solid transparent;
+	    }
+
+	    @else if $direction == 'top-left' {
+	        border-top: $size solid $color;
+	        border-right: $size solid transparent;
+	    }
+
+	    @else if $direction == 'top-right' {
+	        border-top: $size solid $color;
+	        border-left: $size solid transparent;
+	    }
+
+	    @else if $direction == 'bottom-left' {
+	        border-bottom: $size solid $color;
+	        border-right: $size solid transparent;
+	    }
+
+	    @else if $direction == 'bottom-right' {
+	        border-bottom: $size solid $color;
+	        border-left: $size solid transparent;
+	    }
+
+	}
+
+  /* placeholder */
+
+  @mixin placeholder($placeholder: #999) {
+
+    &::-webkit-input-placeholder {
+       color: $placeholder;
+    }
+
+    &:-moz-placeholder { /* Firefox 18- */
+       color: $placeholder;
+    }
+
+    &::-moz-placeholder {  /* Firefox 19+ */
+       color: $placeholder;
+    }
+
+    &:-ms-input-placeholder {
+       color: $placeholder;
+    }
+
+  }
+
+  /* retina images */
+
+  @mixin image-set($normal,$retina){
+  	background-image: image_url("#{$normal}");
+	  background-image: -webkit-image-set(image_url("#{$normal}") 1x, image_url("#{$retina}") 2x);
+  }
