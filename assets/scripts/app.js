@@ -3,6 +3,9 @@ $(document).ready(function() {
   // Body
   $('body:not(.loggedin)').addClass('logged-out');
 
+  // Content
+  $('.content').find('#siteTable_organic').parent('.spacer').addClass('attention-listing');
+
   // Sidebar
   $('.side').removeClass('side').addClass('sidebar');
 

@@ -1,5 +1,9 @@
 @import "helpers.scss";
 
+$subHeight: 26px;
+$headerHeight: 42px;
+$sidebarWidth: 180px;
+
 /* build */
 
 body.res {
@@ -7,11 +11,8 @@ body.res {
 	color: $fontColor;
 	font-family: $fontFamily;
 	min-width: $minWidth;
+	padding: ($subHeight + 1px + $headerHeight + 1px) 0 0 0;
 	position: relative;
-
-	$subHeight: 26px;
-	$headerHeight: 42px;
-	$sidebarWidth: 180px;
 
 	/* header */
 
@@ -1172,16 +1173,11 @@ body.res {
 
 		div.spacer {
 
-		  &:nth-child(2) {
+  		/* promoted & organic lisiting */
+		  &.attention-listing {
   		  display: none;
 		  }
 
-		}
-
-		/* promoted & organic lisiting */
-
-		div#siteTable_promoted, div #siteTable_organic {
-			display: none;
 		}
 
 		/* link listing */
@@ -2070,9 +2066,10 @@ body.res {
 		border-bottom: 1px solid rgba(139,154,179,0.4);
 		display: block !important;
 		float: none;
-		margin: ($subHeight + 1px + $headerHeight + 1px) 0 0 0;
+		margin: 0 0 0 0;
 		min-height: 70px;
 		padding: 10px 16px;
+		position: relative;
 		width: 100%;
 
 		/* creation dropdown */
@@ -2869,7 +2866,7 @@ body.res {
 			div.commentarea {
 
 				div.panestack-title {
-					background: lighten($redditPaleBlue,5%);
+					background: rgba($redditPaleBlue,0.5);
 					border: 0;
 					line-height: 24px;
 					margin: 0;
@@ -2942,7 +2939,7 @@ body.res {
 				}
 
 				div.menuarea {
-					background: lighten($redditPaleBlue,5%);
+					background: rgba($redditPaleBlue,0.5);
 					border: 0;
 					margin: 0;
 					overflow: visible;
@@ -3016,7 +3013,7 @@ body.res {
 				}
 
 				> form.usertext {
-					background: lighten($redditPaleBlue,5%);
+					background: rgba($redditPaleBlue,0.5);
 					margin: 0;
 					padding: 0 16px 10px;
 
@@ -3055,7 +3052,7 @@ body.res {
 								font-weight: $fontWeight;
 								line-height: 1.4em;
 								margin: 0 !important;
-								min-height: 3em !important;
+								min-height: 2em !important;
 								padding: 8px 12px;
 								text-shadow: 0 1px 0 #fff;
 								width: 100% !important;

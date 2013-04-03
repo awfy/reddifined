@@ -16,3 +16,5 @@ This is a temporary requirement whilst I implement enough overwriting CSS to pre
 2. Open Google Chrome and go to your Extensions.
 3. Make sure "Developer mode" is checked in the top right of the page.
 4. Click "Load unpacked extension..." then open the main directory of the Reddifined folder.
+
+I will release it on the Chrome Extension store once I feel it has enough time spent on it, right now it's purely a side project. It will stay on GitHub even when it's on the store though, to allow people to contribute or develop on top of.
