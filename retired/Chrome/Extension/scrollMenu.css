@@ -1,0 +1,21 @@
+
+/* >>>> SROLL MENU */
+	
+html > body {
+	padding-top: 68px !important;
+	}
+
+html > body > div.content {
+	border-top-left-radius: 0 !important;
+	border-top-right-radius: 0 !important;
+	}
+	
+body .content .menuarea {
+	left: 160px !important;
+	margin: 0 !important;
+	position: fixed !important;
+	right: 0 !important;
+	top: 36px !important;
+	width: 100% !important;
+	z-index: 100 !important;
+	}

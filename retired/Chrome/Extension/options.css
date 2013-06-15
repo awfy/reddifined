@@ -1,0 +1,40 @@
+.wrapper {
+	width: 300px;
+	padding: 6px;
+	}
+	
+.form-stacked {
+	margin-bottom: 0;
+	padding-left: 0;
+	}
+	
+.form-stacked fieldset {
+	padding-top: 0;
+	}
+	
+.form-stacked .linkColors .input .input-prepend {
+	float: left;
+	margin-right: 4px;
+	}
+	
+.form-stacked .linkColors .input .input-prepend .medium {
+	height: 28px;
+	width: 55px;
+	}
+	
+.form-stacked .linkColors .input .help-block {
+	clear: both;
+	}
+	
+.form-stacked .customCSS .input textarea {
+	width: 300px;
+	}
+	
+.form-stacked .actions {
+	margin-bottom: 0;
+	margin-left: 0;
+	}
+	
+.form-stacked .actions button {
+	width: 260px;
+	}

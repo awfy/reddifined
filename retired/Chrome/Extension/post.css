@@ -1,0 +1,13 @@
+
+/* >>>> POST */
+
+body > .content .thing.self .entry .flat-list {
+	margin-left: -78px !important;
+	padding: 4px 0 0 !important;
+	}
+
+body > .content .thing.comment .entry .flat-list {
+	margin-left: 0 !important;
+	padding: 0 !important;
+	}
+	

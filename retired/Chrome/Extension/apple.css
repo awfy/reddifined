@@ -1,0 +1,17 @@
+
+/* >>>> CONTENT */
+
+html body > div.content {
+	border-radius: 5px 0 0 5px !important;
+    margin: 0 !important;
+	}
+
+/* >>>> SIDE */
+
+html body > div.side {
+	border-radius: 0 5px 5px 0 !important;
+	float: none !important;
+	margin: 0 !important;
+	padding: 0 16px 16px !important;
+	width: 300px !important;
+	}

@@ -1,0 +1,54 @@
+
+/* >>>> NO SIDE */
+
+html > body {
+	padding-left: 160px !important;
+	}
+	
+/* >>>> HEADER */
+
+html > body > #header #header-bottom-left {
+	left: 160px !important;
+	}
+
+html > body > #header #header-bottom-left a#header-img, html > body > #header #header-bottom-left a#header-img-a {
+	left: -154px !important;
+	}
+
+html > body > #header #sr-header-area {
+	border-right: 0 !important;
+	box-shadow: none !important;
+	width: 160px !important;
+	}
+
+html > body > #header #header-bottom-right {
+	right: 0 !important;
+	width: 438px !important;
+	}
+
+html > body #sr-header-area .sr-list .flat-list li .separator {
+	display: none !important;
+	}
+
+html > body #sr-header-area .sr-list .flat-list li.selected .separator {
+	display: none !important;
+	}
+
+/* >>> CONTENT */
+
+html > body > .content {
+	border-bottom-right-radius: 5px !important;
+	border-top-right-radius: 5px !important;
+	box-shadow: none !important;
+	margin: 0 !important;
+	}
+	
+html > body > .content .content.preftable {
+	bottom: auto !important;
+	left: auto !important;
+	overflow: visible !important;
+	position: static !important;
+	right: auto !important;
+	top: auto !important;
+	}
+	

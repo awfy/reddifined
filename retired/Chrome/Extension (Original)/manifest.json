@@ -1,0 +1,24 @@
+{
+	"name": "Restyleddit",
+	"version": "0.1",
+	"icons": { 
+		"16": "icon16.png",
+		"19": "icon19.png",
+		"48": "icon48.png", 
+		"128": "icon128.png" 
+	},
+	"description": "Restyle all the things!",
+	"homepage_url": "http://restyleddit.com",
+	"background_page": "background.html",
+	"options_page": "options.html",
+	"content_scripts": [ {
+		"css": [ "stylesheet.css" ],
+		"matches": [ "http://*.reddit.com/*", "https://*.reddit.com/*" ]
+	} ],
+	"page_action" : {
+		"default_icon" : "icon16.png", 
+		"default_title" : "Restyleddit Options",
+		"default_popup" : "options.html"
+	},
+	"permissions" : [ "tabs" ]
+}

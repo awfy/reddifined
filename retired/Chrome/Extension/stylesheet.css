@@ -1,0 +1,3195 @@
+
+/* >>>> RESTYLEDDIT */
+
+body, input, button, textarea, select, a, p, span, em, strong {
+    font-family: helvetica, verdana, arial, sans-serif !important;
+	}
+
+body {
+	background: #f5f9fc !important;
+    height: 100% !important;
+    margin: 0 auto !important;
+    min-height: 450px !important;
+    min-width: 992px !important;
+    padding: 36px 0 0 39px !important;
+    position: relative !important;
+	}
+
+body a {
+	background-color: transparent !important;
+    color: #ff8b60 !important;
+	}
+
+body a:hover {
+	background: transparent !important;
+    color: #006699 !important;
+	}
+
+body a:visited, body a.click {
+	background-color: transparent !important;
+    color: #8fa7b3 !important;
+	}
+
+body a:active {
+    background-color: #FF8B60 !important;
+    color: #ffffff !important;
+	}
+
+body a.click:active {
+	background-color: transparent !important;
+    background-color: #8fa7b3 !important;
+	}
+
+/* >>>> HEADER */
+
+#header {
+	background: transparent !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    color: #ffffff !important;
+    margin: 0 !important;
+    min-width: 992px !important;
+    padding: 0 !important;
+    position: relative !important;
+    width: auto !important;
+    z-index: 100 !important;
+	}
+	
+/* >>> ACCOUNT */
+
+#header-bottom-right {
+    background: #222222 url('http://i.imgur.com/Spagr.png') repeat 0 0 !important;
+	border: 0 !important;
+	border-radius: 0 !important;
+    bottom: auto !important;
+    height: 27px !important;
+    line-height: 27px !important;
+    left: auto !important;
+    margin: 0 !important;
+    overflow: hidden !important;
+    position: fixed !important;
+    padding: 9px 6px 0 0 !important;
+    right: 158px !important;
+    top: 0 !important;
+    width: 166px !important;
+    z-index: 250 !important;
+	}
+
+#header-bottom-right a {
+    color: #5d666e !important;
+    display: block !important;
+    float: right !important;
+    font-size: 0 !important;
+    font-weight: bold !important;
+    height: 18px !important;
+    line-height: 18px !important;
+    text-indent: -9999px !important;
+    text-transform: capitalize !important;
+	}
+
+#header-bottom-right .user {
+	display: block !important;
+    float: right !important;
+    font-size: 0 !important;
+    height: 18px !important;
+    line-height: 18px !important;
+    margin-left: 5px !important;
+    text-indent: -9999px !important;
+    position: relative !important;
+	}
+
+#header-bottom-right .user a {
+	background-color: transparent !important;
+    display: block !important;
+    height: 18px !important;
+    line-height: 18px !important;
+    overflow: hidden !important;
+    width: 100% !important;
+    position: absolute !important;
+    z-index: 10 !important;
+	}
+	
+#header-bottom-right .user b {
+    background: #ff6600 url('http://i.imgur.com/Xc8db.png') repeat-x 0 0 !important;
+    border: 1px solid #4e1f00 !important;
+    border-radius: 50px !important;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.1) !important;
+    color: #ffffff !important;
+    display: block !important;
+    font-size: 9px !important;
+    height: 16px !important;
+    line-height: 16px !important;
+    margin-top: -18px !important;
+    min-width: 8px !important;
+    padding: 0 5px !important;
+    position: relative !important;
+    right: 0 !important;
+    text-align: center !important;
+    text-indent: 0 !important;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.2) !important;
+    top: 0 !important;
+    z-index: 5 !important;
+	}
+	
+#header-bottom-right .user:hover b {
+	box-shadow: 0 0 5px 1px rgba(255,102,0,0.7) !important;
+	}
+
+#header-bottom-right #mail, #header-bottom-right #modmail {
+	float: right !important;
+	margin-left: 5px !important;
+	}
+
+#header-bottom-right .separator {
+	display: none !important;
+	}
+	
+#header-bottom-right #mail {
+	background: url('http://i.imgur.com/9LbBz.png') no-repeat 0 4px !important;
+	height: 18px !important;
+	top: 0 !important;
+	width: 14px !important;
+	}
+	
+#header-bottom-right #mail.nohavemail {
+	background-position: -20px 4px !important;
+	}
+	
+#header-bottom-right #modmail {
+	background: url('http://i.imgur.com/wv5oo.png') no-repeat 0 2px !important;
+	height: 18px !important;
+	top: 0 !important;
+	margin-bottom: 0 !important;
+	width: 13px !important;
+	}
+	
+#header-bottom-right #modmail.nohavemail {
+	background-position: -19px 2px !important;
+	}
+	
+#header-bottom-right .flat-list {
+	float: right !important;
+	height: 18px !important;
+	line-height: 18px !important;
+	}
+	
+#header-bottom-right .flat-list li {
+	float: right !important;
+	height: 18px !important;
+	line-height: 18px !important;
+	margin-left: 5px !important;
+	}
+	
+#header-bottom-right .flat-list li .pref-lang {
+	background: url('http://i.imgur.com/0acBC.png') no-repeat 0 2px !important;
+	width: 14px !important;
+	}
+	
+#header-bottom-right .logout {
+	float: right !important;
+	}
+	
+#header-bottom-right .logout a {
+	background: url('http://i.imgur.com/0RtMI.png') no-repeat 0 2px !important;
+	width: 14px !important;
+	}
+
+/* >>> REDDITS */
+
+#sr-header-area {
+    background: transparent url('http://i.imgur.com/Spagr.png') repeat 0 0 !important;
+    border: 0 !important;
+    border-left: 1px solid #000000 !important;
+    bottom: 0 !important;
+    height: auto !important;
+    left: -1px !important;
+    margin: 0 !important;
+    overflow: hidden !important;
+    overflow-y: auto !important;
+    padding: 0 !important;
+    position: fixed !important;
+    right: auto !important;
+    top: 0 !important;
+    width: 39px !important;
+    z-index: 25 !important;
+	}
+	
+#sr-header-area:hover {
+	border-right: 1px solid rgba(0,0,0,0.8) !important;
+	box-shadow: 1px 0 3px rgba(0,0,0,0.3) !important;
+    width: 160px !important;
+    z-index: 100 !important;
+    }
+    
+#sr-header-area #srLeftContainer {
+	display: block !important;
+	float: none !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	}
+	
+#sr-header-area .width-clip, #sr-header-area #srDropdown {
+	background: transparent !important;
+	border: 0 !important;
+	bottom: 0 !important;
+	display: block !important;
+	float: none !important;
+	left: 0 !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	position: absolute !important;
+	right: 0 !important;
+	width: 160px !important;
+	top: 0 !important;
+	}
+	
+#sr-header-area #srDropdown {
+	border-bottom: 1px solid #000000 !important;
+	height: 36px !important;
+	position: relative !important;
+	}
+
+#sr-header-area .dropdown.srdrop {
+    background: transparent url('http://i.imgur.com/Spagr.png') repeat 0 0 !important;
+    border: 0 !important;
+	border-bottom: 1px solid #000000 !important;
+	bottom: auto !important;
+	display: block !important;
+	float: none !important;
+	height: 37px !important;
+	left: 0 !important;
+	padding: 0 !important;
+	position: absolute !important;
+	right: auto !important;
+	top: 0 !important;
+	width: 160px !important;
+	}
+
+#sr-header-area .drop-choices.srdrop {
+	background: transparent url('http://i.imgur.com/Spagr.png') repeat 0 0 !important;
+	border: 0 !important;
+	border-bottom: 31px solid #000000 !important;
+	float: none !important;
+    margin: 0 !important;
+    height: 299px !important;
+    overflow: hidden !important;
+    overflow-y: auto !important;
+	position: absolute !important;
+    width: 160px !important;
+    top: 67px !important;
+    z-index: 500 !important;
+	}
+
+#sr-header-area .srdrop .title, #sr-header-area #srDropdown #srDropdownContainer {
+	background: url('http://i.imgur.com/4kcRc.png') no-repeat 100% 6px !important;
+    color: #ffffff !important;
+    float: right !important;
+    font-size: 11px !important;
+    font-weight: bold !important;
+    height: 16px !important;
+    line-height: 16px !important;
+    margin: 10px 8px 0 0 !important;
+    padding: 0 13px 0 0 !important;
+    text-transform: capitalize !important;
+    vertical-align: middle !important;
+	}
+
+#sr-header-area .srdrop .title a, #sr-header-area #srDropdown #srDropdownContainer a {
+	color: #ffffff !important;
+	text-shadow: 0 1px 0 rgba(0,0,0,0.9) !important;
+	text-transform: capitalize !important;
+	}
+	
+#sr-header-area .srdrop .title a:hover, #sr-header-area #srDropdown #srDropdownContainer a:hover {
+	text-decoration: underline !important;
+	}
+	
+#sr-header-area .srdrop .title a:active, #sr-header-area #srDropdown #srDropdownContainer a:active {
+	background: transparent !important;
+	}
+
+#sr-header-area .drop-choices.srdrop a.choice {
+    border-radius: 2px !important;
+    line-height: 22px !important;
+    padding: 0 5px !important;
+    text-transform: capitalize !important;
+	}
+
+#sr-header-area .drop-choices.srdrop a.choice {
+	color: #ffffff !important;
+	display: block !important;
+	background: transparent !important;
+	border-bottom: 1px solid #000000 !important;
+	border-top: 1px solid rgba(255,255,255,0.1) !important;
+	font-size: 12px !important;
+	font-weight: bold !important;
+	height: 28px !important;
+	line-height: 28px !important;
+	overflow: hidden !important;
+	padding: 0 8px !important;
+	text-shadow: 0 1px 0 #000000 !important;
+	text-transform: capitalize !important;
+	width: 148px !important;
+	}
+	
+#sr-header-area .drop-choices.srdrop a:nth-last-child(2) {
+	border-bottom: 0 !important;
+	}
+
+#sr-header-area .drop-choices.srdrop a.choice:hover {
+	background: rgba(255,255,255,0.05) !important;
+	text-decoration: none !important;
+	}
+
+#sr-header-area .drop-choices.srdrop a.choice.selected a, #sr-header-area .drop-choices.srdrop a.choice.selected a:hover {
+	background: #ff6600 url('http://i.imgur.com/KNW5Z.png') repeat-x 0 -1px !important;
+	text-shadow: 0 1px 0 rgba(0,0,0,0.3) !important;
+	}
+
+#sr-header-area .drop-choices.srdrop a.choice.bottom-option {
+	background: #ff6600 url('http://i.imgur.com/KNW5Z.png') repeat-x 0 -1px !important;
+	border-radius: 0 !important;
+	color: #ffffff !important;
+	font-size: 10px !important;
+	font-style: normal !important;
+	text-align: center !important;
+	position: fixed !important;
+	text-shadow: 0 1px 0 rgba(0,0,0,0.3) !important;
+	top: 37px !important;
+	width: 144px !important;
+	}
+
+#sr-header-area .sr-list, #sr-header-area #RESShortcutsViewport {
+	bottom: 0 !important;
+	display: block !important;
+	float: none !important;
+	left: 0 !important;
+	margin: 0 !important;
+	max-height: none !important;
+	overflow: hidden !important;
+	overflow-y: auto !important;
+	padding: 0 !important;
+	position: absolute !important;
+	top: 38px !important;
+	width: 160px !important;
+	}
+	
+#sr-header-area #RESShortcutsViewport {
+	bottom: 28px !important;
+	top: 157px !important;
+	}
+	
+#sr-header-area #RESShortcutsViewport #RESShortcuts {
+	display: block !important;
+	float: none !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	}
+
+#sr-header-area .sr-list .flat-list {
+	display: block !important;
+	}
+
+#sr-header-area .sr-list .flat-list li {
+	display: block !important;
+	position: relative !important;
+	}
+
+#sr-header-area .sr-list .flat-list li a, #sr-header-area #srLeftContainer #RESStaticShortcuts a, #sr-header-area #RESShortcutsViewport #RESShortcuts a {
+	color: #ffffff !important;
+	display: block !important;
+	border-bottom: 1px solid #000000 !important;
+	border-top: 1px solid rgba(255,255,255,0.1) !important;
+	font-size: 12px !important;
+	font-weight: bold !important;
+	height: 28px !important;
+	line-height: 28px !important;
+	overflow: hidden !important;
+	padding: 0 8px !important;
+	text-shadow: 0 1px 0 #000000 !important;
+	text-transform: capitalize !important;
+	width: 148px !important;
+	}
+	
+#sr-header-area #RESShortcutsViewport #RESShortcuts a {
+	text-transform: none !important;
+	}
+
+#sr-header-area .sr-list .flat-list li a:hover, #sr-header-area #srLeftContainer #RESStaticShortcuts a:hover, #sr-header-area #RESShortcutsViewport #RESShortcuts a:hover {
+	background: rgba(255,255,255,0.05) !important;
+	text-decoration: none !important;
+	}
+
+#sr-header-area .sr-list .flat-list li.selected a, #sr-header-area .sr-list .flat-list li.selected a:hover {
+	background: #ff6600 url('http://i.imgur.com/KNW5Z.png') repeat-x 0 -1px !important;
+	text-shadow: 0 1px 0 rgba(0,0,0,0.3) !important;
+	}
+	
+#sr-header-area #RESShortcutsViewport #RESShortcuts a.srOver {
+	border-left: 0 !important;
+	border-right: 0 !important;
+	border-top: 2px solid #ff6600 !important;
+	outline: none !important;
+	}
+
+#sr-header-area .sr-list .separator, #sr-header-area .sr-list .separator {
+	display: none !important;
+	}
+
+#sr-header-area .sr-list .flat-list li .separator {
+	box-shadow: inset -5px 0 5px #3a3a3a !important;
+	display: block !important;
+	font-size: 0 !important;
+	height: 30px !important;
+	left: 0 !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	position: absolute !important;
+	text-indent: -9999px !important;
+	top: 0 !important;
+	width: 39px !important;
+	}
+
+#sr-header-area .sr-list .flat-list li.selected .separator {
+	box-shadow: inset -5px 0 5px rgba(0,0,0,0.15) !important;
+	}
+
+#sr-header-area:hover .sr-list .flat-list li .separator {
+	display: none !important;
+	}
+	
+#sr-header-area #srLeftContainer #RESStaticShortcuts .separator, #sr-header-area #RESShortcutsViewport .separator {
+	display: none !important;
+	}
+
+#sr-header-area #sr-more-link {
+	display: none !important;
+	}
+	
+/* &&& RES */
+
+#sr-header-area #RESShortcutsEditContainer {
+	background: transparent url(http://i.imgur.com/Spagr.png) repeat 0 0 !important;
+	border: 0 !important;
+	border-top: 1px solid #000000 !important;
+	bottom: 0 !important;
+	height: 28px !important;
+	left: 0 !important;
+	position: absolute !important;
+	right: auto !important;
+	top: auto !important;
+	width: 160px !important;
+	}
+
+#sr-header-area #RESShortcutsEditContainer #RESShortcutsLeft, #sr-header-area #RESShortcutsEditContainer #RESShortcutsRight {
+	display: none !important;
+	}
+	
+/* && MY SUBREDDITS */ 
+
+body > table#srList {
+    background: #ffffff !important;
+    border: 1px solid #000000 !important;
+    border-radius: 5px !important;
+    bottom: auto !important;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.25), inset 0 0 0 2px rgba(0,0,0,0.05) !important;
+   	left: 16px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    position: absolute !important;
+    right: auto !important;
+    top: 24px !important;
+    width: 400px !important;
+    z-index: 500 !important;
+	}
+
+body > table#srList tr {
+	border-bottom: 1px solid #c9cccf !important;
+	}
+
+body > table#srList tr:hover {
+	background: transparent !important;
+	}
+
+body > table#srList tbody tr:last-child {
+	border: 0 !important;
+	border-radius: 0 0 5px 5px !important;
+	}
+
+body > table#srList tr td {
+	color: #737A80 !important;
+	font-size: 11px !important;
+	font-weight: bold !important;
+	height: 26px !important;
+	line-height: 26px !important;
+	padding: 0 5px !important;
+	text-align: left !important;
+	text-transform: capitalize !important;
+	vertical-align: middle !important;
+	}
+
+body > table#srList tr td:first-child {
+	width: 200px !important;
+	}
+
+body > table#srList tr td:nth-child(2) {
+	width: 100px !important;
+	}
+
+body > table#srList tr td:last-child {
+	text-align: right !important;
+	width: 100px !important;
+	}
+	
+body > table#srList thead tr td {
+	color: #475866 !important;
+	}
+	
+body > table#srList thead tr td .sortAsc, body > table#srList thead tr td .sortDesc {
+	margin-top: 6px !important;
+	}
+	
+/* && SHORTCUT ADD */ 
+
+#sr-header-area #RESShortcutsEditContainer #RESShortcutsAdd {
+	background: #ff6600 url(http://i.imgur.com/cK1vU.png) no-repeat 0 3px !important;
+	border: 1px solid #4e1f00 !important;
+	border-radius: 3px !important;
+	box-shadow: 0 1px 0 rgba(0,0,0,1), inset 0 1px 0 rgba(255,255,255,0.35) !important;
+	height: 20px !important;
+	left: 3px !important;
+	right: auto !important;
+	top: 3px !important;
+	width: 20px !important;
+	}
+
+#RESShortcutsAddFormContainer {
+    background: #ffffff !important;
+    border: 1px solid #000000 !important;
+    border-radius: 5px !important;
+    bottom: 20px !important;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.25), inset 0 0 0 2px rgba(0,0,0,0.05) !important;
+   	left: 3px !important;
+    margin: 0 !important;
+    padding: 12px !important;
+    position: fixed !important;
+    right: auto !important;
+    top: auto !important;
+    width: 233px !important;
+    z-index: 100 !important;
+	}
+	
+/* && SHORTCUT TRASH */
+
+#sr-header-area #RESShortcutsEditContainer #RESShortcutsTrash {
+	background-color: transparent !important;
+	background-position: -18px 160px !important;
+	right: 6px !important;
+	top: 6px !important;
+	width: 14px !important;
+	}
+		
+/* >>> MAIN */
+
+#header #header-bottom-left {
+    background: #222222 url('http://i.imgur.com/Spagr.png') repeat 0 0 !important;
+	border: 0 !important;
+	bottom: auto !important;
+	box-shadow: none !important;
+	font-size: 12px !important;
+    height: 36px !important;
+    left: 39px !important;
+    margin: 0 !important;
+    min-width: 459px !important;
+    overflow: visible !important;
+    padding: 0 !important;
+    position: fixed !important;
+    right: 444px !important;
+    top: 0 !important;
+	}
+	
+/* >> LOGO */
+
+#header #header-bottom-left a#header-img, #header #header-bottom-left a#header-img-a {
+    background: url('http://i.imgur.com/gZWtB.png') no-repeat 0 0 !important;
+    cursor: pointer !important;
+    display: block !important;
+    height: 23px !important;
+    left: 6px !important;
+    margin: 0 !important;
+    position: fixed !important;
+    top: 6px !important;
+    width: 27px !important;
+    z-index: 150 !important;
+	}
+
+#header #header-bottom-left a img, #header #header-bottom-left a #header-img {
+    display: none !important;
+	}
+	
+/* >> PAGENAME */
+
+html > body > div#header div#header-bottom-left span.pagename {
+	background: transparent !important;
+	border: 0 !important;
+	bottom: auto !important;
+    color: #ffffff !important;
+    display: block !important;
+    float: left !important;
+    font-size: 16px !important;
+    font-variant: normal !important;
+    font-weight: bold !important;
+    height: 38px !important;
+    line-height: 38px !important;
+    left: auto !important;
+    line-height: 38px !important;
+    margin: 0 !important;
+    padding: 0 4px 0 12px !important;
+    position: static !important;
+    right: auto !important;
+    text-indent: 0 !important;
+    text-transform: capitalize !important;
+    top: auto !important;
+    vertical-align: middle !important;
+    width: auto !important;
+	}
+
+html > body > div#header div#header-bottom-left span.pagename a, html > body > div#header div#header-bottom-left span.pagename.redditname a {
+	background: transparent !important;
+	border: 0 !important;
+	bottom: auto !important;
+	color: #ffffff !important;
+	content: inherit !important;
+    display: block !important;
+    float: left !important;
+    font-size: 16px !important;
+    font-weight: bold !important;
+    font-variant: normal !important;
+    height: 38px !important;
+    left: auto !important;
+    line-height: 38px !important;
+    margin: 0 !important;
+    opacity: 1 !important;
+    padding: 0 !important;
+    position: relative !important;
+    right: auto !important;
+    text-indent: 0 !important;
+    text-shadow: 0 1px 0 rgba(0,0,0,1) !important;
+    text-transform: capitalize !important;
+    top: auto !important;
+    vertical-align: middle !important;
+    width: auto !important;
+	}
+
+html > body > div#header div#header-bottom-left span.pagename:before, html > body > div#header div#header-bottom-left span.pagename.redditname:after, html > body > div#header div#header-bottom-left span.pagename a:before, html > body > div#header div#header-bottom-left span.pagename.redditname a:after {
+	background: transparent !important;
+	border: 0 !important;
+	box-shadow: none !important;
+	content: "" !important;
+	float: none !important;
+	height: auto !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	position: static !important;
+	width: auto !important;
+	}
+	
+/* >> NAVIGATION */
+
+#header #header-bottom-left .tabmenu {
+	background: transparent !important;
+	border: 0 !important;
+	bottom: auto !important;
+	float: left !important;
+    height: 36px !important;
+    left: auto !important;
+    margin: 0 !important;
+    min-width: 0 !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    padding-left: 8px !important;
+    position: static !important;
+    right: auto !important;
+    top: auto !important;
+    width: auto !important;
+	}
+
+#header #header-bottom-left .tabmenu li {
+	background: transparent !important;
+	border: 0 !important;
+    bottom: auto !important;
+    float: left !important;
+    height: 36px !important;
+    left: auto !important;
+    line-height: 36px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    position: static !important;
+    right: auto !important;
+    top: auto !important;
+    width: auto !important;
+	}
+
+#header #header-bottom-left .tabmenu li a {
+    background: transparent !important;
+    border: 1px solid transparent !important;
+    border-bottom: 0 !important;
+    border-radius: 0 !important;
+    border-top: 0 !important;
+    bottom: auto !important;
+    color: #ffffff !important;
+    display: block !important;
+    font-size: 12px !important;
+    font-weight: bold !important;
+    height: 36px !important;
+    left: auto !important;
+    letter-spacing: normal !important;
+    line-height: 36px !important;
+    margin: 0 !important;
+    opacity: 1 !important;
+    padding: 0 12px !important;
+    position: static !important;
+    right: auto !important;
+    text-shadow: 0 1px 0 #000000 !important;
+    text-transform: capitalize !important;
+    top: auto !important;
+	}
+
+#header #header-bottom-left .tabmenu li a:hover {
+    opacity: 1 !important;
+	text-decoration: underline !important;
+	}
+
+#header #header-bottom-left .tabmenu li.selected a, #header #header-bottom-left .tabmenu li.selected a:hover {
+    background: #ff6600 url('http://i.imgur.com/pS7GM.png') repeat-x 0 0 !important;
+    border-color: #000000 !important;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.35) !important;
+    opacity: 1 !important;
+    cursor: default !important;
+    text-decoration: none !important;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.2) !important;
+	}
+
+#header #header-bottom-left .tabmenu li a:before, #header #header-bottom-left .tabmenu li a:after {
+	content: "" !important;
+	}
+	
+/* >>>> BUTTONS */
+
+/* >>> FORMS */
+
+button {
+	background: #2b81ba url('http://i.imgur.com/nPRJp.png') repeat-x 0 0 !important;
+	border: 1px solid rgba(0,0,0,0.6) !important;
+	border-radius: 4px !important;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.15), inset 0 1px 0 rgba(255,255,255,0.4) !important;
+    color: #ffffff !important;
+    cursor: pointer !important;
+	display: block !important;
+	float: left !important;
+	font-size: 11px !important;
+	font-weight: bold !important;
+	height: 26px !important;
+	line-height: 25px !important;
+    margin: 0 !important;
+	outline: none !important;
+	padding: 0 11px !important;
+	text-shadow: 0 1px 0 rgba(0,0,0,0.3) !important;
+	text-transform: capitalize !important;
+	}
+
+button:hover {
+	background-image: none !important;
+	text-decoration: underline !important;
+	}
+
+/* >>> LINKS */
+
+.fancy-toggle-button {
+	height: 27px !important;
+	}
+
+.fancy-toggle-button .option {
+	background-color: transparent !important;
+	border: 1px solid rgba(0,0,0,0.6) !important;
+	border-radius: 4px !important;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.15), inset 0 1px 0 rgba(255,255,255,0.4) !important;
+    color: #ffffff !important;
+	display: block !important;
+	float: left !important;
+	font-size: 11px !important;
+	height: 25px !important;
+	line-height: 25px !important;
+	outline: none !important;
+	padding: 0 8px !important;
+	text-shadow: 0 1px 0 rgba(0,0,0,0.3) !important;
+	text-transform: capitalize !important;
+	}
+
+.fancy-toggle-button.toggle .option {
+	display: none !important;
+	}
+
+.fancy-toggle-button.toggle .option.active {
+	display: block !important;
+	}
+
+.fancy-toggle-button .option.add {
+	background-color: #7ab04c !important;
+	background-image: url('http://i.imgur.com/EHrbI.png') !important;
+	background-position: 0 0 !important;
+	}
+
+
+.fancy-toggle-button .option.remove {
+	background-color: #ba2b2b !important;
+	background-image: url('http://i.imgur.com/Btz7H.png') !important;
+	background-position: 0 0 !important;
+	}
+
+.fancy-toggle-button .option:hover {
+	background-image: none !important;
+	text-decoration: underline !important;
+	}
+	
+/* INFOBAR */
+
+.content .infobar {
+    background: #336699 !important;
+    border: 0 !important;
+    border-radius: 3px !important;
+    clear: left !important;
+    color: #ffffff !important;
+    font-size: 12px !important;
+    font-weight: bold !important;
+    line-height: 1.35em !important;
+    margin: 8px !important;
+    padding: 8px !important;
+	}
+
+.content .infobar:before, .content .infobar:after {
+	background: transparent !important;
+	border: 0 !important;
+	box-shadow: 0 !important;
+	content: "" !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	}
+
+.content .infobar a, .content .infobar a:hover, .content .infobar a:visited, .content .infobar a:active {
+	background: transparent !important;
+    color: #a1d0ff !important;
+	}
+
+.content .infobar a:hover {
+    text-decoration: underline !important;
+	}
+
+.content .infobar .md {
+	font-size: inherit !important;
+	max-width: none !important;
+	}
+
+.content .infobar .md p {
+	margin: 0 !important;
+	}
+
+/* >>>> CONTENT */
+
+body > .content {
+	background: #ffffff !important;
+	border: 0 !important;
+	border-radius: 5px !important;
+    box-shadow: none !important;
+    margin: 0 332px 0 0 !important;
+    min-width: 458px !important;
+    padding: 0 !important;
+    z-index: 25 !important;
+	}
+	
+body > .content:before, body > .content:after {
+	background: transparent !important;
+	border: 0 !important;
+	border-radius: 0 !important;
+	bottom: auto !important;
+	box-shadow: none !important;
+	content: "" !important;
+	float: none !important;
+	height: auto !important;
+	left:auto !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	position: relative !important;
+	right: auto !important;
+	top: auto !important;
+	width: auto !important;
+	}
+
+.content .spacer {
+	margin: 0 !important;
+	}
+	
+body > .content .sitetable:before, body > .content .sitetable:after {
+	background: transparent !important;
+	border: 0 !important;
+	border-radius: 0 !important;
+	bottom: auto !important;
+	box-shadow: none !important;
+	content: "" !important;
+	float: none !important;
+	height: auto !important;
+	left:auto !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	position: relative !important;
+	right: auto !important;
+	top: auto !important;
+	width: auto !important;
+	}
+
+.content h1 {
+	color: #475866 !important;
+	font-size: 18px !important;
+	margin: 0 !important;
+	padding: 8px 8px 12px !important;
+	text-transform: capitalize !important;
+	}
+	
+/* .content h1 {
+	display: none !important;
+	}
+	
+/* >>> MENUAREA */
+
+.content .menuarea {
+	background: #f5f9fc !important;
+    border-bottom: 0 !important;
+    border-radius: 5px 5px 0 0 !important;
+    margin: 0 !important;
+    min-height: 32px !important;
+    overflow: visible !important;
+    padding: 0 8px !important;
+	}
+
+.content .menuarea .spacer {
+	margin: 0 8px 0 0 !important;
+	}
+
+.content .menuarea .dropdown-title {
+    color: #8fa7b3 !important;
+    font-size: 12px !important;
+    font-weight: bold !important;
+    height: 32px !important;
+    line-height: 32px !important;
+    text-transform: capitalize !important;
+	}
+
+.content .menuarea .dropdown.lightdrop {
+	cursor: pointer !important;
+	height: 32px !important;
+	line-height: 32px !important;
+	}
+
+.content .menuarea .dropdown.lightdrop .selected {
+	background: url('http://i.imgur.com/na9V9.png') no-repeat 100% 5px !important;
+	color: #475866 !important;
+	font-size: 12px !important;
+	font-weight: bold !important;
+	padding: 0 12px 0 0 !important;
+	text-decoration: none !important;
+	text-transform: capitalize !important;
+	}
+
+.content .menuarea .drop-choices.lightdrop {
+    background: #ffffff !important;
+    border: 1px solid #000000 !important;
+    border-radius: 5px !important;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.25), inset 0 0 0 2px rgba(0,0,0,0.05) !important;
+    margin: 0 !important;
+    padding: 6px 4px !important;
+    position: absolute !important;
+    width: 140px !important;
+    z-index: 100 !important;
+	}
+
+.content .menuarea .drop-choices.lightdrop .choice {
+	border-radius: 3px !important;
+	font-size: 12px !important;
+	font-weight: bold !important;
+	height: 22px !important;
+	line-height: 22px !important;
+	padding: 0 6px !important;
+	text-transform: capitalize !important;
+	}
+
+.content .menuarea .drop-choices.lightdrop .choice:hover {
+	background-color: #336699 !important;
+	color: #ffffff !important;
+	}
+
+.content .menuarea .flat-list li {
+	float: left !important;
+	}
+
+.content .menuarea .flat-list li a {
+	display: block !important;
+	font-weight: bold !important;
+	height: 32px !important;
+	line-height: 32px !important;
+	padding: 0 9px !important;
+    text-transform: capitalize !important;
+	}
+
+.content .menuarea .flat-list li.selected a, .content .menuarea .flat-list li.selected a:hover {
+	background-color: #ffffff !important;
+	color: #ff6600 !important;
+	cursor: default !important;
+	text-decoration: none !important;
+	}
+
+.content .menuarea .flat-list li .separator {
+	display: none !important;
+	}
+	
+/* >>> TABMENU */
+
+.content ul.tabmenu, .content ul.tabmenu.formtab {
+	background: #f5f9fc !important;
+    border-bottom: 0 !important;
+    border-radius: 5px 5px 0 0 !important;
+    margin: 0 !important;
+    min-height: 32px !important;
+    overflow: visible !important;
+    padding: 0 8px !important;
+	vertical-align: middle !important;
+	}
+
+.content ul.tabmenu li {
+	float: left !important;
+	}
+
+.content ul.tabmenu li a {
+	background: transparent !important;
+	border: 0 !important;
+	display: block !important;
+	font-size: 12px !important;
+	font-weight: bold !important;
+	height: 32px !important;
+	line-height: 32px !important;
+	padding: 0 9px !important;
+    text-transform: capitalize !important;
+	}
+
+.content ul.tabmenu li.selected a, .content ul.tabmenu li.selected a:hover {
+	background-color: #ffffff !important;
+	color: #ff6600 !important;
+	cursor: default !important;
+	text-decoration: none !important;
+	}
+
+.content ul.tabmenu li a.link-button:before {
+	content: "Post a " !important;
+	}
+
+.content ul.tabmenu li a.text-button:before {
+	content: "Post " !important;
+	}
+	
+/* >>> FORM */
+
+.content .submit.content {
+	margin: 0 !important;
+	}
+
+.content .formtabs-content {
+	border: 0 !important;
+	padding: 0 !important;
+	width: auto !important;
+	}
+
+.content .roundfield {
+	background: transparent !important;
+	border-bottom: 1px solid #f5f9fc !important;
+	border-radius: 4px !important;
+	padding: 8px !important;
+	position: relative !important;
+	width: auto !important;
+	}
+
+.content .roundfield .title {
+	color: #737a80 !important;
+	font-size: 12px !important;
+	font-weight: bold !important;
+	height: 26px !important;
+	line-height: 26px !important;
+	left: 8px !important;
+	position: absolute !important;
+	text-align: right !important;
+	text-transform: capitalize !important;
+	top: 8px !important;
+	width: 20% !important;
+	}
+
+.content .roundfield .gray {
+	color: #ff6600 !important;
+	font-size: 10px !important;
+	font-weight: bold !important;
+	position: absolute !important;
+	right: 8px !important;
+	top: 8px !important;
+	}
+
+.content .roundfield .roundfield-content {
+	margin: 0 !important;
+	overflow: hidden !important;
+	padding-left: 22% !important;
+	vertical-align: middle !important;
+	}
+
+.content .roundfield .roundfield-content .usertext .usertext-edit {
+	margin: 0 !important;
+	padding: 0 !important;
+	width: auto !important;
+	}
+
+.content .submit.content .btn {
+	margin: 8px 0 0 22% !important;
+	}
+
+.content .roundfield .roundfield-content .error {
+	border-radius: 3px !important;
+	background: #c43535 !important;
+	color: #ffffff !important;
+	float: right !important;
+	font-size: 11px !important;
+	font-weight: bold !important;
+	line-height: 1.35em !important;
+	padding: 5px 8px !important;
+	}
+	
+/* >> INPUT TYPES */
+
+.content .roundfield .roundfield-content input[type="text"], .content .roundfield .roundfield-content input[type="password"] {
+    border: 1px solid rgba(0,0,0,0.35) !important;
+    border-radius: 3px !important;
+    box-shadow: inset 0 1px 2px 0 rgba(0,0,0,0.1) !important;
+    color: #737a80 !important;
+    font-size: 12px !important;
+    font-weight: bold !important;
+    height: 16px !important;
+    line-height: 16px !important;
+    margin: 0 !important;
+    max-width: 350px !important;
+    outline: none !important;
+    padding: 4px 6px !important;
+    width: 70% !important;
+	}
+	
+.content .roundfield .roundfield-content textarea {
+    border: 1px solid #a8a8a8 !important;
+    border-radius: 3px !important;
+    box-shadow: inset 0 1px 2px 0 rgba(0,0,0,0.15) !important;
+    color: #737a80 !important;
+    font-size: 13px !important;
+    margin-bottom: 8px !important;
+    max-width: 500px !important;
+    outline: none !important;
+    padding: 8px !important;
+    width: 80% !important;
+    }
+	
+/* >> TEXT */
+
+.content .roundfield#text-field .roundfield-content .usertext .usertext-edit .bottom-area {
+	max-width: 500px !important;
+	overflow: visible !important;
+	width: 80% !important;
+	}
+
+.content .roundfield#text-field .roundfield-content .usertext .usertext-edit .bottom-area .usertext-buttons {
+	display: none !important;
+	}
+
+.content .roundfield#text-field .roundfield-content .usertext .usertext-edit .bottom-area .help-toggle {
+	margin-right: -18px !important;
+	}
+
+.content .roundfield#text-field .roundfield-content .usertext .usertext-edit .markhelp {
+	max-width: 500px !important;
+	width: 80% !important;
+	}
+	
+/* >> URL */
+
+.content .roundfield#url-field .title {
+	text-transform: uppercase !important;
+	}
+	
+.content .roundfield#url-field .roundfield-content input {
+	float: left !important;
+	}
+
+.content .roundfield#url-field .roundfield-content button {
+	float: left !important;
+	margin: 0 0 0 6px !important;
+	}
+
+.content .roundfield#url-field .roundfield-content .title-status {
+	border-radius: 3px !important;
+	background: #c43535 !important;
+	color: #ffffff !important;
+	float: right !important;
+	font-size: 11px !important;
+	font-weight: bold !important;
+	line-height: 1.35em !important;
+	padding: 5px 8px !important;
+	}
+	
+/* >> REDDITS */
+
+.content .roundfield#reddit-field .roundfield-content #suggested-reddits {
+	max-width: 600px !important;
+	}
+
+.content .roundfield#reddit-field .roundfield-content #suggested-reddits span {
+	color: #737a80 !important;
+	font-size: 10px !important;
+	font-weight: bold !important;
+	text-transform: capitalize !important;
+	}
+
+.content .roundfield#reddit-field .roundfield-content #suggested-reddits ul {
+	padding-top: 3px !important;
+	}
+
+.content .roundfield#reddit-field .roundfield-content #suggested-reddits ul li a {
+	font-size: 12px !important;
+	line-height: 1.35em !important;
+	}
+	
+/* >>> FLAIR */
+
+.content .flair {
+	display: none !important;
+	margin: 0 0 0 3px !important;
+	padding: 0 !important;
+	}
+	
+/* >>> LISTING */
+
+.content .linklisting {
+	background: transparent !important;
+	border: 0 !important;
+	box-shadow: none !important;
+	height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    position: static !important;
+    width: auto !important;
+	}
+
+.content .linklisting .thing, .content .organic-listing .thing {
+	background: transparent !important;
+	border: 0 !important;
+    border-bottom: 1px solid #f5f9fc !important;
+    content: "" !important;
+    margin: 0 !important;
+    min-height: 0 !important;
+    padding: 8px 0 0 !important;
+    position: relative !important;
+	}
+
+.content .thing:before, .content .thing:after {
+	content: "" !important;
+	}
+
+.content .linklisting .thing.last-clicked {
+    border-left: 3px solid #ff6600 !important;
+    border-right: 0 !important;
+    border-top: 0 !important;
+}
+
+.thing p.parent {
+    color: #737a80 !important;
+    font-size: 10px !important;
+    padding-left: 35px !important;
+}
+
+.thing p.parent a {
+    color: #FF8B60 !important;
+    font-size: 14px !important;
+    font-weight: 100 !important;
+    line-height: 22px !important;
+}
+
+.thing p.parent a:hover {
+    color: #006699 !important;
+}
+
+.thing p.parent a:visited, .thing p.parent a.click {
+    color: #8fa7b3 !important;
+}
+
+.thing p.parent a:active {
+    background-color: #FF8B60 !important;
+    color: #ffffff !important;
+}
+
+.thing p.parent a.click:active {
+    background-color: #8fa7b3 !important;
+}
+
+.thing p.parent a.author, .thing p.parent a.subreddit {
+    font-size: 11px !important;
+}
+
+.message .subject {
+    color: #8fa7b3 !important;
+    font-size: 10px !important;
+    font-weight: bold !important;
+    padding: 0 0 0 37px !important;
+    position: relative !important;
+    text-transform: capitalize !important;
+}
+
+.message .subject a {
+    color: #FF8B60 !important;
+    display: block !important;
+    font-size: 14px !important;
+    font-style: normal !important;
+    font-weight: 100 !important;
+    line-height: 22px !important;
+    margin: 0 !important;
+    padding-top: 2px !important;
+}
+
+.message .subject a:hover {
+    color: #006699 !important;
+}
+
+.message .subject a:visited, .message .subject a.click {
+    color: #8fa7b3 !important;
+}
+
+.message .subject a:active {
+    background-color: #FF8B60 !important;
+    color: #ffffff !important;
+}
+
+.message .subject a.click:active {
+    background-color: #8fa7b3 !important;
+}
+
+.thing .rank {
+    color: #e5e5e5 !important;
+    display: none !important;
+    font-size: 18px !important;
+    font-weight: bold !important;
+}
+
+/* >>> MIDCOL */
+
+.content .thing .midcol {
+	background: transparent !important;
+	border: 0 !important;
+	bottom: auto !important;
+	left: auto !important;
+    height: 42px !important;
+    margin: 0 8px !important;
+    padding: 0 !important;
+    position: relative !important;
+    right: auto !important;
+    top: auto !important;
+    width: 70px !important;
+	}
+
+.content .thing.compressed .midcol {
+	margin-left: 12px !important;
+	width: 17px !important;
+	}
+
+.content .thing.last-clicked .midcol {
+    width: 67px !important;
+	}
+
+.content .thing .midcol .score {
+	display: none !important;
+    font-size: 15px !important;
+    height: 42px !important;
+    line-height: 42px !important;
+    position: relative !important;
+    visibility: visible !important;
+    width: 52px !important;
+	}
+	
+.content .thing .midcol.dislikes .score.dislikes {
+	display: block !important;
+	color: #03699c !important;
+	}
+	
+.content .thing .midcol.unvoted .score.unvoted {
+	display: block !important;
+	color: #b3b3b3 !important;
+	}
+	
+.content .thing .midcol.likes .score.likes {
+	color: #ff6600 !important;
+	display: block !important;
+	}
+
+.content .thing .midcol .arrow {
+	background: url('http://i.imgur.com/lEKIe.png') no-repeat 0 0 !important;
+	height: 17px !important;
+    margin: 0 !important;
+    position: absolute !important;
+    right: 0 !important;
+    top: 3px !important;
+    width: 17px !important;
+	}
+
+.content .thing .midcol .arrow.upmod {
+	background-position: -23px 0 !important;
+	}
+
+.content .thing .midcol .arrow.down, .content .thing .midcol .arrow.downmod {
+	background-position: 0 -23px !important;
+    bottom: 2px !important;
+    top: auto !important;
+	}
+	
+.content .thing .midcol .arrow.downmod {
+	background-position: -23px -23px !important;
+	}
+
+/* >> THUMBNAIL */
+
+.content .thing .thumbnail {
+	border: 0 !important;
+	bottom: auto !important;
+	height: 42px !important;
+	left: auto !important;
+    margin: 0 8px 8px 0 !important;
+    padding: 0 !important;
+    position: static !important;
+    right: auto !important;
+    top: auto !important;
+    width: 70px !important;
+	}
+
+.content .thing .thumbnail:hover {
+	background: inherit !important;
+	}
+
+.content .thing .thumbnail:before {
+	content: "" !important;
+	left: auto !important;
+	position: relative !important;
+	top: auto !important;
+	z-index: auto !important;
+	}
+
+.content .thing .thumbnail img {
+	background: transparent !important;
+	border: 0 !important;
+    border-radius: 3px !important;
+    bottom: auto !important;
+    height: 42px !important;
+    left: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    position: relative !important;
+    right: auto !important;
+    top: auto !important;
+    width: 70px !important;
+	}
+
+/* >> ENTRY */
+
+.content .thing .entry {
+	background: transparent !important;
+	border: 0 !important;
+	bottom: auto !important;
+	box-shadow: none !important;
+	height: auto !important;
+	left: auto !important;
+    margin: 0 !important;
+    min-height: 42px !important;
+    overflow: visible !important;
+    padding: 0 8px 8px 164px !important;
+    position: static !important;
+    right: auto !important;
+    top: auto !important;
+    width: auto !important;
+	}
+
+.content .thing.compressed .entry {
+	padding-left: 41px !important;
+	}
+
+.message.new .entry {
+    background: transparent !important;
+    border: 0 !important;
+    padding: 0 !important;
+}
+
+.thing .entry p.tagline {
+    color: #8fa7b3 !important;
+    float: left !important;
+    font-family: Helvetica !important;
+    font-size: 11px !important;
+    height: 14px !important;
+    line-height: 15px !important;
+    margin-right: 4px !important;
+}
+
+.message.new .entry .head {
+    color: #737a80 !important;
+    font-weight: normal !important;
+}
+
+.message.new .entry .head a {
+    font-weight: normal !important;
+}
+
+.thing .md {
+    background: #f5f9fc !important;
+    border: 0 !important;
+    border-radius: 3px !important;
+    font-size: 13px !important;
+    line-height: 1.35em !important;
+    margin: 8px 0 2px !important;
+    padding: 8px 12px !important;
+    max-width: none !important;
+	}
+
+.thing.message .md {
+    clear: left !important;
+    margin-top: 5px !important;
+}
+
+.thing .md p, .thing .md ul li, .thing .md ol li {
+    color: #555555 !important;
+    font-size: 13px !important;
+    line-height: 1.35em !important;
+}
+
+.thing .md ul li, .thing .md ol li {
+    padding: 2px 0 !important;
+}
+
+.thing .child form.sharelink {
+    background: #f5f9fc !important;
+    padding: 16px !important;
+}
+
+.sharetable.preftable th {
+    padding: 11px 0 8px !important;
+}
+	
+/* > TITLE */
+
+.content .thing .entry p.title {
+	background: transparent !important;
+    font-size: 18px !important;
+    font-weight: 100 !important;
+    line-height: 1.35em !important;
+    margin: 0 !important;
+    padding: 3px 0 0 !important;
+    text-shadow: none !important;
+	}
+
+.content .thing .entry p.title a {
+	background: transparent !important;
+    color: #ff8b60 !important;
+    display: inline !important;
+    font-size: 18px !important;
+    font-weight: 100 !important;
+    line-height: 1.35em !important;
+    padding: 0 !important;
+    text-shadow: none !important;
+	}
+
+.content .thing .entry p.title a:hover {
+    color: #006699 !important;
+	}
+
+.content .thing .entry p.title a:visited, .content .thing .entry p.title a.click {
+    color: #8fa7b3 !important;
+	}
+
+.content .thing .entry p.title a:active {
+    background-color: #FF8B60 !important;
+    color: #ffffff !important;
+	}
+
+.content .thing .entry p.title a.click:active {
+    background-color: #8fa7b3 !important;
+	}
+
+.content .thing .entry p.title span.domain, .content .thing .entry p.title span.domain a {
+    font-size: 10px !important;
+	}
+	
+/* >>> DETAILS */
+	
+/* >> EXPANDO BUTTON */
+
+.content .thing .entry .expando-button {
+    background: #369 url('http://i.imgur.com/cK1vU.png') no-repeat -3px 0 !important;
+    border-radius: 2px !important;
+    height: 14px !important;
+    margin: 0 6px 0 0 !important;
+    width: 14px !important;
+	}
+
+.content .thing .entry .expando-button.expanded {
+    background-position: -29px 0 !important;
+	}
+
+.content .thing .entry .expando-button:hover {
+    background-color: #ff6600 !important;
+    cursor: pointer !important;
+	}
+	
+/* >> TAGLINE */
+
+.content .thing .entry p.tagline a {
+    color: #006699 !important;
+	}
+
+.content .thing .entry p.tagline a.author {
+    margin-right: 0 !important;
+	}
+	
+/* >> FLATLIST */
+
+.content .thing .entry .flat-list {
+    display: inline-block !important;
+    margin: 0 !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+	}
+
+.content .thing .entry .flat-list li {
+    height: 14px !important;
+    line-height: 15px !important;
+    padding: 0 6px 0 0 !important;
+	}
+
+.content .thing .entry .flat-list li span, .content .thing .entry .flat-list li form, .content .thing .entry .flat-list li a, .content .thing .entry .flat-list li span a {
+    color: #8fa7b3 !important;
+    font-size: 10px !important;
+    font-weight: bold !important;
+    height: 14px !important;
+    line-height: 15px !important;
+	}
+
+.content .thing .entry .flat-list li form.state-button.unsave-button {
+    color: #95b344 !important;
+	}
+	
+/* > NSFW */
+
+.content .thing .entry .flat-list li.nsfw-stamp {
+	background: transparent !important;
+	border: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: auto !important;
+	}
+
+.content .thing .flat-list li.nsfw-stamp acronym {
+    background: #ff4d4d !important;
+    border: 0 !important;
+    border-radius: 3px !important;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    bottom: auto !important;
+    color: #ffffff !important;
+    height: auto !important;
+    left: 16px !important;
+    margin: 0 !important;
+    padding: 0 4px !important;
+    position: absolute !important;
+    right: auto !important;
+    top: 0 !important;
+    width: auto !important;
+	}
+	
+/* > UNVOTABLE */
+
+.content .thing .entry .unvotable-message {
+    background: #ff6600 !important;
+    clear: both !important;
+    color: #ffffff !important;
+    float: left !important;
+    font-size: 10px !important;
+    line-height: 16px !important;
+    padding: 0 4px !important;
+    text-transform: uppercase !important;
+	}
+
+/* >>> EXPANDO */
+
+.content .thing .expando {
+	margin: 8px 0 0 -78px !important;
+    overflow: hidden !important;
+	}
+
+.content .thing .expando iframe.media-embed {
+    margin: 8px !important;
+	}
+
+.content .thing .expando iframe.media-embed body {
+    background: transparent !important;
+    height: auto !important;
+    margin: 0 !important;
+    max-width: none !important;
+    position: static !important;
+	}
+
+/* >>> PROMOTED */
+
+.content .organic-listing {
+	position: relative !important;
+	border: 0 !important;
+	}
+
+.content .organic-listing .link, .content .link.promoted {
+	background: transparent !important;
+	border: 0 !important;
+	border-bottom: 1px solid #f5f9fc !important;
+	}
+
+.content .promoted .sponsored-tagline {
+	background: #f5f9fc !important;
+	border: 0 !important;
+	border-radius: 3px 0 0 0 !important;
+	bottom: 0 !important;
+	color: #336699 !important;
+	display: block !important;
+	font-size: 10px !important;
+	height: 16px !important;
+	left: auto !important;
+	line-height: 16px !important;
+	margin: 0 !important;
+	overflow: hidden !important;
+	padding: 0 6px !important;
+	position: absolute !important;
+	right: 0 !important;
+	top: auto !important;
+	width: 54px !important;
+	}
+
+.content .promoted .sponsored-tagline:before, .content .promoted .sponsored-tagline:after {
+	content: "" !important;
+	}
+	
+.content .organic-listing .nextprev {
+	display: none !important;
+	}
+
+.content .organic-listing .help {
+	bottom: 0 !important;
+	position: absolute !important;
+	right: 72px !important;
+	}
+
+.content .organic-listing .help a {
+	height: 16px !important;
+	line-height: 16px !important;
+	margin: 0 !important;
+	text-align: right !important;
+	width: 60px !important;
+	}
+
+/* >>> SEARCH */
+
+.content .search-summary {
+	margin: 0 10px 0 0 !important;
+	}
+	
+.content .search-summary .result-count {
+	color: #8fa7b3 !important;
+	font-size: 12px !important;
+	font-weight: bold !important;
+	height: 44px !important;
+	line-height: 44px !important;
+	}
+
+.content .searchpane {
+	background: #f5f9fc !important;
+	border: 0 !important;
+	border-radius: 5px 5px 0 0 !important;
+	margin: 0 !important;
+	padding: 8px !important;
+	}
+
+.content .searchpane h4 {
+	display: none !important;
+	}
+
+.content .searchpane #search input[type="text"] {
+    border: 1px solid #a8a8a8 !important;
+    border-radius: 50px !important;
+    box-shadow: inset 0 1px 2px 0 rgba(0,0,0,0.15) !important;
+    font-size: 14px !important;
+    height: 26px !important;
+    outline: none !important;
+    padding: 0 8px !important;
+    text-transform: capitalize !important;
+    width: 282px !important;
+	}
+
+.content .searchpane #search input[type="text"]:focus {
+    border-color: #336699 !important;
+	}
+	
+/* >>> SUB REDDITS */
+
+.content .thing.subreddit {
+	padding: 12px !important;
+	}
+
+.content .thing.subreddit .midcol {
+	height: auto !important;
+	margin: 0 !important;
+	width: 85px !important;
+	}
+
+.content .thing.subreddit .entry {
+	padding-left: 93px !important;
+	}
+	
+.content .thing.subreddit .entry .titlerow {
+	height: 27px !important;
+	line-height: 27px !important;
+	margin: 0 !important;
+	}
+	
+.content .thing.subreddit .entry .titlerow .title {
+	color: #ff6600 !important;
+	font-size: 18px !important;
+	text-transform: capitalize !important;
+	}
+	
+.content .thing.subreddit .entry .titlerow .title:hover {
+	color: #336699 !important;
+	}
+	
+.content .thing.subreddit .entry .titlerow .title:visited {
+	color: #8fa7b3 !important;
+	}
+
+.content .thing.subreddit .entry .description, .content .thing.subreddit .entry .description .md {
+	max-width: none !important;
+	}
+	
+.content .thing.subreddit .entry .tagline {
+	padding: 6px 0 0 !important;
+	}
+
+/* >>> COMMENTS */
+
+.content .commentarea {
+    position: relative !important;
+	}
+	
+/* >> TOP */
+
+.content .commentarea .panestack-title {
+	background: #f5f9fc !important;
+    border-bottom: 0 !important;
+    float: none !important;
+    height: 38px !important;
+    line-height: 38px !important;
+    margin: 0 !important;
+    overflow: hidden !important;
+    padding: 10px 16px 0 !important;
+	}
+
+.content .commentarea .panestack-title .title {
+    color: #475866 !important;
+    float: left !important;
+    font-size: 18px !important;
+    margin: 0 !important;
+    text-transform: capitalize !important;
+	}
+
+.content .commentarea .panestack-title a {
+    background: #336699 !important;
+    border-radius: 3px !important;
+    color: #ffffff !important;
+    display: block !important;
+    float: left !important;
+    font-size: 12px !important;
+    font-weight: bold !important;
+    height: 24px !important;
+    line-height: 24px !important;
+    margin-top: 1px !important;
+    padding: 0 12px !important;
+    position: absolute !important;
+    right: 344px !important;
+    text-transform: capitalize !important;
+    top: 11px !important;
+	}
+
+.content .commentarea .panestack-title a:hover {
+    background: #4388cc !important;
+	}
+
+.content .commentarea .menuarea {
+    float: left !important;
+    margin: 0 !important;
+    position: absolute !important;
+    right: 8px !important;
+    top: 14px !important;
+	}
+
+.content .commentarea .menuarea .drop-choices.lightdrop {
+	left: auto !important;
+	right: 15px !important;
+	top: 26px !important;
+	}
+
+.content .commentarea > .usertext {
+    background: #f5f9fc !important;
+    clear: left !important;
+    margin: 0 0 0 0 !important;
+    padding: 0 16px 16px !important;
+	}
+
+.content .commentarea .usertext .usertext-edit {
+	margin: 0 18px 0 0 !important;
+	padding: 0 !important;
+	width: auto !important;
+	}
+
+.content .commentarea .child .usertext .usertext-edit {
+	padding: 8px !important;
+	}
+
+.content .commentarea .usertext .usertext-edit textarea {
+    border: 1px solid #a8a8a8 !important;
+    border-radius: 3px !important;
+    box-shadow: inset 0 1px 2px 0 rgba(0,0,0,0.15) !important;
+    margin-bottom: 8px !important;
+    outline: none !important;
+    padding: 8px !important;
+    width: 100% !important;
+	}
+
+.content .commentarea .usertext .usertext-edit .bottom-area {
+	min-height: 26px !important;
+	overflow: visible !important;
+	}
+
+.content .commentarea .usertext .usertext-edit .bottom-area .usertext-buttons .cancel {
+	margin-left: 6px !important;
+	}
+
+.content .commentarea .usertext .usertext-edit .bottom-area .help-toggle {
+	margin: 0 -18px 0 0 !important;
+	}
+
+.content .commentarea .usertext .usertext-edit .bottom-area .help-toggle a {
+	font-size: 11px !important;
+	height: 26px !important;
+	line-height: 26px !important;
+	text-transform: capitalize !important;
+	}
+
+.content .commentarea .usertext .usertext-edit .bottom-area .help-toggle a.active {
+	display: block !important;
+	}
+
+.content .commentarea .sitetable {
+    clear: left !important;
+	}
+
+.content .commentarea .comment .child {
+    border-left: 1px dashed #cad6e3 !important;
+	}
+	
+/* >> LISTING */
+
+.content .commentarea .nestedlisting {
+	padding-top: 8px !important;
+	}
+
+.content .commentarea .thing.comment {
+    background: none !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    margin: 0 !important;
+    overflow: auto !important;
+    padding: 0 !important;
+	}
+
+.thing.comment .usertext .usertext-body {
+    clear: both !important;
+    padding: 6px 0 4px !important;
+	}
+
+.content .thing.comment .usertext.border .usertext-body {
+	background-color: transparent !important;
+	}
+
+.thing.comment .usertext .usertext-body .md {
+    margin: 0 !important;
+	}
+
+.thing.comment .usertext .md {
+    border: 0 !important;
+    clear: both !important;
+}
+
+.content .thing.comment .usertext.border .usertext-body .md {
+	background-color: #ffffcc !important;
+	}
+
+.thing.morechildren {
+    border-bottom: 1px dashed #cad6e3 !important;
+    background: none !important;
+    margin-bottom: 16px !important;
+    padding: 4px 12px !important;
+}
+
+.thing.morechildren .entry {
+    padding: 0 !important;
+}
+
+.thing.morechildren .entry p.tagline {
+    display: none !important;
+}
+
+.thing.morerecursion {
+    background: transparent !important;
+    border-bottom: 0 !important;
+    padding: 0 0 0 10px !important;
+}
+
+.morerecursion .entry {
+    padding: 0 !important;
+}
+
+.morecomments a {
+    background: #336699 !important;
+    border-radius: 3px !important;
+    color: #ffffff !important;
+    display: block !important;
+    float: left !important;
+    font-size: 10px !important;
+    height: 18px !important;
+    line-height: 18px !important;
+    padding: 0 6px !important;
+    text-transform: capitalize !important;
+}
+
+.morecomments a:hover {
+    background: #4388cc !important;
+    text-decoration: none !important;
+}
+
+.morecomments a span.gray {
+    color: #dcdcdc !important;
+}
+
+.comment .child .usertext-edit {
+    margin: 0 0 16px 12px !important;
+}
+
+.comment .child .usertext-edit button {
+    margin-right: 4px !important;
+}
+
+.content .thing.comment {
+	min-height: 42px !important;
+	position: relative !important;
+	}
+
+.content .thing.comment .midcol, .content .thing.message .midcol {
+	left: 8px !important;
+	margin: 0 !important;
+	position: absolute !important;
+	top: 8px !important;
+	width: 17px !important;
+	}
+
+.content .thing.comment .entry {
+	padding: 0 8px 0 36px !important;
+	}
+
+.content .thing.comment .entry.keyHighlight {
+	outline: none !important;
+	}
+	
+.content .thing.comment .entry.keyHighlight .usertext .usertext-body .md {
+	background-color: #ffffcc !important;
+	}
+
+.content .thing.comment .entry .tagline .author.submitter {
+	background: transparent !important;
+	border-radius: 0 !important;
+	color: #ff6600 !important;
+	display: inline-block !important;
+	height: 14px !important;
+	line-height: 14px !important;
+	padding: 0 !important;
+	}
+
+.content .thing.comment .entry .tagline .author.submitter:hover {
+	text-decoration: underline !important;
+	}
+	
+/* >> COMMENT */
+
+.content .thing.comment .entry .collapsed {
+	color: #8fa7b3 !important;
+	float: left !important;
+	font-size: 11px !important;
+	font-style: normal !important;
+	height: 14px !important;
+	line-height: 15px !important;
+	margin-right: 4px !important;
+	padding: 0 !important;
+	}
+
+.content .thing.comment .entry .collapsed .author {
+	color: #336699 !important;
+	margin: 0 !important;
+	}
+
+.content .thing.comment .entry .expand {
+    background: #369 url('http://i.imgur.com/cK1vU.png') no-repeat -29px 0 !important;
+    border-radius: 2px !important;
+    display: block !important;
+    float: left !important;
+	font-size: 0 !important;
+    height: 14px !important;
+    margin: 0 6px 0 0 !important;
+    padding: 0 !important;
+	text-indent: -9999px !important;
+    width: 14px !important;
+	}
+
+.content .thing.comment .entry .collapsed .expand {
+    background-position: -3px 0 !important;
+	}
+
+.content .thing.comment .entry .collapsed .expand:last-child {
+	background: transparent !important;
+	border-radius: 0 !important;
+	display: inline !important;
+	float: none !important;
+	font-size: 11px !important;
+	line-height: 15px !important;
+	margin: 0 !important;
+	text-indent: 0 !important;
+	width: auto !important;
+	}
+
+.content .thing.comment .entry .expand:hover {
+    background-color: #ff6600 !important;
+    cursor: pointer !important;
+	}
+	
+/* >>> MESSAGES */
+
+.content .message .subject {
+	padding: 0 0 0 30px !important;
+	}
+
+.content .message .entry {
+	padding: 0 8px 8px 30px !important;
+	}
+
+.content .message .expand {
+	background: #336699 url('http://i.imgur.com/cK1vU.png') no-repeat -3px 0 !important;
+	border-radius: 2px !important;
+	float: left !important;
+	font-size: 0 !important;
+	height: 14px !important;
+	margin: 0 4px 0 0 !important;
+	padding: 0 !important;
+	text-indent: -9999px !important;
+	width: 14px !important;
+	}
+
+.content .message .expand:hover {
+	background-color: #ff6600 !important;
+	}
+
+.content .message .noncollapsed .expand {
+	background-position: -29px 0 !important;
+	}
+
+.content .thing.message .entry p.tagline {
+    padding-bottom: 4px !important;
+	}
+	
+/* >> PARENT */
+
+.content .message-parent {
+	border-top: 1px solid #bacad6 !important;
+	padding: 0 !important;
+	}
+
+.content .message-parent .message {
+	min-height: 0 !important;
+	}
+
+.content .message-parent .subject {
+	background: #f5f9fc !important;
+	height: 18px !important;
+	line-height: 18px !important;
+	padding: 6px 8px !important;
+	}
+
+.content .message-parent .subject .correspondent {
+	background: transparent !important;
+	border: 0 !important;
+	margin-right: 6px !important;
+	padding: 0 !important;
+	}
+
+.content .message-parent .subject .correspondent a, .content .message-parent .subject .correspondent span {
+	color: #ff6600 !important;
+	font-size: 13px !important;
+	font-weight: bold !important;
+	height: 18px !important;
+	line-height: 18px !important;
+	padding: 0 !important;
+	}
+
+.content .message-parent .subject br {
+	display: none !important;
+	}
+
+.content .message-parent .subject .expand-btn {
+	background: #336699 url('http://i.imgur.com/cK1vU.png') no-repeat -3px 0 !important;
+	border-radius: 2px !important;
+	float: left !important;
+	font-size: 0 !important;
+	height: 14px !important;
+	margin: 2px 2px 0 0 !important;
+	padding: 0 !important;
+	text-indent: -9999px !important;
+	width: 14px !important;
+	}
+
+.content .message-parent .subject .expand-btn:hover {
+	background-color: #ff6600 !important;
+	}
+
+.content .message-parent .subject .expand-btn:last-child {
+	background-position: -29px 0 !important;
+	margin-right: 5px !important;
+	}
+
+.content .message-parent .midcol {
+	display: none !important;
+	}
+
+.content .message-parent .entry {
+	border-left: 0 !important;
+	padding: 0 8px 8px 8px !important;
+	}
+
+.content .message-parent .entry .head {
+	color: #8fa7b3 !important;
+	font-size: 11px !important;
+	font-style: normal !important;
+	font-weight: normal !important;
+	height: 14px !important;
+	line-height: 15px !important;
+	}
+
+.content .message-parent .entry .head .author {
+	margin-right: 0 !important;
+	}
+
+.content .message-parent .entry .md {
+	max-width: none !important;
+	}
+
+.content .message-parent .entry .buttons {
+	margin-left: 0 !important;
+	}
+
+/* >> COMMENTS (MESSAGES) */
+	
+.content .thing.was-comment {
+	min-height: 42px !important;
+	padding: 8px !important;
+	position: relative !important;
+	}
+	
+.content .thing.was-comment .midcol {
+	margin: 0 !important;
+	position: absolute !important;
+	top: 8px !important;
+	}
+	
+.content .thing.was-comment .entry {
+	padding-left: 30px !important;
+	}
+	
+/* >> REPLY */
+
+.content .message-parent .child .usertext {
+	background: #f5f9fc !important;
+	margin: 0 !important;
+	padding: 8px !important;
+	}
+
+.content .message-parent .child .usertext .usertext-edit {
+	width: auto !important;
+	margin-right: 18px !important;
+	}
+
+.content .message-parent .child .usertext .usertext-edit textarea {
+    border: 1px solid #a8a8a8 !important;
+    border-radius: 3px !important;
+    box-shadow: inset 0 1px 2px 0 rgba(0,0,0,0.15) !important;
+    margin-bottom: 8px !important;
+    outline: none !important;
+    padding: 8px !important;
+    width: 100% !important;
+	}
+
+.content .message-parent .child .usertext .usertext-edit .bottom-area {
+	min-height: 26px !important;
+	overflow: visible !important;
+	}
+
+.content .message-parent .child .usertext .usertext-edit .bottom-area .usertext-buttons .cancel {
+	margin-left: 6px !important;
+	}
+
+.content .message-parent .child .usertext .usertext-edit .bottom-area .help-toggle {
+	margin: 0 -18px 0 0 !important;
+	}
+
+.content .message-parent .child .usertext .usertext-edit .bottom-area .help-toggle a {
+	font-size: 11px !important;
+	height: 26px !important;
+	line-height: 26px !important;
+	text-transform: capitalize !important;
+	}
+
+.content .message-parent .child .usertext .usertext-edit .bottom-area .help-toggle a.active {
+	display: block !important;
+	}
+	
+/* >>> MODERATOR TABLE */
+
+.content .usertable {
+	margin: 0 !important;
+	padding: 0 !important;
+	}
+
+.content .usertable table {
+	margin: 0 12px 12px !important;
+	}
+
+.content .usertable table tr td {
+	overflow: hidden !important;
+	padding: 4px 0 !important;
+	text-transform: capitalize !important;
+	}
+
+.content .usertable table tr td:first-child {
+	text-transform: none !important;
+	width: 100% !important;
+	}
+
+.content .usertable table tr td .gray {
+	color: #737a80 !important;
+	display: none !important;
+	}
+
+.content .usertable table tr td .user {
+	color: #737a80 !important;
+	display: block !important;
+	font-size: 0 !important;
+	text-indent: -9999px !important;
+	}
+
+.content .usertable table tr td .user a {
+	display: inline-block !important;
+    float: left !important;
+	font-size: 12px !important;
+	height: 18px !important;
+	line-height: 18px !important;
+	margin-right: 6px !important;
+	text-indent: 0 !important;
+	}
+	
+.content .usertable table tr td .user b {
+    background: #ff6600 url('http://i.imgur.com/Xc8db.png') repeat-x 0 0 !important;
+    border: 1px solid #4e1f00 !important;
+    border-radius: 50px !important;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.1) !important;
+    color: #ffffff !important;
+    display: inline-block !important;
+    float: left !important;
+    font-size: 9px !important;
+    height: 16px !important;
+    line-height: 16px !important;
+    margin: 0 !important;
+    min-width: 8px !important;
+    padding: 0 5px !important;
+    position: static !important;
+    right: auto !important;
+    text-align: center !important;
+    text-indent: 0 !important;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.2) !important;
+    top: auto !important;
+    z-index: 5 !important;
+	}
+
+/* >>> PAGINATION */
+
+.nextprev {
+	background: #f5f9fc !important;
+	border-radius: 0 0 0 5px !important;
+    color: #8fa7b3 !important;
+    display: block !important;
+    font-size: 0 !important;
+    height: 28px !important;
+    line-height: 28px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    position: relative !important;
+    text-indent: -9999px !important;
+    text-transform: capitalize !important;
+	}
+	
+.nextprev a {
+	font-size: 12px !important;
+	font-weight: bold !important;
+	height: 28px;
+	line-height: 28px;
+	left: 0 !important;
+	text-indent: 0 !important;
+	padding: 0 8px;
+	position: absolute !important;
+	}
+	
+.nextprev a:hover {
+	text-decoration: underline;
+	}
+	
+.nextprev a[rel~="next"] {
+	left: auto !important;
+	right: 0 !important;
+	}
+	
+.nextprev a:after {
+	content: " Page";
+	}
+
+/* >>> NO RESULTS */
+
+p#noresults {
+    color: #8fa7b3 !important;
+    font-size: 24px !important;
+    padding: 120px 0 !important;
+    text-align: center !important;
+    width: 100% !important;
+	}
+	
+/* >>>> SIDE */
+
+.side {
+	background: #f5f9fc !important;
+    border: 0 !important;
+    border-radius: 0 5px 5px 0 !important;
+    bottom: 0 !important;
+    margin: 0 !important;
+    padding: 0 16px 16px !important;
+    position: absolute !important;
+    right: 0 !important;
+    top: 36px !important;
+    width: 300px !important;
+    z-index: 50 !important;
+	}
+
+.side .spacer {	
+	background: transparent !important;
+	border: 0 !important;
+    bottom: auto !important;
+    height: auto !important;
+    left: auto !important;
+    margin: 16px 0 0 !important;
+    padding: 0 !important;
+    position: relative !important;
+    right: auto !important;
+    top: auto !important;
+    width: auto !important;
+	}
+
+.side .usertext-body {
+    background: transparent !important;
+    bottom: auto !important;
+    color: #737a80 !important;
+    left: auto !important;
+    line-height: 1.35em !important;
+    margin: 0 !important;
+    padding: 12px 0 0 !important;
+    position: relative !important;
+    right: auto !important;
+    top: auto !important;
+}
+
+.side .usertext-body a:hover {
+    text-decoration: underline !important;
+}
+
+/* >>> SEARCH */
+
+.side #search {
+    background: #222222 url('http://i.imgur.com/Spagr.png') repeat 0 0 !important;
+	border: 0 !important;
+	border-radius: 0 !important;
+	bottom: auto !important;
+	box-shadow: none !important;
+	height: 36px !important;
+	left: auto !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	position: fixed !important;
+	right: 0 !important;
+    top: 0 !important;
+    z-index: 200 !important;
+    }
+
+.side #search input[type="text"] {
+	background: #ffffff !important;
+    border: 1px solid #000000 !important;
+    border-radius: 50px !important;
+    bottom: auto !important;
+    box-shadow: 0 1px 0 rgba(255,255,255,0.25), inset 0 1px 1px 0 rgba(0,0,0,0.25) !important;
+    float: right !important;
+    font-size: 12px !important;
+    height: 22px !important;
+    left: auto !important;
+    margin: 6px 6px 0 0 !important;
+    outline:none !important;
+    padding: 0 8px !important;
+    position: relative !important;
+    right: auto !important;
+    text-transform: capitalize !important;
+    transition: all 0.25s ease-in-out !important;
+    top: auto !important;
+    width: 136px !important;
+	}
+
+.side #search input[type="text"]:focus {
+    box-shadow: 0 0 5px 1px rgba(255,255,255,0.3), inset 0 1px 1px 0 rgba(0,0,0,0.1) !important;
+	}
+
+.side #search #searchexpando {
+    background: #ffffff !important;
+    border: 1px solid #000000 !important;
+    border-radius: 5px !important;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.25), inset 0 0 0 2px rgba(0,0,0,0.05) !important;
+    margin: 0 !important;
+    padding: 12px !important;
+    position: absolute !important;
+    right: 6px !important;
+    top: 35px !important;
+    width: 233px !important;
+    z-index: 100 !important;
+	}
+
+.side #search #searchexpando label {
+    border: 0 !important;
+	color: #737a80 !important;
+    display: block !important;
+    font-size: 12px !important;
+	}
+
+.side #search #searchexpando label:focus {
+    background: #ff0000 !important;
+	}
+
+.side #search #searchexpando p {
+    margin: 0 !important;
+	}
+
+.side #search #searchexpando a {
+    font-size: 11px !important;
+	}
+
+.side #search #moresearchinfo {
+    background: #ffffff !important;
+    border: 0 !important;
+    border-radius: 3px !important;
+    color: #737a80 !important;
+    padding: 8px !important;
+	}
+
+/* >>> LINKINFO */
+	
+.side .linkinfo {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#fafdff)) !important;
+    background: -webkit-linear-gradient(top, #ffffff 0%,#fafdff 100%) !important;
+	border: 1px solid #678aa3 !important;
+	border-radius: 4px !important;
+	box-shadow: 0 2px 0 rgba(0,0,0,0.08), inset 0 1px 0 rgba(255,255,255,1) !important;
+	padding: 0 !important;
+	position: relative !important;
+	}
+
+.side .linkinfo .date {
+	border-left: 1px solid #ffffff !important;
+	color: #fafdff !important;
+	float: right !important;
+	font-size: 0 !important;
+	height: 60px !important;
+	position: relative !important;
+	width: 148px !important;
+	}
+
+.side .linkinfo .date time {
+	color: #475866 !important;
+	font-size: 20px !important;
+	font-weight: bold !important;
+	height: 60px !important;
+	left: 0 !important;
+	line-height: 60px !important;
+	position: absolute !important;
+	text-align: center !important;
+	text-shadow: 0 1px 0 rgba(255,255,255,1) !important;
+	top: 0 !important;
+	width: 148px !important;
+	}
+
+.side .linkinfo .score {
+    border-right: 1px solid #a7bbc9 !important;
+    color: #8fa7b3 !important;
+    float: left !important;
+    font-size: 10px !important;
+    height: 60px !important;
+    padding: 0 !important;
+    text-align: center !important;
+    width: 148px !important;
+	}
+
+.side .linkinfo .score .number {
+    color: #ff6600 !important;
+    display: block !important;
+    font-size: 26px !important;
+   	padding-top: 7px !important;
+	text-shadow: 0 1px 0 rgba(255,255,255,1) !important;
+	}
+
+.side .linkinfo .score .word {
+    color: #737a80 !important;
+	font-size: inherit !important;
+	}
+
+.side .linkinfo .upvotes, .side .linkinfo .downvotes {
+	background: #ff6600 url(http://i.imgur.com/Xc8db.png) repeat-x 0 0 !important;
+	border: 1px solid #4e1f00 !important;
+	border-radius: 50px 0 0 50px !important;
+	box-shadow: 0 2px 0 rgba(0,0,0,0.1), inset 0 1px 0 rgba(255,255,255,0.35) !important;
+	color: #ffffff !important;
+	display: block !important;
+	float: left !important;
+	font-size: 9px !important;
+	font-weight: bold !important;
+	height: 16px !important;
+	line-height: 16px !important;
+	min-width: 8px !important;
+	padding: 0 4px 0 6px !important;
+	position: absolute !important;
+	right: 149px !important;
+	text-align: center !important;
+	text-shadow: 0 1px 0 rgba(0,0,0,0.2) !important;
+	top: -8px !important;
+	}
+
+.side .linkinfo .downvotes {
+	background-color: #9494ff !important;
+	background-image: url('http://i.imgur.com/LuV0q.png') !important;
+	border-color: #1d1d66 !important;
+	border-radius: 0 50px 50px 0 !important;
+	float: right !important;
+	left: 148px !important;
+	padding: 0 5px 0 4px !important;
+	right: auto !important;
+ 	}
+
+.side .linkinfo .upvotes .word, .side .linkinfo .downvotes .word {
+	display: none !important;
+	}
+
+.side .linkinfo .shortlink {
+    color: #ffffff !important;
+    font-size: 0 !important;
+    height: auto !important;
+    margin: 0 !important;
+	}
+
+.side .linkinfo .shortlink input {
+    background: #e6edf2 !important;
+    border: 0 !important;
+    border-radius: 0 0 3px 3px !important;
+    border-top: 1px solid #678aa3 !important;
+    color: #737a80 !important;
+    font-size: 12px !important;
+    font-weight: bold !important;
+    height: 14px !important;
+    line-height: 14px !important;
+    overflow: hidden !important;
+    padding: 6px 0 !important;
+    text-align: center !important;
+    width: 298px !important;
+	}
+
+.side .linkinfo table {
+	display: none !important;
+	}
+
+/* >>> LOGIN */
+
+.login-form-side {
+	background: #ffffff !important;
+	border: 1px solid #678aa3 !important;
+	border-radius: 4px !important;
+	box-shadow: 0 2px 0 rgba(0,0,0,0.08), inset 0 1px 0 rgba(255,255,255,1) !important;
+    padding: 8px !important;
+}
+
+.login-form-side input {
+    border: 1px solid rgba(0,0,0,0.35) !important;
+    border-radius: 3px !important;
+    box-shadow: inset 0 1px 2px 0 rgba(0,0,0,0.1) !important;
+    color: #737a80 !important;
+    font-size: 12px !important;
+    font-weight: bold !important;
+    height: 16px !important;
+    line-height: 16px !important;
+    margin: 0 0 6px !important;
+    outline: none !important;
+    padding: 4px 6px !important;
+    width: 270px !important;
+}
+
+.login-form-side input:focus {
+    border-color: rgba(0,0,0,0.75) !important;
+    color: #333333 !important;
+}
+
+.login-form-side .error {
+    background: #ff6600 !important;
+    border-radius: 3px !important;
+    color: #ffffff !important;
+    display: block !important;
+    font-size: 10px !important;
+    font-weight: bold !important;
+    line-height: 18px !important;
+    margin: 0 0 5px !important;
+    padding: 0 4px !important;
+}
+
+.login-form-side #remember-me {
+    margin: 0 !important;
+}
+
+.login-form-side #rem-login-main {
+    float: left !important;
+    margin: 7px 4px 0 0 !important;
+    width: auto !important;
+}
+
+.login-form-side label {
+    line-height: 24px !important;
+}
+
+.login-form-side .attention {
+    border: 0 !important;
+}
+
+/* >>> TITLEBOX */
+
+.side .titlebox {
+	background: transparent !important;
+	border: 0 !important;
+	box-shadow: none !important;
+	float: none !important;
+	margin: 0 !important;
+	padding: 0 !important;
+    position: relative !important;
+	}
+
+.side .titlebox h1 {
+	background: transparent !important;
+	border: 0 !important;
+	box-shadow: none !important;
+	float: none !important;
+    font-size: 18px !important;
+    font-style: normal !important;
+    font-weight: 100 !important;
+    margin: 0 !important;
+    padding: 4px 91px 1px 0 !important;
+    overflow: hidden !important;
+    text-transform: capitalize !important;
+	}
+
+.side .titlebox h1:before, .side .titlebox h1:after {
+	background: transparent !important;
+	border: 0 !important;
+	box-shadow: none !important;
+	content: "" !important;
+	float: none !important;
+	height: auto !important;
+	margin: 0 !important;
+	overflow: auto !important;
+	padding: 0 !important;
+	position: static !important;
+	width: auto !important;
+	}
+
+.side .titlebox h1 a {
+    color: #336699 !important;
+	}
+
+.side .titlebox h1 a:before, .side .titlebox h1 a:after {
+	background: transparent !important;
+	border: 0 !important;
+	box-shadow: none !important;
+	content: "" !important;
+	float: none !important;
+	height: auto !important;
+	margin: 0 !important;
+	overflow: auto !important;
+	padding: 0 !important;
+	position: static !important;
+	width: auto !important;
+	}
+
+.side .titlebox .fancy-toggle-button {
+    margin: 0 !important;
+    position: absolute !important;
+    right: 0 !important;
+    top: 0 !important;
+	}
+
+.side .titlebox .number {
+	background: transparent !important;
+	border: 0 !important;
+	box-shadow: none !important;
+    color: #475866 !important;
+	content: "" !important;
+	float: none !important;
+    font-size: 12px !important;
+    font-style: normal !important;
+    font-weight: bold !important;
+	height: auto !important;
+	margin: 0 !important;
+	overflow: auto !important;
+	padding: 0 !important;
+	position: static !important;
+	width: auto !important;
+    }
+
+.side .titlebox .number:before {
+	background: transparent !important;
+	border: 0 !important;
+	box-shadow: none !important;
+	content: "" !important;
+	float: none !important;
+	height: auto !important;
+	margin: 0 !important;
+	overflow: auto !important;
+	padding: 0 !important;
+	position: static !important;
+	width: auto !important;
+	}
+
+.side .titlebox .number:after {
+	background: transparent !important;
+	border: 0 !important;
+	box-shadow: none !important;
+	content: " readers" !important;
+	float: none !important;
+	height: auto !important;
+	margin: 0 !important;
+	overflow: auto !important;
+	padding: 0 !important;
+	position: static !important;
+	width: auto !important;
+	}
+
+.side .titlebox .word {
+	background: transparent !important;
+	border: 0 !important;
+	box-shadow: none !important;
+    color: #737a80 !important;
+	content: "" !important;
+	display: none !important;
+	float: none !important;
+    font-size: 10px !important;
+    font-style: normal !important;
+    font-weight: bold !important;
+	height: auto !important;
+	margin: 0 !important;
+	overflow: auto !important;
+	padding: 0 !important;
+	position: static !important;
+	width: auto !important;
+	}
+
+.side .titlebox .usertext-body .md h1, .side .titlebox .usertext-body .md h2, .side .titlebox .usertext-body .md h3, .side .titlebox .usertext-body .md h4, .side .titlebox .usertext-body .md h5, .side .titlebox .usertext-body .md h6, .side .titlebox .usertext-body .md p, .side .titlebox .usertext-body .md ul, .side .titlebox .usertext-body .md ol, .side .titlebox .usertext-body .md li, .side .titlebox .usertext-body .md a, .side .titlebox .usertext-body .md strong {
+	background: transparent !important;
+	border: 0 !important;
+	box-shadow: none !important;
+	height: auto !important;
+	line-height: 1.35em !important;
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+	position: static !important;
+	text-align: left !important;
+	width: auto !important;
+	}
+	
+.side .titlebox .usertext-body .md p, .side .titlebox .usertext-body .md ul, .side .titlebox .usertext-body .md ol, .side .titlebox .usertext-body .md li, .side .titlebox .usertext-body .md strong {
+	color: #737a80 !important;
+	font-size: 12px !important;
+	}
+
+.side .titlebox .bottom {
+	color: #737a80 !important;
+    border-top: 0 !important;
+    padding: 0 !important;
+	}
+
+.side .titlebox .age {
+    float: none !important;
+	}
+
+/* SUBMIT */
+
+.side .morelink {
+    background: none !important;
+    border: 0 !important;
+    height: auto !important;
+	}
+
+.side .morelink a {
+    background: #ff6600 url('http://i.imgur.com/pS7GM.png') repeat-x 0 -6px !important;
+    border: 1px solid #4e1f00 !important;
+    border-radius: 4px !important;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.1), inset 0 1px 0 0 rgba(255,255,255,0.35) !important;
+    color: #ffffff !important;
+    font-size: 12px !important;
+    font-weight: bold !important;
+    height: 24px !important;
+    letter-spacing: normal !important;
+    line-height: 24px !important;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.25) !important;
+    text-transform: capitalize !important;
+	}
+
+.side .morelink a:hover {
+    background-color: #ff6600 !important;
+    background-image: none !important;
+	}
+
+.side .submit .morelink {
+    background: #222222 url('http://i.imgur.com/Spagr.png') repeat 0 0 !important;
+    border-radius: 0 !important;
+    left: auto !important;
+    height: 36px !important;
+    margin: 0 !important;
+    position: fixed !important;
+    right: 330px !important;
+    top: 0 !important;
+    width: 114px !important;
+    }
+
+.side .submit .morelink a {
+	margin-top: 5px !important;
+	width: auto !important;
+	}
+
+.side .create .morelink a {
+	background-position: 0 0 !important;
+	font-size: 14px !important;
+	height: 36px !important;
+	line-height: 36px !important;
+	}
+
+.morelink .nub {
+    display: none !important;
+	}
+
+.sidebox.submit .spacer, .sidebox.create .spacer {
+    display: none !important;
+	}
+
+.side .morelink a:before, .side .morelink a:after {
+	content: "" !important;
+	}
+
+/* >> SIDECONTENTBOX */
+
+.side .sidecontentbox h1 {
+	color: #475866 !important;
+    font-size: 12px !important;
+    font-weight: bold !important;
+    padding: 0 0 6px !important;
+    text-transform: capitalize !important;
+	}
+
+.side .sidecontentbox .content {
+    border: 0 !important;
+    margin: 0 !important;
+    min-width: 0 !important;
+    padding: 0 !important;
+    position: static !important;
+	}
+
+.side .sidecontentbox .content .gadget .thing {
+	background: #ffffff !important;
+	border: 0 !important;
+	margin: 0 0 1px !important;
+	min-height: 0 !important;
+	padding: 5px 7px !important;
+	position: relative !important;
+	}
+
+.side .sidecontentbox .content .gadget .thing:first-child {
+	border-top-left-radius: 4px !important;
+	border-top-right-radius: 4px !important;
+	}
+
+.side .sidecontentbox .content .gadget .thing .midcol {
+    height: 17px !important;
+    left: auto !important;
+    margin: 0 !important;
+    position: absolute !important;
+    right: 7px !important;
+    top: 13px !important;
+    width: 37px !important;
+	}
+
+.side .sidecontentbox .content .gadget .thing .midcol .arrow {
+	bottom: auto !important;
+	left: 0 !important;
+	right: auto !important;
+    top: 0 !important;
+	}
+
+.side .sidecontentbox .content .gadget .thing .midcol .arrow.down, .side .sidecontentbox .content .gadget .thing .midcol .arrow.downmod {
+	left: auto !important;
+    right: 0 !important;
+	}
+
+.side .sidecontentbox .content .gadget .thing .entry {
+	line-height: 1.35em !important;
+    margin: 0 !important;
+    min-height: 0 !important;
+    padding: 0 43px 0 0 !important;
+	}
+
+.side .sidecontentbox .content .gadget .thing .entry br {
+	display: none !important;
+	}
+
+.side .sidecontentbox .content .gadget .thing .entry small {
+	color: #8fa7b3 !important;
+	display: block !important;
+	font-size: 10px !important;
+	}
+
+.side .sidecontentbox .content .gadget .thing .entry small span {
+	color: #8fa7b3 !important;
+	font-size: 10px !important;
+	}
+	
+.side .sidecontentbox .content .gadget .thing .entry small a, .side .sidecontentbox .content .gadget .thing .entry small a:hover, .side .sidecontentbox .content .gadget .thing .entry small a:visited {
+	color: #ff8b60 !important;
+	font-size: 10px !important;
+	}
+
+.side .sidecontentbox .content .gadget .thing .reddit-link-end {
+	display: none !important;
+	}
+
+.side .sidecontentbox .content .gadget .right a {
+	background: #ffffff !important;
+	border-radius: 0 0 4px 4px !important;
+	display: block !important;
+	height: 22px !important;
+	line-height: 22px !important;
+	text-align: center !important;
+	text-transform: capitalize !important;
+	}
+
+.side .sidecontentbox .content .gadget .right a:hover {
+	text-decoration: underline !important;
+	}
+
+.side .sidecontentbox .content .gadget .right a:after {
+	content: " History" !important;
+	}
+
+/* LINKLISTING */
+
+.linklisting .thing {
+    background: transparent !important;
+}
+
+.linklisting .thing .entry .usertext-body {
+    padding: 5px 0 1px !important;
+}
+
+.linklisting .thing .entry .usertext-body .md {
+    margin: 0 !important;
+}
+
+/* PROFILE */
+
+.trophy-area .content {
+    background: #F0F4F7 !important;
+    border-radius: 3px !important;
+}
+
+.trophy-area .content .trophy-info .trophy-icon {
+    margin-bottom: 5px !important;
+}
+
+.trophy-area .content .trophy-info .trophy-name {
+    color: #737a80 !important;
+    font-size: 10px !important;
+    font-weight: bold !important;
+}
+
+/* >>>> FOOTER */
+
+.footer-parent {
+    display: none !important;
+	}
+	
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* >>>> REDDIT ENHANCEMENT SUITE */
+
+/* >>> GUIDER */
+
+body .guider {
+	border: 1px solid rgba(0,0,0,0.5) !important;
+	box-shadow: 0 2px 3px rgba(0,0,0,0.35) !important;
+	}

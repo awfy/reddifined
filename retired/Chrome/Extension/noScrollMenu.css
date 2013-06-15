@@ -1,0 +1,17 @@
+
+/* >>>> SROLL MENU */
+
+html > body > .content {
+	border-top-left-radius: 0 !important;
+	border-top-right-radius: 0 !important;
+	top: 36px !important;
+	}
+
+body .content .menuarea {
+	margin: -32px 0 0 0 !important;
+	/* left: 160px !important; */
+	position: fixed !important;
+	/* right: 334px !important;
+	top: 36px !important; */
+	width: 100% !important;
+	}

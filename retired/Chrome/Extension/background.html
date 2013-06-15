@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ </head>
+ <body>
+	<script>
+	 var _gaq = _gaq || [];
+	 _gaq.push(['_setAccount', 'UA-10672987-9']);
+	 _gaq.push(['_trackPageview']);
+	
+	 (function() {
+	   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	   ga.src = 'https://ssl.google-analytics.com/ga.js';
+	   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	 })();
+	</script>
+	<script type="text/javascript">
+	var _gauges = _gauges || [];
+	(function() {
+		var t   = document.createElement('script');
+		t.type  = 'text/javascript';
+		t.async = true;
+		t.id    = 'gauges-tracker';
+		t.setAttribute('data-site-id', '4f1934c1844d521f0d000001');
+		t.src = 'https://secure.gaug.es/track.js';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(t, s);
+	})();
+	</script>
+    <script>
+      // Called when the url of a tab changes.
+      function checkForValidUrl(tabId, changeInfo, tab) {
+        // If the letter 'g' is found in the tab's URL...
+        if (tab.url.indexOf('reddit.com') > -1) {
+          // ... show the page action.
+          chrome.pageAction.show(tabId);
+        }
+      };
+
+      // Listen for any changes to the URL of any tab.
+      chrome.tabs.onUpdated.addListener(checkForValidUrl);
+    </script>
+ </body>
+</html>

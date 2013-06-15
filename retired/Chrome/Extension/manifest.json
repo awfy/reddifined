@@ -1,0 +1,76 @@
+{
+	"name": "Restyleddit",
+	"version": "0.3.0",
+	"icons": { 
+		"16": "icon16.png",
+		"19": "icon19.png",
+		"48": "icon48.png", 
+		"128": "icon128.png" 
+	},
+	"description": "Restyle all the things!",
+	"homepage_url": "http://restyleddit.com",
+	"background_page": "background.html",
+	"content_scripts": [ 
+		{
+			"css": [ "stylesheet.css" ],
+			"matches": [ "http://*.reddit.com/*", "https://*.reddit.com/*" ]
+		},
+		{
+			"css": [ "noSide.css" ],
+			"matches": [ 
+				"http://ssl.reddit.com/*", "https://ssl.reddit.com/*", 
+				"http://*.reddit.com/help*", "https://*.reddit.com/help*", 
+				"http://*.reddit.com/message*", "https://*.reddit.com/message*", 
+				"http://*.reddit.com/ad_inq*", "https://*.reddit.com/ad_inq*", 
+				"http://*.reddit.com/promoted*", "https://*.reddit.com/promoted*" 
+			]
+		},
+		{
+			"css": [ "noSearch.css" ],
+			"matches": [ 
+				"http://ssl.reddit.com/*", "https://ssl.reddit.com/*", 
+				"http://*.reddit.com/user/*", "https://*.reddit.com/user/*", 
+				"http://*.reddit.com/reddits*", "https://*.reddit.com/reddits*", 
+				"http://*.reddit.com/search*", "https://*.reddit.com/search*",  
+				"http://*.reddit.com/help*", "https://*.reddit.com/help*", 
+				"http://*.reddit.com/message*", "https://*.reddit.com/message*", 
+				"http://*.reddit.com/ad_inq*", "https://*.reddit.com/ad_inq*", 
+				"http://*.reddit.com/promoted*", "https://*.reddit.com/promoted*" 
+			]
+		},
+		{
+			"css": [ "noTitle.css" ],
+			"matches": [ 
+				"http://*.reddit.com/r/*/submit", "https://*.reddit.com/r/*/submit"
+			]
+		},
+		{
+			"css": [ "scrollMenu.css" ],
+			"matches": [ 
+				"http://*.reddit.com/message/inbox*", "https://*.reddit.com/message/inbox*", 
+				"http://*.reddit.com/message/unread*", "https://*.reddit.com/message/unread*", 
+				"http://*.reddit.com/message/messages*", "https://*.reddit.com/message/messages*",
+				"http://*.reddit.com/message/comments*", "https://*.reddit.com/message/comments*", 
+				"http://*.reddit.com/message/selfreply*", "https://*.reddit.com/message/selfreply*", 
+				"http://*.reddit.com/message/moderator*", "https://*.reddit.com/message/moderator*", 
+				"http://*.reddit.com/promoted*", "https://*.reddit.com/promoted*" 
+			]
+		},
+		{
+			"css": [ "noSearchSubmit.css" ],
+			"matches": [ "http://*.reddit.com/user/*", "https://*.reddit.com/user/*" ]
+		},
+		{
+			"css": [ "apple.css" ],
+			"matches": [ "http://*.reddit.com/r/apple*", "https://*.reddit.com/r/apple*" ]
+		},
+		{
+			"css": [ "post.css" ],
+			"matches": [ "http://*.reddit.com/r/*/comments/*", "https://*.reddit.com/r/*/comments/*" ]
+		},
+		{
+			"css": [ "media.css" ],
+			"matches": [ "http://*.redditmedia.com/*", "https://*.redditmedia.com/*" ]
+		}
+	]
+}

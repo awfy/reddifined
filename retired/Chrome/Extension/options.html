@@ -1,0 +1,76 @@
+<html>
+<head>
+	<title>Restyleddit &rarr; Options</title>
+	<link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css">
+	<link href="options.css" rel="stylesheet" />
+</head>
+<body onload="restore_options()">
+
+	<div class="wrapper">
+		<form class="form-stacked">
+			<fieldset>
+				<div class="clearfix">
+					<label for="fontFamily">Font Family</label>
+					<div class="input">
+						<select id="fontFamily" name="fontFamily">
+							<option value="0">Arial</option>
+							<option value="1">Georgia</option>
+							<option value="2">Helvetica</option>
+							<option value="3" selected="selected">Helvetica Neue</option>
+							<option value="4">Tahoma</option>
+							<option value="5">Verdana</option>
+						</select>
+					</div>
+				</div>
+				<div class="clearfix linkColors">
+					<label for="staticHex">Link Colors</label>
+					<div class="input">
+						<div class="input-prepend">
+							<span class="add-on">#</span>
+							<input class="medium" id="staticHex" name="staticHex" placeholder="Static" size="6" type="text" value="ff8b60" />
+						</div>
+						<div class="input-prepend">
+							<span class="add-on">#</span>
+							<input class="medium" id="hoveredHex" name="hoveredHex" placeholder="Hover" size="6" type="text" value="006699" />
+						</div>
+						<div class="input-prepend">
+							<span class="add-on">#</span>
+							<input class="medium" id="visitedHex" name="visitedHex" placeholder="Visited" size="6" type="text" value="8fa7b3" />
+						</div>
+						<span class="help-block">Choose static, hovered and visited colors.</span>
+					</div>
+				</div>
+				<div class="clearfix">
+					<label for="allowStyles">Display Options</label>
+					<div class="input">
+						<ul class="inputs-list">
+							<li>
+								<label>
+									<input type="checkbox" id="showStyles" name="showStyles" />
+									<span>Show sub-reddit custom styles <span class="label warning">not supported</span></span>
+								</label>
+							</li>
+							<li>
+								<label>
+									<input type="checkbox" id="showThumbnails" name="showThumbnails" checked="checked" />
+									<span>Always show thumbnails</strong></span>
+								</label>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="clearfix customCSS">
+					<label for="customCSS">Custom CSS</label>
+					<div class="input">
+						<textarea id="customCSS" name="customCSS" rows="3"></textarea>
+					</div>
+				</div>
+			</fieldset>
+			<div class="actions">
+				<button type="submit" class="btn primary">Save Changes</button>
+			</div>
+		</form>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+{
+	"name": "Restyleddit",
+	"version": "0.2.2",
+	"icons": { 
+		"16": "icon16.png",
+		"19": "icon19.png",
+		"48": "icon48.png", 
+		"128": "icon128.png" 
+	},
+	"description": "Restyle all the things!",
+	"homepage_url": "http://restyleddit.com",
+	"background_page": "background.html",
+	"options_page": "options.html",
+	"content_scripts": [ 
+		{
+			"css": [ "stylesheet.css" ],
+			"matches": [ "http://*.reddit.com/*", "https://*.reddit.com/*" ]
+		},
+		{
+			"css": [ "noSide.css" ],
+			"matches": [ "http://ssl.reddit.com/*", "https://ssl.reddit.com/*", "http://*.reddit.com/help*", "https://*.reddit.com/help*", "http://*.reddit.com/message*", "https://*.reddit.com/message*" ]
+		},
+		{
+			"css": [ "noSearch.css" ],
+			"matches": [ "http://ssl.reddit.com/*", "https://ssl.reddit.com/*", "http://*.reddit.com/user/*", "https://*.reddit.com/user/*", "http://*.reddit.com/reddits*", "https://*.reddit.com/reddits*", "http://*.reddit.com/message*", "https://*.reddit.com/message*" ]
+		},
+		{
+			"css": [ "scrollMenu.css" ],
+			"matches": [ "http://*.reddit.com/user/*", "https://*.reddit.com/user/*", "http://*.reddit.com/message*", "https://*.reddit.com/message*" ]
+		},
+		{
+			"css": [ "media.css" ],
+			"matches": [ "http://*.redditmedia.com/*", "https://*.redditmedia.com/*" ]
+		}
+	],
+	"page_action" : {
+		"default_icon" : "icon16.png", 
+		"default_title" : "Restyleddit Options",
+		"default_popup" : "options.html"
+	},
+	"permissions" : [ "tabs" ]
+}

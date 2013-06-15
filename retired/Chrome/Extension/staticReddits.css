@@ -1,0 +1,27 @@
+
+/* >>>> HEADER */
+
+html > body > #header #header-bottom-left {
+	left: 160px !important;
+	}
+
+html > body > #header #header-bottom-left a#header-img, html > body > #header #header-bottom-left a#header-img-a {
+	left: -154px !important;
+	}
+
+html > body > #header #sr-header-area {
+	border-right: 0 !important;
+	box-shadow: none !important;
+	width: 160px !important;
+	}
+
+html > body > #header #header-bottom-right {
+	right: 6px !important;
+	}
+	
+/* >>>> CONTENT */
+
+html > body > .content {
+	box-shadow: none !important;
+	left: 160px !important;
+	}
