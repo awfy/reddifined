@@ -6,6 +6,16 @@ $(document).ready(function() {
   // Content
   $('.content').find('#siteTable_organic').parent('.spacer').addClass('attention-listing');
 
+    // Thumbnail
+    var $thumbnail = $(".thumbnail");
+    var $img = $(".thumbnail img");
+
+    var attributes = $img.prop("attributes");
+
+    $.each(attributes, function() {
+      $thumbnail.attr(this.name, this.value);
+    });
+
   // Sidebar
   $('.side').removeClass('side').addClass('sidebar');
 
