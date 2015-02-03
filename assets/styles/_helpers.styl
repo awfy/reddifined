@@ -1,0 +1,188 @@
+/* imports */
+global-reset()
+@import 'nib'
+@import url('http://fonts.googleapis.com/css?family=Lato:300,400,700')
+
+/* widths + heights */
+subHeight           = 26px
+headerHeight        = 42px
+sidebarWidth        = 180px
+minWidth            = 992px
+sideWidth           = 332px
+searchWidth         = 180px
+
+/* font family */
+fontFamily          = "Helvetica Neue", Helvetica, Arial, Tahoma, sans-serif
+fontFamilyCustom    = Lato, "Helvetica Neue", Helvetica, Arial, Tahoma, sans-serif
+
+/* font colors */
+fontColor           = #616c78;
+fontColorLight      = #939fab;
+fontColorDark       = #313b45;
+fontColorLink       = #297acc;
+fontColorLinkHover  = redditOrange;
+
+/* font weights */
+fontWeight          = 400
+fontWeightBold      = 700
+
+/* reddit colors */
+redditOrange        = #ff5700
+redditRed           = #ff4500
+redditPaleBlue      = #f0f2f6
+redditDarkBlue      = #3d454d
+redditUpVote        = #ff8b60
+redditDownVote      = #9494ff
+
+/* buttons */
+green-button(fontSize = 12px, height = 26px)
+  z-index: 100
+
+  box-sizing: border-box
+  height: height
+  margin: 0
+  padding: 0 11px
+
+  background: linear-gradient(#98db39, #72b334 95%, #5ea120)
+  background-color: #ffffff
+  background-position: 0 0
+  background-repeat: no-repeat
+  border: 1px solid rgba(#3c6614, 0.8)
+  border-bottom-color: #3c6614
+  border-radius: 4px
+  border-top-color: rgba(#3c6614, 0.6)
+  box-shadow: rgba(white, 0.2) 0 1px 0 inset, rgba(black, 0.2) 0 1px 1px
+  color: rgba(white, 0.97)
+  cursor: pointer
+  font-family: fontFamily
+  font-size: fontSize
+  font-weight: fontWeightBold
+  line-height: height
+  outline: 0
+  text-shadow: 0 -1px 0 rgba(black, 0.5)
+  text-transform: capitalize
+  vertical-align: middle
+
+  &:hover
+    background: linear-gradient(#98db39, #5ea120)
+    color: white
+    text-decoration: none
+
+  &:active
+    background: linear-gradient(#5ea120, #72b334)
+    background-color: #5ea120
+    border-color: 1px solid rgba(#3c6614, 0.8)
+    border-bottom-color: rgba(#3c6614, 0.6)
+    border-top-color: #3c6614
+    box-shadow: rgba(black, 0.1) 0 1px 1px inset, rgba(white, 0.7) 0 1px 0
+    color: white
+    text-shadow: 0 1px 0 rgba(black, 0.5)
+
+red-button(fontSize = 12px, height = 26px)
+  z-index: 100
+
+  box-sizing: border-box
+  height: height
+  margin: 0
+  padding: 0 11px
+
+  background: linear-gradient(#e95c3e, #d83e1a 95%, #bf2a13)
+  background-color: #ffffff
+  background-position: 0 0
+  background-repeat: no-repeat
+  border: 1px solid rgba(#801c0d, 0.8)
+  border-bottom-color: #801c0d
+  border-radius: 4px
+  border-top-color: rgba(#801c0d, 0.6)
+  box-shadow: rgba(white, 0.2) 0 1px 0 inset, rgba(black, 0.2) 0 1px 1px
+  color: rgba(white, 0.97)
+  cursor: pointer
+  font-family: fontFamily
+  font-size: fontSize
+  font-weight: fontWeightBold
+  line-height: height
+  outline: 0
+  text-shadow: 0 -1px 0 rgba(black, 0.5)
+  text-transform: capitalize
+  vertical-align: middle
+
+  &:hover
+    background: linear-gradient(#d83e1a, #bf2a13)
+    color: white
+    text-decoration: none
+
+  &:active
+    background: linear-gradient(#bf2a13, #d83e1a)
+    background-color: #5ea120
+    border: 1px solid rgba(#801c0d, 0.8)
+    border-bottom-color: rgba(#801c0d, 0.6)
+    border-top-color: #801c0d
+    box-shadow: rgba(black, 0.1) 0 1px 1px inset, rgba(white, 0.7) 0 1px 0
+    color: white
+    text-shadow: 0 1px 0 rgba(black, 0.5)
+
+/* border arrow */
+arrow(direction, color, size)
+  display: block
+  height: 0
+  width: 0
+
+  if direction == "top"
+    border-bottom: size solid color
+    border-left: size solid transparent
+    border-right: size solid transparent
+
+  else if direction == "right"
+    border-bottom: size solid transparent
+    border-left: size solid color
+    border-top: size solid transparent
+
+  else if direction == "bottom"
+    border-left: size solid transparent
+    border-right: size solid transparent
+    border-top: size solid color
+
+  else if direction == "left"
+    border-bottom: size solid transparent
+    border-right: size solid color
+    border-top: size solid transparent
+
+  else if direction == "top-left"
+    border-right: size solid transparent
+    border-top: size solid color
+
+  else if direction == "top-right"
+    border-left: size solid transparent
+    border-top: size solid color
+
+  else if direction == "bottom-left"
+    border-bottom: size solid color
+    border-right: size solid transparent
+
+  else if direction == "bottom-right"
+    border-bottom: size solid color
+    border-left: size solid transparent
+
+/* placeholder */
+placeholder(placeholder = #999999)
+
+  /* Chrome + Safari */
+  &::-webkit-input-placeholder
+    color: placeholder
+
+  /* Firefox 18- */
+  &:-moz-placeholder
+    color: placeholder
+
+  /* Firefox 19+ */
+  &::-moz-placeholder
+    color: placeholder
+
+  /* Internet Explorer */
+  &:-ms-input-placeholder
+    color: placeholder
+
+/* retina images */
+image-set(normal, retina)
+  background-image: image_url(normal)
+  background-image: -webkit-image-set(image_url(normal) 1x, image_url(retina) 2x)

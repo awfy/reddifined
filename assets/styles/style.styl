@@ -1,0 +1,2383 @@
+
+/* helpers */
+@import '_helpers.styl'
+
+/* build */
+body.res
+  position: relative
+
+  min-width: minWidth
+  padding: subHeight + 1px + headerHeight + 1px 0 0 0
+
+  background-color: #ffffff
+  color: fontColor
+  font-family: fontFamily
+
+  /* multi-reddits */
+  .listing-chooser
+    display: none
+
+    > .content
+      margin: 0
+
+  /* header */
+  #header
+    left: 0
+    position: fixed
+    right: 0
+    top: (subHeight + 1px)
+    z-index: 500
+
+    display: none !important
+    height: headerHeight
+    margin: 0
+    min-width: minWidth
+    max-width: none
+    width: auto
+
+    background: linear-gradient(rgba(255, 255, 255, 0), #f0f2f6 95%, #e5e8ee)
+    background-color: #ffffff
+    box-shadow: #ffffff 0 1px 0 inset, rgba(139, 154, 179, 0.4) 0 1px 3px
+    border: 0
+    border-bottom: 1px solid #98a4b8
+
+    &:before, &:after
+      display: none
+
+    /* sidebar (sub-reddits) */
+    #sr-header-area
+      controlWidth = 16px
+      box-shadow(rgba(black, 0.2) 0 -1px 2px inset)
+      background: redditDarkBlue
+      border: 0
+      border-bottom: 1px solid darken(redditDarkBlue, 10%)
+      height: subHeight
+      line-height: 1
+      left: 0
+      position: fixed
+      right: 0
+      top: 0
+      div#srLeftContainer
+        background-image(linear-gradient(lighten(redditDarkBlue, 10%), lighten(redditDarkBlue, 5%), redditDarkBlue))
+        box-shadow(rgba(black, 0.1) 1px 0 1px)
+        border-right: 1px solid darken(redditDarkBlue, 10%)
+        height: subHeight
+        line-height: subHeight
+        max-height: subHeight
+        margin: 0
+        padding: 0 10px
+        div#srDropdown
+          div#srDropdownContainer
+            padding-right: 4px
+            a
+              color: #ffffff
+              line-height: subHeight
+              padding: 0 13px 0 0
+              position: relative
+              text-shadow: 0 1px 0 rgba(black, 0.7)
+              text-transform: uppercase
+              &:after
+                arrow(bottom, #ffffff, 3px)
+                content: ""
+                display: inline-block
+                position: absolute
+                right: 0
+                top: 4px
+        div#RESStaticShortcuts
+          a, span
+            color: #ffffff
+            font-size: 12px !important
+            line-height: subHeight
+            text-shadow: 0 1px 0 rgba(black, 0.7)
+            text-transform: none
+            &.subbarlink, &.undefined
+              font-size: 0 !important
+              text-indent: -9999em
+              &:before
+                font-size: 11px
+                line-height: subHeight
+              &[href="/r/Dashboard/"]:before
+                content: "Dashboard"
+              &[href="/"]:before
+                content: "Frontpage"
+              &[href="/r/all/"]:before
+                content: "All"
+              &[href="/r/random/"]:before
+                content: "Random"
+              &[href="/r/friends/"]:before
+                content: "Friends"
+              &[href="/r/mod/"]:before
+                content: "Mod"
+              &[href="/r/mod/about/modqueue"]:before
+                content: "Queue"
+            &.RESShortcutsCurrentSub
+              color: redditOrange !important
+              cursor: default
+              font-weight: normal
+              text-decoration: none
+              &:hover
+                text-decoration: none
+            &:hover
+              text-decoration: underline
+        span.srSep
+          display: none
+      div#RESShortcutsViewport
+        height: subHeight
+        line-height: subHeight
+        max-height: subHeight
+        #RESShortcuts
+          color: #ffffff
+          font-size: 11px !important
+          padding: 0 controlWidth * 3 + 10px 0 10px
+          text-shadow: 0 1px 0 rgba(black, 0.7)
+          a, span
+            color: #ffffff
+            font-size: 11px !important
+            line-height: subHeight
+            text-shadow: 0 1px 0 rgba(black, 0.7)
+            text-transform: none
+            &.RESShortcutsCurrentSub
+              color: redditOrange !important
+              cursor: default
+              font-weight: normal
+              text-decoration: none
+              &:hover
+                text-decoration: none
+          a:hover
+            text-decoration: underline
+      div#RESShortcutsEditContainer
+        background-image(linear-gradient(lighten(redditDarkBlue, 10%), lighten(redditDarkBlue, 5%), redditDarkBlue))
+        box-shadow(rgba(black, 0.1) -1px 0 1px)
+        border-left: 1px solid darken(redditDarkBlue, 10%)
+        height: subHeight
+        line-height: subHeight
+        max-height: subHeight
+        position: absolute
+        right: 0
+        top: 0
+        width: (controlWidth * 3)
+        div
+          arrowWidth = 5px
+          background: transparent
+          color: #ffffff
+          font-size: 13px
+          height: subHeight
+          line-height: subHeight
+          max-height: subHeight
+          position: absolute
+          text-align: center
+          text-shadow: rgba(black, 0.7) 0 1px 0
+          width: controlWidth
+          &#RESShortcutsLeft, &#RESShortcutsRight
+            cursor: pointer
+            font-size: 0
+            text-indent: -9999em
+            &:before
+              arrow(left, #ffffff, arrowWidth)
+              content: ""
+              left: 8px
+              position: absolute
+              top: 8px
+          &#RESShortcutsRight
+            &:before
+              arrow(right, #ffffff, arrowWidth)
+              border-right: transparent
+              left: auto
+              right: 8px
+            /* div#srLeftContainer {
+              position: relative;
+              z-index: 20;
+
+              span.srSep {
+                display: none;
+              }
+
+              #srDropdown {
+                display: block;
+                left: 0;
+                position: absolute;
+                top: 10px;
+                width: sidebarWidth;
+                z-index: 30;
+
+                div#srDropdownContainer {
+
+                  a {
+                    border: 1px solid transparent;
+                    border-left: 0;
+                    border-right: 0;
+                    color: fontColorDark;
+                    display: block;
+                    font-family: fontFamilyCustom;
+                    font-size: 12px !important;
+                    font-weight: fontWeightBold;
+                    height: auto;
+                    line-height: 28px;
+                    margin-bottom: -1px;
+                    padding: 0 10px;
+                    position: relative;
+                    text-shadow: 0 1px 0 #ffffff;
+                    text-transform: lowercase;
+                    width: sidebarWidth - 20px;
+
+                    &:before {
+                      @include arrow(bottom, fontColorDark, 5px);
+                      content: "";
+                      position: absolute;
+                      right: 14px;
+                      top: 12px;
+                    }
+
+                    &:hover {
+                      background: shade(redditPaleBlue,2%);
+                      border-bottom: 1px solid shade(redditPaleBlue,15%);
+                      border-top: 1px solid shade(redditPaleBlue,15%);
+                      color: fontColorLinkHover;
+                      text-decoration: none;
+
+                      &:before {
+                        border-top-color: fontColorLinkHover;
+                      }
+
+                    }
+
+                    &:active {
+                      @include background-image(
+                        linear-gradient(
+                          shade(redditPaleBlue,4%),
+                          shade(redditPaleBlue,2%)
+                        )
+                      );
+                      @include box-shadow(rgba(black,0.05) 0 1px 1px inset);
+                      background: shade(redditPaleBlue,2%);
+                      border-bottom: 1px solid shade(redditPaleBlue,15%);
+                      border-top: 1px solid shade(redditPaleBlue,15%);
+                      color: fontColorDark;
+
+                      &:before {
+                        border-top-color: fontColorDark;
+                      }
+
+                    }
+
+                    &.RESShortcutsCurrentSub {
+                      @include background-image(
+                        linear-gradient(
+                          lighten(redditPaleBlue,5%),
+                          lighten(redditPaleBlue,2%) 50%,
+                          redditPaleBlue
+                        )
+                      );
+                      @include box-shadow(#ffffff 0 1px 0 inset, rgba(black,0.05) 0 1px 1px);
+                      border-bottom: 1px solid shade(redditPaleBlue,15%);
+                      border-top: 1px solid shade(redditPaleBlue,15%);
+                      color: fontColorLink !important;
+                    }
+
+                  }
+
+                }
+
+              }
+
+              div#RESStaticShortcuts {
+                left: 0;
+                position: absolute;
+                top: 39px;
+                width: sidebarWidth;
+                z-index: 20;
+
+                span.separator {
+                  display: none;
+                }
+
+                a, a.subbarlink {
+                  border: 1px solid transparent;
+                  border-left: 0;
+                  border-right: 0;
+                  color: fontColorDark;
+                  display: block;
+                  font-family: fontFamilyCustom;
+                  font-size: 12px !important;
+                  font-weight: fontWeightBold;
+                  height: auto;
+                  line-height: 28px;
+                  margin-bottom: -1px;
+                  padding: 0 10px;
+                  position: relative;
+                  text-shadow: 0 1px 0 #ffffff;
+                  text-transform: lowercase;
+                  width: sidebarWidth - 20px;
+
+                  &:hover {
+                    background: shade(redditPaleBlue,2%);
+                    border-bottom: 1px solid shade(redditPaleBlue,15%);
+                    border-top: 1px solid shade(redditPaleBlue,15%);
+                    color: fontColorLinkHover;
+                    text-decoration: none;
+                  }
+
+                  &:active {
+                    @include background-image(
+                      linear-gradient(
+                        shade(redditPaleBlue,4%),
+                        shade(redditPaleBlue,2%)
+                      )
+                    );
+                    @include box-shadow(rgba(black,0.05) 0 1px 1px inset);
+                    background: shade(redditPaleBlue,2%);
+                    border-bottom: 1px solid shade(redditPaleBlue,15%);
+                    border-top: 1px solid shade(redditPaleBlue,15%);
+                    color: fontColorDark;
+                  }
+
+                  &.RESShortcutsCurrentSub {
+                    @include background-image(
+                      linear-gradient(
+                        lighten(redditPaleBlue,5%),
+                        lighten(redditPaleBlue,2%) 50%,
+                        redditPaleBlue
+                      )
+                    );
+                    @include box-shadow(#ffffff 0 1px 0 inset, rgba(black,0.05) 0 1px 1px);
+                    border-bottom: 1px solid shade(redditPaleBlue,15%);
+                    border-top: 1px solid shade(redditPaleBlue,15%);
+                    color: fontColorLink !important;
+                  }
+
+                }
+
+              }
+
+            }
+
+            div#RESShortcutsViewport {
+              bottom: 0;
+              display: block;
+              left: 0;
+              margin: 0;
+              max-height: none;
+              padding: 0;
+              position: absolute;
+              top: 242px;
+              width: sidebarWidth;
+              z-index: 10;
+
+              div#RESShortcuts {
+                bottom: 0;
+                left: 0;
+                margin: 0;
+                padding: 0;
+                position: absolute;
+                top: 0;
+
+                span.separator {
+                  display: none;
+                }
+
+                a, a.subbarlink {
+                  border: 1px solid transparent;
+                  border-left: 0;
+                  border-right: 0;
+                  color: fontColorDark;
+                  display: block;
+                  font-family: fontFamilyCustom;
+                  font-size: 12px !important;
+                  font-weight: fontWeightBold;
+                  height: auto;
+                  line-height: 28px;
+                  margin-bottom: -1px;
+                  padding: 0 10px;
+                  position: relative;
+                  text-shadow: 0 1px 0 #ffffff;
+                  text-transform: lowercase;
+                  width: sidebarWidth - 20px;
+
+                  &:hover {
+                    background: shade(redditPaleBlue,2%);
+                    border-bottom: 1px solid shade(redditPaleBlue,15%);
+                    border-top: 1px solid shade(redditPaleBlue,15%);
+                    color: fontColorLinkHover;
+                    text-decoration: none;
+                  }
+
+                  &:active {
+                    @include background-image(
+                      linear-gradient(
+                        shade(redditPaleBlue,4%),
+                        shade(redditPaleBlue,2%)
+                      )
+                    );
+                    @include box-shadow(rgba(black,0.05) 0 1px 1px inset);
+                    background: shade(redditPaleBlue,2%);
+                    border-bottom: 1px solid shade(redditPaleBlue,15%);
+                    border-top: 1px solid shade(redditPaleBlue,15%);
+                    color: fontColorDark;
+                  }
+
+                  &.RESShortcutsCurrentSub {
+                    @include background-image(
+                      linear-gradient(
+                        lighten(redditPaleBlue,5%),
+                        lighten(redditPaleBlue,2%) 50%,
+                        redditPaleBlue
+                      )
+                    );
+                    @include box-shadow(#ffffff 0 1px 0 inset, rgba(black,0.05) 0 1px 1px);
+                    border-bottom: 1px solid shade(redditPaleBlue,15%);
+                    border-top: 1px solid shade(redditPaleBlue,15%);
+                    color: fontColorLink !important;
+                  }
+
+                }
+
+              }
+
+            }
+
+            div#RESShortcutsEditContainer {
+              display: none;
+            } */
+    /* logo & navigation */
+    #header-bottom-left
+      logoHeight = 23px
+      logoPadding = 27px
+      logoWidth = 27px
+      box-shadow(none)
+      background: none
+      bottom: auto
+      display: block
+      height: auto
+      left: 0
+      margin: 0
+      padding: 0
+      position: absolute
+      right: auto
+      top: 0
+      width: auto
+      /* logo */
+      #header-img, a#header-img-a
+        background: url("http://i.imgur.com/gZWtB.png") no-repeat 0 0
+        color: fontColorDark
+        font-size: 0
+        height: logoHeight
+        left: 10px
+        line-height: logoHeight
+        margin: 0
+        padding: 0
+        position: absolute
+        text-indent: -9999em
+        top: 10px
+        width: logoWidth
+        #header-img
+          display: none
+      /* page name */
+      span.pagename
+        display: none
+        background: none
+        color: fontColorDark
+        font-family: fontFamilyCustom
+        font-weight: fontWeightBold
+        height: logoHeight
+        left: (10px + logoPadding + 6px)
+        line-height: logoHeight
+        margin: 0
+        padding: 0
+        position: absolute
+        text-indent: 0
+        top: 10px
+        a
+          background: none
+          bottom: auto
+          color: fontColorDark
+          display: block
+          font-family: fontFamilyCustom
+          font-size: 12px
+          font-weight: fontWeightBold
+          font-variant: normal
+          height: logoHeight
+          left: auto
+          line-height: logoHeight
+          padding: 0
+          position: relative
+          right: auto
+          text-indent: 0
+          top: auto
+      /* navigation */
+      ul.tabmenu
+        border-radius(0)
+        background: transparent
+        border: 0
+        display: block
+        margin: 0
+        height: auto
+        left: (logoWidth + 20px)
+        padding: 0
+        position: absolute
+        right: auto
+        top: 0
+        width: auto
+        li
+          display: block
+          float: left
+          margin: 0
+          padding: 0
+          a
+            border-radius(0)
+            box-shadow(none)
+            background: transparent
+            border: 0
+            color: fontColorDark
+            display: block
+            font-size: 11px
+            font-weight: fontWeightBold
+            height: headerHeight
+            line-height: headerHeight
+            margin-right: -1px
+            padding: 0 14px
+            position: relative
+            text-shadow: rgba(#ffffff, 0.5) 0 1px 0
+            text-transform: capitalize
+            z-index: 25
+            &:before, &:after
+              background-image(linear-gradient(top, rgba(240, 242, 246, 0), rgba(240, 242, 246, 0) 30%, rgba(#98a4b8, 0.5)))
+              content: ""
+              display: block
+              height: headerHeight
+              left: 0
+              position: absolute
+              top: 0
+              width: 1px
+            &:after
+              left: auto
+              right: 0
+            &:hover
+              background-image(linear-gradient(top, rgba(255, 255, 255, 0), #e5e8ee))
+              z-index: 50
+            &:active
+              background-image(linear-gradient(top, #e5e8ee, #f0f2f6))
+              box-shadow(rgba(black, 0.1) 0 1px 1px inset)
+              z-index: 75
+              &:before, &:after
+                background-image(linear-gradient(top, rgba(#98a4b8, 0.6), rgba(#98a4b8, 0.3)))
+          &.selected
+            a, a:hover, a:active
+              background-image(linear-gradient(top, #e5e8ee, #f0f2f6))
+              box-shadow(rgba(black, 0.1) 0 1px 1px inset)
+              z-index: 75
+              &:before, &:after
+                background-image(linear-gradient(top, rgba(#98a4b8, 0.6), rgba(#98a4b8, 0.3)))
+    /* user items */
+    #header-bottom-right
+      userbarHeight = 26px
+      background: none
+      margin: 0
+      padding: 0
+      position: absolute
+      right: (searchWidth + 20px)
+      top: 7px
+      div#userbarToggle, span.separator, a#mailCount, a#modmail, ul.flat-list
+        display: none !important
+      span.user
+        background-image(linear-gradient(rgba(255, 255, 255, 0), #f0f2f6 95%, #e5e8ee))
+        border-radius(4px 0 0 4px)
+        box-shadow(rgba(139, 154, 179, 0.2) 0 1px 0 inset, #ffffff 0 1px 0)
+        background-color: #ffffff
+        border: 0
+        border: 1px solid rgba(#98a4b8, 0.8)
+        border-bottom-color: #98a4b8
+        border-top-color: rgba(#98a4b8, 0.6)
+        cursor: pointer
+        display: block
+        float: left
+        font-size: 0
+        height: 26px
+        margin: 0
+        position: relative
+        text-indent: -9999em
+        width: auto
+        a
+          display: block
+          font-size: 12px
+          font-weight: bold
+          height: 28px
+          line-height: 28px
+          margin: -1px !important
+          padding: 0 12px
+        span#RESAccountSwitcherIcon, span.userkarma
+          display: none
+        &:hover
+          background-image(linear-gradient(top, rgba(255, 255, 255, 0), #e5e8ee))
+          text-decoration: none
+        &:active
+          background-image(linear-gradient(top, #e5e8ee, #f0f2f6))
+          box-shadow(rgba(black, 0.1) 0 1px 1px inset, rgba(#ffffff, 0.7) 0 1px 0)
+          background-color: darken(redditPaleBlue, 2%)
+          border-color: 1px solid rgba(#98a4b8, 0.8)
+          border-bottom-color: rgba(#98a4b8, 0.6)
+          border-top-color: #98a4b8
+      a#mail
+        background-image(linear-gradient(rgba(255, 255, 255, 0), #f0f2f6 95%, #e5e8ee))
+        box-shadow(rgba(139, 154, 179, 0.2) 0 1px 0 inset, #ffffff 0 1px 0)
+        background-color: #ffffff
+        background-position: 0 0 !important
+        background-repeat: repeat !important
+        border: 0
+        border: 1px solid rgba(#98a4b8, 0.8)
+        border-bottom-color: #98a4b8
+        border-top-color: rgba(#98a4b8, 0.6)
+        cursor: pointer
+        display: block
+        float: left
+        font-size: 0
+        height: 26px
+        line-height: 26px !important
+        margin: 0 0 0 -1px
+        position: relative
+        text-indent: -9999em
+        top: auto !important
+        width: 28px !important
+        &:before
+          image-set("http://i.imgur.com/BiMNt9k.png", "http://i.imgur.com/gZsyOcb.png")
+          content: ""
+          display: block
+          height: 14px
+          left: 7px
+          margin: 0
+          position: absolute
+          top: 6px
+          width: 14px
+        &.havemail
+          background-position: 0 0 !important
+          background-repeat: repeat !important
+          top: auto !important
+          &:before
+            image-set("http://i.imgur.com/TFqUiBJ.png", "http://i.imgur.com/Nx2t7Cs.png")
+        &:hover
+          background-image(linear-gradient(top, rgba(255, 255, 255, 0), #e5e8ee))
+          text-decoration: none
+        &:active
+          background-image(linear-gradient(top, #e5e8ee, #f0f2f6))
+          box-shadow(rgba(black, 0.1) 0 1px 1px inset, rgba(#ffffff, 0.7) 0 1px 0)
+          background-color: darken(redditPaleBlue, 2%)
+          border-color: 1px solid rgba(#98a4b8, 0.8)
+          border-bottom-color: rgba(#98a4b8, 0.6)
+          border-top-color: #98a4b8
+      span#openRESPrefs
+        background-image(linear-gradient(rgba(255, 255, 255, 0), #f0f2f6 95%, #e5e8ee))
+        box-shadow(rgba(139, 154, 179, 0.2) 0 1px 0 inset, #ffffff 0 1px 0)
+        background-color: #ffffff
+        border: 0
+        border: 1px solid rgba(#98a4b8, 0.8)
+        border-bottom-color: #98a4b8
+        border-top-color: rgba(#98a4b8, 0.6)
+        cursor: pointer
+        display: block
+        float: left
+        font-size: 0
+        height: 26px
+        margin: 0 0 0 -1px
+        position: relative
+        text-indent: -9999em
+        width: 28px
+        span#RESSettingsButton
+          image-set("http://i.imgur.com/0Yew0MD.png", "http://i.imgur.com/2AhsvK1.png")
+          background-position: 0 0
+          display: block
+          height: 14px
+          left: 7px
+          margin: 0
+          position: absolute
+          top: 6px
+          width: 14px
+        &:hover
+          background-image(linear-gradient(top, rgba(255, 255, 255, 0), #e5e8ee))
+          text-decoration: none
+        &:active
+          background-image(linear-gradient(top, #e5e8ee, #f0f2f6))
+          box-shadow(rgba(black, 0.1) 0 1px 1px inset, rgba(#ffffff, 0.7) 0 1px 0)
+          background-color: darken(redditPaleBlue, 2%)
+          border-color: 1px solid rgba(#98a4b8, 0.8)
+          border-bottom-color: rgba(#98a4b8, 0.6)
+          border-top-color: #98a4b8
+      form.logout
+        display: block
+        float: left
+        margin: 0 0 0 -1px
+        a
+          background-image(linear-gradient(rgba(255, 255, 255, 0), #f0f2f6 95%, #e5e8ee))
+          border-radius(0 4px 4px 0)
+          box-shadow(rgba(139, 154, 179, 0.2) 0 1px 0 inset, #ffffff 0 1px 0)
+          background-color: #ffffff
+          border: 0
+          border: 1px solid rgba(#98a4b8, 0.8)
+          border-bottom-color: #98a4b8
+          border-top-color: rgba(#98a4b8, 0.6)
+          cursor: pointer
+          display: block
+          font-size: 0
+          height: 26px
+          margin: 0
+          position: relative
+          text-indent: -9999em
+          width: 27px
+          &:before
+            image-set("http://i.imgur.com/6tRtJ4A.png", "http://i.imgur.com/APTmxyI.png")
+            content: ""
+            display: block
+            height: 14px
+            left: 7px
+            position: absolute
+            top: 6px
+            width: 13px
+          &:hover
+            background-image(linear-gradient(top, rgba(255, 255, 255, 0), #e5e8ee))
+            text-decoration: none
+          &:active
+            background-image(linear-gradient(top, #e5e8ee, #f0f2f6))
+            box-shadow(rgba(black, 0.1) 0 1px 1px inset, rgba(#ffffff, 0.7) 0 1px 0)
+            background-color: darken(redditPaleBlue, 2%)
+            border-color: 1px solid rgba(#98a4b8, 0.8)
+            border-bottom-color: rgba(#98a4b8, 0.6)
+            border-top-color: #98a4b8
+            /*@include background-image(
+              linear-gradient(
+                top,
+                #e5e8ee,
+                #f0f2f6
+              )
+            );
+            @include border-radius(5px);
+            @include box-shadow(rgba(black,0.1) 0 1px 1px inset, #ffffff 0 1px 0);
+            border: 1px solid #98a4b8;
+            height: userbarHeight;
+            padding: 0 10px;
+            position: absolute;
+            right: searchWidth + 20px;
+            top: 7px;
+
+            div#userbarToggle {
+              display: none;
+            }
+
+            span {
+              font-family: fontFamilyCustom;
+              font-size: 11px;
+
+              &.user {
+                font-size: 0;
+                line-height: userbarHeight;
+                margin: 0;
+                text-indent: -9999em;
+
+                a {
+                  color: fontColorLink;
+                  font-size: 11px;
+                  font-weight: bold;
+                  margin-right: 4px !important;
+                  text-indent: 0;
+
+                  &:hover {
+                    color: fontColorLinkHover;
+                    text-decoration: underline;
+                  }
+
+                }
+
+                span#RESAccountSwitcherIcon {
+                  background: transparent;
+                  margin: 0;
+                  padding: 0;
+                  position: relative;
+
+                  &:before {
+                    @include arrow(bottom, fontColorLink, 4px);
+                    content: "";
+                    position: absolute;
+                    top: 6px;
+                    left: 2px;
+                  }
+
+                  &:hover {
+                    @include arrow(bottom, fontColorLinkHover, 4px);
+                  }
+
+                }
+
+                span.userkarma {
+                  border: 0;
+                  cursor: default;
+                  display: none;
+                  height: userbarHeight;
+                  line-height: userbarHeight;
+                  padding: 0 5px;
+
+                  a {
+                    color: redditOrange;
+                    margin-right: 0 !important;
+                  }
+
+                }
+
+              }
+
+              &.separator {
+                @include box-shadow(rgba(#ffffff,0.7) 1px 0 0);
+                background: rgba(#98a4b8,0.5);
+                display: inline-block;
+                font-size: 0;
+                height: userbarHeight;
+                margin: 0;
+                position: relative;
+                text-indent: -9999em;
+                top: -10px;
+                width: 1px;
+              }
+
+            }
+
+            ul.flat-list {
+              display: inline-block;
+
+              li {
+
+                a {
+                  padding: 0 8px;
+                  display: block;
+                }
+
+              }
+
+            } */
+
+  /* content */
+  a[name="content"]
+    display: none
+
+  div.content
+    position: relative
+
+    margin: 0 !important
+    padding: 0
+
+    background: #ffffff
+    border: 0
+    border-radius: 0
+    box-shadow: none
+
+    div.spacer
+
+      /* promoted & organic lisiting */
+      &.attention-listing
+        display: none
+
+    /* link listing */
+    div.linklisting, div.nestedlisting
+
+      div.thing
+        margin: 0
+        padding: 16px 20px !important
+
+        background: #ffffff
+        border-bottom: 1px solid redditPaleBlue
+
+        &:first-child
+          border-radius: top left 5px
+
+        &.odd
+          background: rgba(redditPaleBlue, 0.1)
+
+        &:hover
+          background: rgba(redditPaleBlue, 0.2)
+
+        span.rank
+          margin: 17px 0 0
+          padding: 0
+          width: 26px !important
+
+          color: fontColorLight
+          font-family: fontFamilyCustom
+          font-size: 12px
+          font-weight: fontWeightBold
+          text-align: center
+
+        div.midcol
+          midcolWidth = 46px
+
+          position: relative
+
+          margin: 0 8px 0 0
+          padding: 0
+          width: midcolWidth !important
+
+          div.arrow
+            left: 0
+            position: absolute
+            top: 5px
+            z-index: 20
+
+            height: 10px
+            margin: 0
+            padding: 0
+            width: midcolWidth
+
+            background: transparent
+
+            &:after
+              background: transparent
+              background-color: fontColorLight
+              content: ""
+              display: block
+              height: 4px
+              left: 20px
+              margin: 0
+              padding: 0
+              position: absolute
+              top: 6px
+              width: 6px
+              z-index: 20
+
+            &:before
+              arrow(top, fontColorLight, 6px)
+              content: ""
+              left: 17px
+              position: absolute
+              top: 0
+
+            &.down, &.downmod
+              display: block
+              bottom: 5px
+              top: auto
+              &:after
+                top: auto
+                bottom: 6px
+              &:before
+                arrow(bottom, fontColorLight, 6px)
+                border-bottom: 0
+                bottom: 0
+                content: ""
+                top: auto
+            &.upmod
+              background: transparent
+              &:after
+                background: redditUpVote
+              &:before
+                border-bottom-color: redditUpVote
+            &.downmod
+              background: transparent
+              &:after
+                background: redditDownVote
+              &:before
+                border-top-color: redditDownVote
+          div.score
+            color: fontColor
+            font-family: fontFamilyCustom
+            font-size: 12px
+            font-weight: fontWeightBold
+            margin: 17px 0
+            padding: 0
+            position: relative
+            z-index: 10
+            &.dislikes
+              color: redditDownVote
+            &.likes
+              color: redditUpVote
+
+        a.thumbnail
+          height: 70px
+          margin: 0 8px 0 0
+          width: 70px
+
+          img
+            display: block
+
+            border-radius: 3px
+
+        div.entry
+          margin: 0
+          padding: 0
+
+          p.title
+            margin: 0
+
+            a.title
+              color: fontColorLink
+              font-family: fontFamilyCustom
+              font-size: 18px !important
+              letter-spacing: 0.03em
+              line-height: 24px
+
+              &:hover
+                color: fontColorLinkHover
+
+              &:visited
+                color: fontColorLight
+
+            span.linkflairlabel
+              height: 16px
+              margin: 3px 0 0
+              max-width: 120px
+              padding: 0 6px
+
+              background: lighten(redditOrange, 5%)
+              border: 0
+              border-radius: 4px
+              color: #ffffff
+              font-size: 9px
+              line-height: 16px
+              vertical-align: top
+
+            span.domain
+              display: none !important
+
+              color: fontColorLight
+              font-size: 10px
+
+          a.expando-button
+            margin: 0 6px 0 0
+
+          p.tagline
+            color: fontColorLight
+            font-family: fontFamilyCustom
+
+            span
+              font-family: fontFamilyCustom
+              font-size: 10px
+
+              &:first-child
+                font-size: 0
+                text-indent: -9999px
+
+              span.res_post_ups
+                color: redditUpVote
+                font-size: 10px
+                text-indent: 0
+
+                &:after
+                  color: fontColorLight
+                  content: " - "
+                  font-size: 8px
+                  vertical-align: middle
+
+              span.res_post_downs
+                margin-right: 4px
+
+                color: redditDownVote
+
+            a
+              margin: 0
+
+              color: fontColorLink
+
+              &:hover
+                color: fontColorLinkHover
+                text-decoration: none
+
+            span.RESUserTag
+              display: none
+
+          ul.flat-list
+
+            li
+              margin: 0
+              padding: 0
+
+              font-family: fontFamilyCustom
+              font-size: 10px
+              font-weight: fontWeight
+
+              &:after
+                content: " - "
+
+              &:last-child
+
+                &:after
+                  content: ""
+
+              a, span
+                color: fontColorLight
+                font-size: 10px
+                font-weight: fontWeight
+
+                &:hover
+                  color: fontColorLinkHover
+                  text-decoration: none
+
+          /* expando */
+          div.expando
+            margin: 6px 16px 6px 0
+
+            background: transparent
+            border-radius: 5px
+
+          &.keyHighlight, &.RES-keyNav-activeElement
+            background-color: transparent !important
+            border: 0
+            outline: none
+
+            p.title
+
+              a.title
+                text-decoration: none
+
+        /* last-clicked */
+        &.last-clicked
+          background: rgba(redditPaleBlue, 0.4)
+          border: 0
+
+        /* comment */
+        &.comment
+          position: relative
+
+          margin: 0 0 -1px !important
+          padding-bottom: 6px !important
+
+          background: #ffffff !important
+          border-radius: 0 !important
+          border: 1px solid darken(redditPaleBlue, 5%) !important
+          border-left: 0 !important
+          border-right: 0 !important
+
+          p.parent
+            padding: 0 0 6px 12px
+
+            color: fontColor
+            font-family: fontFamilyCustom
+            font-size: 11px
+            font-weight: fontWeight
+            line-height: 1.3em
+
+            a.title
+              margin: 0
+
+              color: fontColorLink
+              font-family: fontFamilyCustom
+              font-size: 13px
+              font-weight: fontWeight
+              line-height: 1.3em
+
+              &:hover
+                color: fontColorLinkHover
+
+            a.author
+              display: inline-block
+              height: 14px
+              margin: 0 3px 0 0
+              padding: 0
+
+              color: fontColorLink
+              font-family: fontFamilyCustom
+              font-size: 11px
+              font-style: normal
+              line-height: 14px
+              text-indent: 0
+
+              &:hover
+                color: fontColorLinkHover
+                text-decoration: none
+
+              &.submitter
+                background: none
+                background-color: fontColorLink !important
+                color: #ffffff
+                padding: 0 4px
+
+                &:hover
+                  background-color: fontColorLinkHover !important
+                  color: #ffffff
+
+          div.midcol
+            midcolWidth = 12px !important
+            left: 14px
+            position: absolute
+            top: 16px
+
+            height: 24px
+            margin: 0
+            width: midcolWidth
+
+            div.arrow
+              background: transparent
+              height: 10px
+              left: 0
+              margin: 0
+              padding: 0
+              position: absolute
+              top: 0
+              width: midcolWidth
+              z-index: 20
+
+              &:after
+                background: transparent
+                background-color: fontColorLight
+                content: ""
+                display: block
+                height: 4px
+                left: 3px
+                margin: 0
+                padding: 0
+                position: absolute
+                top: 6px
+                width: 6px
+                z-index: 20
+              &:before
+                arrow(top, fontColorLight, 6px)
+                content: ""
+                left: 0
+                position: absolute
+                top: 0
+              &.down, &.downmod
+                display: block
+                bottom: 0
+                top: auto
+                &:after
+                  top: auto
+                  bottom: 6px
+                &:before
+                  arrow(bottom, fontColorLight, 6px)
+                  border-bottom: 0
+                  bottom: 0
+                  content: ""
+                  top: auto
+              &.upmod
+                background: transparent
+                &:after
+                  background: redditUpVote
+                &:before
+                  border-bottom-color: redditUpVote
+              &.downmod
+                background: transparent
+                &:after
+                  background: redditDownVote
+                &:before
+                  border-top-color: redditDownVote
+          div.entry
+            hideshowWidth = 10px
+            padding-left: 12px
+            p.tagline, div.collapsed
+              fontSize = 10px
+              color: fontColorLight
+              display: block
+              font-family: fontFamilyCustom
+              font-size: 0
+              font-style: normal
+              font-weight: fontWeight
+              height: 14px
+              line-height: 14px
+              margin: 0
+              padding: 0 0 0 14px
+              position: relative
+              text-indent: -9999em
+              a.expand
+                border-radius(3px)
+                background: transparent
+                border: 1px solid fontColorLight
+                color: fontColorLight
+                display: block
+                font-size: 0
+                height: hideshowWidth
+                left: 1px
+                line-height: hideshowWidth
+                margin: 0
+                padding: 0
+                position: absolute
+                text-indent: -9999em
+                top: 1px
+                width: hideshowWidth
+                &:before
+                  color: fontColorLight
+                  content: "-"
+                  display: block
+                  font-family: fontFamilyCustom
+                  font-size: 14px
+                  font-weight: fontWeightBold
+                  height: hideshowWidth
+                  line-height: (hideshowWidth - 2px)
+                  text-align: center
+                  text-indent: 0
+                  width: hideshowWidth
+                &:hover
+                  border-color: fontColorLink
+                  color: fontColorLink
+                  &:before
+                    color: fontColorLink
+              a.author
+                color: fontColorLink
+                display: inline-block
+                font-family: fontFamilyCustom
+                font-size: fontSize
+                font-style: normal
+                height: 14px
+                line-height: 14px
+                margin: 0 3px
+                padding: 0
+                text-indent: 0
+                &:hover
+                  color: fontColorLinkHover
+                  text-decoration: none
+                &.submitter
+                  background: none
+                  background-color: fontColorLink !important
+                  color: #ffffff
+                  padding: 0 4px
+                  &:hover
+                    background-color: fontColorLinkHover !important
+                    color: #ffffff
+              span, time
+                color: fontColorLight
+                font-family: fontFamilyCustom
+                font-size: 0
+                font-style: normal
+                font-weight: fontWeight
+                text-indent: -9999em
+                &.flair
+                  border-radius(4px)
+                  background: lighten(redditOrange, 5%)
+                  border: 0
+                  color: #ffffff
+                  font-size: fontSize
+                  height: 14px
+                  line-height: 14px
+                  margin: 0 2px
+                  max-width: 120px
+                  padding: 0 4px
+                  text-indent: 0
+                  vertical-align: top
+                &.RESUserTag
+                  display: none
+                &.score
+                  color: fontColor
+                  font-size: fontSize
+                  padding: 0 3px
+                  text-indent: 0
+                  &.dislikes
+                    color: redditDownVote
+                  &.likes
+                    color: redditUpVote
+                &.res_comment_ups
+                  color: redditUpVote
+                  font-size: fontSize
+                  padding-left: 3px
+                  text-indent: 0
+                  &:after
+                    color: fontColorLight
+                    content: " - "
+                &.res_comment_downs
+                  color: redditDownVote
+                  font-size: fontSize
+                  padding-right: 3px
+                  text-indent: 0
+                &.gilded-comment-icon
+                  height: 14px
+                  margin: 0 2px
+                  top: auto
+                  width: 13px
+              time
+                font-size: fontSize
+                padding: 0 3px
+                position: absolute
+                right: 0
+                text-indent: 0
+                top: 0
+                &:after
+                  content: " ago"
+                &.edited-timestamp
+                  right: -4px
+                  top: -1px
+                  &:after
+                    content: ""
+            /* comment collapsed */
+            div.collapsed
+              margin-bottom: 10px
+              a.expand
+                &:before
+                  content: "+"
+                  line-height: hideshowWidth
+            /* usertext */
+            form.usertext
+              &.border
+                div.usertext-body
+                  margin: 4px 0
+                  padding: 0 10px
+            div.usertext-body
+              border-radius(4px)
+              div.md
+                color: fontColor
+                font-family: fontFamily
+                font-size: 13px
+                line-height: 1.4em
+            /* flat-list */
+            ul.flat-list
+              li
+                color: fontColorLight
+                font-family: fontFamilyCustom
+                font-size: 11px
+                font-weight: fontWeight
+                margin: 0
+                padding: 0
+                a
+                  color: fontColorLight
+                  font-weight: fontWeight
+                &:after
+                  content: " - "
+                &:last-child
+                  &:after
+                    content: ""
+          /* child */
+          div.child
+            border: 0
+            margin: 10px 0 0 13px
+            div.thing
+              -moz-border-radius: 4px !important
+              -webkit-border-radius: 4px !important
+              border-radius: 4px !important
+              background-color: #ffffff !important
+              margin: 0 0 16px 0 !important
+              &.comment
+                -moz-border-radius: 4px !important
+                -webkit-border-radius: 4px !important
+                border-radius: 4px !important
+                border-left: 1px solid darken(redditPaleBlue, 5%) !important
+                border-right: 1px solid darken(redditPaleBlue, 5%) !important
+                &.even
+                  background: #ffffff !important
+              &.morechildren
+                margin: 0 -16px 0 -29px !important
+                padding: 0 !important
+                div.entry
+                  padding-left: 0
+                  p.tagline
+                    display: none
+                  span.morecomments
+                    color: fontColorLight
+                    font-family: fontFamilyCustom
+                    font-size: 12px
+                    a.button
+                      border-radius(0 0 3px 3px)
+                      background: lighten(redditPaleBlue, 4%)
+                      border-top: 1px solid darken(redditPaleBlue, 5%)
+                      color: fontColorLink
+                      display: block
+                      font-family: fontFamilyCustom
+                      font-size: 12px
+                      margin: 0
+                      padding: 6px 0
+                      span.gray
+                        color: fontColorLight
+                      &:hover
+                        background: lighten(redditPaleBlue, 2%)
+                        color: fontColorLinkHover
+                        text-decoration: none
+                  ul.flat-list
+                    display: none
+                .child
+                  display: none
+      /* page marker */
+      div.NERPageMarker
+        border-radius(0)
+        box-shadow(rgba(black, 0.05) 0 1px 1px inset)
+        background: transparent
+        background-color: redditPaleBlue
+        border: 0
+        border-bottom: 1px solid darken(redditPaleBlue, 5%)
+        border-top: 1px solid darken(redditPaleBlue, 10%)
+        color: fontColor
+        font-family: fontFamilyCustom
+        font-size: 11px
+        font-weight: bold
+        margin: 0
+        padding: 10px 16px
+        text-align: left
+        text-shadow: 0 1px 0 #ffffff
+  /* side */
+  div.sidebar
+    float: none
+    position: relative
+
+    box-sizing: border-box
+    display: none !important
+    margin: 0 0 0 0
+    min-height: 70px
+    padding: 10px 16px
+    width: 100%
+
+    background: linear-gradient(darken(redditPaleBlue, 2%), lighten(redditPaleBlue, 3%))
+    border: 0
+    border-bottom: 1px solid rgba(139, 154, 179, 0.4)
+    border-radius: 0
+    box-shadow: rgba(black, 0.05) 0 1px 2px inset, rgba(black, 0.05) 0 -1px 2px inset
+
+    /* creation dropdown */
+    div.creation-dropdown
+      background-image(linear-gradient(rgba(255, 255, 255, 0), #f0f2f6 95%, #e5e8ee))
+      border-radius(4px)
+      box-shadow(#ffffff 0 1px 0 inset, rgba(139, 154, 179, 0.2) 0 1px 1px)
+      background-color: #ffffff
+      border: 0
+      border: 1px solid rgba(#98a4b8, 0.8)
+      border-bottom-color: #98a4b8
+      border-top-color: rgba(#98a4b8, 0.6)
+      color: fontColor
+      cursor: pointer
+      display: block
+      font-family: fontFamily
+      font-size: 12px
+      font-weight: fontWeightBold
+      height: 26px
+      line-height: 26px
+      margin: 0
+      padding: 0 32px 0 11px
+      position: absolute
+      right: 16px
+      text-shadow: 0 1px 0 #ffffff
+      text-transform: capitalize
+      top: 18px
+      vertical-align: middle
+      z-index: 100
+      &:before
+        arrow(bottom, fontColor, 4px)
+        content: ""
+        position: absolute
+        right: 12px
+        top: 11px
+      &:hover
+        background-image(linear-gradient(top, rgba(255, 255, 255, 0), #e5e8ee))
+        color: fontColorDark
+      &:active
+        background-image(linear-gradient(top, #e5e8ee, #f0f2f6))
+        box-shadow(rgba(black, 0.1) 0 1px 1px inset, rgba(#ffffff, 0.7) 0 1px 0)
+        background-color: darken(redditPaleBlue, 2%)
+        border-color: 1px solid rgba(#98a4b8, 0.8)
+        border-bottom-color: rgba(#98a4b8, 0.6)
+        border-top-color: #98a4b8
+        color: fontColorDark
+      div.creation-dropdown-area
+        background-image(linear-gradient(rgba(255, 255, 255, 0), #f0f2f6 95%, #e5e8ee))
+        border-radius(4px)
+        box-shadow(#ffffff 0 1px 0 inset, rgba(139, 154, 179, 0.2) 0 1px 1px)
+        background-color: #ffffff
+        border: 1px solid rgba(#98a4b8, 0.8)
+        border-bottom-color: #98a4b8
+        border-top-color: rgba(#98a4b8, 0.6)
+        display: none
+        padding: 8px 0
+        position: absolute
+        right: -1px
+        top: 33px
+        width: 180px
+        &:before
+          arrow(top, rgba(#98a4b8, 0.6), 6px)
+          content: ""
+          position: absolute
+          right: 37px
+          top: -6px
+          z-index: 5
+        &:after
+          arrow(top, #ffffff, 5px)
+          content: ""
+          position: absolute
+          right: 38px
+          top: -5px
+          z-index: 5
+        a.new-a
+          border: 1px solid transparent
+          border-left: 0
+          border-right: 0
+          color: fontColor
+          cursor: pointer
+          display: block
+          font-family: fontFamily
+          font-size: 12px
+          font-weight: fontWeightBold
+          height: 22px
+          line-height: 22px
+          margin-bottom: -1px
+          padding: 0 16px
+          text-shadow: 0 1px 0 #ffffff
+          &:last-child
+            display: none
+          &:hover
+            background: rgba(#e5e8ee, 0.3)
+            border-color: rgba(#98a4b8, 0.3)
+            color: fontColorDark
+          &:active
+            background-image(linear-gradient(top, #e5e8ee, #f0f2f6))
+            box-shadow(rgba(black, 0.1) 0 1px 1px inset, rgba(#ffffff, 0.7) 0 1px 0)
+            background-color: darken(redditPaleBlue, 2%)
+            border-bottom-color: rgba(#98a4b8, 0.6)
+            border-top-color: #98a4b8
+            color: fontColorDark
+          &.new-disabled, &.new-disabled:hover, &.new-disabled:active
+            background-image(none)
+            box-shadow(none)
+            background: transparent
+            border-color: transparent
+            color: redditRed
+            cursor: default
+        &.show-dropdown
+          display: block
+    /* sidebar spacer */
+    div.spacer
+      margin: 0
+      padding: 0
+      /* search */
+      &.search-box
+        margin: 0
+        margin-left: (minWidth - searchWidth - 10px)
+        padding: 0
+        position: fixed
+        right: 10px
+        top: (subHeight + 1px + 7px)
+        z-index: 500
+        form#search
+          input[name="q"]
+            background-image(linear-gradient(lighten(redditPaleBlue, 5%), #ffffff))
+            border-radius(20px)
+            box-shadow(#ffffff 0 1px 1px, rgba(black, 0.1) 0 1px 1px inset)
+            box-sizing(border-box)
+            placeholder(fontColorLight)
+            border: 1px solid rgba(#98a4b8, 0.8)
+            border-bottom-color: rgba(#98a4b8, 0.6)
+            border-top-color: #98a4b8
+            color: fontColor
+            font-family: fontFamilyCustom
+            font-size: 13px
+            outline: none
+            padding: 6px 12px 5px
+            text-transform: capitalize
+            width: searchWidth
+          div#searchexpando
+            background-image(linear-gradient(rgba(255, 255, 255, 0), #f0f2f6 95%, #e5e8ee))
+            border-radius(4px)
+            box-shadow(#ffffff 0 1px 0 inset, rgba(139, 154, 179, 0.2) 0 2px 2px, rgba(139, 154, 179, 0.1) 0 0 4px)
+            box-sizing(border-box)
+            background-color: #ffffff
+            border: 0
+            border: 1px solid rgba(#98a4b8, 0.8)
+            border-bottom-color: #98a4b8
+            border-top-color: rgba(#98a4b8, 0.6)
+            color: fontColor
+            cursor: pointer
+            font-family: fontFamily
+            font-size: 14px
+            font-weight: fontWeightBold
+            margin: 0
+            padding: 10px 16px
+            position: absolute
+            right: 0
+            top: 30px
+            width: 260px
+            &:before
+              arrow(top, rgba(#98a4b8, 0.6), 6px)
+              content: ""
+              position: absolute
+              right: (searchWidth / 2 - 6px)
+              top: -6px
+            &:after
+              arrow(top, #ffffff, 5px)
+              content: ""
+              position: absolute
+              right: (searchWidth / 2 - 5px)
+              top: -4px
+      /* login form */
+      &.login-form-box
+        display: none
+      /* sponsor/ad/gold box */
+      &.create-link-box, &.sponsor-box, &.ad-box, &.gold-box, &.account-activity-box
+        display: none
+      /* titlebox */
+      div.titlebox
+        div:first-child
+          z-index: 50 !important
+      div.sidecontentbox
+        div.title
+          padding-bottom: 6px
+          h1
+            color: fontColor
+            font-family: fontFamilyCustom
+            text-transform: none
+        ul.content
+          border: 0
+          padding: 0
+          li
+            div.gadget
+              div.click-gadget
+                div
+                  div.reddit-link
+                    position: relative
+                    div.midcol
+                      midcolWidth = 12px
+                      height: 24px
+                      left: 0
+                      position: absolute
+                      top: 4px
+                      width: midcolWidth
+                      div.arrow
+                        background: transparent
+                        height: 10px
+                        left: 0
+                        margin: 0
+                        padding: 0
+                        position: absolute
+                        top: 0
+                        width: midcolWidth
+                        z-index: 20
+                        &:after
+                          background: transparent
+                          background-color: fontColorLight
+                          content: ""
+                          display: block
+                          height: 4px
+                          left: 3px
+                          margin: 0
+                          padding: 0
+                          position: absolute
+                          top: 6px
+                          width: 6px
+                          z-index: 20
+                        &:before
+                          arrow(top, fontColorLight, 6px)
+                          content: ""
+                          left: 0
+                          position: absolute
+                          top: 0
+                        &.down, &.downmod
+                          display: block
+                          bottom: 0
+                          top: auto
+                          &:after
+                            top: auto
+                            bottom: 6px
+                          &:before
+                            arrow(bottom, fontColorLight, 6px)
+                            border-bottom: 0
+                            bottom: 0
+                            content: ""
+                            top: auto
+                        &.upmod
+                          background: transparent
+                          &:after
+                            background: redditUpVote
+                          &:before
+                            border-bottom-color: redditUpVote
+                        &.downmod
+                          background: transparent
+                          &:after
+                            background: redditDownVote
+                          &:before
+                            border-top-color: redditDownVote
+                    div.entry
+                      a.reddit-link-title
+                        color: fontColorLink
+                        font-family: fontFamilyCustom
+                        font-size: 13px
+                        &:hover
+                          color: fontColorLinkHover
+                      span.linkflair
+                        color: fontColorLight
+                        font-size: 11px
+                        margin-left: 4px
+                      small
+                        color: fontColorLight
+                        font-size: 10px
+                        span
+                          &.score
+                            color: fontColorLight
+                            &.dislikes
+                              color: redditDownVote
+                            &.likes
+                              color: redditUpVote
+                        a.reddit-comment-link
+                          color: fontColorLight
+                          &:hover
+                            color: fontColorLink
+              .right
+                display: none
+      div.sponsorshipbox
+        margin: -px
+      div.sidebox
+        &.create
+          div.spacer
+            display: none
+      &.recently-viewed
+        div.sidecontentbox
+          ul.content
+            li
+              div.gadget
+                div.click-gadget
+                  div
+                    div.reddit-link
+                      display: none
+                      &:first-child
+                        display: block
+  /* footer */
+  div.footer-parent
+    display: none
+
+  /* debug */
+  p.debuginfo
+    display: none
+
+  /* preferences dropdown */
+  div#RESMainGearOverlay
+    background-image(linear-gradient(top, #e5e8ee, #f0f2f6))
+    border-radius(0)
+    box-shadow(rgba(black, 0.1) 0 1px 1px inset, rgba(#ffffff, 0.7) 0 1px 0)
+    background-color: #ffffff
+    border: 1px solid rgba(#98a4b8, 0.8)
+    border-bottom-color: rgba(#98a4b8, 0.6)
+    border-top-color: #98a4b8
+    cursor: pointer
+    float: left
+    font-size: 0
+    height: 26px !important
+    left: auto !important
+    margin: 0 0 0 -1px
+    position: fixed
+    right: searchWidth + 48px !important
+    text-indent: -9999em
+    top: subHeight + 8px !important
+    width: 28px
+    div.gearIcon
+      image-set("http://i.imgur.com/0Yew0MD.png", "http://i.imgur.com/2AhsvK1.png")
+      background-position: 0 0
+      display: block
+      height: 14px
+      left: 7px
+      margin: 0
+      position: absolute
+      top: 6px
+      width: 14px
+  div#RESPrefsDropdown
+    border-radius(4px 0 4px 4px)
+    box-shadow(rgba(black, 0.1) 0 2px 3px, rgba(black, 0.1) 0 0 5px, rgba(black, 0.3) 0 0 0 1px)
+    background: #ffffff
+    border: 0 !important
+    margin: 0
+    padding: 0
+    position: fixed
+    right: searchWidth + 49px !important
+    top: subHeight + 36px !important
+    ul#RESDropdownOptions
+      li
+        background: none
+        border: 0
+        margin: 0
+        padding: 0
+        a
+          display: block
+          padding: 0 10px
+  /* sub-reddits list */
+  > table#srList
+    subListWidth = 220px
+    border-radius(0)
+    box-shadow(rgba(black, 0.1) 0 2px 3px, rgba(black, 0.1) 0 0 3px)
+    background: transparent
+    background-color: #ffffff
+    border: 0
+    border-right: 1px solid rgba(black, 0.4)
+    bottom: 0
+    max-height: none
+    left: 0
+    position: fixed
+    top: 27px
+    width: subListWidth
+    z-index: 500
+    &:before
+      arrow(top, rgba(black, 0.4), 6px)
+      content: ""
+      left: 10px
+      position: absolute
+      top: -6px
+    thead, tbody
+      display: block
+      width: subListWidth
+      tr
+        border: 1px solid transparent
+        border-left: 0
+        border-right: 0
+        color: fontColorDark
+        display: block
+        font-family: fontFamilyCustom
+        font-size: 12px !important
+        font-weight: fontWeightBold
+        height: 28px
+        line-height: 28px
+        margin-bottom: -1px
+        padding: 0
+        position: relative
+        text-shadow: 0 1px 0 #ffffff
+        text-transform: lowercase
+        width: subListWidth
+        td
+          color: fontColor
+          font-size: 11px
+          font-weight: fontWeightBold
+          margin: 0
+          padding: 0
+          &:first-child
+            color: fontColorDark
+            height: auto
+            line-height: 28px
+            left: 0
+            position: absolute
+            top: 0
+            width: subListWidth
+            a
+              color: fontColorDark
+              display: block
+              padding: 0 10px
+              width: auto
+              &:hover
+                color: fontColorLinkHover
+          &.RESvisited
+            display: none
+          &.RESshortcut
+            font-size: 0
+            height: 30px
+            text-indent: -9999em
+            position: absolute
+            right: 0
+            text-align: center
+            top: 0
+            width: 30px
+            &:before
+              color: fontColorDark
+              content: "+"
+              display: block
+              font-family: fontFamilyCustom
+              font-size: 13px
+              font-weight: fontWeightBold
+              height: auto
+              line-height: 30px
+            &:hover
+              &:before
+                color: fontColorLinkHover
+        &:hover
+          background: shade(redditPaleBlue, 2%)
+          border-bottom: 1px solid shade(redditPaleBlue, 15%)
+          border-top: 1px solid shade(redditPaleBlue, 15%)
+          color: fontColorLinkHover
+          text-decoration: none
+        &:first-child
+          border-top: 0
+    thead
+      display: none
+  /* sub-reddit (subscriber) */
+  &.subscriber
+    div#header
+      div#header-bottom-left
+        a#header-img
+          font-size: 0
+          text-indent: -9999em
+  /* comments page */
+  &.comments-page
+    div#header
+      div#header-bottom-left
+        a#header-img
+          font-size: 0
+          text-indent: -9999em
+    div.content
+      div.commentarea
+        div.panestack-title
+          background: rgba(redditPaleBlue, 0.5)
+          border: 0
+          line-height: 24px
+          margin: 0
+          padding: 6px 16px 10px
+          position: relative
+          vertical-align: middle
+          z-index: 25
+          span.title
+            color: fontColorDark
+            font-family: fontFamilyCustom
+            font-size: 16px
+            text-transform: capitalize
+          span.RESSubscriptionButton
+            background-image(linear-gradient(lighten(redditOrange, 5%), lighten(redditOrange, 2%) 50%, redditOrange))
+            border-radius(5px)
+            box-shadow(rgba(#ffffff, 0.3) 0 1px 0 inset, rgba(black, 0.1) 0 1px 1px)
+            background-color: redditOrange
+            border: 0
+            border: 1px solid shade(redditOrange, 23%)
+            color: #ffffff
+            display: inline-block
+            font-family: fontFamilyCustom
+            font-size: 10px
+            font-weight: fontWeightBold
+            height: 16px
+            line-height: 17px
+            margin: -2px 0 0 10px
+            padding: 0 8px
+            text-shadow: 0 -1px 0 rgba(black, 0.3)
+            text-transform: capitalize
+            vertical-align: middle
+            width: auto
+            &:hover
+              background-image(linear-gradient(lighten(redditOrange, 2%), lighten(redditOrange, 1%) 50%, darken(redditOrange, 2%)))
+              background-color: darken(redditOrange, 2%)
+              color: lighten(redditOrange, 45%)
+            &:active
+              background-image(linear-gradient(darken(redditOrange, 2%), lighten(redditOrange, 1%) 50%, lighten(redditOrange, 2%)))
+              box-shadow(rgba(black, 0.05) 0 1px 1px inset, rgba(#ffffff, 0.7) 0 1px 0)
+              background-color: darken(redditOrange, 2%)
+              color: lighten(redditOrange, 45%)
+        div.menuarea
+          background: rgba(redditPaleBlue, 0.5)
+          border: 0
+          margin: 0
+          overflow: visible
+          padding: 0
+          position: relative
+          z-index: 50
+          div.spacer
+            position: absolute
+            right: 349px
+            top: -24px
+            span
+              color: fontColor
+              font-family: fontFamilyCustom
+              font-size: 12px
+              &.dropdown-title
+                text-transform: capitalize
+            div.dropdown
+              span.selected
+                background: transparent
+                font-size: 12px
+                padding: 0 12px 0 0
+                text-decoration: none
+                text-transform: capitalize
+                &:after
+                  arrow(bottom, fontColor, 4px)
+                  content: ""
+                  position: absolute
+                  right: 0
+                  top: 5px
+            div.drop-choices
+              border-radius(4px)
+              box-shadow(rgba(black, 0.2) 0 1px 2px)
+              border: 1px solid rgba(black, 0.4)
+              left: auto !important
+              margin: 0
+              padding: 8px 12px
+              right: 0
+              top: 20px !important
+              width: 110px
+              &:before
+                arrow(top, rgba(black, 0.4), 4px)
+                position: absolute
+                right: 10px
+                top: 0
+          div#REScommentNavToggle
+            display: none
+        > form.usertext
+          background: rgba(redditPaleBlue, 0.5)
+          margin: 0
+          padding: 0 16px 10px
+          div.usertext-edit
+            margin: 0
+            padding: 0
+            width: auto
+            div.commentingAs
+              display: none
+            div.markdownEditor
+            div
+              margin-right: 26px
+              position: relative
+              textarea[name="text"]
+                background-image(linear-gradient(lighten(redditPaleBlue, 7%), lighten(redditPaleBlue, 13%)))
+                border-radius(5px)
+                box-shadow(rgba(black, 0.05) 0 1px 1px inset, rgba(#ffffff, 0.5) 0 1px 0)
+                background-color: redditPaleBlue
+                border: 0
+                border: 1px solid shade(redditPaleBlue, 23%)
+                color: fontColor
+                display: block
+                font-family: fontFamily
+                font-size: 14px
+                font-weight: fontWeight
+                line-height: 1.4em
+                margin: 0 !important
+                min-height: 2em !important
+                padding: 8px 12px
+                text-shadow: 0 1px 0 #ffffff
+                width: 100% !important
+                &:hover
+                  border-color: shade(redditPaleBlue, 26%)
+                &:active, &:focus
+                  outline: none
+              &.bottom-area
+                height: 26px
+                overflow: visible
+                margin: 6px 0 0
+                span.help-toggle
+                  a
+                    color: fontColorLink
+                    font-family: fontFamilyCustom
+                    font-size: 10px
+                    outline: 0
+                    text-transform: capitalize
+                    a:hover
+                      color: fontColorLinkHover
+                div.usertext-buttons
+                  float: left
+                  margin: 0
+                  button.save
+                    background-image(linear-gradient(rgba(255, 255, 255, 0), #f0f2f6 95%, #e5e8ee))
+                    border-radius(4px)
+                    box-shadow(#ffffff 0 1px 0 inset, rgba(139, 154, 179, 0.2) 0 1px 1px)
+                    background-color: #ffffff
+                    border: 0
+                    border: 1px solid rgba(#98a4b8, 0.8)
+                    border-bottom-color: #98a4b8
+                    border-top-color: rgba(#98a4b8, 0.6)
+                    color: fontColor
+                    cursor: pointer
+                    display: inline-block
+                    font-family: fontFamily
+                    font-size: 12px
+                    font-weight: fontWeightBold
+                    height: 26px
+                    line-height: 24px
+                    margin: 0
+                    padding: 0 11px
+                    text-shadow: 0 1px 0 #ffffff
+                    text-transform: capitalize
+                    vertical-align: middle
+                    width: auto
+                    &:hover
+                      background-image(linear-gradient(top, rgba(255, 255, 255, 0), #e5e8ee))
+                      color: fontColorDark
+                    &:active
+                      background-image(linear-gradient(top, #e5e8ee, #f0f2f6))
+                      box-shadow(rgba(black, 0.1) 0 1px 1px inset, rgba(#ffffff, 0.7) 0 1px 0)
+                      background-color: darken(redditPaleBlue, 2%)
+                      border-color: 1px solid rgba(#98a4b8, 0.8)
+                      border-bottom-color: rgba(#98a4b8, 0.6)
+                      border-top-color: #98a4b8
+                      color: fontColorDark
+            table.markhelp
+              margin: 10px 0 0
+              tbody
+                tr
+                  border: 0
+                  padding: 0
+                  td
+                    border: 1px solid shade(redditPaleBlue, 15%)
+                    color: fontColor
+                    font-family: fontFamily
+                    font-size: 12px
+                    padding: 6px 10px
+                  &:first-child
+                    background-color: redditPaleBlue !important
+                    em
+                      font-style: normal
+                      font-weight: fontWeightBold
+                      text-transform: capitalize
+            div.RESDialogSmall
+              background: transparent
+              border: 0
+              margin: 10px 0 0
+              padding: 0
+              > h3
+                background: transparent
+                border: 0
+                color: fontColor
+                font-size: 10px
+                font-weight: fontWeightBold
+                height: auto
+                left: auto
+                margin: 0
+                padding: 0
+                position: relative
+                right: auto
+                top: auto
+                &:after
+                  content: ":"
+              div.RESDialogContents
+                border-radius(4px)
+                background: #ffffff
+                border: 1px solid darken(redditPaleBlue, 5%)
+                margin: 4px 0 0
+                padding: 10px 16px
+        div.infobar
+          border-radius(0)
+          box-shadow(rgba(black, 0.05) 0 1px 1px inset)
+          background: transparent
+          background-color: redditPaleBlue
+          border: 0
+          border-bottom: 1px solid darken(redditPaleBlue, 5%)
+          border-top: 1px solid darken(redditPaleBlue, 10%)
+          color: fontColor
+          font-family: fontFamilyCustom
+          font-size: 13px
+          font-weight: fontWeight
+          line-height: 1.3em
+          margin: 0 0 -1px
+          padding: 10px 16px
+          text-align: left
+          text-shadow: 0 1px 0 #ffffff
+          p
+            a
+              color: fontColorLink
+              &:hover
+                color: fontColorLinkHover
+        div.nestedlisting
+          div.thing
+            &.comment
+              p.parent
+                display: none
+  /* subreddit */
+  &.subreddit-page
+    div.sidebar
+      div.recently-viewed
+        display: none
+      div.subreddit-info-box
+        div.titlebox
+          p.users-online
+            display: none !important
+          div.subreddit-options
+            display: none
+          div.subreddit-details
+            h1.redditname
+              font-family: fontFamilyCustom
+              font-size: 18px
+              margin: 0
+              padding: 2px 0 3px
+            span.subscribers
+              border-radius(4px)
+              box-shadow(rgba(black, 0.1) 0 1px 0 inset, rgba(#ffffff, 0.2) 0 1px 1px)
+              background: transparent
+              background-position: 0 0
+              background-repeat: no-repeat
+              border: 0
+              border: 1px solid rgba(#98a4b8, 0.6)
+              border-bottom-color: rgba(#98a4b8, 0.4)
+              border-top-color: rgba(#98a4b8, 0.8)
+              color: fontColor
+              display: inline-block
+              font-size: 11px
+              font-weight: bold
+              height: 12px
+              line-height: 12px
+              padding: 3px 6px
+              text-shadow: 0 1px 0 rgba(#ffffff, 0.9)
+              span.word
+                font-size: 0
+                text-indent: -9999em
+                &:before
+                  content: "subscribers"
+                  font-size: 11px
+                  font-weight: bold
+                  text-indent: 0
+          div.subButtons
+            position: absolute
+            right: 102px
+            top: 18px
+            span.REStoggle
+              green-button()
+              border-radius(4px 0 0 4px)
+              display: block
+              float: right
+              margin-right: -1px
+              &.remove
+                red-button()
+                border-radius(4px 0 0 4px)
+                margin-right: -1px
+            span.RESshortcut
+              green-button()
+              border-radius(0 4px 4px 0)
+              display: block
+              float: right
+              &.remove
+                red-button()
+                border-radius(0 4px 4px 0)
+            span.fancy-toggle-button
+              display: block
+              float: right
+              margin: 0 0 0 6px
+              a
+                green-button()
+                display: none
+                &.active
+                  display: block
+                &.remove
+                  red-button()
+          form.usertext
+            display: none
+          div.bottom
+            display: none
+          div.clear
+            display: none
+      div.moderators-box
+        display: none
+  /* profile page */
+  &.profile-page
+    div.sidebar
+      div.side-profile
+        div.titlebox
+          font-size: 0
+          text-indent: -9999em
+          h1
+            color: fontColorDark
+            font-family: fontFamilyCustom
+          div.karma-count
+            span.karma
+              border-radius(4px 0 0 4px)
+              background: redditUpVote
+              color: #ffffff
+              display: block
+              float: left
+              font-size: 10px
+              height: 18px
+              line-height: 18px
+              padding: 0 8px
+              &.comment-karma
+                border-radius(0 4px 4px 0)
+                background: redditDownVote
+          table#per-sr-karma, div.karma-breakdown, div.giftgold, div.bottom
+            display: none
+      div.trophy-area, div.recently-viewed
+        display: none
+  /* no search */
+  &.no-search
+    #header
+      #header-bottom-right
+        right: 10px
+    div#RESMainGearOverlay
+      right: 38px !important
+    div#RESPrefsDropdown
+      right: 39px !important
+  /* submit page */
+  &.submit-page
+    div.sidebar
+      div.creation-dropdown
+        display: none
+  /* logged out */
+  &.logged-out
+    div#header
+      div#header-bottom-right
+        span
+          &.user
+            a
+              margin-top: -13px !important
+              font-size: 0
+              text-indent: -9999em
+              &:before
+                color: fontColor
+                content: "Login/Join"
+                font-size: 12px
+                text-indent: 0
+              &:hover
+                &:before
+                  color: fontColorDark
+          &#openRESPrefs
+            border-radius(0 4px 4px 0)
+    div#RESMainGearOverlay
+      border-radius(0 4px 0 0)
+      right: 200px !important
+    div#RESPrefsDropdown
+      right: 201px !important
+  /* author tooltip */
+  div#authorInfoToolTip
+    display: none !important
