@@ -1,6 +1,6 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-"creatorBuild": "18270",
+"creatorBuild": "19033",
 "files": {
 	"\/assets\/css\/_helpers.css": {
 		"fileType": 16,
@@ -13,7 +13,7 @@
 		},
 	"\/assets\/css\/style.css": {
 		"fileType": 16,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/css\/style.css",
 		"outputAbbreviatedPath": "No Output Path",
@@ -91,9 +91,9 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/scripts\/app.js",
-		"outputAbbreviatedPath": "\/assets\/scripts\/min\/app-min.js",
+		"outputAbbreviatedPath": "\/assets\/scripts\/app-min.js",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
+		"outputPathIsSetByUser": 1,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
@@ -108,11 +108,22 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/assets\/scripts\/min\/app-min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/scripts\/min\/app-min.js",
+		"outputAbbreviatedPath": "\/assets\/scripts\/min\/min\/app-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/assets\/styles\/_helpers.styl": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"fileType": 8,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 1,
 		"importCSS": 1,
 		"inputAbbreviatedPath": "\/assets\/styles\/_helpers.styl",
@@ -122,7 +133,7 @@
 		"outputStyle": 1,
 		"resolveRelativeURLS": 0,
 		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0
+		"shouldRunBless": 1
 		},
 	"\/assets\/styles\/style.css": {
 		"fileType": 16,
@@ -143,11 +154,11 @@
 		"inputAbbreviatedPath": "\/assets\/styles\/style.styl",
 		"outputAbbreviatedPath": "\/assets\/styles\/style.css",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1,
+		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"resolveRelativeURLS": 0,
 		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0
+		"shouldRunBless": 1
 		},
 	"\/background.html": {
 		"fileType": 8192,
@@ -158,17 +169,16 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/README.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
-		"fileType": 4096,
-		"ignore": 0,
+	"\/manifest.json": {
+		"fileType": 524288,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/README.md",
-		"outputAbbreviatedPath": "\/README.html",
+		"inputAbbreviatedPath": "\/manifest.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/manifest-min.json",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
 		},
 	"\/retired\/App\/images\/addBackground.png": {
 		"fileType": 32768,
@@ -452,6 +462,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/retired\/Chrome\/Extension (Original)\/manifest.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/retired\/Chrome\/Extension (Original)\/manifest.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/retired\/Chrome\/Extension (Original)\/manifest-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/retired\/Chrome\/Extension (Original)\/options.css": {
 		"fileType": 16,
 		"ignore": 0,
@@ -541,6 +562,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/retired\/Chrome\/Extension\/manifest.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/retired\/Chrome\/Extension\/manifest.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/retired\/Chrome\/Extension\/manifest-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/retired\/Chrome\/Extension\/media.css": {
 		"fileType": 16,
 		"ignore": 0,
@@ -595,6 +627,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/retired\/Chrome\/Extension\/oldManifest.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/retired\/Chrome\/Extension\/oldManifest.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/retired\/Chrome\/Extension\/oldManifest-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/retired\/Chrome\/Extension\/options.css": {
 		"fileType": 16,
 		"ignore": 0,
@@ -623,16 +666,25 @@
 		"outputPathIsSetByUser": 0
 		},
 	"\/retired\/Chrome\/Extension\/README.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/retired\/Chrome\/Extension\/README.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/retired\/Chrome\/Extension\/README.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/retired\/Chrome\/Extension\/scrollMenu.css": {
 		"fileType": 16,
@@ -748,7 +800,7 @@
 	"bowerAbbreviatedPath": "",
 	"displayValue": "Reddifined",
 	"displayValueWasSetByUser": 0,
-	"iconImageName": "globe_darkGray"
+	"iconImageName": "brackets_blue"
 	},
 "projectSettings": {
 	"alwaysUseExternalServer": 0,
@@ -787,6 +839,10 @@
 			},
 		"empty_constructor_needs_parens": {
 			"active": 0,
+			"flagValue": -1
+			},
+		"ensure_comprehensions": {
+			"active": 1,
 			"flagValue": -1
 			},
 		"indentation": {
@@ -880,6 +936,10 @@
 		"space_operators": {
 			"active": 0,
 			"flagValue": -1
+			},
+		"spacing_after_comma": {
+			"active": 1,
+			"flagValue": -1
 			}
 		},
 	"coffeeMinifyOutput": 1,
@@ -936,6 +996,10 @@
 			"active": 1,
 			"flagValue": -1
 			},
+		"browserify": {
+			"active": 0,
+			"flagValue": -1
+			},
 		"camelcase": {
 			"active": 0,
 			"flagValue": -1
@@ -958,6 +1022,10 @@
 			},
 		"dojo": {
 			"active": 0,
+			"flagValue": -1
+			},
+		"elision": {
+			"active": 1,
 			"flagValue": -1
 			},
 		"eqeqeq": {
@@ -996,6 +1064,10 @@
 			"active": 0,
 			"flagValue": -1
 			},
+		"futurehostile": {
+			"active": 0,
+			"flagValue": -1
+			},
 		"globalstrict": {
 			"active": 0,
 			"flagValue": -1
@@ -1009,6 +1081,10 @@
 			"flagValue": 4
 			},
 		"iterator": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"jasmine": {
 			"active": 0,
 			"flagValue": -1
 			},
@@ -1056,6 +1132,10 @@
 			"active": 0,
 			"flagValue": 4
 			},
+		"mocha": {
+			"active": 0,
+			"flagValue": -1
+			},
 		"mootools": {
 			"active": 0,
 			"flagValue": -1
@@ -1074,6 +1154,10 @@
 			},
 		"noarg": {
 			"active": 1,
+			"flagValue": -1
+			},
+		"nocomma": {
+			"active": 0,
 			"flagValue": -1
 			},
 		"node": {
@@ -1124,6 +1208,10 @@
 			"active": 0,
 			"flagValue": -1
 			},
+		"qunit": {
+			"active": 0,
+			"flagValue": -1
+			},
 		"regexp": {
 			"active": 1,
 			"flagValue": -1
@@ -1170,6 +1258,10 @@
 			},
 		"unused": {
 			"active": 1,
+			"flagValue": -1
+			},
+		"varstmt": {
+			"active": 0,
 			"flagValue": -1
 			},
 		"withstmt": {
@@ -1295,6 +1387,14 @@
 			"flagValue": -1
 			}
 		},
+	"jsonAutoOutputPathEnabled": 0,
+	"jsonAutoOutputPathFilenamePattern": "*-min.json",
+	"jsonAutoOutputPathRelativePath": "",
+	"jsonAutoOutputPathReplace1": "",
+	"jsonAutoOutputPathReplace2": "",
+	"jsonAutoOutputPathStyle": 0,
+	"jsonOrderOutput": 0,
+	"jsonOutputStyle": 1,
 	"kitAutoOutputPathEnabled": 1,
 	"kitAutoOutputPathFilenamePattern": "*.html",
 	"kitAutoOutputPathRelativePath": "",
@@ -1322,9 +1422,18 @@
 	"markdownAutoOutputPathReplace1": "",
 	"markdownAutoOutputPathReplace2": "",
 	"markdownAutoOutputPathStyle": 0,
+	"markdownCriticStyle": 0,
 	"markdownEnableFootnotes": 0,
-	"markdownEnableSmartyPants": 1,
-	"markdownExpandTabs": 1,
+	"markdownEnableLabels": 1,
+	"markdownEnableSmartQuotes": 1,
+	"markdownEscapeLineBreaks": 0,
+	"markdownMaskEmailAddresses": 1,
+	"markdownOutputFormat": 0,
+	"markdownOutputStyle": 0,
+	"markdownParseMetadata": 1,
+	"markdownProcessHTML": 0,
+	"markdownRandomFootnoteNumbers": 0,
+	"markdownUseCompatibilityMode": 0,
 	"reloadFileURLs": 0,
 	"sassAutoOutputPathEnabled": 1,
 	"sassAutoOutputPathFilenamePattern": "*.css",
@@ -1338,7 +1447,7 @@
 	"sassOutputStyle": 0,
 	"sassUseLibsass": 0,
 	"shouldRunAutoprefixer": 0,
-	"shouldRunBless": 0,
+	"shouldRunBless": 1,
 	"skippedItemsString": ".svn, .git, .hg, log, _logs, _cache, cache, logs, node_modules",
 	"slimAutoOutputPathEnabled": 1,
 	"slimAutoOutputPathFilenamePattern": "*.html",
@@ -1348,6 +1457,7 @@
 	"slimAutoOutputPathStyle": 0,
 	"slimCompileOnly": 0,
 	"slimLogicless": 0,
+	"slimOutputFormat": 0,
 	"slimOutputStyle": 1,
 	"slimRailsCompatible": 0,
 	"stylusAutoOutputPathEnabled": 1,
@@ -1355,11 +1465,11 @@
 	"stylusAutoOutputPathRelativePath": "..\/css",
 	"stylusAutoOutputPathReplace1": "stylus",
 	"stylusAutoOutputPathReplace2": "css",
-	"stylusAutoOutputPathStyle": 2,
+	"stylusAutoOutputPathStyle": 0,
 	"stylusCreateSourceMap": 0,
 	"stylusDebugStyle": 0,
-	"stylusImportCSS": 0,
-	"stylusOutputStyle": 0,
+	"stylusImportCSS": 1,
+	"stylusOutputStyle": 1,
 	"stylusResolveRelativeURLS": 0,
 	"typescriptAutoOutputPathEnabled": 1,
 	"typescriptAutoOutputPathFilenamePattern": "*.js",
@@ -1372,12 +1482,17 @@
 	"typescriptMinifyOutput": 0,
 	"typescriptModuleType": 0,
 	"typescriptNoImplicitAny": 0,
-	"typescriptNoResolve": 0,
+	"typescriptPreserveConstEnums": 0,
 	"typescriptRemoveComments": 0,
+	"typescriptSuppressImplicitAnyIndexErrors": 0,
 	"typescriptTargetECMAVersion": 0,
 	"uglifyDefinesString": "",
 	"uglifyFlags2": {
 		"ascii-only": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"bare-returns": {
 			"active": 0,
 			"flagValue": -1
 			},
@@ -1410,6 +1525,10 @@
 			"flagValue": -1
 			},
 		"dead_code": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"drop_console": {
 			"active": 0,
 			"flagValue": -1
 			},
@@ -1453,6 +1572,14 @@
 			"active": 1,
 			"flagValue": -1
 			},
+		"keep_fargs": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"keep_fnames": {
+			"active": 0,
+			"flagValue": -1
+			},
 		"loops": {
 			"active": 1,
 			"flagValue": -1
@@ -1465,8 +1592,16 @@
 			"active": 1,
 			"flagValue": 32000
 			},
+		"negate_iife": {
+			"active": 1,
+			"flagValue": -1
+			},
 		"properties": {
 			"active": 1,
+			"flagValue": -1
+			},
+		"pure_getters": {
+			"active": 0,
 			"flagValue": -1
 			},
 		"quote-keys": {
