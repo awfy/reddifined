@@ -2,24 +2,6 @@
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
 "creatorBuild": "19033",
 "files": {
-	"\/assets\/css\/_helpers.css": {
-		"fileType": 16,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/css\/_helpers.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/css\/style.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/css\/style.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/assets\/imgs\/icons\/large.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -119,6 +101,28 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/assets\/sketch\/Reddifined - v2.sketch\/QuickLook\/Preview.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 40055,
+		"inputAbbreviatedPath": "\/assets\/sketch\/Reddifined - v2.sketch\/QuickLook\/Preview.png",
+		"outputAbbreviatedPath": "\/assets\/sketch\/Reddifined - v2.sketch\/QuickLook\/Preview.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/sketch\/Reddifined - v2.sketch\/QuickLook\/Thumbnail.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 14629,
+		"inputAbbreviatedPath": "\/assets\/sketch\/Reddifined - v2.sketch\/QuickLook\/Thumbnail.png",
+		"outputAbbreviatedPath": "\/assets\/sketch\/Reddifined - v2.sketch\/QuickLook\/Thumbnail.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/styles\/_helpers.styl": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -180,492 +184,7 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1
 		},
-	"\/retired\/App\/images\/addBackground.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 2815,
-		"inputAbbreviatedPath": "\/retired\/App\/images\/addBackground.png",
-		"outputAbbreviatedPath": "\/retired\/App\/images\/addBackground.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/retired\/App\/images\/blueLinen.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 212802,
-		"inputAbbreviatedPath": "\/retired\/App\/images\/blueLinen.png",
-		"outputAbbreviatedPath": "\/retired\/App\/images\/blueLinen.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/retired\/App\/images\/buttonBackground.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 2815,
-		"inputAbbreviatedPath": "\/retired\/App\/images\/buttonBackground.png",
-		"outputAbbreviatedPath": "\/retired\/App\/images\/buttonBackground.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/retired\/App\/images\/downvotesBackground.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 2814,
-		"inputAbbreviatedPath": "\/retired\/App\/images\/downvotesBackground.png",
-		"outputAbbreviatedPath": "\/retired\/App\/images\/downvotesBackground.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/retired\/App\/images\/headerBackground.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 2855,
-		"inputAbbreviatedPath": "\/retired\/App\/images\/headerBackground.png",
-		"outputAbbreviatedPath": "\/retired\/App\/images\/headerBackground.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/retired\/App\/images\/karmaBackground.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 2812,
-		"inputAbbreviatedPath": "\/retired\/App\/images\/karmaBackground.png",
-		"outputAbbreviatedPath": "\/retired\/App\/images\/karmaBackground.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/retired\/App\/images\/linen.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 197729,
-		"inputAbbreviatedPath": "\/retired\/App\/images\/linen.png",
-		"outputAbbreviatedPath": "\/retired\/App\/images\/linen.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/retired\/App\/images\/logo.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 3898,
-		"inputAbbreviatedPath": "\/retired\/App\/images\/logo.png",
-		"outputAbbreviatedPath": "\/retired\/App\/images\/logo.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/retired\/App\/images\/logout.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 3384,
-		"inputAbbreviatedPath": "\/retired\/App\/images\/logout.png",
-		"outputAbbreviatedPath": "\/retired\/App\/images\/logout.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/retired\/App\/images\/mail.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 3409,
-		"inputAbbreviatedPath": "\/retired\/App\/images\/mail.png",
-		"outputAbbreviatedPath": "\/retired\/App\/images\/mail.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/retired\/App\/images\/menuArrow.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 2846,
-		"inputAbbreviatedPath": "\/retired\/App\/images\/menuArrow.png",
-		"outputAbbreviatedPath": "\/retired\/App\/images\/menuArrow.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/retired\/App\/images\/menuBackground.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 2811,
-		"inputAbbreviatedPath": "\/retired\/App\/images\/menuBackground.png",
-		"outputAbbreviatedPath": "\/retired\/App\/images\/menuBackground.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/retired\/App\/images\/modMail.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 3887,
-		"inputAbbreviatedPath": "\/retired\/App\/images\/modMail.png",
-		"outputAbbreviatedPath": "\/retired\/App\/images\/modMail.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/retired\/App\/images\/pixels.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 3738,
-		"inputAbbreviatedPath": "\/retired\/App\/images\/pixels.png",
-		"outputAbbreviatedPath": "\/retired\/App\/images\/pixels.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/retired\/App\/images\/preferences.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 3480,
-		"inputAbbreviatedPath": "\/retired\/App\/images\/preferences.png",
-		"outputAbbreviatedPath": "\/retired\/App\/images\/preferences.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/retired\/App\/images\/redditsArrow.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 2828,
-		"inputAbbreviatedPath": "\/retired\/App\/images\/redditsArrow.png",
-		"outputAbbreviatedPath": "\/retired\/App\/images\/redditsArrow.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/retired\/App\/images\/removeBackground.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 2815,
-		"inputAbbreviatedPath": "\/retired\/App\/images\/removeBackground.png",
-		"outputAbbreviatedPath": "\/retired\/App\/images\/removeBackground.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/retired\/App\/images\/sidebarBackground.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 9995,
-		"inputAbbreviatedPath": "\/retired\/App\/images\/sidebarBackground.png",
-		"outputAbbreviatedPath": "\/retired\/App\/images\/sidebarBackground.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/retired\/App\/images\/subBackground.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 2811,
-		"inputAbbreviatedPath": "\/retired\/App\/images\/subBackground.png",
-		"outputAbbreviatedPath": "\/retired\/App\/images\/subBackground.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/retired\/App\/images\/voteArrows.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 3408,
-		"inputAbbreviatedPath": "\/retired\/App\/images\/voteArrows.png",
-		"outputAbbreviatedPath": "\/retired\/App\/images\/voteArrows.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/retired\/App\/style.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/retired\/App\/style.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/retired\/Chrome\/Extension (Original)\/background.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/retired\/Chrome\/Extension (Original)\/background.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/retired\/Chrome\/Extension (Original)\/icon128.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 11120,
-		"inputAbbreviatedPath": "\/retired\/Chrome\/Extension (Original)\/icon128.png",
-		"outputAbbreviatedPath": "\/retired\/Chrome\/Extension (Original)\/icon128.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/retired\/Chrome\/Extension (Original)\/icon16.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 849,
-		"inputAbbreviatedPath": "\/retired\/Chrome\/Extension (Original)\/icon16.png",
-		"outputAbbreviatedPath": "\/retired\/Chrome\/Extension (Original)\/icon16.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/retired\/Chrome\/Extension (Original)\/icon19.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1034,
-		"inputAbbreviatedPath": "\/retired\/Chrome\/Extension (Original)\/icon19.png",
-		"outputAbbreviatedPath": "\/retired\/Chrome\/Extension (Original)\/icon19.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/retired\/Chrome\/Extension (Original)\/icon48.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 5936,
-		"inputAbbreviatedPath": "\/retired\/Chrome\/Extension (Original)\/icon48.png",
-		"outputAbbreviatedPath": "\/retired\/Chrome\/Extension (Original)\/icon48.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/retired\/Chrome\/Extension (Original)\/manifest.json": {
-		"fileType": 524288,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/retired\/Chrome\/Extension (Original)\/manifest.json",
-		"orderOutput": 0,
-		"outputAbbreviatedPath": "\/retired\/Chrome\/Extension (Original)\/manifest-min.json",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1
-		},
-	"\/retired\/Chrome\/Extension (Original)\/options.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/retired\/Chrome\/Extension (Original)\/options.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/retired\/Chrome\/Extension (Original)\/options.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/retired\/Chrome\/Extension (Original)\/options.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/retired\/Chrome\/Extension (Original)\/stylesheet.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/retired\/Chrome\/Extension (Original)\/stylesheet.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/retired\/Chrome\/Extension\/apple.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/retired\/Chrome\/Extension\/apple.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/retired\/Chrome\/Extension\/background.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/retired\/Chrome\/Extension\/background.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/retired\/Chrome\/Extension\/icon128.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 11120,
-		"inputAbbreviatedPath": "\/retired\/Chrome\/Extension\/icon128.png",
-		"outputAbbreviatedPath": "\/retired\/Chrome\/Extension\/icon128.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/retired\/Chrome\/Extension\/icon16.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 849,
-		"inputAbbreviatedPath": "\/retired\/Chrome\/Extension\/icon16.png",
-		"outputAbbreviatedPath": "\/retired\/Chrome\/Extension\/icon16.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/retired\/Chrome\/Extension\/icon19.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1034,
-		"inputAbbreviatedPath": "\/retired\/Chrome\/Extension\/icon19.png",
-		"outputAbbreviatedPath": "\/retired\/Chrome\/Extension\/icon19.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/retired\/Chrome\/Extension\/icon48.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 5936,
-		"inputAbbreviatedPath": "\/retired\/Chrome\/Extension\/icon48.png",
-		"outputAbbreviatedPath": "\/retired\/Chrome\/Extension\/icon48.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/retired\/Chrome\/Extension\/manifest.json": {
-		"fileType": 524288,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/retired\/Chrome\/Extension\/manifest.json",
-		"orderOutput": 0,
-		"outputAbbreviatedPath": "\/retired\/Chrome\/Extension\/manifest-min.json",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1
-		},
-	"\/retired\/Chrome\/Extension\/media.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/retired\/Chrome\/Extension\/media.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/retired\/Chrome\/Extension\/noScrollMenu.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/retired\/Chrome\/Extension\/noScrollMenu.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/retired\/Chrome\/Extension\/noSearch.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/retired\/Chrome\/Extension\/noSearch.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/retired\/Chrome\/Extension\/noSearchSubmit.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/retired\/Chrome\/Extension\/noSearchSubmit.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/retired\/Chrome\/Extension\/noSide.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/retired\/Chrome\/Extension\/noSide.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/retired\/Chrome\/Extension\/noTitle.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/retired\/Chrome\/Extension\/noTitle.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/retired\/Chrome\/Extension\/oldManifest.json": {
-		"fileType": 524288,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/retired\/Chrome\/Extension\/oldManifest.json",
-		"orderOutput": 0,
-		"outputAbbreviatedPath": "\/retired\/Chrome\/Extension\/oldManifest-min.json",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1
-		},
-	"\/retired\/Chrome\/Extension\/options.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/retired\/Chrome\/Extension\/options.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/retired\/Chrome\/Extension\/options.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/retired\/Chrome\/Extension\/options.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/retired\/Chrome\/Extension\/post.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/retired\/Chrome\/Extension\/post.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/retired\/Chrome\/Extension\/README.md": {
+	"\/README.md": {
 		"criticStyle": 0,
 		"enableFootnotes": 0,
 		"enableLabels": 1,
@@ -674,9 +193,9 @@
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/retired\/Chrome\/Extension\/README.md",
+		"inputAbbreviatedPath": "\/README.md",
 		"maskEmailAddresses": 1,
-		"outputAbbreviatedPath": "\/retired\/Chrome\/Extension\/README.html",
+		"outputAbbreviatedPath": "\/README.html",
 		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
@@ -686,106 +205,568 @@
 		"randomFootnoteNumbers": 0,
 		"useCompatibilityMode": 0
 		},
-	"\/retired\/Chrome\/Extension\/scrollMenu.css": {
+	"\/~archive\/App\/images\/addBackground.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2815,
+		"inputAbbreviatedPath": "\/~archive\/App\/images\/addBackground.png",
+		"outputAbbreviatedPath": "\/~archive\/App\/images\/addBackground.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/~archive\/App\/images\/blueLinen.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 212802,
+		"inputAbbreviatedPath": "\/~archive\/App\/images\/blueLinen.png",
+		"outputAbbreviatedPath": "\/~archive\/App\/images\/blueLinen.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/~archive\/App\/images\/buttonBackground.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2815,
+		"inputAbbreviatedPath": "\/~archive\/App\/images\/buttonBackground.png",
+		"outputAbbreviatedPath": "\/~archive\/App\/images\/buttonBackground.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/~archive\/App\/images\/downvotesBackground.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2814,
+		"inputAbbreviatedPath": "\/~archive\/App\/images\/downvotesBackground.png",
+		"outputAbbreviatedPath": "\/~archive\/App\/images\/downvotesBackground.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/~archive\/App\/images\/headerBackground.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2855,
+		"inputAbbreviatedPath": "\/~archive\/App\/images\/headerBackground.png",
+		"outputAbbreviatedPath": "\/~archive\/App\/images\/headerBackground.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/~archive\/App\/images\/karmaBackground.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2812,
+		"inputAbbreviatedPath": "\/~archive\/App\/images\/karmaBackground.png",
+		"outputAbbreviatedPath": "\/~archive\/App\/images\/karmaBackground.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/~archive\/App\/images\/linen.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 197729,
+		"inputAbbreviatedPath": "\/~archive\/App\/images\/linen.png",
+		"outputAbbreviatedPath": "\/~archive\/App\/images\/linen.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/~archive\/App\/images\/logo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3898,
+		"inputAbbreviatedPath": "\/~archive\/App\/images\/logo.png",
+		"outputAbbreviatedPath": "\/~archive\/App\/images\/logo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/~archive\/App\/images\/logout.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3384,
+		"inputAbbreviatedPath": "\/~archive\/App\/images\/logout.png",
+		"outputAbbreviatedPath": "\/~archive\/App\/images\/logout.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/~archive\/App\/images\/mail.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3409,
+		"inputAbbreviatedPath": "\/~archive\/App\/images\/mail.png",
+		"outputAbbreviatedPath": "\/~archive\/App\/images\/mail.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/~archive\/App\/images\/menuArrow.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2846,
+		"inputAbbreviatedPath": "\/~archive\/App\/images\/menuArrow.png",
+		"outputAbbreviatedPath": "\/~archive\/App\/images\/menuArrow.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/~archive\/App\/images\/menuBackground.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2811,
+		"inputAbbreviatedPath": "\/~archive\/App\/images\/menuBackground.png",
+		"outputAbbreviatedPath": "\/~archive\/App\/images\/menuBackground.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/~archive\/App\/images\/modMail.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3887,
+		"inputAbbreviatedPath": "\/~archive\/App\/images\/modMail.png",
+		"outputAbbreviatedPath": "\/~archive\/App\/images\/modMail.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/~archive\/App\/images\/pixels.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3738,
+		"inputAbbreviatedPath": "\/~archive\/App\/images\/pixels.png",
+		"outputAbbreviatedPath": "\/~archive\/App\/images\/pixels.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/~archive\/App\/images\/preferences.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3480,
+		"inputAbbreviatedPath": "\/~archive\/App\/images\/preferences.png",
+		"outputAbbreviatedPath": "\/~archive\/App\/images\/preferences.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/~archive\/App\/images\/redditsArrow.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2828,
+		"inputAbbreviatedPath": "\/~archive\/App\/images\/redditsArrow.png",
+		"outputAbbreviatedPath": "\/~archive\/App\/images\/redditsArrow.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/~archive\/App\/images\/removeBackground.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2815,
+		"inputAbbreviatedPath": "\/~archive\/App\/images\/removeBackground.png",
+		"outputAbbreviatedPath": "\/~archive\/App\/images\/removeBackground.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/~archive\/App\/images\/sidebarBackground.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 9995,
+		"inputAbbreviatedPath": "\/~archive\/App\/images\/sidebarBackground.png",
+		"outputAbbreviatedPath": "\/~archive\/App\/images\/sidebarBackground.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/~archive\/App\/images\/subBackground.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2811,
+		"inputAbbreviatedPath": "\/~archive\/App\/images\/subBackground.png",
+		"outputAbbreviatedPath": "\/~archive\/App\/images\/subBackground.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/~archive\/App\/images\/voteArrows.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3408,
+		"inputAbbreviatedPath": "\/~archive\/App\/images\/voteArrows.png",
+		"outputAbbreviatedPath": "\/~archive\/App\/images\/voteArrows.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/~archive\/App\/style.css": {
 		"fileType": 16,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/retired\/Chrome\/Extension\/scrollMenu.css",
+		"inputAbbreviatedPath": "\/~archive\/App\/style.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/retired\/Chrome\/Extension\/staticReddits.css": {
-		"fileType": 16,
+	"\/~archive\/Chrome\/Extension (Original)\/background.html": {
+		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/retired\/Chrome\/Extension\/staticReddits.css",
+		"inputAbbreviatedPath": "\/~archive\/Chrome\/Extension (Original)\/background.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/retired\/Chrome\/Extension\/stylesheet.css": {
+	"\/~archive\/Chrome\/Extension (Original)\/icon128.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 11120,
+		"inputAbbreviatedPath": "\/~archive\/Chrome\/Extension (Original)\/icon128.png",
+		"outputAbbreviatedPath": "\/~archive\/Chrome\/Extension (Original)\/icon128.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/~archive\/Chrome\/Extension (Original)\/icon16.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 849,
+		"inputAbbreviatedPath": "\/~archive\/Chrome\/Extension (Original)\/icon16.png",
+		"outputAbbreviatedPath": "\/~archive\/Chrome\/Extension (Original)\/icon16.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/~archive\/Chrome\/Extension (Original)\/icon19.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1034,
+		"inputAbbreviatedPath": "\/~archive\/Chrome\/Extension (Original)\/icon19.png",
+		"outputAbbreviatedPath": "\/~archive\/Chrome\/Extension (Original)\/icon19.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/~archive\/Chrome\/Extension (Original)\/icon48.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5936,
+		"inputAbbreviatedPath": "\/~archive\/Chrome\/Extension (Original)\/icon48.png",
+		"outputAbbreviatedPath": "\/~archive\/Chrome\/Extension (Original)\/icon48.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/~archive\/Chrome\/Extension (Original)\/manifest.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/~archive\/Chrome\/Extension (Original)\/manifest.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/~archive\/Chrome\/Extension (Original)\/manifest-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/~archive\/Chrome\/Extension (Original)\/options.css": {
 		"fileType": 16,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/retired\/Chrome\/Extension\/stylesheet.css",
+		"inputAbbreviatedPath": "\/~archive\/Chrome\/Extension (Original)\/options.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/retired\/Chrome\/Graphics\/1280x800.png": {
+	"\/~archive\/Chrome\/Extension (Original)\/options.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/~archive\/Chrome\/Extension (Original)\/options.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/~archive\/Chrome\/Extension (Original)\/stylesheet.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/~archive\/Chrome\/Extension (Original)\/stylesheet.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/~archive\/Chrome\/Extension\/apple.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/~archive\/Chrome\/Extension\/apple.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/~archive\/Chrome\/Extension\/background.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/~archive\/Chrome\/Extension\/background.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/~archive\/Chrome\/Extension\/icon128.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 11120,
+		"inputAbbreviatedPath": "\/~archive\/Chrome\/Extension\/icon128.png",
+		"outputAbbreviatedPath": "\/~archive\/Chrome\/Extension\/icon128.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/~archive\/Chrome\/Extension\/icon16.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 849,
+		"inputAbbreviatedPath": "\/~archive\/Chrome\/Extension\/icon16.png",
+		"outputAbbreviatedPath": "\/~archive\/Chrome\/Extension\/icon16.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/~archive\/Chrome\/Extension\/icon19.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1034,
+		"inputAbbreviatedPath": "\/~archive\/Chrome\/Extension\/icon19.png",
+		"outputAbbreviatedPath": "\/~archive\/Chrome\/Extension\/icon19.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/~archive\/Chrome\/Extension\/icon48.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5936,
+		"inputAbbreviatedPath": "\/~archive\/Chrome\/Extension\/icon48.png",
+		"outputAbbreviatedPath": "\/~archive\/Chrome\/Extension\/icon48.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/~archive\/Chrome\/Extension\/manifest.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/~archive\/Chrome\/Extension\/manifest.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/~archive\/Chrome\/Extension\/manifest-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/~archive\/Chrome\/Extension\/media.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/~archive\/Chrome\/Extension\/media.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/~archive\/Chrome\/Extension\/noScrollMenu.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/~archive\/Chrome\/Extension\/noScrollMenu.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/~archive\/Chrome\/Extension\/noSearch.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/~archive\/Chrome\/Extension\/noSearch.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/~archive\/Chrome\/Extension\/noSearchSubmit.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/~archive\/Chrome\/Extension\/noSearchSubmit.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/~archive\/Chrome\/Extension\/noSide.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/~archive\/Chrome\/Extension\/noSide.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/~archive\/Chrome\/Extension\/noTitle.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/~archive\/Chrome\/Extension\/noTitle.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/~archive\/Chrome\/Extension\/oldManifest.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/~archive\/Chrome\/Extension\/oldManifest.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/~archive\/Chrome\/Extension\/oldManifest-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/~archive\/Chrome\/Extension\/options.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/~archive\/Chrome\/Extension\/options.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/~archive\/Chrome\/Extension\/options.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/~archive\/Chrome\/Extension\/options.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/~archive\/Chrome\/Extension\/post.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/~archive\/Chrome\/Extension\/post.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/~archive\/Chrome\/Extension\/README.md": {
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
+		"fileType": 4096,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/~archive\/Chrome\/Extension\/README.md",
+		"maskEmailAddresses": 1,
+		"outputAbbreviatedPath": "\/~archive\/Chrome\/Extension\/README.html",
+		"outputFormat": 0,
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
+		},
+	"\/~archive\/Chrome\/Extension\/scrollMenu.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/~archive\/Chrome\/Extension\/scrollMenu.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/~archive\/Chrome\/Extension\/staticReddits.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/~archive\/Chrome\/Extension\/staticReddits.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/~archive\/Chrome\/Extension\/stylesheet.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/~archive\/Chrome\/Extension\/stylesheet.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/~archive\/Chrome\/Graphics\/1280x800.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 434013,
-		"inputAbbreviatedPath": "\/retired\/Chrome\/Graphics\/1280x800.png",
-		"outputAbbreviatedPath": "\/retired\/Chrome\/Graphics\/1280x800.png",
+		"inputAbbreviatedPath": "\/~archive\/Chrome\/Graphics\/1280x800.png",
+		"outputAbbreviatedPath": "\/~archive\/Chrome\/Graphics\/1280x800.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/retired\/Chrome\/Graphics\/440x280.png": {
+	"\/~archive\/Chrome\/Graphics\/440x280.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 25471,
-		"inputAbbreviatedPath": "\/retired\/Chrome\/Graphics\/440x280.png",
-		"outputAbbreviatedPath": "\/retired\/Chrome\/Graphics\/440x280.png",
+		"inputAbbreviatedPath": "\/~archive\/Chrome\/Graphics\/440x280.png",
+		"outputAbbreviatedPath": "\/~archive\/Chrome\/Graphics\/440x280.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/retired\/Chrome\/Web Store\/Screenshots\/Homepage (1280x800).jpg": {
+	"\/~archive\/Chrome\/Web Store\/Screenshots\/Homepage (1280x800).jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 834031,
-		"inputAbbreviatedPath": "\/retired\/Chrome\/Web Store\/Screenshots\/Homepage (1280x800).jpg",
-		"outputAbbreviatedPath": "\/retired\/Chrome\/Web Store\/Screenshots\/Homepage (1280x800).jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/sketch\/Version 2.sketch\/QuickLook\/Preview.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 40055,
-		"inputAbbreviatedPath": "\/sketch\/Version 2.sketch\/QuickLook\/Preview.png",
-		"outputAbbreviatedPath": "\/sketch\/Version 2.sketch\/QuickLook\/Preview.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/sketch\/Version 2.sketch\/QuickLook\/Thumbnail.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 14629,
-		"inputAbbreviatedPath": "\/sketch\/Version 2.sketch\/QuickLook\/Thumbnail.png",
-		"outputAbbreviatedPath": "\/sketch\/Version 2.sketch\/QuickLook\/Thumbnail.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/sketch\/Version 3.sketch\/QuickLook\/Preview.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 191045,
-		"inputAbbreviatedPath": "\/sketch\/Version 3.sketch\/QuickLook\/Preview.png",
-		"outputAbbreviatedPath": "\/sketch\/Version 3.sketch\/QuickLook\/Preview.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/sketch\/Version 3.sketch\/QuickLook\/Thumbnail.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 61619,
-		"inputAbbreviatedPath": "\/sketch\/Version 3.sketch\/QuickLook\/Thumbnail.png",
-		"outputAbbreviatedPath": "\/sketch\/Version 3.sketch\/QuickLook\/Thumbnail.png",
+		"inputAbbreviatedPath": "\/~archive\/Chrome\/Web Store\/Screenshots\/Homepage (1280x800).jpg",
+		"outputAbbreviatedPath": "\/~archive\/Chrome\/Web Store\/Screenshots\/Homepage (1280x800).jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
